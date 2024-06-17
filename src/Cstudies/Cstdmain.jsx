@@ -14,7 +14,7 @@ function Cstdmain()
     }
     return(
         <div className="font-manrope">
-            <div className="flex-col text-blackk font-manrope flex text-center font-bold bg-cstdmain bg-blend-overlay bg-black/10 bg-cover 
+            <div className="flex-col text-white font-manrope flex text-center font-bold bg-cstdmain bg-blend-overlay bg-black/10 bg-cover 
                             2xl:text-6xl 2xl:p-44 2xl:mt-0
                             mt-16 p-12">
                 CASE STUDIES
