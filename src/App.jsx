@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 // import Withsplashscreen from './Splashcomponents/Withsplashscreen';
 import logo from './assets/logo.svg';
 
-import { Routes, Route, Outlet, NavLink } from 'react-router-dom';
+import {Routes, Route, Outlet, NavLink } from 'react-router-dom';
 
 import Big from './Homecomps/Big';
 import Offers from './Homecomps/Offers';
@@ -107,7 +107,7 @@ const NavLayout = () => {
         >
         <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 scale-[0.65]'>
           <div className='cursor-pointer justify-self-end pr-44'>
-            <a href="/home">
+            <a href="home">
               {/* <h1 className="text-[50px] w-[120px] text-center font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
               <img src={logo} alt="" className='scale-150'/>
             </a>
