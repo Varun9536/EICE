@@ -1,0 +1,68 @@
+import React, {useRef, useEffect} from "react";
+import hexagon from "../assets/HEXAGON.png";
+import abstract from "../assets/abstract.mp4";
+import bannerbig from "../assets/bannerbig.png";
+import arrow from '../assets/arrow.svg';
+
+function Big() {
+
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.playbackRate = 0.8; // Slow down the video playback to half speed
+        }
+    }, []);
+
+    return (
+        <div className="relative overflow-hidden font-manrope flex pr-64 pl-64 pt-44 pb-44 text-blackk">
+            <div className="absolute inset-0">
+                <video ref={videoRef} autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
+                    <source src={abstract} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            {/* <div className="absolute inset-0 z-20 overflow-hidden w-1/2 h-auto -ml-12 -mb-12 2xl:w-1/2 2xl:h-auto 2xl:-ml-60 2xl:-mb-48 absolute bottom-0 left-0">
+                <img 
+                    className="w-1/2 h-auto object-top-right animate-spin-slow" 
+                    src={hexagon} 
+                    alt="" 
+                />
+            </div>  
+            <div className="absolute inset-0 z-20 overflow-hidden w-1/2 h-auto -mr-20 -mt-14 2xl:w-1/2 2xl:h-auto 2xl:-mr-[32rem] 2xl:-mt-64 absolute top-0 right-0">
+                <img
+                    className="w-1/2 h-auto object-left-bottom animate-spin-slow"
+                    src={hexagon}
+                    alt=""
+                />
+            </div> */}
+            <div className="absolute inset-0 bg-stone-50/90 z-10"></div>
+            <div className="flex flex-row">
+                <div className="relative w-3/4 h-3/4 flex flex-col justify-start items-start text-start z-20 pt-8">
+                    <div className="w-full">
+                        <h1 className="font-bold text-[72px] leading-[4.5rem] mb-2">
+                            Driving technology Solutions, your
+                        </h1>
+                        <h1 className="font-bold 2xl:text-[72px] -mt-6">
+                            partner for <span className="text-bloo">Success</span>
+                        </h1>
+                        <p className="font-base text-2xl mr-[225px]">
+                            Empowering industry leaders, forward-thinking enterprises and global law firms with cutting-edge technology solutions. Together, we shape the future of IT.
+                        </p>     
+                    </div>
+                    <div className="scale-[1.4] flex items-center justify-center pt-12 pl-10">
+                        <a href="About">
+                            {/* <button className="transition duration-200 h-[56px] w-56 border-[3px] border-bloo hover:border-bloo hover:border-[3px] hover:bg-bloo hover:text-white text-bloo text-xl font-extrabold py-2 px-4 rounded"> */}
+                            <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 h-[56px] w-56 hover:bg-bloo/80 bg-bloo text-white text-xl font-semibold py-2 px-4 rounded"> 
+                                {'LEARN MORE '} <span className="bg-cover scale-[0.9] pl-1"><img src={arrow} alt="" /></span>
+                            </button>
+                        </a>
+                    </div>     
+                </div>
+                <div className="z-20"><img src={bannerbig} alt="" /></div>
+            </div>
+        </div>
+    )
+}
+
+export default Big;

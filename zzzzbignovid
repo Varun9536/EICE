@@ -1,0 +1,49 @@
+import React from "react";
+import Rottext from "./subcomps/Rottext";
+import hexagon from "../assets/HEXAGON.png"
+
+function Big()
+{
+    const words = ['Innovation', 'Excellence', 'Solutions', 'Growth'];
+    return (
+        <div>
+            <div className="relative overflow-hidden font-manrope flex p-20 2xl:p-64 bg-cover bg-no-repeat bg-abstract bg-blue-50/85 bg-blend-overlay justify-center items-center">
+            <div className="overflow-hidden w-1/2 h-auto -ml-12 -mb-12 2xl:w-1/2 2xl:h-auto 2xl:-ml-60 2xl:-mb-48 absolute bottom-0 left-0">
+                <img 
+                    className="w-1/2 h-auto object-top-right animate-spin-slow" 
+                    src={hexagon} 
+                    alt="" 
+                />
+            </div>  
+            <div className="overflow-hidden w-1/2 h-auto -mr-20 -mt-14 2xl:w-1/2 2xl:h-auto 2xl:-mr-[32rem] 2xl:-mt-64 absolute top-0 right-0">
+                <img
+                    className="w-1/2 h-auto object-left-bottom animate-spin-slow"
+                    src={hexagon}
+                    alt=""
+                />
+            </div>
+            <div className="flex flex-row">
+                <div className="pl-24">
+                    <h1 className="font-extrabold 2xl:text-[72px]">
+                        Driving technology
+                        <span className="pl-2">
+                            <Rottext words={words} interval={3000} />
+                        </span>
+                    </h1>
+                    <h1 className="font-extrabold 2xl:text-[64px] -mt-6">
+                        Your partner for success
+                    </h1>
+                    <p className="font-extralight text-2xl mr-[425px]">Empowering industry leaders, forward-thinking enterprises and global law firms with cutting-edge technology solutions. Together, we shape the future of IT.</p>     
+                </div>
+                <div className="scale-[1.4] flex items-center justify-center pr-24">
+                    <a href="About">
+                        <button className="transition duration-200 h-16 w-48 border-[3px] border-blue-200 hover:border-bloo hover:border-[3px] hover:bg-bloo hover:text-white text-blue-900 text-xl font-extrabold py-2 px-4 rounded">{'LEARN MORE->'}</button>
+                    </a>
+                </div>     
+            </div>
+        </div>
+    </div>
+    )
+}
+
+export default Big;

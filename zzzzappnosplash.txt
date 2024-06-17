@@ -1,0 +1,152 @@
+import * as React from 'react';
+import { Routes, Route, Outlet, NavLink } from 'react-router-dom';
+
+import Big from './Homecomps/Big';
+import Offers from './Homecomps/Offers';
+import Solutions from './Homecomps/Solutions';
+import Clientele from './Homecomps/Clientele';
+import Clients from './Homecomps/Clients';
+import Footer from './Homecomps/Footer';
+import Reviews from './Homecomps/Reviews';
+import Casestudies from './Homecomps/Casestudies';
+import Copyright from './Homecomps/Copyright';
+
+import Company from './Aboutcomponents/Company';
+import Misvis from './Aboutcomponents/Misvis';
+import Keyteam from './Aboutcomponents/Keyteam';
+
+import Ims from './Prodcomps/Ims';
+import Lms from './Prodcomps/Lms';
+import Tmt from './Prodcomps/Tmt';
+import Wtms from './Prodcomps/Wtms';
+
+import Servmain from './Servcomps/Servmain'; 
+
+import Careerform from './Othercomps/Careerform';
+import Contactform from './Othercomps/Contactform';
+
+// import Separator from './Othercomps/Separator'; 
+// import Separatorr from './Othercomps/Separatorr';
+// import Separatorrr from './Othercomps/Separatorrr';
+
+const App = () => {
+  return (
+    <Routes>
+      <Route element={<NavLayout />}>
+        <Route index element={<Home />} />
+        <Route path="home" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="products" element={<Products />} />
+        <Route path="services" element={<Services  />} />
+        <Route path="Careers" element={<Careers />} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="*" element={<p><pre>There's nothing here: 404</pre></p>} />
+      </Route>
+    </Routes>
+  );
+};
+
+const NavLayout = () => {
+
+  return (
+    <>
+      <nav
+        className='flex flex-row justify-center text-center'
+      >
+        <NavLink to="/home" className="m-4">
+          Home
+        </NavLink>
+        <NavLink to="/about" className="m-4">
+          About
+        </NavLink>
+        <NavLink to="/products" className="m-4">
+          Products
+        </NavLink>
+        <NavLink to="/services" className="m-4">
+          Services
+        </NavLink>
+        <NavLink to="/careers" className="m-4">
+          Careers
+        </NavLink>
+        <NavLink to="/contact" className="m-4">
+          Contact Us
+        </NavLink>
+
+      </nav>
+      <main style={{ padding: '1rem 0' }}>
+        <Outlet/>
+      </main>
+    </>
+  );
+};
+
+const Home = () => {
+  return (
+    <>
+      <Big />
+      {/* <Separator /> */}
+      <Offers />
+      {/* <Separatorr /> */}
+      <Solutions />
+      {/* <Separatorrr /> */}
+      <Casestudies />
+      <Clients />
+      <Reviews />
+      <Clientele />
+      <Footer />
+      <Copyright />
+    </>
+  );
+};
+
+const About = () => {
+  return (
+    <>
+      <h2>About Us</h2>
+      <Company />
+      <Misvis />
+      <Keyteam />
+    </>
+  );
+};
+
+const Products = () => {
+  return (
+    <>
+      <h2>Products</h2>
+      <Wtms />
+      <Lms />
+      <Tmt />
+      <Ims />
+    </>
+  );
+};
+
+const Services = () => {
+  return (
+    <>
+      <h2>Services</h2>
+      <Servmain />
+    </>
+  );
+};
+
+const Careers = () => {
+  return (
+    <>
+      <h2>Careers Page</h2>
+      <Careerform />
+    </>
+  );
+};
+
+const Contact = () => {
+  return (
+    <>
+      <h2>Contact Us</h2>
+      <Contactform />
+    </>
+  );
+};
+
+export default App;
