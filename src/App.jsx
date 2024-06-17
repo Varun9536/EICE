@@ -178,7 +178,7 @@ const NavLayout = () => {
       {/* phone navbar */}
       <nav className='2xl:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
         <div className='curosr-pointer pl-3'>
-          <a href="/home">
+          <a href="home">
             {/* <h1 className="text-3xl w-[120px] text-start font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
             <img src={logo} alt="" className='scale-[1.15]' />
           </a>
