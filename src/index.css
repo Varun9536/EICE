@@ -7,6 +7,49 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Add this CSS to your main CSS file or as a styled component */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+
+.slide-enter {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  
+  .slide-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .slide-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .slide-exit-active {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 500ms, transform 500ms;
+  }
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
   }

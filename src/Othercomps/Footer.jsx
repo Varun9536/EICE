@@ -3,9 +3,31 @@ import x from '../assets/x.svg';
 import linkedin from '../assets/linkedin.svg';
 import fb from '../assets/fb.svg';
 import logo from '../assets/logo.svg';
+import { useState } from "react";
 
 function Footer()
 {
+    const [email, setemail] = useState("")
+
+    const putdetail = (e) =>
+    {
+        setemail(e.target.value)
+    }
+
+    const printvalue = async ()=>
+    {
+        let a = await fetch("http://192.168.9.91:8000/v1/newsletter/email", {
+            method : 'post',
+            body : JSON.stringify({email:email}),
+            headers : {
+                "Content-Type" : "application/json"
+            }
+        })
+
+        a = await a.json()
+        console.log(a)
+    }
+
     return (
         <div className="grid text-manrope 
                         2xl:grid-cols-2 2xl:ml-[280px] 2xl:mr-[280px] 2xl:m-0
@@ -71,17 +93,19 @@ function Footer()
                 </div>
                 <div className="flex flex-col overflow-hidden 2xl:px-12 2xl:pb-20 px-3 py-2">
                     <label htmlFor="newsletter" className="font-semibold 2xl:text-2xl 2xl:pb-2 py-1 text-xl">Subscribe to our Newsletter</label>
-                    <input placeholder="your-email@provider.com" type="email" name="newsletter" id="newslatter" className="border-gray-300 border-[2px] rounded-md 2xl:text-xl 2xl:w-1/2 2xl:py-2 2xl:px-1 px-1 py-1"/>
+                    <input onChange={putdetail} placeholder="your-email@provider.com" type="email" name="newsletter" id="newslatter" className="border-gray-300 border-[2px] rounded-md 2xl:text-xl 2xl:w-1/2 2xl:py-2 2xl:px-1 px-1 py-1"/>
                     <div className='transition duration-300 ease-in-out 2xl:pt-3 pt-2'>
                         <a>
                             {/* <button className="transition duration-200 h-[56px] w-56 border-[3px] border-bloo hover:border-bloo hover:border-[3px] hover:bg-bloo hover:text-white text-bloo text-xl font-extrabold py-2 px-4 rounded"> */}
                             <button 
+                                onClick={printvalue}
                                 className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30 bg-bloo text-white
                                             h-[44px] w-[120px] text-lg font-semibold py-2 px-4 rounded"> 
                                 {`Subscribe`}
                             </button>
                         </a>
                     </div>
+                   
                 </div>
             </div>
         </div>
