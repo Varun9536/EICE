@@ -267,7 +267,7 @@ function Big() {
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div className="absolute inset-0 bg-white opacity-[0.93] z-10"></div>
+            <div className="absolute inset-0 bg-white/90 z-10"></div>
             <div className="z-10 overflow-hidden h-auto absolute bottom-0 left-0 2xl:scale-100 2xl:w-1/2 2xl:h-auto 2xl:-ml-60 2xl:-mb-48 2xl:1/2 2xl:block xl:scale-100 xl:w-1/2 xl:h-auto xl:-ml-60 xl:-mb-48 2xl:1/2 xl:block sm:-ml-24 sm:-mb-20 -mb-48 -ml-48 scale-75 hidden">
                 <img className="w-1/2 h-auto object-top-right animate-spin-slow" src={hexagon} alt="" />
             </div>
