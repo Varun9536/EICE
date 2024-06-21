@@ -28,7 +28,7 @@ const Rottextt = ({ divs, interval }) => {
       style={{ transition: 'opacity 0.2s ease-in-out' }}
     >
       {divs[currentDivIndex]} 
-      <submit onClick={clickright} className='cursor-pointer border-2 border-bloo text-xs'>move right</submit>
+      {/* <submit onClick={clickright} className='cursor-pointer border-2 border-bloo text-xs'>move right</submit> */}
     </div>
   );
 };
