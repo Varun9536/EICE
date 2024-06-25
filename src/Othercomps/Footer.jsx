@@ -16,7 +16,7 @@ function Footer()
 
     const printvalue = async ()=>
     {
-        let a = await fetch("http://192.168.9.91:8000/v1/newsletter/email", {
+        let a = await fetch("https://eice-website.onrender.com/v1/newsletter/email", {
             method : 'post',
             body : JSON.stringify({email:email}),
             headers : {
@@ -25,6 +25,11 @@ function Footer()
         })
 
         a = await a.json()
+        if(a.result==='successful')
+            {
+                console.log(a.response)
+                alert(`Subscribed Successfully`)
+            }
         console.log(a)
     }
 

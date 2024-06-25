@@ -55,6 +55,15 @@ import { Dropdown } from '@mui/base/Dropdown';
 import { useTheme } from '@mui/system';
 import menu from "./assets/menu.svg"
 
+import Servicebutton from './Navcomps/Servicebutton';
+
+import {
+  FiArrowRight,
+  FiBarChart2,
+  FiChevronDown,
+  FiPieChart,
+} from "react-icons/fi";
+import { CiMobile1, CiUser, CiCircleQuestion } from "react-icons/ci";
 
 // import Separator from './Othercomps/Separator'; 
 // import Separatorr from './Othercomps/Separatorr';
@@ -92,77 +101,6 @@ const App = () => {
   );
 };
 
-const FlyoutLink = ({ children, href, FlyoutContent }) => {
-  const [open, setOpen] = useState(false);
-
-  const showFlyout = FlyoutContent && open;
-
-  return (
-    <div
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-      className="relative w-fit h-fit"
-    >
-      <a href={href} className="relative text-blackk">
-        {children}
-        <span
-          style={{
-            transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
-          }}
-          className="z-30 absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full transition-transform duration-300 ease-out"
-        />
-      </a>
-      <AnimatePresence>
-        {showFlyout && (
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 15 }}
-            style={{ translateX: "-50%" }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="fixed z-50 overflow-visible bg-white text-black"
-          >
-            <div className="z-50 absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-            <div className="z-50 absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
-            <FlyoutContent />
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-};
-
-const ServicesContent = () => {
-  return (
-    <div className="z-50 w-64 bg-white p-6 shadow-xl">
-      <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">For Individuals</h3>
-        <a href="#" className="block text-sm hover:underline">
-          Introduction
-        </a>
-        <a href="#" className="block text-sm hover:underline">
-          Pay as you go
-        </a>
-      </div>
-      <div className="mb-6 space-y-3">
-        <h3 className="font-semibold">For Companies</h3>
-        <a href="#" className="block text-sm hover:underline">
-          Startups
-        </a>
-        <a href="#" className="block text-sm hover:underline">
-          SMBs
-        </a>
-        <a href="#" className="block text-sm hover:underline">
-          Enterprise
-        </a>
-      </div>
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
-        Contact sales
-      </button>
-    </div>
-  );
-};
-
 
 const NavLayout = () => {
 
@@ -174,11 +112,10 @@ const NavLayout = () => {
 
   return (
     <>
-
-      <div className='overflow-hidden'>
+      <div className='relative overflow-hidden'>
         {/* laptop navbar */}
         <nav
-        className='fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center overflow-hidden
+        className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
                    2xl:block hidden'
         >
         <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 scale-[0.65]'>
@@ -188,7 +125,7 @@ const NavLayout = () => {
               <img src={logo} alt="" className='scale-150'/>
             </a>
           </div>
-          <div className='flex flex-row items-center justify-center'>
+          <div className='flex flex-row items-center justify-center overflow-visible'>
             <NavLink to="/home" className="p-6">
               <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
                 <div>HOME</div>
@@ -196,41 +133,40 @@ const NavLayout = () => {
                 </div>
               </div>
             </NavLink>
-            <NavLink to="/about" className="p-6 ">
+            {/* <NavLink to="/about" className="p-6 ">
               <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
                 <div>ABOUT</div>
                   <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
                 </div>
               </div>
-            </NavLink>
-            <NavLink to="/services" className="p-6">
+            </NavLink> */}
+            {/* <NavLink to="/services" className="p-6">
               <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
-                <button type='button' id='servicesbutton' aria-expanded='false' aria-haspopup='true'>
-                <FlyoutLink className="relative" FlyoutContent={ServicesContent}>
-                  SERVICES
-                </FlyoutLink>
-                </button>
-                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
+                  <button type='button' id='servicesbutton' aria-expanded='false' aria-haspopup='true'>
+                    SERVICES
+                  </button>
+                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'></div> 
+                  <div className='absolute top-full left-0 bg-white shadow-lg rounded-md p-2 mt-2 hidden group-hover:block'>
+                    <ul>
+                      <li><a href="/service1">Service 1</a></li>
+                      <li><a href="/service2">Service 2</a></li>
+                      <li><a href="/service3">Service 3</a></li>
+                    </ul>
+                  </div>                 
                 </div>
-              </div>
-              {/* <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                <div className="py-1" role="none">
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-0">Account settings</a>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-1">Support</a>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-2">License</a>
-                  <form method="POST" action="#" role="none">
-                    <button type="submit" className="block w-full px-4 py-2 text-left text-sm text-gray-700" role="menuitem" tabIndex="-1" id="menu-item-3">Sign out</button>
-                  </form>
-                </div>
-              </div> */}
-            </NavLink>
-            <NavLink to="/resources" className="p-6 ">
+            </NavLink> */}
+            {/* <div>
+              <Servicebutton />
+            </div> */}
+            <div className='relative'>
+              <Tabs className='absolute' />
+            </div>
+            {/* <NavLink to="/resources" className="p-6 ">
               <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
                 <div>RESOURCES</div>
-                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
-                </div>
+                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>
               </div>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/careers" className="p-6 ">
               <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
                 <div>CAREERS</div>
@@ -267,7 +203,7 @@ const NavLayout = () => {
           <div className='flex flex-row items-center justify-end'>
             <Dropdown>
               <MenuButton className='scale-[0.6] -mr-1'>
-                <span><img src={menu} alt="" className='' /></span>
+                <div ><span><img src={menu} alt="" className='' /></span></div>
               </MenuButton>
               <Menu className='font-semibold'>
                 <MenuItem onClick={createHandleMenuClick('Home')}><a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/home">Home</a></MenuItem>
@@ -283,7 +219,7 @@ const NavLayout = () => {
         </div>
       </nav>
 
-      <main className='overflow-hidden
+      <main className='overflow-hidden 
                        2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100'>
         <Outlet />
       </main>
@@ -292,7 +228,312 @@ const NavLayout = () => {
   );
 };
 
+const Tabs = () => {
+  const [selected, setSelected] = useState(null);
+  const [dir, setDir] = useState(null);
 
+  const handleSetSelected = (val) => {
+    if (typeof selected === "number" && typeof val === "number") {
+      setDir(selected > val ? "r" : "l");
+    } else if (val === null) {
+      setDir(null);
+    }
+
+    setSelected(val);
+  };
+
+  return (
+    <div
+      onMouseLeave={() => handleSetSelected(null)}
+      className="relative overflow-visible flex h-fit gap-4"
+    >
+      {TABS.map((t) => {
+        return (
+          <Tab
+            className=''
+            key={t.id}
+            selected={selected}
+            handleSetSelected={handleSetSelected}
+            tab={t.id}
+          >
+            {t.title}
+          </Tab>
+        );
+      })}
+
+      <AnimatePresence className=''>
+        {selected && <Content dir={dir} selected={selected} />}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+const Tab = ({ children, tab, handleSetSelected, selected }) => {
+  return (
+    <button
+      id={`shift-tab-${tab}`}
+      onMouseEnter={() => handleSetSelected(tab)}
+      onClick={() => handleSetSelected(tab)}
+      className={`h-full flex items-center gap-1 rounded-full px-3 py-1.5 text-md transition-colors ${
+        selected === tab
+          ? ""
+          : ""
+      }`}
+    >
+      <div className='group overflow-visible hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
+        <div className='flex flex-row items-center justify-center'>
+          <span className='pr-2'>{children}</span>
+          <FiChevronDown 
+              className={`transition-transform ${
+                selected === tab ? "rotate-180" : ""
+              }`}
+            />
+        </div>
+        <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>  
+      </div>
+    </button>
+  );
+};
+
+const Content = ({ selected, dir }) => {
+  return (
+    <motion.div
+      id="overlay-content"
+      initial={{
+        opacity: 0,
+        y: 8,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      exit={{
+        opacity: 0,
+        y: 8,
+      }}
+      // style={'z-offset:1000'}
+      // give width down here for standard sizing, pref 450px 
+      className="absolute overflow-visible z-50 left-0 top-16 rounded-lg border bg-white p-4"
+    >
+      <Bridge />
+      <Nub selected={selected} />
+
+      {TABS.map((t) => {
+        return (
+          <div className="overflow-hidden" key={t.id}>
+            {selected === t.id && (
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  x: dir === "l" ? 100 : dir === "r" ? -100 : 0,
+                }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+              >
+                <t.Component />
+              </motion.div>
+            )}
+          </div>
+        );
+      })}
+    </motion.div>
+  );
+};
+
+const Bridge = () => (
+  <div className="absolute overflow-visible -top-[24px] left-0 right-0 h-[24px]" />
+);
+
+const Nub = ({ selected }) => {
+  const [left, setLeft] = useState(0);
+
+  useEffect(() => {
+    moveNub();
+  }, [selected]);
+
+  const moveNub = () => {
+    if (selected) {
+      const hoveredTab = document.getElementById(`shift-tab-${selected}`);
+      const overlayContent = document.getElementById("overlay-content");
+
+      if (!hoveredTab || !overlayContent) return;
+
+      const tabRect = hoveredTab.getBoundingClientRect();
+      const { left: contentLeft } = overlayContent.getBoundingClientRect();
+
+      const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
+
+      setLeft(tabCenter);
+    }
+  };
+
+  return (
+    <motion.span
+      style={{
+        clipPath: "polygon(0 0, 100% 0, 50% 50%, 0% 100%)",
+      }}
+      animate={{ left }}
+      transition={{ duration: 0.25, ease: "easeInOut" }}
+      className="absolute overflow-visible left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl bg-bloo"
+    />
+  );
+};
+
+const Aboutus = () => {
+  return (
+    <div className="overflow-visible p-6">
+      <div className="flex flex-wrap divide-y-2 gap-6">
+        <div className="flex-1 min-w-[200px]">
+          <h3 className="mb-2 text-md font-bold text-blackk">Who we Are</h3>
+          <a href="#" className="mb-1 block text-sm text-blackk">
+            lorem
+          </a>
+          <a href="#" className="block text-sm text-blackk">
+            ipsum
+          </a>
+        </div>
+        <div className="flex-1 min-w-[200px] pt-4">
+          <h3 className="mb-2 text-md font-bold text-blackk">What we Do</h3>
+          <a href="#" className="mb-1 block text-sm text-blackk">
+            Lorem
+          </a>
+          <a href="#" className="mb-1 block text-sm text-blackk">
+            IpsumReviews
+          </a>
+          <a href="#" className="block text-sm text-blackk">
+            Dolor
+          </a>
+        </div>
+        <div className="flex-1 min-w-[200px] pt-4">
+          <h3 className="mb-2 text-md font-bold text-blackk">Mission and Vision</h3>
+          <a href="#" className="mb-1 block text-sm text-blackk">
+            Lorem
+          </a>
+          <a href="#" className="mb-1 block text-sm text-blackk">
+            Ipsum
+          </a>
+          <a href="#" className="block text-sm text-blackk">
+            Dolor
+          </a>
+          <a href="#" className="block text-sm text-blackk">
+            Sit Amet
+          </a>
+        </div>
+      </div>
+      <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
+        <span>Learn more</span>
+        <FiArrowRight />
+      </button>
+    </div>
+
+  );
+};
+
+const OurServices = () => {
+  return (
+    <div className="p-6">
+  <div className="flex flex-row divide-x-2">
+    <div className="p-6 flex flex-col items-center justify-center text-nowrap">
+      <a href="#" className="items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50">
+        <CiMobile1 size={40} className="w-full mb-2 text-bloo" />
+        <div className="text-md text-center text-blackk">App Development</div>
+      </a>
+      <div className="w-full items-start font-light">
+        <ul>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+        </ul>
+      </div>
+    </div>
+    <div className="p-6 flex flex-col items-center justify-center text-nowrap">
+      <a href="#" className="items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50">
+        <CiUser size={40} className="w-full mb-2 text-bloo" />
+        <span className="text-md text-center text-blackk">UI / UX</span>
+      </a>
+      <div className="w-full items-start font-light">
+        <ul>
+          <li>- Design Services</li>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+        </ul>
+      </div>
+    </div>
+    <div className="p-6 flex flex-col items-center justify-center text-nowrap">
+      <a href="#" className="items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50">
+        <CiCircleQuestion size={40} className="w-full mb-2 text-xl text-bloo" />
+        <span className="text-md text-center text-blackk">Consultancy Services</span>
+      </a>
+      <div className="w-full items-start font-light">
+        <ul>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+          <li>- item</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  );
+};
+
+const OurResources = () => {
+  return (
+    <div className="p-6">
+      <div className="grid grid-cols-2 gap-6">
+        <a href="#">
+          <img
+            className="mb-2 h-14 w-full rounded object-cover text-blackk"
+            src=""
+            alt="Placeholder image"
+          />
+          <h4 className="mb-0.5 text-sm font-medium text-bloo">Lorem ipsum dolor</h4>
+          <p className="text-xs text-neutral-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
+            quidem eos.
+          </p>
+        </a>
+        <a href="#">
+          <img
+            className="mb-2 h-14 w-full rounded object-cover text-blackk"
+            src=""
+            alt="Placeholder image"
+          />
+          <h4 className="mb-0.5 text-sm font-medium text-bloo">Lorem ipsum dolor</h4>
+          <p className="text-xs text-neutral-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
+            quidem eos.
+          </p>
+        </a>
+      </div>
+      <button className="mt-4 flex items-center gap-1 text-sm text-bloo">
+        <span>View more</span>
+        <FiArrowRight />
+      </button>
+    </div>
+  );
+};
+
+const TABS = [
+  {
+    title: "ABOUT",
+    Component: Aboutus,
+  },
+  {
+    title: "SERVICES",
+    Component: OurServices,
+  },
+  {
+    title: "RESOURCES",
+    Component: OurResources,
+  },
+].map((n, idx) => ({ ...n, id: idx + 1 }));
 
 const Home = () => {
   return (
@@ -390,6 +631,7 @@ const Allindus = () => {
     </>
   )
 }
+
 const resolveSlotProps = (fn, args) => (typeof fn === 'function' ? fn(args) : fn);
 
 const Menu = React.forwardRef((props, ref) => {

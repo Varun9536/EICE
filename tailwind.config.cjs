@@ -24,6 +24,8 @@ export default {
         'testimonial' : "url('./assets/testimonial.png')",
         'map' : "url('./assets/MAP.png')",
         'cstdmain' : "url('./assets/cstdmain.png')",
+        'blurr' : "url('./assets/blurr.png')",
+
 
       },
       animation: {

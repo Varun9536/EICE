@@ -22,7 +22,7 @@ function Contactform()
 
     const printvalues = async () =>
     {
-        let a = await fetch("http://192.168.9.91:8000/v1/form/userdata", {
+        let a = await fetch("https://eice-website.onrender.com/v1/form/userdata", {
             method : 'post',
             body : JSON.stringify({email:formvalues.email, number:formvalues.number, name:formvalues.name, message:formvalues.message}),
             headers : {
@@ -34,7 +34,7 @@ function Contactform()
         if(a.result==='successful')
         {
             console.log(a.response)
-            alert(`Data Recieved Successfully`)
+            alert(`Message Sent Successfully`)
         }
         
     }

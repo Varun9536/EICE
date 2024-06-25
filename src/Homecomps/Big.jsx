@@ -7,7 +7,7 @@ import devops from "../assets/devops.png";
 import cloud from '../assets/cloud.png';
 import uiux from '../assets/uiux.png';
 import digitrans from '../assets/digitrans.png';
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -17,205 +17,196 @@ function Big() {
 
     useEffect(() => {
         if (videoRef.current) {
-            videoRef.current.playbackRate = 0.8; // Slow down the video playback to half speed
+            videoRef.current.playbackRate = 1; // Slow down the video playback to half speed
         }
     }, []);
 
     const slides = [
         {
             content: (
-                <div className="flex flex-col">
-                    <div className="2xl:grid 2xl:grid-cols-2 flex flex-col">
-                        <div className="2xl:pl-32 2xl:pt-0 flex flex-col items-start justify-start">
-                            <div>
-                                <div className="font-bold 2xl:text-[64px] 2xl:h-[210px] 2xl:leading-[4.5rem] sm:text-7xl text-5xl">
-                                    <h1 className="pb-2">Transforming your Business through</h1>
-                                    <div className="">
-                                        <div className="2xl:text-[80px] pb-6 pt-6 ">
-                                            <span className="text-nowrap border-2 text-bloo border-blackk/60 shadow-md shadow-blackk/30 rounded-md px-4"> Generative AI </span>
-                                        </div>
-                                        <div className="2xl:pl-1 2xl:pt-2 2xl:text-[20px] text-blackk font-light leading-8">
-                                            <p>{`Integrating our Generative AI tools into your businesses enhances efficiency and innovation by automating tasks and personalizing customer experience. 
-                                                Our AI solutions generate analyze data for valuable insights, optimizing logistics, 
-                                                and accelerating time-to-market.`}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex items-center justify-center">
-                            <div className="p-0 w-[30rem] h-[30rem] border-2 border-bloo/10 shadow-xl shadow-bloo/90 flex justify-center items-center">
-                                <div className="w-full h-full">
-                                    <img className="w-[30rem] h-[30rem] object-cover" src={genai} alt="" />
-                                </div>
-                            </div>
-                        </div>
+                <div className="container mx-auto px-4 2xl:max-w-[1500px]">
+                <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+                  <div className="flex flex-col space-y-6">
+                    <h1 className="text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
+                      Transforming your Business through
+                      <span className="text-bloo font-bold block mt-2">Generative AI</span>
+                    </h1>
+                    <p className="text-white/80 text-base 2xl:text-xl">
+                      Integrating our Generative AI tools into your businesses enhances efficiency and innovation by automating tasks and personalizing customer experience. 
+                      Our AI solutions generate analyze data for valuable insights, optimizing logistics, 
+                      and accelerating time-to-market.
+                    </p>
+                    <div className="pt-4">
+                      <a href="/resources/casestudies">
+                        <button className="py-3 px-6 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+                          Explore
+                        </button>
+                      </a>
                     </div>
+                  </div>
+                  <div className="flex justify-center 2xl:justify-end">
+                    <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg border-2 border-white/60 shadow-md shadow-white/60 overflow-hidden">
+                      <img className="w-full h-full object-cover rounded-lg" src={genai} alt="Generative AI" />
+                    </div>
+                  </div>
                 </div>
+              </div>
             ),
         },
         {
             content: (
-                <div className="flex flex-col">
-                    <div className="2xl:grid 2xl:grid-cols-2 flex flex-col">
-                        <div className="2xl:pl-32 2xl:pt-0 flex flex-col items-start justify-start">
-                            <div>
-                                <div className="font-bold 2xl:text-[64px] 2xl:h-[210px] 2xl:leading-[4.5rem] sm:text-7xl text-5xl">
-                                    <h1 className="pb-2">Scaling Your Company With</h1>
-                                    <div className="">
-                                        <div className="2xl:text-[80px] pb-6 pt-6 ">
-                                            <span className="border-2 text-nowrap text-bloo border-blackk/60 shadow-md shadow-blackk/30 rounded-md px-4"> Cloud Services </span>
-                                        </div>
-                                        <div className="2xl:pl-1 2xl:pt-2 2xl:text-[20px] text-blackk font-light leading-8">
-                                            <p>{`With our Cloud solutions we help you increase your operational scalablility, reduce tech expenditure and accelerate your growth. 
-                                            Enhance your business agility and ensure seamless integration with our innovative cloud services`}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex items-center justify-center">
-                            <div className="p-0 w-[30rem] h-[30rem] border-2 border-bloo/10 shadow-xl shadow-bloo/90 flex justify-center items-center">
-                                <div className="w-full h-full">
-                                    <img className="w-[30rem] h-[30rem] object-cover" src={cloud} alt="" />
-                                </div>
-                            </div>
-                        </div>
+                <div className="container mx-auto px-4 2xl:max-w-[1500px]">
+                <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+                  <div className="flex flex-col space-y-6">
+                    <h1 className="text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
+                      Scaling Your Company With
+                      <span className="text-bloo font-bold block mt-2">Cloud Services</span>
+                    </h1>
+                    <p className="text-white/80 text-base 2xl:text-xl">
+                      With our Cloud solutions we help you increase your operational scalability, reduce tech expenditure, and accelerate your growth.
+                      Enhance your business agility and ensure seamless integration with our innovative cloud services.
+                    </p>
+                    <div className="pt-4">
+                      <a href="/resources/casestudies">
+                        <button className="py-3 px-6 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+                          Explore
+                        </button>
+                      </a>
                     </div>
+                  </div>
+                  <div className="flex justify-center 2xl:justify-end">
+                    <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg border-2 border-white/60 shadow-md shadow-white/60 overflow-hidden">
+                      <img className="w-full h-full object-cover rounded-lg" src={cloud} alt="Cloud Services" />
+                    </div>
+                  </div>
                 </div>
+              </div>
+              
             ),
         },
         {
             content: (
-                
-                    <div className="flex flex-col">
-                        <div className="2xl:grid 2xl:grid-cols-2 flex flex-col">
-                            <div className="2xl:pl-32 2xl:pt-0 flex flex-col items-start justify-start">
-                                <div>
-                                    <div className="font-bold 2xl:text-[64px] 2xl:h-[210px] 2xl:leading-[4.5rem] sm:text-7xl text-5xl">
-                                        <h1 className="pb-2">Improving your Efficiency with</h1>
-                                        <div className="">
-                                            <div className="2xl:text-[80px] pb-6 pt-6 ">
-                                                <span className="border-2 text-bloo text-nowrap border-blackk/60 shadow-md shadow-blackk/30 rounded-md px-4"> DevOps </span>
-                                            </div>
-                                            <div className="2xl:pl-1 2xl:pt-2 2xl:text-[20px] text-blackk font-light leading-8">
-                                                <p>{`Use our DevOps services to automate your manual deployment process. Achieve greater MMTR (Mean Time to Recovery), 
-                                                discover true reliability and increase the frequency of your software releases with DevOps.`}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex items-center justify-center">
-                                <div className="p-0 w-[30rem] h-[30rem] border-2 border-bloo/10 shadow-xl shadow-bloo/90 flex justify-center items-center">
-                                    <div className="w-full h-full">
-                                        <img className="w-[30rem] h-[30rem] object-cover" src={devops} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
+                <div className="container mx-auto px-4 2xl:max-w-[1500px]">
+  <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+    <div className="flex flex-col space-y-6">
+      <h1 className="text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
+        Improving your Efficiency with
+        <span className="text-bloo font-bold block mt-2">DevOps</span>
+      </h1>
+      <p className="text-white/80 text-base 2xl:text-xl">
+        Use our DevOps services to automate your manual deployment process. Achieve greater MMTR (Mean Time to Recovery),
+        discover true reliability, and increase the frequency of your software releases with DevOps.
+      </p>
+      <div className="pt-4">
+        <a href="/resources/casestudies">
+          <button className="py-3 px-6 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+            Explore
+          </button>
+        </a>
+      </div>
+    </div>
+    <div className="flex justify-center 2xl:justify-end">
+      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg border-2 border-white/60 shadow-md shadow-white/60 overflow-hidden">
+        <img className="w-full h-full object-cover rounded-lg" src={devops} alt="DevOps" />
+      </div>
+    </div>
+  </div>
+</div>
+
             ),
         },
         {
             content: (
-                <div className="flex flex-col">
-                        <div className="2xl:grid 2xl:grid-cols-2 flex flex-col">
-                            <div className="2xl:pl-32 2xl:pt-0 flex flex-col items-start justify-start">
-                                <div>
-                                    <div className="font-bold 2xl:text-[64px] 2xl:h-[210px] 2xl:leading-[4.5rem] sm:text-7xl text-5xl">
-                                        <h1 className="pb-2">Increasing your Revenue with</h1>
-                                        <div className="">
-                                            <div className="2xl:text-[80px] pb-6 pt-6 ">
-                                                <span className="border-2 text-nowrap text-bloo border-blackk/60 shadow-md shadow-blackk/30 rounded-md px-4"> IOT </span>
-                                            </div>
-                                            <div className="2xl:pl-1 2xl:pt-2 2xl:text-[20px] text-blackk font-light leading-8">
-                                                <p>{`Automate processes, develop new product lines, generate new revenue streams
-                                                 reduce labor costs, and cut waste with IOT technology. Enhance your customer experience, Predictive maintenance and Manufacturing with our IOT technology.`}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex items-center justify-center">
-                                <div className="p-0 w-[30rem] h-[30rem] border-2 border-bloo/10 shadow-xl shadow-bloo/90 flex justify-center items-center">
-                                    <div className="w-full h-full">
-                                        <img className="w-[30rem] h-[30rem] object-cover" src={iot} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div className="container mx-auto px-4 2xl:max-w-[1500px]">
+                <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+                  <div className="flex flex-col space-y-6">
+                    <h1 className="text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
+                      Increasing your Revenue with
+                      <span className="text-bloo font-bold block mt-2">IoT</span>
+                    </h1>
+                    <p className="text-white/80 text-base 2xl:text-xl">
+                      Automate processes, develop new product lines, generate new revenue streams, reduce labor costs, and cut waste with IoT technology.
+                      Enhance your customer experience, predictive maintenance, and manufacturing with our IoT technology.
+                    </p>
+                    <div className="pt-4">
+                      <a href="/resources/casestudies">
+                        <button className="py-3 px-6 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+                          Explore
+                        </button>
+                      </a>
                     </div>
-            ),
-        },
-        {
-            content: (
-                <div className="flex flex-col">
-                    <div className="2xl:grid 2xl:grid-cols-2 flex flex-col">
-                        <div className="2xl:pl-32 2xl:pt-0 flex flex-col items-start justify-start">
-                            <div>
-                                <div className="font-bold 2xl:text-[64px] 2xl:h-[210px] 2xl:leading-[4.5rem] sm:text-7xl text-5xl">
-                                    <h1 className="pb-2">Driving Business Growth with</h1>
-                                    <div className="">
-                                        <div className="2xl:text-[80px] pb-6 pt-6 ">
-                                            <div className="grid grid-cols-1 gap-4 p-4 border-2 text-bloo border-blackk/60 shadow-md shadow-blackk/30 rounded-md px-4"> 
-                                            <div>
-                                                Digital
-                                            </div>
-                                            <div>
-                                                Transformation
-                                            </div>
-                                            </div>
-                                        </div>
-                                        <div className="2xl:pl-1 2xl:pt-2 2xl:text-[20px] text-blackk font-light leading-8">
-                                            <p>{`Integrate digital technology into all areas of your business, fundamentally changing how you operate
-                                            and deliver value to customers.`}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex items-center justify-center">
-                            <div className="p-0 w-[30rem] h-[30rem] border-2 bg-bloo/5 border-bloo/10 shadow-xl shadow-bloo/90 flex justify-center items-center">
-                                <div className="w-full h-full">
-                                    <img className="w-[30rem] h-[30rem] object-cover" src={digitrans} alt="" />
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div className="flex justify-center 2xl:justify-end">
+                    <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg border-2 border-white/60 shadow-md shadow-white/60 overflow-hidden">
+                      <img className="w-full h-full object-cover rounded-lg" src={iot} alt="IoT" />
                     </div>
+                  </div>
                 </div>
+              </div>
+              
             ),
         },
         {
             content: (
-                <div className="flex flex-col">
-                <div className="2xl:grid 2xl:grid-cols-2 flex flex-col">
-                    <div className="2xl:pl-32 2xl:pt-0 flex flex-col items-start justify-start">
-                        <div>
-                            <div className="font-bold 2xl:text-[64px] 2xl:h-[210px] 2xl:leading-[4.5rem] sm:text-7xl text-5xl">
-                                <h1 className="pb-2">Creating gorgeous Designs with</h1>
-                                <div className="">
-                                    <div className="2xl:text-[80px] pb-6 pt-6 ">
-                                        <span className="border-2 text-bloo border-blackk/60 shadow-md shadow-blackk/30 rounded-md px-4"> UI / UX </span>
-                                    </div>
-                                    <div className="2xl:pl-1 2xl:pt-2 2xl:text-[20px] text-blackk font-light leading-8">
-                                        <p>{`Employ our highly experienced UI/UX developers to get high end designs for your app
-                                        made with your customers as our utmost priority.`}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <div className="p-0 w-[30rem] h-[30rem] border-2 border-bloo/10 shadow-xl shadow-bloo/90 flex justify-center items-center">
-                            <div className="w-full h-full">
-                                <img className="w-[30rem] h-[30rem] object-cover" src={uiux} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             
+                <div className="container mx-auto px-4 2xl:max-w-[1500px]">
+  <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+    <div className="flex flex-col space-y-6">
+      <h1 className="text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
+        Creating gorgeous Designs with
+        <span className="text-bloo font-bold block mt-2">Digital Transformation</span>
+      </h1>
+      <p className="text-white/80 text-base 2xl:text-xl">
+        Integrate digital technology into all areas of your business, fundamentally changing how you operate
+        and deliver value to customers.
+      </p>
+      <div className="pt-4">
+        <a href="/resources/casestudies">
+          <button className="py-3 px-6 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+            Explore
+          </button>
+        </a>
+      </div>
+    </div>
+    <div className="flex justify-center 2xl:justify-end">
+      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg border-2 border-white/60 shadow-md shadow-white/60 overflow-hidden">
+        <img className="w-full h-full object-cover rounded-lg" src={digitrans} alt="Digital Transformation" />
+      </div>
+    </div>
+  </div>
+</div>
+
+            ),
+        },
+        {
+            content: (
+                <div className="container mx-auto px-4 2xl:max-w-[1500px]">
+  <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+    <div className="flex flex-col space-y-6">
+      <h1 className="text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
+        Creating gorgeous Designs with
+        <span className="text-bloo font-bold block mt-2">UI / UX</span>
+      </h1>
+      <p className="text-white/80 text-base 2xl:text-xl">
+        Employ our highly experienced UI/UX developers to get high-end designs for your apps and other developmental needs
+        made with your customers as our utmost priority.
+      </p>
+      <div className="pt-4">
+        <a href="/resources/casestudies">
+          <button className="py-3 px-6 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+            Explore
+          </button>
+        </a>
+      </div>
+    </div>
+    <div className="flex justify-center 2xl:justify-end">
+      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg border-2 border-white/60 shadow-md shadow-white/60 overflow-hidden">
+        <img className="w-full h-full object-cover rounded-lg" src={uiux} alt="UI / UX" />
+      </div>
+    </div>
+  </div>
+</div>
+
             ),
         },
     ];
@@ -267,34 +258,31 @@ function Big() {
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div className="absolute inset-0 bg-white/90 z-10"></div>
-            <div className="z-10 overflow-hidden h-auto absolute bottom-0 left-0 2xl:scale-100 2xl:w-1/2 2xl:h-auto 2xl:-ml-60 2xl:-mb-48 2xl:1/2 2xl:block xl:scale-100 xl:w-1/2 xl:h-auto xl:-ml-60 xl:-mb-48 2xl:1/2 xl:block sm:-ml-24 sm:-mb-20 -mb-48 -ml-48 scale-75 hidden">
-                <img className="w-1/2 h-auto object-top-right animate-spin-slow" src={hexagon} alt="" />
+            <div className="">
+                <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-zinc-900/50"></div>    
             </div>
-            <div className="z-10 overflow-hidden h-auto absolute top-0 right-0 2xl:scale-100 2xl:w-1/2 2xl:h-auto 2xl:-mr-[44rem] 2xl:-mt-64 2xl:block xl:scale-100 xl:w-1/2 xl:h-auto xl:-mr-[32rem] xl:-mt-64 xl:block sm:-mr-80 sm:-mt-24 -mr-[34rem] -mt-[9.5rem] scale-[.6] hidden">
-                <img className="w-1/2 h-auto object-left-bottom animate-spin-slow" src={hexagon} alt="" />
-            </div>
-
-            <div className='z-20 flex flex-row max-h-[1000px] w-screen px-4 relative group items-center'>
-                <div className="justify-self-start w-4 pr-32">
-                        <div className='absolute text-2xl rounded-full p-2 bg-black/60 text-white cursor-pointer'>
-                            <BsChevronCompactLeft onClick={prevSlide} size={30} />
-                        </div>
+            <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
+                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 -ml-24">
+                    <div onClick={prevSlide} className='rounded-full text-white cursor-pointer'>
+                        <BsChevronLeft size={80} />
+                    </div>
                 </div>
-                <TransitionGroup className='scale-110 w-[1600px] h-full rounded-2xl bg-center bg-cover transition duration-500'>
-                    <CSSTransition
-                        key={currentIndex}
-                        timeout={500}
-                        classNames="fade"
-                        exit={false}
-                    >
-                        {slides[currentIndex].content}
-                    </CSSTransition>
-                </TransitionGroup>
-                <div className="justify-self-end w-4">
-                        <div className='absolute text-2xl rounded-full p-2 bg-black/60 text-white cursor-pointer'>
-                            <BsChevronCompactRight onClick={nextSlide} size={30} />
-                        </div>
+                <div className="w-full px-12 2xl:px-16"> {/* Added padding here */}
+                    <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
+                        <CSSTransition
+                            key={currentIndex}
+                            timeout={500}
+                            classNames="fade"
+                            exit={false}
+                        >
+                            {slides[currentIndex].content}
+                        </CSSTransition>
+                    </TransitionGroup>
+                </div>
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 -mr-24">
+                    <div onClick={nextSlide} className='rounded-full text-white cursor-pointer'>
+                        <BsChevronRight size={80} />
+                    </div>
                 </div>
             </div>
         </div>
