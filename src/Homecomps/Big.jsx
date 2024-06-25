@@ -1,12 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import hexagon from "../assets/HEXAGON.png";
 import abstract from "../assets/abstract.mp4";
-import genai from "../assets/genai.png";
-import iot from "../assets/iot.png";
-import devops from "../assets/devops.png";
-import cloud from '../assets/cloud.png';
-import uiux from '../assets/uiux.png';
-import digitrans from '../assets/digitrans.png';
+import genai from "../assets/Compressed/genai.png";
+import iot from "../assets/Compressed/iot.png";
+import devops from "../assets/Compressed/devops.png";
+import cloud from '../assets/Compressed/cloud.png';
+import uiux from '../assets/Compressed/uiux.png';
+import digitrans from '../assets/Compressed/digitrans.png';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';

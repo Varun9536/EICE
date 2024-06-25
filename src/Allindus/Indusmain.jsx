@@ -1,5 +1,5 @@
 import React from "react";
-import laptop from "../assets/Laptop.png";
+import laptop from "../assets/Compressed/Laptop.png";
 
 function Indusmain()
 {

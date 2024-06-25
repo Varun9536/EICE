@@ -1,18 +1,17 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
-import tata from "../assets/tata.png";
-import indianoil from "../assets/indianoil.png";
-import pandg from "../assets/pandg.png";
-import halli from "../assets/halli.png";
-import NIC from '../assets/NIC.png';
-import IIC from '../assets/IIC.png';
-
-import salesvu from '../assets/salesvu.png';
-import wapcos from '../assets/wapcos.png';
-import geologix from '../assets/geologix.png';
-import dgh from '../assets/dgh.png';
-import nrf from '../assets/nrf.png';
-import slb from '../assets/slb.png';
+import tata from "../assets/Compressed/tata.png";
+import indianoil from "../assets/Compressed/indianoil.png";
+import pandg from "../assets/Compressed/pandg.png";
+import halli from "../assets/Compressed/halli.png";
+import NIC from '../assets/Compressed/NIC.png';
+import IIC from '../assets/Compressed/IIC.png';
+import salesvu from '../assets/Compressed/salesvu.png';
+import wapcos from '../assets/Compressed/wapcos.png';
+import geologix from '../assets/Compressed/geologix.png';
+import dgh from '../assets/Compressed/dgh.png';
+import nrf from '../assets/Compressed/nrf.png';
+import slb from '../assets/Compressed/slb.png';
 
 import Rottextt from "./subcomps/Rottextt";
 
