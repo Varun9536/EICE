@@ -152,7 +152,7 @@ function Big() {
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
       <h1 className="text-white text-4xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
-        Creating gorgeous Designs with
+        Driving business Growth with
         <span className="text-bloo font-bold block mt-2">Digital Transformation</span>
       </h1>
       <p className="text-white/80 text-base 2xl:text-xl">
