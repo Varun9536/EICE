@@ -22,9 +22,6 @@ export default {
         'testimonial' : "url('./assets/Compressed/testimonial.png')",
         'map' : "url('./assets/Compressed/MAP.png')",
         'cstdmain' : "url('./assets/Compressed/cstdmain.png')",
-        'blurr' : "url('./assets/Compressed/blurr.png')",
-
-
       },
       animation: {
         'spin-slow': 'spin 150s linear infinite',

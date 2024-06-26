@@ -6,7 +6,7 @@ import digitrans from '../assets/Compressed/digitrans.svg';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import hexagon from '../assets/Compressed/hexagon.png';
+import hexagon from '../assets/hexagon.png';
 
 
 function Big() {
@@ -169,7 +169,7 @@ function Big() {
                             -mb-48 -ml-48 scale-75 hidden">
                 <img 
                     className="w-1/2 h-auto object-top-right animate-spin-slow" 
-                    src={hexagon} 
+                    src={hexagon}
                     alt="" 
                 />
             </div>  
