@@ -21,7 +21,7 @@ function Big() {
     const slides = [
         {
             content: (
-                <div className="container mx-auto px-4 2xl:max-w-[1300px]">
+                <div className="container mx-auto my-auto px-1 2xl:max-w-[1300px]">
                 <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col space-y-6">
                     <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -51,7 +51,7 @@ function Big() {
         },   
         {
             content: (
-                <div className="container mx-auto px-4 2xl:max-w-[1300px]">
+                <div className="container mx-auto my-auto px-1 2xl:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
       <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -83,7 +83,7 @@ function Big() {
         {
             content: (
              
-                <div className="container mx-auto px-4 2xl:max-w-[1300px]">
+                <div className="container mx-auto my-auto px-1 2xl:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
       <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -154,7 +154,8 @@ function Big() {
     }, [currentIndex])
 
     return (
-        <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pr-64 2xl:pl-64 2xl:py-40 max-h-[1000px] xl:pr-64 xl:pl-64 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
+        <div>
+          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pr-64 2xl:pl-64 2xl:py-40 max-h-[1000px] xl:pr-64 xl:pl-64 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
             <div className="w-full h-full bg-bloo/15 -rotate-45 absolute z-1 left-[50%] blur-[300px]"></div>
             {/* <div className="left-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
             <div className="right-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
@@ -224,10 +225,12 @@ function Big() {
                   ))}
               </div>
             </div>
-
         </div>
+        <div className="pb-1 shadow-sm shadow-blackk/30"></div>
+    </div>
     );
 }
+
 
 export default Big;
 

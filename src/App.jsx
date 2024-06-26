@@ -313,7 +313,7 @@ const Content = ({ selected, dir }) => {
       }}
       // style={'z-offset:1000'}
       // give width down here for standard sizing, pref 450px 
-      className="absolute overflow-visible z-50 left-0 top-16 rounded-lg border bg-white p-4"
+      className="absolute overflow-visible z-50 left-0 top-16 rounded-lg border border-blackk/30 shadow-lg shadow-blackk/30 bg-white p-4"
     >
       <Bridge />
       <Nub selected={selected} />
