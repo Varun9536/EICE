@@ -70,9 +70,9 @@ function Big() {
         </a>
       </div>
     </div>
-    <div className="flex justify-center 2xl:justify-end">
+    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
       <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
-        <img className="w-full h-full object-cover rounded-lg" src={devops} alt="DevOps" />
+        <img className="w-full h-full rounded-lg" src={devops} alt="DevOps" />
       </div>
     </div>
   </div>
@@ -102,9 +102,9 @@ function Big() {
         </a>
       </div>
     </div>
-    <div className="flex justify-center 2xl:justify-end">
-      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
-        <img className="w-full h-full object-cover rounded-lg" src={digitrans} alt="Digital Transformation" />
+    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
+      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg overflow-visible">
+        <img className="w-full h-full pb-12 rounded-lg overflow-visible" src={digitrans} alt="Digital Transformation" />
       </div>
     </div>
   </div>
@@ -155,7 +155,7 @@ function Big() {
 
     return (
         <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pr-64 2xl:pl-64 2xl:py-40 max-h-[1000px] xl:pr-64 xl:pl-64 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
-            <div className="w-full h-full bg-bloo/15 -rotate-45 absolute z-1 left-[30%] blur-[300px]"></div>
+            <div className="w-full h-full bg-bloo/15 -rotate-45 absolute z-1 left-[50%] blur-[300px]"></div>
             {/* <div className="left-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
             <div className="right-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
             <div className="right-[25%] w-full h-full scale-75 -rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
@@ -191,7 +191,7 @@ function Big() {
             </div>
             <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 -ml-12">
-                    <div onClick={prevSlide} className='rounded-full text-blackk cursor-pointer'>
+                    <div onClick={prevSlide} className='rounded-full text-blackk/50 cursor-pointer'>
                         <BsChevronLeft size={50} />
                     </div>
                 </div>
@@ -206,13 +206,25 @@ function Big() {
                             {slides[currentIndex].content}
                         </CSSTransition>
                     </TransitionGroup>
+                    
                 </div>
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 -mr-12">
-                    <div onClick={nextSlide} className='rounded-full text-blackk cursor-pointer'>
+                    <div onClick={nextSlide} className='rounded-full text-blackk/50 cursor-pointer'>
                         <BsChevronRight size={50} />
                     </div>
                 </div>
+                <div className="cursor-pointer absolute -bottom-[20%] left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+                  {slides.map((slide, slideIndex) => (
+                      <RxDotFilled 
+                          size={40}
+                          key={slideIndex} 
+                          className={currentIndex === slideIndex ? 'text-blue-900' : 'text-blue-900/30'} 
+                          onClick={() => goToSlide(slideIndex)} 
+                      />
+                  ))}
+              </div>
             </div>
+
         </div>
     );
 }

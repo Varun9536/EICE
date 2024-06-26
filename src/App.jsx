@@ -538,6 +538,9 @@ const TABS = [
 const Home = () => {
   return (
     <>
+      {/* <div className="w-[10000px] h-[10000px] bg-bloo/15 -rotate-45 absolute  blur-[300px]">     </div> */}
+      {/* <div className="bg-gradient-to-b from-bloo/[.01] via-bloo/[.06] to-bloo/[.01]"> */}
+
       {/* <Temp /> */}
       <Big />
       {/* <Separator /> */}
