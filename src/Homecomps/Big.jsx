@@ -40,7 +40,7 @@ function Big() {
                       </a>
                     </div>
                   </div>
-                  <div className="order-first sm:order-last flex justify-center 2xl:justify-end 2xl:scale-[1.15] 2xl:pl-2 scale-100">
+                  <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] 2xl:pl-2 scale-100">
                     <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
                       <img className="w-full h-full rounded-lg " src={aiml} alt="Generative AI" />
                     </div>
@@ -70,7 +70,7 @@ function Big() {
         </a>
       </div>
     </div>
-    <div className="order-first sm:order-last flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
+    <div className=" flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
       <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
         <img className="w-full h-full rounded-lg" src={devops} alt="DevOps" />
       </div>
@@ -102,7 +102,7 @@ function Big() {
         </a>
       </div>
     </div>
-    <div className="order-first sm:order-last flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
+    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
       <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg overflow-visible">
         <img className="w-full h-full pb-12 rounded-lg overflow-visible" src={digitrans} alt="Digital Transformation" />
       </div>

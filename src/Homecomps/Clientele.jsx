@@ -14,7 +14,7 @@ function Clientele() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 xl:gap-24 2xl:gap-32">
                     <Milestone number="10+" text="Years" smallText="Of Experience" />
                     <Milestone number="150+" text="Projects" smallText="Delivered Successfully" />
-                    <Milestone number="60+" text="Clients" smallText="Global" />
+                    <Milestone number="60+" text="Clients" smallText="Globally" />
                 </div>
             </div>
         </div>
