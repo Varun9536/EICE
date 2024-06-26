@@ -7,7 +7,7 @@ function Copyright()
             <div className="grid grid-cols justify-center 
                             2xl:p-2 2xl:text-base 
                             p-1 text-[10px]">
-                <div className="text-center">© 2024 EICE Technology Pvt. Ltd.</div>
+                <div className="text-center">© 2024 EICE Technology</div>
                 {/* <div className="">T&C</div> */}
             </div>
         </div>
