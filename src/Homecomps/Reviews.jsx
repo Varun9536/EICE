@@ -38,7 +38,7 @@ function Reviews() {
     };
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 5000);
+        const interval = setInterval(nextSlide, 7000);
         return () => clearInterval(interval);
     }, []);
 
@@ -57,14 +57,16 @@ function Reviews() {
                             classNames="fade"
                             exit={false}
                         >
+                            <div className="w-full p-4 flex items-center justify-center">
                             <div className="text-center">
                                 <p className="font-semibold italic text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 max-w-4xl mx-auto">
                                     "{testimonials[currentIndex].quote}"
                                 </p>
                                 <div className="font-semibold">
-                                    <p className="text-lg md:text-xl mb-1">{testimonials[currentIndex].name}</p>
-                                    <p className="text-bloo italic text-md md:text-lg">{testimonials[currentIndex].title}</p>
+                                    <p className="font-bold text-xl md:text-xl mb-1">{`- `}{testimonials[currentIndex].name}</p>
+                                    <p className="text-bloo italic text-md md:text-2xl">{testimonials[currentIndex].title}</p>
                                 </div>
+                            </div>
                             </div>
                         </CSSTransition>
                     </TransitionGroup>
@@ -87,8 +89,8 @@ function Reviews() {
                     {testimonials.map((_, index) => (
                         <RxDotFilled 
                             key={index}
-                            size={24}
-                            className={`cursor-pointer ${currentIndex === index ? 'text-bloo' : 'text-gray-300'}`}
+                            size={30}
+                            className={`cursor-pointer ${currentIndex === index ? 'text-blue-900' : 'text-blue-900/30'}`}
                             onClick={() => setCurrentIndex(index)}
                         />
                     ))}

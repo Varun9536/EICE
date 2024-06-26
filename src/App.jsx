@@ -158,7 +158,7 @@ const NavLayout = () => {
             {/* <div>
               <Servicebutton />
             </div> */}
-            <div className='relative'>
+            <div className='relative px-2'>
               <Tabs className='absolute' />
             </div>
             {/* <NavLink to="/resources" className="p-6 ">

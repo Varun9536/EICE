@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import tata from "../assets/Compressed/tata.png";
 import indianoil from "../assets/Compressed/indianoil.png";
 import pandg from "../assets/Compressed/pandg.png";
@@ -12,44 +12,66 @@ import dgh from '../assets/Compressed/dgh.png';
 import nrf from '../assets/Compressed/nrf.png';
 import slb from '../assets/Compressed/slb.png';
 
-import Rottextt from "./subcomps/Rottextt";
-
 function Clients() {
-    const clientGroups = [
-        [IIC, tata, indianoil, pandg, halli, NIC],
-        [geologix, salesvu, slb, nrf, dgh, wapcos]
+    const clients = [
+        { src: IIC, width: 120, height: 120, link:"https://iicdelhi.in" },
+        { src: tata, width: 150, height: 150, link:"https://tata.com"},
+        { src: indianoil, width: 110, height: 120, link:"https://iocl.com"},
+        { src: pandg, width: 130, height: 65, link:"https://in.pg.com" },
+        { src: halli, width: 120, height: 120, link:"https://halliburton.com" },
+        { src: NIC, width: 100, height: 90, link:"https://nic.in" },
+        { src: geologix, width: 120, height: 100, link:"https://geologix.com" },
+        { src: salesvu, width: 120, height: 100, link:"https://salesvu.com" },
+        { src: slb, width: 120, height: 120, link:"https://slb.com" },
+        { src: nrf, width: 120, height: 100, link:"https://nortonrosefulbright.com" },
+        { src: dgh, width: 150, height: 120, link:"https://dghindia.gov.in" },
+        { src: wapcos, width: 130, height: 130, link:"https://wapcos.co.in" }
     ];
 
+    const containerRef = useRef(null);
+
     return (
-        <div className="font-manrope flex flex-col justify-center py-16 sm:py-20 lg:py-24">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 className="text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mb-12 sm:mb-16 lg:mb-20">
-                    <span className="text-muted font-bold">Proudly serving </span>
-                    <span className="text-bloo font-semibold">Global Clients</span>
-                    <span className="text-muted font-bold"> with excellence</span>
+        <div className="font-manrope flex flex-col items-center justify-center py-8 sm:py-16 lg:py-16">
+            <div className="max-w-7xl mx-2 px-4 sm:px-6 lg:px-8">
+                <h1 className="text-center text-black font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-12 lg:mb-16">
+                    Proudly serving <br className="sm:hidden"/>
+                    <span className="text-bloo font-semibold"> Global Clients </span>
+                     with excellence
                 </h1>
                 
-                <div className="bg-white py-8 sm:py-12">
-                    <Rottextt
-                        divs={clientGroups.map((group, index) => (
-                            <ClientGroup  key={index} clients={group} />
-                        ))}
-                        interval={3500}
-                    />
+                <div className="relative w-full woverflow-hidden">
+                    <div className="sm:w-full w-screen px-6">
+                    <div ref={containerRef} className="bg-white rounded-xl py-8 sm:py-12 overflow-x-auto hide-scrollbar">
+                        <div className="flex flex-nowrap gap-8 items-center px-4 sm:px-0 min-w-max sm:grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 sm:min-w-0 justify-center">
+                            {clients.map((client, index) => (
+                                <ClientLogo 
+                                    key={index} 
+                                    src={client.src} 
+                                    width={client.width} 
+                                    height={client.height}
+                                    link={client.link}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
-function ClientGroup({ clients }) {
+function ClientLogo({ src, width, height, link }) {
     return (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-            {clients.map((client, index) => (
-                <div key={index} className="flex items-center justify-center w-32 h-20 sm:w-40 sm:h-24">
-                    <img src={client} alt="" className="max-w-full max-h-full object-contain hover:saturate-100" />
-                </div>
-            ))}
+        <div className="flex items-center justify-center p-4 flex-shrink-0 sm:flex-shrink">
+            <a href={link} className="cursor-pointer">
+                <img 
+                    src={src} 
+                    alt="Client Logo" 
+                    style={{ width: `${width}px`, height: `${height}px` }}
+                    className="object-contain transition-all duration-300 filter saturate-0 hover:saturate-100" 
+                />
+            </a>
         </div>
     );
 }

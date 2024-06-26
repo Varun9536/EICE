@@ -40,7 +40,7 @@ function Big() {
                       </a>
                     </div>
                   </div>
-                  <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] 2xl:pl-2 scale-100">
+                  <div className="order-first sm:order-last flex justify-center 2xl:justify-end 2xl:scale-[1.15] 2xl:pl-2 scale-100">
                     <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
                       <img className="w-full h-full rounded-lg " src={aiml} alt="Generative AI" />
                     </div>
@@ -70,7 +70,7 @@ function Big() {
         </a>
       </div>
     </div>
-    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
+    <div className="order-first sm:order-last flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
       <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
         <img className="w-full h-full rounded-lg" src={devops} alt="DevOps" />
       </div>
@@ -102,7 +102,7 @@ function Big() {
         </a>
       </div>
     </div>
-    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
+    <div className="order-first sm:order-last flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
       <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg overflow-visible">
         <img className="w-full h-full pb-12 rounded-lg overflow-visible" src={digitrans} alt="Digital Transformation" />
       </div>
@@ -190,7 +190,7 @@ function Big() {
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
             <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 -ml-12">
+                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 -ml-32">
                     <div onClick={prevSlide} className='rounded-full text-blackk/50 cursor-pointer'>
                         <BsChevronLeft size={50} />
                     </div>
@@ -208,7 +208,7 @@ function Big() {
                     </TransitionGroup>
                     
                 </div>
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 -mr-12">
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 -mr-32">
                     <div onClick={nextSlide} className='rounded-full text-blackk/50 cursor-pointer'>
                         <BsChevronRight size={50} />
                     </div>

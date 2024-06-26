@@ -7,7 +7,15 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Add this CSS to your main CSS file or as a styled component */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
 .fade-enter {
   opacity: 0;
   z-index: 1;
@@ -100,9 +108,3 @@ html, body {
 .offer-item:hover .back {
     transform: rotateY(0deg);
 }
-/*   
-.bgimage{
-    background-image: url("https://via.placeholder.com/600");
-    width: 100px;
-    height: auto;
-} */
