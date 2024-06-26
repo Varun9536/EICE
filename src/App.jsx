@@ -116,9 +116,9 @@ const NavLayout = () => {
         {/* laptop navbar */}
         <nav
         className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
-                   2xl:block hidden'
+                   2xl:block xl:block lg:block hidden'
         >
-        <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 scale-[0.65]'>
+        <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 xl:scale-100 lg:scale-100 scale-[0.65]'>
           <div className='cursor-pointer justify-self-end pr-44'>
             <a href="home">
               {/* <h1 className="text-[50px] w-[120px] text-center font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
@@ -192,7 +192,7 @@ const NavLayout = () => {
       <div className='bg-black'></div>
 
       {/* phone navbar */}
-      <nav className='2xl:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
+      <nav className='2xl:hidden xl:hidden lg:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
         <div className='curosr-pointer pl-3'>
           <a href="home">
             {/* <h1 className="text-3xl w-[120px] text-start font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}

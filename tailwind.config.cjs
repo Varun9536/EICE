@@ -8,8 +8,6 @@ export default {
         valera:['Valera Round Regular', 'serif'],
       },
       backgroundImage: {
-        'abstract' : "url('./assets/Compressed/abstract.jpg')",
-        'hexagon' : "url('./assets/Compressed/HEXAGON.png')",
         'offers' : "url('./assets/Compressed/offers.png')",
         'healthcare' : "url('./assets/Compressed/Healthcare.jpg')",
         'finance' : "url('./assets/Compressed/finance.jpg')",
