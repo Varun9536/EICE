@@ -6,7 +6,7 @@ import digitrans from '../assets/Compressed/digitrans.svg';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import hexagon from '../assets/Compressed/Hexagon.png';
+import hexagon from '../assets/Compressed/hexagon.png';
 
 
 function Big() {
