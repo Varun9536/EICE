@@ -24,11 +24,11 @@ function Big() {
                 <div className="container mx-auto my-auto sm:max-w-[1300px]">
                 <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col space-y-6">
-                    <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+                    <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
                       Transforming your Business through
                       <span className="text-bloo font-bold block mt-2">Generative AI</span>
                     </h1>
-                    <p className="text-blackk/80 text-base 2xl:text-xl">
+                    <p className="text-blackk/80 text-xl sm:text-xl">
                       Integrate our Generative AI tools to automate tasks, personalize customer experiences, and drive innovation. Our AI solutions analyze data for insights, optimize logistics, and accelerate 
                       time-to-market.
                     </p>
@@ -54,11 +54,11 @@ function Big() {
                 <div className="container mx-auto my-auto sm:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
-      <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
         Improving your Efficiency with
         <span className="text-bloo font-bold block mt-2">DevOps</span>
       </h1>
-      <p className="text-blackk/80 text-base 2xl:text-xl">
+      <p className="text-blackk/80 text-xl sm:text-xl">
         Use our DevOps services to automate your manual deployment process. Achieve greater MMTR (Mean Time to Recovery),
         discover true reliability, and increase the frequency of your software releases with DevOps.
       </p>
@@ -88,11 +88,11 @@ function Big() {
                 <div className="container mx-auto my-auto sm:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
-      <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
         Driving business Growth with
         <span className="text-bloo font-bold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span>
       </h1>
-      <p className="text-blackk/80 text-base 2xl:text-xl">
+      <p className="text-blackk/80 text-xl sm:text-xl">
         Integrate digital technology into all areas of your business, fundamentally changing how you operate
         and deliver value to customers.
       </p>
