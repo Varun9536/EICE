@@ -21,7 +21,7 @@ function Big() {
     const slides = [
         {
             content: (
-                <div className="container mx-auto my-auto sm:max-w-[1300px]">
+                <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
                 <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col space-y-6">
                     <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -51,7 +51,7 @@ function Big() {
         },   
         {
             content: (
-                <div className="container mx-auto my-auto sm:max-w-[1300px]">
+                <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
       <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -85,7 +85,7 @@ function Big() {
         {
             content: (
              
-                <div className="container mx-auto my-auto sm:max-w-[1300px]">
+                <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
       <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
