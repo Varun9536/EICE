@@ -313,7 +313,7 @@ const Content = ({ selected, dir }) => {
       }}
       // style={'z-offset:1000'}
       // give width down here for standard sizing, pref 450px 
-      className="absolute overflow-visible z-50 left-0 top-16 rounded-lg border border-blackk/30 shadow-lg shadow-blackk/30 bg-white p-4"
+      className="absolute overflow-visible z-50 left-0 top-16 w-[450px] rounded-lg border border-blackk/30 shadow-lg shadow-blackk/30 bg-white p-4"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -381,49 +381,18 @@ const Nub = ({ selected }) => {
 
 const Aboutus = () => {
   return (
-    <div className="overflow-visible p-6">
-      <div className="flex flex-wrap divide-y-2 gap-6">
-        <div className="flex-1 min-w-[200px]">
-          <h3 className="mb-2 text-md font-bold text-blackk">Who we Are</h3>
-          <a href="#" className="mb-1 block text-sm text-blackk">
-            lorem
-          </a>
-          <a href="#" className="block text-sm text-blackk">
-            ipsum
-          </a>
-        </div>
-        <div className="flex-1 min-w-[200px] pt-4">
-          <h3 className="mb-2 text-md font-bold text-blackk">What we Do</h3>
-          <a href="#" className="mb-1 block text-sm text-blackk">
-            Lorem
-          </a>
-          <a href="#" className="mb-1 block text-sm text-blackk">
-            IpsumReviews
-          </a>
-          <a href="#" className="block text-sm text-blackk">
-            Dolor
-          </a>
-        </div>
-        <div className="flex-1 min-w-[200px] pt-4">
-          <h3 className="mb-2 text-md font-bold text-blackk">Mission and Vision</h3>
-          <a href="#" className="mb-1 block text-sm text-blackk">
-            Lorem
-          </a>
-          <a href="#" className="mb-1 block text-sm text-blackk">
-            Ipsum
-          </a>
-          <a href="#" className="block text-sm text-blackk">
-            Dolor
-          </a>
-          <a href="#" className="block text-sm text-blackk">
-            Sit Amet
-          </a>
-        </div>
+    <div className='p-6'>
+      <div className='grid grid-cols-3 gap-12 text-nowrap'>
+        <div>Who We Are</div>
+        <div>What We Do</div>
+        <div>Mission And Vision</div>
       </div>
-      <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
-        <span>Learn more</span>
-        <FiArrowRight />
-      </button>
+      <div>
+        <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
+          <span>Learn more</span>
+          <FiArrowRight />
+        </button>
+      </div>
     </div>
 
   );

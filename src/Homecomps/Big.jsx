@@ -21,7 +21,7 @@ function Big() {
     const slides = [
         {
             content: (
-                <div className="container mx-auto my-auto px-1 2xl:max-w-[1300px]">
+                <div className="container mx-auto my-auto sm:max-w-[1300px]">
                 <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col space-y-6">
                     <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -51,7 +51,7 @@ function Big() {
         },   
         {
             content: (
-                <div className="container mx-auto my-auto px-1 2xl:max-w-[1300px]">
+                <div className="container mx-auto my-auto sm:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
       <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -64,7 +64,9 @@ function Big() {
       </p>
       <div className="pt-4">
         <a href="/resources/casestudies">
-          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 
+                          border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md 
+                          hover:shadow-bloo/30 text-lg 2xl:text-xl">
             Explore
           </button>
         </a>
@@ -83,7 +85,7 @@ function Big() {
         {
             content: (
              
-                <div className="container mx-auto my-auto px-1 2xl:max-w-[1300px]">
+                <div className="container mx-auto my-auto sm:max-w-[1300px]">
   <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
     <div className="flex flex-col space-y-6">
       <h1 className="text-blackk text-4xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
@@ -196,7 +198,7 @@ function Big() {
                         <BsChevronLeft size={50} />
                     </div>
                 </div>
-                <div className="w-full px-12 2xl:px-16"> {/* Added padding here */}
+                <div className="w-full px-2 sm:px-16"> {/* Added padding here */}
                     <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
                         <CSSTransition
                             key={currentIndex}
