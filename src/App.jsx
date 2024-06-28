@@ -21,8 +21,8 @@ import Temp from './Homecomps/Temp';
 import Copyright from './Othercomps/Copyright';
 
 import Company from './Aboutcomponents/Company';
-import Misvis from './Aboutcomponents/Misvis';
-import Keyteam from './Aboutcomponents/Keyteam';
+import Workflow from './Aboutcomponents/Workflow';
+import Certifications from './Aboutcomponents/Certifications';
 
 import Cstdmain from './Cstudies/Cstdmain';
 import AutoOne from './Cstudies/AutoOne';
@@ -119,7 +119,7 @@ const NavLayout = () => {
                    2xl:block xl:block lg:block hidden'
         >
         <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 xl:scale-100 lg:scale-100 scale-[0.65]'>
-          <div className='cursor-pointer justify-self-end pr-44'>
+          <div className='cursor-pointer justify-self-end pr-52'>
             <a href="home">
               {/* <h1 className="text-[50px] w-[120px] text-center font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
               <img src={logo} alt="" className='scale-150'/>
@@ -175,7 +175,7 @@ const NavLayout = () => {
               </div>  
             </NavLink>
           </div>
-          <div className='justify-self-start pl-36'>
+          <div className='justify-self-start pl-48'>
             <NavLink to="/contact" className="p-6">
               <div className='transition duration-300 ease-in-out'>
                     <a href="Contact">
@@ -282,12 +282,14 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
     >
       <div className='group overflow-visible hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
         <div className='flex flex-row items-center justify-center'>
-          <span className='pr-2'>{children}</span>
-          <FiChevronDown 
-              className={`transition-transform ${
-                selected === tab ? "rotate-180" : ""
-              }`}
-            />
+          <a className='flex items-center justify-center' href={`/${children}`}>
+            <span className='pr-2'>{children}</span>
+            <FiChevronDown 
+                className={`transition-transform ${
+                  selected === tab ? "rotate-180" : ""
+                }`}
+              />
+          </a>
         </div>
         <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>  
       </div>
@@ -313,7 +315,7 @@ const Content = ({ selected, dir }) => {
       }}
       // style={'z-offset:1000'}
       // give width down here for standard sizing, pref 450px 
-      className="absolute overflow-visible z-50 left-0 top-16 w-[450px] rounded-lg border border-blackk/30 shadow-lg shadow-blackk/30 bg-white p-4"
+      className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/10 shadow-md shadow-blackk/20 bg-white p-4"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -381,17 +383,19 @@ const Nub = ({ selected }) => {
 
 const Aboutus = () => {
   return (
-    <div className='p-6'>
+    <div className='w-11/12 flex flex-col items-center justify-center text-center'>
       <div className='grid grid-cols-3 gap-12 text-nowrap'>
         <div>Who We Are</div>
         <div>What We Do</div>
         <div>Mission And Vision</div>
       </div>
       <div>
-        <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
-          <span>Learn more</span>
-          <FiArrowRight />
-        </button>
+        <a href="/about">
+          <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
+            <span>Learn more</span>
+            <FiArrowRight />
+          </button>
+        </a>
       </div>
     </div>
 
@@ -530,10 +534,9 @@ const Home = () => {
 const About = () => {
   return (
     <>
-      <h2>About Us</h2>
       <Company />
-      <Misvis />
-      <Keyteam />
+      <Workflow />
+      <Certifications />
       <Footer />
       <Copyright />
     </>

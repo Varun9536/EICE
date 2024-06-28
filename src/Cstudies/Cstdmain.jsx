@@ -21,7 +21,7 @@ function Cstdmain()
             </div>
             <div className="2xl:ml-[450px] 2xl:mr-[450px] 2xl:mt-24 2xl:mb-24">
                 <div>
-                <h1 className="bg-neutral-100 text-center font-semibold 
+                <h1 className="bg-blue-50 text-center font-semibold 
                                2xl:p-12 2xl:text-3xl 
                                p-6">
                     <span className="2xl:text-4xl">{`"`}</span>Explore <span className="text-bloo">Real-World Examples</span> of how EICE has transformed businesses accross industries through innovative software solutions and unparalelled expertise.<span className="2xl:text-4xl">{`"`}</span>
