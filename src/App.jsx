@@ -63,7 +63,16 @@ import {
   FiChevronDown,
   FiPieChart,
 } from "react-icons/fi";
+import { FaAndroid, FaAppStoreIos, FaLaptopCode, FaPeopleArrows } from "react-icons/fa";
+import { GiCircuitry } from "react-icons/gi";
+import { MdDesignServices } from "react-icons/md";
+import { FaComputer, FaFileCircleCheck } from "react-icons/fa6";
+import { GrCloudSoftware } from "react-icons/gr";
+import { MdOutlineAppRegistration } from "react-icons/md";
 import { CiMobile1, CiUser, CiCircleQuestion } from "react-icons/ci";
+import { IoIosBuild } from "react-icons/io";
+import { LuBrainCircuit, LuCircuitBoard } from "react-icons/lu";
+import { SiBlockchaindotcom } from "react-icons/si";
 
 // import Separator from './Othercomps/Separator'; 
 // import Separatorr from './Othercomps/Separatorr';
@@ -133,40 +142,9 @@ const NavLayout = () => {
                 </div>
               </div>
             </NavLink>
-            {/* <NavLink to="/about" className="p-6 ">
-              <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
-                <div>ABOUT</div>
-                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
-                </div>
-              </div>
-            </NavLink> */}
-            {/* <NavLink to="/services" className="p-6">
-              <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
-                  <button type='button' id='servicesbutton' aria-expanded='false' aria-haspopup='true'>
-                    SERVICES
-                  </button>
-                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'></div> 
-                  <div className='absolute top-full left-0 bg-white shadow-lg rounded-md p-2 mt-2 hidden group-hover:block'>
-                    <ul>
-                      <li><a href="/service1">Service 1</a></li>
-                      <li><a href="/service2">Service 2</a></li>
-                      <li><a href="/service3">Service 3</a></li>
-                    </ul>
-                  </div>                 
-                </div>
-            </NavLink> */}
-            {/* <div>
-              <Servicebutton />
-            </div> */}
             <div className='relative px-2'>
               <Tabs className='absolute' />
             </div>
-            {/* <NavLink to="/resources" className="p-6 ">
-              <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
-                <div>RESOURCES</div>
-                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>
-              </div>
-            </NavLink> */}
             <NavLink to="/careers" className="p-6 ">
               <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
                 <div>CAREERS</div>
@@ -417,53 +395,91 @@ const Aboutus = () => {
 
 const OurServices = () => {
   return (
-    <div className="p-6">
-  <div className="flex flex-row divide-x-2">
-    <div className="p-6 flex flex-col items-center justify-center text-nowrap">
-      <a href="#" className="items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50">
-        <CiMobile1 size={40} className="w-full mb-2 text-bloo" />
+<div className="p-6">
+  <div className="grid grid-cols-2 gap-8 items-start justify-start">
+    
+    <div className="flex flex-col items-center justify-center text-nowrap">
+      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <MdOutlineAppRegistration size={30} className="w-full mb-2 text-bloo" />
         <div className="text-md text-center text-blackk">App Development</div>
-      </a>
-      <div className="w-full items-start font-light">
-        <ul>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-        </ul>
+      </div>
+      <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <FaAndroid size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>Andriod App Development</p>
+        </a>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <FaAppStoreIos size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>iOS App Development</p>
+        </a>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <FaLaptopCode size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>Web App Development</p>
+        </a>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>SAAS Development</p>
+        </a>
+
       </div>
     </div>
-    <div className="p-6 flex flex-col items-center justify-center text-nowrap">
-      <a href="#" className="items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50">
-        <CiUser size={40} className="w-full mb-2 text-bloo" />
-        <span className="text-md text-center text-blackk">UI / UX</span>
-      </a>
-      <div className="w-full items-start font-light">
-        <ul>
-          <li>- Design Services</li>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-        </ul>
+    
+    <div className="flex flex-col items-center justify-center text-nowrap">
+      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <LuCircuitBoard size={30} className="w-full mb-2 text-bloo" />
+        <div className="text-md text-center text-blackk">Emerginng Technologies</div>
+      </div>
+      <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <LuBrainCircuit size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>AI & ML</p>
+        </a>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <GiCircuitry size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>Internet Of Things</p>
+        </a>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <SiBlockchaindotcom size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>Blockchain Development</p>
+        </a>
+        
       </div>
     </div>
-    <div className="p-6 flex flex-col items-center justify-center text-nowrap">
-      <a href="#" className="items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50">
-        <CiCircleQuestion size={40} className="w-full mb-2 text-xl text-bloo" />
-        <span className="text-md text-center text-blackk">Consultancy Services</span>
-      </a>
-      <div className="w-full items-start font-light">
-        <ul>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-          <li>- item</li>
-        </ul>
+
+    <div className="flex flex-col items-center justify-center text-nowrap">
+      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <FaPeopleArrows size={30} className="w-full mb-2 text-bloo" />
+        <div className="text-md text-center text-blackk">Consultancy Services</div>
+      </div>
+      <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <FaComputer size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>App Consulting</p>
+        </a>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <MdDesignServices  size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>Design & UI / UX Consulting</p>
+        </a>
       </div>
     </div>
+    
+    <div className="flex flex-col items-center justify-center text-nowrap">
+      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <FaPeopleArrows size={30} className="w-full mb-2 text-bloo" />
+        <div className="text-md text-center text-blackk">Technical Services</div>
+      </div>
+      <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <IoIosBuild size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>DevOps Services</p>
+        </a>
+        <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
+          <p>Software Testing</p>
+        </a>
+      </div>
+    </div>
+   
   </div>
 </div>
   );

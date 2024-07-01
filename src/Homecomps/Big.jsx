@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from "react";
-import abstract from "../assets/abstract.mp4";
 import aiml from "../assets/Compressed/aiml.svg";
 import devops from "../assets/Compressed/devops.svg";
 import digitrans from '../assets/Compressed/digitrans.svg';
@@ -52,33 +51,33 @@ function Big() {
         {
             content: (
                 <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
-  <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
-    <div className="flex flex-col space-y-6">
-      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
-        Improving your Efficiency with
-        <span className="text-bloo font-bold block mt-2">DevOps</span>
-      </h1>
-      <p className="text-blackk/80 text-xl sm:text-xl">
-      Being a top DevOps development firm, we specialize in optimizing your business's infrastructure and development operations. Maximize your business potential with our customized DevOps solutions. 
-      Whether you're a visionary business owner striving to lead, our array of DevOps development services enables you to thrive and innovate in the digital age.
-      </p>
-      <div className="pt-4">
-        <a href="/resources/casestudies">
-          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 
-                          border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md 
-                          hover:shadow-bloo/30 text-lg 2xl:text-xl">
-            Explore
-          </button>
-        </a>
-      </div>
-    </div>
-    <div className=" flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
-      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
-        <img className="w-full h-full rounded-lg" src={devops} alt="DevOps" />
-      </div>
-    </div>
-  </div>
-</div>
+                  <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+                    <div className="flex flex-col space-y-6">
+                      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+                        Improving your Efficiency with
+                        <span className="text-bloo font-bold block mt-2">DevOps</span>
+                      </h1>
+                      <p className="text-blackk/80 text-xl sm:text-xl">
+                      Being a top DevOps development firm, we specialize in optimizing your business's infrastructure and development operations. Maximize your business potential with our customized DevOps solutions. 
+                      Whether you're a visionary business owner striving to lead, our array of DevOps development services enables you to thrive and innovate in the digital age.
+                      </p>
+                      <div className="pt-4">
+                        <a href="/resources/casestudies">
+                          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 
+                                          border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md 
+                                          hover:shadow-bloo/30 text-lg 2xl:text-xl">
+                            Explore
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div className=" flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
+                      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
+                        <img className="w-full h-full rounded-lg" src={devops} alt="DevOps" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
             ),
         },
@@ -86,31 +85,31 @@ function Big() {
             content: (
              
                 <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
-  <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
-    <div className="flex flex-col space-y-6">
-      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
-        Driving business Growth with
-        <span className="text-bloo font-bold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span>
-      </h1>
-      <p className="text-blackk/80 text-xl sm:text-xl">
-      As the digital landscape gains significance, businesses are adopting digital strategies and consulting to meet evolving consumer preferences. Flexsin offers tailored digital transformation services, 
-      leveraging expertise to foster innovation and enhance operational efficiency, capabilities, processes, and customer experiences. 
-      </p>
-      <div className="pt-4">
-        <a href="/resources/casestudies">
-          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
-            Explore
-          </button>
-        </a>
-      </div>
-    </div>
-    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
-      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg overflow-visible">
-        <img className="w-full h-full pb-12 rounded-lg overflow-visible" src={digitrans} alt="Digital Transformation" />
-      </div>
-    </div>
-  </div>
-</div>
+                  <div className="grid grid-cols-1 2xl:grid-cols-2 gap-8 items-center">
+                    <div className="flex flex-col space-y-6">
+                      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+                        Driving business Growth with
+                        <span className="text-bloo font-bold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span>
+                      </h1>
+                      <p className="text-blackk/80 text-xl sm:text-xl">
+                      As the digital landscape gains significance, businesses are adopting digital strategies and consulting to meet evolving consumer preferences. Flexsin offers tailored digital transformation services, 
+                      leveraging expertise to foster innovation and enhance operational efficiency, capabilities, processes, and customer experiences. 
+                      </p>
+                      <div className="pt-4">
+                        <a href="/resources/casestudies">
+                          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
+                            Explore
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
+                      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg overflow-visible">
+                        <img className="w-full h-full pb-12 rounded-lg overflow-visible" src={digitrans} alt="Digital Transformation" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
             ),
         },
@@ -198,7 +197,7 @@ function Big() {
                         <BsChevronLeft size={50} />
                     </div>
                 </div>
-                <div className="w-full px-2 sm:px-16"> {/* Added padding here */}
+                <div className="w-full px-2 sm:px-16 2xl:h-[500px]"> {/* Added padding here */}
                     <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
                         <CSSTransition
                             key={currentIndex}

@@ -38,7 +38,7 @@ function Digitrans()
                 </div>    
             </div>
             <div>
-                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20">
+                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-28">
                     <div className="grid grid-cols-2 gap-12 items-center justify-center">
                         <div>
                             <h1 className="text-blackk font-bold sm:text-5xl text-3xl sm:leading-tight leading-snug">
@@ -91,48 +91,48 @@ function Digitrans()
                     </div>
                 </div>
             </div>
-            <div className="pb-20">
-                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-24 pb-8">
+            <div className="pb-32">
+                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-24 pb-16">
                     <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Why Choose Us</h1>
                     <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Take a quick look at the key reasons why you should choose us for your digital transformation journey</h2>
                 </div>    
                 <div className="bg-zinc-50">
-                    <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-8">
-                        <div className="py-4 flex flex-row gap-10 items-center justify-center">
+                    <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20">
+                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
                                 <span className="text-2xl font-semibold">Seamless Integration: </span>We integrate open technology development tools with innovative systems to ensure a seamless digital transformation.
                             </p>
                         </div>
-                        <div className="py-4 flex flex-row gap-10 items-center justify-center">
+                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
                                 <span className="text-2xl font-semibold">Agile Methodologies: </span>
                                 Our use of agile development and project management methodologies enhances engagement and delivers timely results.
                             </p>
                         </div>
-                        <div className="py-4 flex flex-row gap-10 items-center justify-center">
+                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
                                 <span className="text-2xl font-semibold">Collaborative Communication: </span>
                                 We leverage a collaborative and communicative approach, working closely with clients to meet their unique needs.
                             </p>
                         </div>
-                        <div className="py-4 flex flex-row gap-10 items-center justify-center">
+                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
                                 <span className="text-2xl font-semibold">Global Expertise: </span>
                             Our cross-functional teams, comprising over 300 experts, are strategically based in North America, Europe, and Asia to provide global support.
                             </p>
                         </div>
-                        <div className="py-4 flex flex-row gap-10 items-center justify-center">
+                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
                                 <span className="text-2xl font-semibold">In-House Specialists: </span>
                                 We harness the skills of our in-house front-end experts, including business analysts, UX/UI specialists, and designers, to create user-centric solutions.
                             </p>
                         </div>
-                        <div className="py-4 flex flex-row gap-10 items-center justify-center">
+                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
                                 <span className="text-2xl font-semibold">Proven Success: </span>
