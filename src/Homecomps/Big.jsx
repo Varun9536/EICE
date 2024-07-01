@@ -29,8 +29,8 @@ function Big() {
                       <span className="text-bloo font-bold block mt-2">Generative AI</span>
                     </h1>
                     <p className="text-blackk/80 text-xl sm:text-xl">
-                      Integrate our Generative AI tools to automate tasks, personalize customer experiences, and drive innovation. Our AI solutions analyze data for insights, optimize logistics, and accelerate 
-                      time-to-market.
+                    As a specialized artificial intelligence development company, we focus on creating cutting-edge Generative AI software solutions. 
+                    Our expert team of AI developers excels in deploying generative models such as GPT-3, GANs, and variational autoencoders.
                     </p>
                     <div className="pt-4">
                       <a href="/resources/casestudies">
@@ -59,8 +59,8 @@ function Big() {
         <span className="text-bloo font-bold block mt-2">DevOps</span>
       </h1>
       <p className="text-blackk/80 text-xl sm:text-xl">
-        Use our DevOps services to automate your manual deployment process. Achieve greater MMTR (Mean Time to Recovery),
-        discover true reliability, and increase the frequency of your software releases with DevOps.
+      Being a top DevOps development firm, we specialize in optimizing your business's infrastructure and development operations. Maximize your business potential with our customized DevOps solutions. 
+      Whether you're a visionary business owner striving to lead, our array of DevOps development services enables you to thrive and innovate in the digital age.
       </p>
       <div className="pt-4">
         <a href="/resources/casestudies">
@@ -93,8 +93,8 @@ function Big() {
         <span className="text-bloo font-bold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span>
       </h1>
       <p className="text-blackk/80 text-xl sm:text-xl">
-        Integrate digital technology into all areas of your business, fundamentally changing how you operate
-        and deliver value to customers.
+      As the digital landscape gains significance, businesses are adopting digital strategies and consulting to meet evolving consumer preferences. Flexsin offers tailored digital transformation services, 
+      leveraging expertise to foster innovation and enhance operational efficiency, capabilities, processes, and customer experiences. 
       </p>
       <div className="pt-4">
         <a href="/resources/casestudies">

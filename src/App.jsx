@@ -22,7 +22,7 @@ import Copyright from './Othercomps/Copyright';
 
 import Company from './Aboutcomponents/Company';
 import Workflow from './Aboutcomponents/Workflow';
-import Certifications from './Aboutcomponents/Certifications';
+import Scopes from './Aboutcomponents/Scopes';
 
 import Cstdmain from './Cstudies/Cstdmain';
 import AutoOne from './Cstudies/AutoOne';
@@ -86,11 +86,11 @@ const App = () => {
         <Route path="services/Dataanalytics" element={<Dataanalytics />} />
         <Route path="services/Datatrans" element={<Datatrans />} />
         <Route path="services/Devops" element={<Devops />} />
-        <Route path="services/Digitrans" element={<Digitrans />} />
+        <Route path="Digitrans" element={<Digitrans />} />
         <Route path="services/Entpappdev" element={<Entpappdev />} />
         <Route path="services/Iot" element={<Iot />} />
         <Route path="services/Techconsult" element={<Techconsult />} />
-        <Route path="resources/casestudies" element={<Cstudiescomp />} />
+        <Route path="casestudies" element={<Cstudiescomp />} />
         <Route path="resources/casestudies/AutoOne" element={<AutoOne />} />
         <Route path="resources/casestudies/AutoTwo" element={<AutoTwo />} />
         <Route path="resources/casestudies/AutoThree" element={<AutoThree />} />
@@ -120,7 +120,7 @@ const NavLayout = () => {
         >
         <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 xl:scale-100 lg:scale-100 scale-[0.65]'>
           <div className='cursor-pointer justify-self-end pr-52'>
-            <a href="home">
+            <a href="/home">
               {/* <h1 className="text-[50px] w-[120px] text-center font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
               <img src={logo} alt="" className='scale-150'/>
             </a>
@@ -194,7 +194,7 @@ const NavLayout = () => {
       {/* phone navbar */}
       <nav className='2xl:hidden xl:hidden lg:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
         <div className='curosr-pointer pl-3'>
-          <a href="home">
+          <a href="/home">
             {/* <h1 className="text-3xl w-[120px] text-start font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
             <img src={logo} alt="" className='scale-[1.15]' />
           </a>
@@ -315,7 +315,7 @@ const Content = ({ selected, dir }) => {
       }}
       // style={'z-offset:1000'}
       // give width down here for standard sizing, pref 450px 
-      className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/10 shadow-md shadow-blackk/20 bg-white p-4"
+      className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -384,10 +384,23 @@ const Nub = ({ selected }) => {
 const Aboutus = () => {
   return (
     <div className='w-11/12 flex flex-col items-center justify-center text-center'>
-      <div className='grid grid-cols-3 gap-12 text-nowrap'>
-        <div>Who We Are</div>
-        <div>What We Do</div>
-        <div>Mission And Vision</div>
+      <div className='grid grid-cols-3 gap-10 text-nowrap'>
+        <div className='w-full'>
+          <h1>Who We Are</h1>
+          <p className='text-wrap font-medium text-blackk/80 text-left text-[15px]'>
+          We are a global IT services and consulting firm that has grown from a small, passionate team to over 200 professional technologists.
+          We specialize in innovative strategies that bridge technology solutions with business concepts.</p>  
+        </div>
+        <div className='w-full'>
+          <h1>What We Do</h1>
+          <p className='text-wrap font-medium text-blackk/80 text-left text-[15px]'>We partner with both global industry leaders and startups to turn innovative ideas into reality using exceptional custom software and integrated models, delivering cutting-edge IT solutions.</p>  
+        </div>
+        <div className='w-full'>
+          Mission and Vision
+        <p className='text-wrap font-medium text-blackk/80 text-left text-[15px]'> Client Satisfaction is our primary mission, we empower them with innovative technology solutions that drive growth and ensure sustainable success.
+        Our vision is to be a global leader in IT services, offering top-tier software development.
+        </p>  
+        </div>
       </div>
       <div>
         <a href="/about">
@@ -536,7 +549,7 @@ const About = () => {
     <>
       <Company />
       <Workflow />
-      <Certifications />
+      <Scopes />
       <Footer />
       <Copyright />
     </>
@@ -579,7 +592,7 @@ const Resources = () => {
   return(
     <>
       <h1>Resources</h1>
-      <h2><a href="resources/casestudies">casestudies</a></h2>
+      <h2><a href="casestudies">casestudies</a></h2>
       <Footer />
       <Copyright />
     </>

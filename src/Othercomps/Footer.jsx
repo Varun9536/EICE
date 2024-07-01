@@ -42,9 +42,8 @@ function Footer()
         <img src={logo} alt="EICE Logo" className="h-12 w-auto"/>
       </a>
       <p className="text-sm text-gray-600 mb-6">
-        EICE is a global software services organization offering high-quality solutions to businesses.
-        It services the IT requirements of multiple fortune 500 companies by utilizing specialized domain knowledge, 
-        best-of-breed technologies, rapidly deployable proprietary frameworks/solutions and flexible management models.
+      EICE Technology is an outstanding software development company with deep domain knowledge, well-designed processes, and technical expertise. We have a highly skilled team of software engineers with expertise in advanced technologies such as GIS, IoT, Blockchain, Cloud, Data Analytics, DevOps and Generative Artificial Intelligence.
+      Our mission is to develop innovative and scalable digital products and services that drive business transformation and differentiate our company from the competition. Our expertise lies in Financial Services and Enterprise Services. Our headquarters are in Houston, Texas, and we have offices in Noida, India, and Delhi, India.
       </p>
       <div className="flex space-x-4">
         <a href="https://twitter.com/EICE_Int" target="_blank" rel="noopener noreferrer">

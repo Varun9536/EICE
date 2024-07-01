@@ -25,7 +25,7 @@ function Offeritem({ id, svg, title, link, fliptext }) {
                 <div className="items-start justify-start"><h3 className="text-blackk text-center font-bold text-xl sm:text-2xl">{title}</h3></div>
             </div>
             <div className={`back h-full flex flex-col justify-between p-4 ${showDetails ? "opacity-100" : "opacity-0"} transition-opacity duration-300`}>
-                <p className="font-manrope text-blackk text-center text-sm sm:text-base">
+                <p className="font-manrope text-blackk text-left sm:text-lg">
                     {fliptext}
                 </p>
                 <a
