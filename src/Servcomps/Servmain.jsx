@@ -327,7 +327,7 @@ function Servmain()
             </div>
           </div>
           <div>
-            Technical Services
+            {/* Technical Services */}
           </div>
         </div>
       )
