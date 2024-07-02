@@ -575,7 +575,6 @@ const About = () => {
 const Services = () => {
   return (
     <>
-      <h2>Services</h2>
       <Servmain />
       <Footer />
       <Copyright />
