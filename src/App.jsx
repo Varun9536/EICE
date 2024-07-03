@@ -16,6 +16,7 @@ import Clients from './Homecomps/Clients';
 import Footer from './Othercomps/Footer';
 import Reviews from './Homecomps/Reviews';
 import Casestudies from './Homecomps/Casestudies';
+import Techs from './Homecomps/Techs';
 import Temp from './Homecomps/Temp';
 
 import Copyright from './Othercomps/Copyright';
@@ -399,10 +400,10 @@ const OurServices = () => {
 <div className="p-4">
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start justify-start">
     
-    <div className="flex flex-col items-center justify-center text-nowrap">
-      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
-        <MdOutlineAppRegistration size={30} className="w-full mb-2 text-bloo" />
-        <div className="text-md text-center text-blackk">App Development</div>
+    <div className="flex flex-col items-start justify-start text-nowrap">
+      <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
+        <div className="text-md text-left text-blackk">App Development</div>
       </div>
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
@@ -425,9 +426,9 @@ const OurServices = () => {
       </div>
     </div>
     
-    <div className="flex flex-col items-center justify-center text-nowrap">
-      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
-        <LuCircuitBoard size={30} className="w-full mb-2 text-bloo" />
+    <div className="flex flex-col items-start justify-start text-nowrap">
+      <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <div className=''><LuCircuitBoard size={40} className="mb-2 text-bloo" /></div>
         <div className="text-md text-center text-blackk">Emerginng Technologies</div>
       </div>
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
@@ -447,9 +448,9 @@ const OurServices = () => {
       </div>
     </div>
 
-    <div className="flex flex-col items-center justify-center text-nowrap">
-      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
-        <FaPeopleArrows size={30} className="w-full mb-2 text-bloo" />
+    <div className="flex flex-col items-start justify-start text-nowrap">
+      <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
         <div className="text-md text-center text-blackk">Consultancy Services</div>
       </div>
       <div className='gap-2 font-light text-md w-full justify-left'>
@@ -464,9 +465,9 @@ const OurServices = () => {
       </div>
     </div>
     
-    <div className="flex flex-col items-center justify-center text-nowrap">
-      <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
-        <FaPeopleArrows size={30} className="w-full mb-2 text-bloo" />
+    <div className="flex flex-col items-start justify-start text-nowrap">
+      <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
+        <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
         <div className="text-md text-center text-blackk">Technical Services</div>
       </div>
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
@@ -549,11 +550,12 @@ const Home = () => {
       {/* <Separator /> */}
       <Offers />
       {/* <Separatorr /> */}
-      <Casestudies />
+      <Techs />
       <Solutions />
       {/* <Separatorrr /> */}
-      <Reviews />
       <Clients />
+      <Casestudies />
+      <Reviews />
       <Clientele />
       <Footer />
       <Copyright />

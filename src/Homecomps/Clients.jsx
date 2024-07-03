@@ -31,7 +31,7 @@ function Clients() {
     const containerRef = useRef(null);
 
     return (
-        <div className="font-manrope flex flex-col items-center justify-center pb-8 sm:pb-16 lg:pb-16 pt-20 sm:pt-28 lg:pt-32">
+        <div className="font-manrope bg-zinc-50 flex flex-col items-center justify-center pb-8 sm:pb-16 lg:pb-16 pt-20 sm:pt-28 lg:pt-32">
             <div className="max-w-7xl mx-2 px-4 sm:px-6 lg:px-8">
                 <h1 className="text-center text-black font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-12 lg:mb-16">
                     Proudly serving <br className="sm:hidden"/>
@@ -41,7 +41,8 @@ function Clients() {
                 
                 <div className="relative w-full woverflow-hidden">
                     <div className="sm:w-full w-screen px-6">
-                    <div ref={containerRef} className="bg-white rounded-xl py-8 sm:py-12 overflow-x-auto hide-scrollbar">
+                    <div ref={containerRef} className=" rounded-xl py-8 sm:py-12 overflow-x-auto hide-scrollbar">
+                    {/* <div ref={containerRef} className="bg-white rounded-xl py-8 sm:py-12 overflow-x-auto hide-scrollbar"> */}
                         <div className="flex flex-nowrap gap-8 items-center px-4 sm:px-0 min-w-max sm:grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 sm:min-w-0 justify-center">
                             {clients.map((client, index) => (
                                 <ClientLogo 

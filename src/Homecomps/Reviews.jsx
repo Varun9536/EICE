@@ -43,7 +43,8 @@ function Reviews() {
     }, []);
 
     return (
-        <div className="text-blackk bg-testimonial bg-blend-overlay bg-white/30 bg-cover py-16 px-4 sm:px-6 lg:px-8">
+        <div className="text-blackk bg-zinc-50 bg-cover py-32 px-4 sm:px-6 lg:px-8">
+        {/* <div className="text-blackk bg-testimonial bg-blend-overlay bg-white/30 bg-cover py-16 px-4 sm:px-6 lg:px-8"> */}
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-center text-bloo font-bold text-3xl md:text-4xl mb-8">
                     Testimonials

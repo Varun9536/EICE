@@ -10,16 +10,16 @@ function Solutions() {
     ];
 
     return (
-        <div className="font-manrope py-24 sm:py-32 lg:py-32 px-4 sm:px-6 lg:px-8">
+        <div className="font-manrope py-24 sm:py-32 lg:py-44 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl text-center mb-2">
+                <h2 className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl text-center mb-2 py-2">
                     Industries We Serve
                 </h2>
-                <h1 className="text-blackk font-extrabold text-2xl sm:text-3xl lg:text-4xl text-center mb-12">
+                <h1 className="text-blackk font-extrabold text-2xl sm:text-3xl lg:text-4xl text-center mb-12 py-2">
                     IT & Software Development Solutions for Industries
                 </h1>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 py-6">
                     {industries.map((industry, index) => (
                         <IndustryCard key={index} {...industry} />
                     ))}

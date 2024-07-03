@@ -34,7 +34,7 @@ const CaseStudy = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <img 
-        src={image} 
+        src={image}
         alt={title} 
         className="w-full h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />

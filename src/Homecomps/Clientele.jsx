@@ -2,12 +2,13 @@ import React from "react";
 
 function Clientele() {
     return (
-        <div className="bg-map bg-cover bg-blend-overlay bg-white/25 shadow-sm shadow-blackk/20 font-manrope text-blackk py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 2xl:py-44 px-4 sm:px-6 lg:px-8">
+        <div className="bg- bg-cover bg-blend-overlay bg-white/25 shadow-sm shadow-blackk/20 font-manrope text-blackk py-16 sm:py-20 md:py-24 lg:py-32 xl:py-44 2xl:py-48 px-4 sm:px-6 lg:px-8">
+        {/* <div className="bg-map bg-cover bg-blend-overlay bg-white/25 shadow-sm shadow-blackk/20 font-manrope text-blackk py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 2xl:py-44 px-4 sm:px-6 lg:px-8"> */}
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
+                <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
                     Journey so far
                 </h2>
-                <h1 className="text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16">
+                <h1 className="text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
                     Milestones and achievements
                 </h1>
 
