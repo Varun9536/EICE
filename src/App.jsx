@@ -125,7 +125,7 @@ const NavLayout = () => {
         {/* laptop navbar */}
         <nav
         className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
-                   2xl:block xl:block lg:block hidden'
+                   2xl:block xl:block hidden'
         >
         <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 xl:scale-100 lg:scale-100 scale-[0.65]'>
           <div className='cursor-pointer justify-self-end pr-52'>
@@ -170,7 +170,7 @@ const NavLayout = () => {
       <div className='bg-black'></div>
 
       {/* phone navbar */}
-      <nav className='2xl:hidden xl:hidden lg:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
+      <nav className='2xl:hidden xl:hidden  flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
         <div className='curosr-pointer pl-3'>
           <a href="/home">
             {/* <h1 className="text-3xl w-[120px] text-start font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
@@ -293,7 +293,8 @@ const Content = ({ selected, dir }) => {
       }}
       // style={'z-offset:1000'}
       // give width down here for standard sizing, pref 450px 
-      className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
+      className="absolute overflow-visible z-50 left-0 transform -translate-x-1/2 top-16 w-[90vw] max-w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
+      // className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -362,7 +363,7 @@ const Nub = ({ selected }) => {
 const Aboutus = () => {
   return (
     <div className='w-11/12 flex flex-col items-center justify-center text-center'>
-      <div className='grid grid-cols-3 gap-10 text-nowrap'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-wrap'>
         <div className='w-full'>
           <h1>Who We Are</h1>
           <p className='text-wrap font-medium text-blackk/80 text-left text-[15px]'>
@@ -395,8 +396,8 @@ const Aboutus = () => {
 
 const OurServices = () => {
   return (
-<div className="p-6">
-  <div className="grid grid-cols-2 gap-8 items-start justify-start">
+<div className="p-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start justify-start">
     
     <div className="flex flex-col items-center justify-center text-nowrap">
       <div className="items-center justify-center py-6 text-neutral-400 transition-colors hover:text-neutral-50">
@@ -406,19 +407,19 @@ const OurServices = () => {
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <FaAndroid size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>Andriod App Development</p>
+          <p className="group-hover:text-bloo">Andriod App Development</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <FaAppStoreIos size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>iOS App Development</p>
+          <p className="group-hover:text-bloo">iOS App Development</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <FaLaptopCode size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>Web App Development</p>
+          <p className="group-hover:text-bloo">Web App Development</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>SAAS Development</p>
+          <p className="group-hover:text-bloo">SAAS Development</p>
         </a>
 
       </div>
@@ -432,15 +433,15 @@ const OurServices = () => {
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <LuBrainCircuit size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>AI & ML</p>
+          <p className="group-hover:text-bloo">AI & ML</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <GiCircuitry size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>Internet Of Things</p>
+          <p className="group-hover:text-bloo">Internet Of Things</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <SiBlockchaindotcom size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>Blockchain Development</p>
+          <p className="group-hover:text-bloo">Blockchain Development</p>
         </a>
         
       </div>
@@ -451,14 +452,14 @@ const OurServices = () => {
         <FaPeopleArrows size={30} className="w-full mb-2 text-bloo" />
         <div className="text-md text-center text-blackk">Consultancy Services</div>
       </div>
-      <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
+      <div className='gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <FaComputer size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>App Consulting</p>
+          <p className="group-hover:text-bloo">App Consulting</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <MdDesignServices  size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>Design & UI / UX Consulting</p>
+          <p className="group-hover:text-bloo">Design & UI / UX Consulting</p>
         </a>
       </div>
     </div>
@@ -471,11 +472,11 @@ const OurServices = () => {
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <IoIosBuild size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>DevOps Services</p>
+          <p className="group-hover:text-bloo">DevOps Services</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p>Software Testing</p>
+          <p className="group-hover:text-bloo">Software Testing</p>
         </a>
       </div>
     </div>

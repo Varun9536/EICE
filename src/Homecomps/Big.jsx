@@ -236,7 +236,7 @@ function Big() {
                   {slides.map((slide, slideIndex) => (
                       <RxDotFilled 
                           size={40}
-                          key={slideIndex} 
+                          key={slideIndex}
                           className={currentIndex === slideIndex ? 'text-blue-900' : 'text-blue-900/30'} 
                           onClick={() => goToSlide(slideIndex)} 
                       />
