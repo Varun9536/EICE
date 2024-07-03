@@ -31,7 +31,7 @@ function Clients() {
     const containerRef = useRef(null);
 
     return (
-        <div className="font-manrope flex flex-col items-center justify-center py-8 sm:py-16 lg:py-16">
+        <div className="font-manrope flex flex-col items-center justify-center pb-8 sm:pb-16 lg:pb-16 pt-20 sm:pt-28 lg:pt-32">
             <div className="max-w-7xl mx-2 px-4 sm:px-6 lg:px-8">
                 <h1 className="text-center text-black font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-12 lg:mb-16">
                     Proudly serving <br className="sm:hidden"/>

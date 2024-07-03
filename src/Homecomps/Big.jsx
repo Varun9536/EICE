@@ -156,7 +156,7 @@ function Big() {
 
     return (
         <div>
-          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pr-64 2xl:pl-64 2xl:py-40 max-h-[1000px] xl:pr-64 xl:pl-64 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
+          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:py-40 max-h-[1000px] xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
             <div className="w-full h-full bg-bloo/15 -rotate-45 absolute z-1 left-[50%] blur-[300px]"></div>
             {/* <div className="left-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
             <div className="right-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
@@ -164,7 +164,7 @@ function Big() {
             <div className="left-[25%] w-full h-full scale-75 -rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div> */}
 
 
-            <div className="z-20 overflow-hidden h-auto absolute bottom-0 left-0 
+            {/* <div className="z-20 overflow-hidden h-auto absolute bottom-0 left-0 
                             2xl:scale-[.8] 2xl:w-1/2 2xl:h-auto 2xl:-ml-60 2xl:-mb-48 2xl:1/2 2xl:block 
                             xl:scale-100 xl:w-1/2 xl:h-auto xl:-ml-60 xl:-mb-48 2xl:1/2 xl:block 
                             sm:-ml-24 sm:-mb-20
@@ -186,18 +186,18 @@ function Big() {
                     src={hexagon}
                     alt=""
                 />
-            </div>
+            </div> */}
 
             <div className="">
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
             <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 -ml-32">
+                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30">
                     <div onClick={prevSlide} className='rounded-full text-blackk/50 cursor-pointer'>
-                        <BsChevronLeft size={50} />
+                        <BsChevronLeft size={30} />
                     </div>
                 </div>
-                <div className="w-full px-2 sm:px-16 2xl:h-[500px]"> {/* Added padding here */}
+                <div className="w-full sm:px-16 2xl:h-[500px]"> {/* Added padding here */}
                     <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
                         <CSSTransition
                             key={currentIndex}
@@ -210,9 +210,9 @@ function Big() {
                     </TransitionGroup>
                     
                 </div>
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 -mr-32">
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30">
                     <div onClick={nextSlide} className='rounded-full text-blackk/50 cursor-pointer'>
-                        <BsChevronRight size={50} />
+                        <BsChevronRight size={30} />
                     </div>
                 </div>
                 <div className="cursor-pointer absolute -bottom-[20%] left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">

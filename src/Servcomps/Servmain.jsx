@@ -14,9 +14,11 @@ import { GrCloudSoftware } from "react-icons/gr";
 import { MdOutlineAppRegistration } from "react-icons/md";
 import { CiMobile1, CiUser, CiCircleQuestion } from "react-icons/ci";
 import { IoIosBuild, IoIosChatboxes } from "react-icons/io";
-import { LuBrainCircuit, LuCircuitBoard } from "react-icons/lu";
+import { LuBrainCircuit, LuCircuitBoard, LuCloudCog  } from "react-icons/lu";
 import { SiBlockchaindotcom } from "react-icons/si";
 import { FiCheckCircle } from "react-icons/fi";
+import { TbLetterA, TbLetterI } from "react-icons/tb";
+
 
 import consultancy from "../assets/Compressed/consultancy.jpg";
 
@@ -29,7 +31,7 @@ function Servmain()
             <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">Explore what we offer</h2>
             <h2 className="text-blackk/60 font-semibold sm:text-3xl py-4 text-2xl sm:leading-tight leading-snug text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus quo sunt tenetur rerum eius, dolorem harum expedita? Ullam molestiae consectetur quis inventore vero minima non. Enim suscipit totam nihil?</h2>
           </div>
-          <div className="2xl:pt-32 2xl:pb-20 pt-32 pb-20 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
+          {/* <div className="2xl:pt-32 2xl:pb-20 pt-32 pb-20 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
             <div>
               <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">Our Flagship Services</h1>
               <h2 className="text-blackk/60 font-medium py-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus quo sunt tenetur rerum eius, dolorem harum expedita? Ullam molestiae consectetur quis inventore vero minima non. Enim suscipit totam nihil?</h2>
@@ -40,13 +42,11 @@ function Servmain()
                     <div className="lg:hidden flex flex-col items-center justify-center w-full h-full">
                       <div className="relative w-11/12 h-[27.5rem] items-center justify-center flex justify-self-start">
                           <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                              {/* <div className="z-20 pb-8 justify-center flex w-full"><img src="" alt="" className="scale-[1.2]"/></div> */}
                               <h1 className="text-white z-20 font-bold text-4xl pb-4">DevOps</h1>
                               <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
                               </p>
                           </div>
-                          {/* <img src="" alt="" className="w-full h-full object-cover"/> */}
                           <div className="absolute inset-0 bg-slate-800/80"></div>
                       </div>
                       <div className="flex flex-col px-8 py-4">
@@ -87,13 +87,11 @@ function Servmain()
                       </div>
                       <div className="relative w-11/12 h-[27.5rem] items-center justify-center flex justify-self-start">
                           <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                              {/* <div className="z-20 pb-8 justify-center flex w-full"><img src="" alt="" className="scale-[1.2]"/></div> */}
                               <h1 className="text-white z-20 font-bold text-4xl pb-4">DevOps</h1>
                               <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
                               </p>
                           </div>
-                          {/* <img src="" alt="" className="w-full h-full object-cover"/> */}
                           <div className="absolute inset-0 bg-slate-800/80"></div>
                       </div>
                   </div>
@@ -103,13 +101,11 @@ function Servmain()
                   <div className="lg:grid lg:grid-cols-2 flex flex-col items-center justify-center w-full h-full">
                       <div className="relative w-11/12 h-[27.5rem] items-center justify-center flex justify-self-start">
                           <div className="flex flex-col py-8 px-16 items-center justify-center absolute inset-0 text-center">
-                              {/* <div className="z-20 pb-8 justify-center flex w-full"><img src="" alt="" className="scale-[1.2]"/></div> */}
                               <h1 className="text-white z-20 font-bold text-4xl pb-4">Digital Transformation</h1>
                               <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium nam veniam error quas ad quis sapiente reprehenderit illum dolore, nulla itaque, placeat debitis facilis, eaque sunt. Soluta, ab odio.
                               </p>
                           </div>
-                          {/* <img src="" alt="" className="w-full h-full object-cover"/> */}
                           <div className="absolute inset-0 bg-cyan-400/80"></div>
                       </div>
                       <div className="flex flex-col px-8 py-4 h-full">
@@ -131,13 +127,11 @@ function Servmain()
                   <div className="lg:hidden flex flex-col items-center justify-center w-full h-full">
                       <div className="relative w-11/12 h-[27.5rem] items-center justify-center flex justify-self-start">
                           <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                              {/* <div className="z-20 pb-8 justify-center flex w-full"><img src="" alt="" className="scale-[1.2]"/></div> */}
                               <h1 className="text-white z-20 font-bold text-4xl pb-4">Artificial Intelligence</h1>
                               <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
                               </p>
                           </div>
-                          {/* <img src="" alt="" className="w-full h-full object-cover"/> */}
                           <div className="absolute inset-0 bg-slate-800/80"></div>
                       </div>
                       <div className="flex flex-col px-8 py-4">
@@ -178,13 +172,11 @@ function Servmain()
                       </div>
                       <div className="relative w-11/12 h-[27.5rem] items-center justify-center flex justify-self-start">
                           <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                              {/* <div className="z-20 pb-8 justify-center flex w-full"><img src="" alt="" className="scale-[1.2]"/></div> */}
                               <h1 className="text-white z-20 font-bold text-4xl pb-4">Artificial Intelligence</h1>
                               <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
                               </p>
                           </div>
-                          {/* <img src="" alt="" className="w-full h-full object-cover"/> */}
                           <div className="absolute inset-0 bg-slate-800/80"></div>
                       </div>
                   </div>
@@ -192,65 +184,73 @@ function Servmain()
 
 
               </div>
-          </div>
-          
-          <div className="py-32 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
-            <div>
-              <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">App Development Services</h1>
-              <h2 className="text-blackk/60 font-medium py-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus quo sunt tenetur rerum eius, dolorem harum expedita? Ullam molestiae consectetur quis inventore vero minima non. Enim suscipit totam nihil?</h2>
-              <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
-            </div>
-            <div className="">
-                <div className="grid grid-cols-3 gap-6 pt-16">
-                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
-                      <div className="h-1/2 rounded-full bg-bloo/10">
-                          <FaAndroid size={60} className="text-bloo"/>
-                      </div>
-                      <div className="pt-6 h-full text-center">
-                          <h1 className="font-semibold pb-2 text-xl">Android App Development</h1>
-                          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta? </p>
-                      </div>
-                  </div>
-                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
-                      <div className="h-1/2 rounded-full bg-bloo/10">
-                          <IoIosBuild size={60} className="text-bloo"/>
-                      </div>
-                      <div className="pt-6 h-full text-center">
-                          <h1 className="font-semibold pb-2 text-xl">iOS App Development</h1>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>
-                      </div>
-                  </div>
-                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
-                      <div className="h-1/2 rounded-full bg-bloo/10">
-                        <GrCloudSoftware size={60} className="text-bloo"/>
-                      </div>
-                      <div className="pt-6 h-full text-center">
-                          <h1 className="font-semibold pb-2 text-xl">SAAS Development</h1>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>    
-                      </div>
-                  </div>
-                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
-                      <div className="h-1/2 rounded-full bg-bloo/10">
-                        <FaLaptopCode size={60} className="text-bloo"/>
-                      </div>
-                      <div className="pt-6 h-full text-center">
-                          <h1 className="font-semibold pb-2 text-xl">Web App Development</h1>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>    
-                      </div>
-                  </div>
-                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
-                      <div className="h-1/2 rounded-full bg-bloo/10">
-                        <IoIosChatboxes size={60} className="text-bloo"/>
-                      </div>
-                      <div className="pt-6 h-full text-center">
-                          <h1 className="font-semibold pb-2 text-xl">Chat Bot Development</h1>
-                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>    
-                      </div>
-                  </div>
+            </div> */}
+
+          <div className="py-20">
+            <div className="bg-zinc-50">
+                <div className="py-32 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
+                    <div>
+                        <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">Our Flagship Services</h1>
+                        <h2 className="text-blackk/60 font-medium py-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus quo sunt tenetur rerum eius, dolorem harum expedita? Ullam molestiae consectetur quis inventore vero minima non. Enim suscipit totam nihil?</h2>
+                    </div>
+                    <div>
+                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pt-12">
+                            <a className="group cursor-pointer hover:bg-emerald-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
+                                <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
+                                    <div className="flex w-full h-full items-center justify-start px-2 pb-2">
+                                        <LuCloudCog size={100} className="text-bloo"/>
+                                    </div>
+                                    <div>
+                                        <div className="flex flex-col p-2 text-start justify-end">
+                                            <h1 className="text-blackk z-20 px-2 font-bold text-4xl pb-4">Digital Transformation</h1>
+                                            <p className="z-20 text-blackk/90 text-lg px-2 text-left font-medium">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a className="group cursor-pointer hover:bg-fuchsia-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
+                                <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
+                                    <div className="flex w-full h-full items-center justify-start px-2 pb-2">
+                                        <IoIosBuild size={100} className="text-bloo"/>
+                                    </div>
+                                    <div>
+                                        <div className="flex flex-col p-2 text-start justify-end ">
+                                            <h1 className="text-blackk z-20 px-2 font-bold text-4xl pb-4">DevOps</h1>
+                                            <p className="z-20 text-blackk/90 text-lg px-2 text-left font-medium">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a className="group cursor-pointer hover:bg-yellow-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
+                                <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
+                                    <div className="flex w-full h-full items-center justify-start px-2 pb-2">
+                                        <div className="grid grid-cols-2 gap-0">
+                                        <TbLetterA size={100} className="text-bloo"/>
+                                        <TbLetterI size={100} className="text-bloo -ml-8"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="flex flex-col p-2 text-start">
+                                            <h1 className="text-blackk z-20 px-2 font-bold text-4xl pb-4">Generative AI</h1>
+                                            <p className="z-20 text-blackk/90 text-lg px-2 text-left font-medium">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
           </div>
-          <div className="bg-zinc-100/60">
+          
+          <div className="">
             <div className="py-16 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
               <div>
                 <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">Emerging Technologies</h1>
@@ -299,6 +299,68 @@ function Servmain()
               </div>
             </div>
           </div>
+
+
+        <div className="bg-zinc-50">
+        <div className="py-32 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
+            <div>
+              <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">App Development Services</h1>
+              <h2 className="text-blackk/60 font-medium py-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus quo sunt tenetur rerum eius, dolorem harum expedita? Ullam molestiae consectetur quis inventore vero minima non. Enim suscipit totam nihil?</h2>
+              <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
+            </div>
+            <div className="">
+                <div className="grid grid-cols-3 gap-6 pt-16">
+                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
+                      <div className="h-1/2 rounded-full bg-bloo/10">
+                          <FaAndroid size={60} className="text-bloo"/>
+                      </div>
+                      <div className="pt-6 h-full text-center">
+                          <h1 className="font-semibold pb-2 text-xl">Android App Development</h1>
+                          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta? </p>
+                      </div>
+                  </div>
+                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
+                      <div className="h-1/2 rounded-full bg-bloo/10">
+                          <FaAppStoreIos size={60} className="text-bloo"/>
+                      </div>
+                      <div className="pt-6 h-full text-center">
+                          <h1 className="font-semibold pb-2 text-xl">iOS App Development</h1>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>
+                      </div>
+                  </div>
+                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
+                      <div className="h-1/2 rounded-full bg-bloo/10">
+                        <GrCloudSoftware size={60} className="text-bloo"/>
+                      </div>
+                      <div className="pt-6 h-full text-center">
+                          <h1 className="font-semibold pb-2 text-xl">SAAS Development</h1>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>    
+                      </div>
+                  </div>
+                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
+                      <div className="h-1/2 rounded-full bg-bloo/10">
+                        <FaLaptopCode size={60} className="text-bloo"/>
+                      </div>
+                      <div className="pt-6 h-full text-center">
+                          <h1 className="font-semibold pb-2 text-xl">Web App Development</h1>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>    
+                      </div>
+                  </div>
+                  <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
+                      <div className="h-1/2 rounded-full bg-bloo/10">
+                        <IoIosChatboxes size={60} className="text-bloo"/>
+                      </div>
+                      <div className="pt-6 h-full text-center">
+                          <h1 className="font-semibold pb-2 text-xl">Chat Bot Development</h1>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, quidem excepturi perspiciatis voluptas quaerat deserunt mollitia soluta?</p>    
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
           <div className="py-28 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
               <div className="relative flex items-center justify-center text-center scale-90 w-full h-full rounded-xl">
@@ -332,4 +394,4 @@ function Servmain()
         </div>
       )
     }
-export default Servmain;
+export default Servmain; 

@@ -17,7 +17,7 @@ function Scopes()
             <div className="text-center text-blackk font-bold sm:text-4xl text-3xl">
                 <div className="flex flex-col items-center justify-center text-center sm:pb-6 pb-2">
                     <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4">Engage with Us</h1>
-                    <h2 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">Discover how we choose an appropriate engagement method for your project</h2>
+                    <h2 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">Choosing an appropriate engagement method for your project</h2>
                 </div>
                 <div className="font-medium text-blackk/60 sm:text-xl text-lg lg:px-32 sm:pt-4 pt-2 text-justify">
                     <p>

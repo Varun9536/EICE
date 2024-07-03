@@ -136,7 +136,7 @@ const NavLayout = () => {
           </div>
           <div className='flex flex-row items-center justify-center overflow-visible'>
             <NavLink to="/home" className="p-6">
-              <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
+              <div className='group hover:text-bloo  transition duration-300 ease-in-out'>
                 <div>HOME</div>
                   <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
                 </div>
@@ -146,7 +146,7 @@ const NavLayout = () => {
               <Tabs className='absolute' />
             </div>
             <NavLink to="/careers" className="p-6 ">
-              <div className='group hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
+              <div className='group hover:text-bloo  transition duration-300 ease-in-out'>
                 <div>CAREERS</div>
                   <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
                 </div>
@@ -258,7 +258,7 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
           : ""
       }`}
     >
-      <div className='group overflow-visible hover:text-bloo hover:scale-125 transition duration-300 ease-in-out'>
+      <div className='group overflow-visible hover:text-bloo  transition duration-300 ease-in-out'>
         <div className='flex flex-row items-center justify-center'>
           <a className='flex items-center justify-center' href={`/${children}`}>
             <span className='pr-2'>{children}</span>

@@ -10,7 +10,7 @@ function Solutions() {
     ];
 
     return (
-        <div className="font-manrope py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="font-manrope py-24 sm:py-32 lg:py-32 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl text-center mb-2">
                     Industries We Serve
@@ -26,7 +26,7 @@ function Solutions() {
                 </div>
 
                 <div className="flex justify-center">
-                    <a href="Allindus" className="inline-flex items-center justify-center px-6 py-3 border border-bloo bg-bloo text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30">
+                    <a href="Allindus" className="inline-flex items-center justify-center py-4 px-24  border border-bloo bg-bloo text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30">
                         See All <img src={arrow} alt="" className="ml-2 w-5 h-5" />
                     </a>
                 </div>
