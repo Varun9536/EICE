@@ -31,7 +31,7 @@ const projects = {
 };
 
 const CaseStudy = ({ title, description, image }) => (
-  <div className="flex-shrink-0 w-80 md:w-96 p-4">
+  <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <img 
         src={image} 
@@ -49,14 +49,6 @@ const CaseStudy = ({ title, description, image }) => (
 function Cstdmain() {
   const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
   const sliderRefs = useRef({});
-
-  const scroll = (direction, industryId) => {
-    const slider = sliderRefs.current[industryId];
-    if (slider) {
-      const scrollAmount = direction === 'left' ? -400 : 400;
-      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  };
 
   return (
     <div className="font-manrope">
@@ -94,16 +86,11 @@ function Cstdmain() {
           >
             <h2 className="text-2xl font-bold mb-6">{industry.name}</h2>
             <div className="relative">
-              <button
-                onClick={() => scroll('left', industry.id)}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10"
-              >
-                <MdChevronLeft size={24} />
-              </button>
+              
               <div className="mx-auto sm:max-w-7xl w-screen">
                 <div
                   ref={(el) => (sliderRefs.current[industry.id] = el)}
-                  className="flex overflow-x-auto space-x-6 pb-6 scrollbar-hide"
+                  className="grid lg:grid-cols-3 grid-cols-2 py-4 space-x-6 pb-6 scrollbar-hide"
                 >
                   {projects[industry.id].map((project, index) => (
                     <CaseStudy
@@ -115,12 +102,7 @@ function Cstdmain() {
                   ))}
                 </div>
               </div>
-              <button
-                onClick={() => scroll('right', industry.id)}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10"
-              >
-                <MdChevronRight size={24} />
-              </button>
+             
             </div>
           </section>
         ))}

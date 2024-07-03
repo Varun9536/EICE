@@ -5,7 +5,7 @@ import digitrans from '../assets/Compressed/digitrans.svg';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import hexagon from '../assets/hexagon.png';
+import hexagon from '../assets/hexagon.svg';
 
 
 function Big() {
@@ -187,12 +187,29 @@ function Big() {
                     alt=""
                 />
             </div> */}
+            {/* <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute top-0 left-0 w-1/2 h-full overflow-hidden">
+                <img 
+                  src={hexagon} 
+                  alt="" 
+                  className="w-auto h-full max-w-none object-contain -ml-16 scale-[0.6] sm:scale-75 xl:scale-60 2xl:scale-[.65] "
+                />
+              </div>
+              
+              <div className="absolute top-0 right-0 w-1/2 h-full overflow-hidden scale-x-[-1]">
+                <img 
+                  src={hexagon} 
+                  alt="" 
+                  className="w-auto h-full max-w-none object-contain -ml-16 scale-[0.6] sm:scale-75 xl:scale-60 2xl:scale-[.65]"
+                />
+              </div>
+            </div> */}
 
             <div className="">
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
             <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30">
+                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 ">
                     <div onClick={prevSlide} className='rounded-full text-blackk/50 cursor-pointer'>
                         <BsChevronLeft size={30} />
                     </div>
@@ -210,8 +227,8 @@ function Big() {
                     </TransitionGroup>
                     
                 </div>
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30">
-                    <div onClick={nextSlide} className='rounded-full text-blackk/50 cursor-pointer'>
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 ">
+                    <div onClick={nextSlide} className='rounded-full text-blackk/50 cursor-pointer '>
                         <BsChevronRight size={30} />
                     </div>
                 </div>
