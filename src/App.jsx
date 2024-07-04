@@ -90,7 +90,7 @@ const App = () => {
         <Route path="resources" element={<Resources />} />
         <Route path="Careers" element={<Careers />} />
         <Route path="Contact" element={<Contact />} />
-        <Route path="Allindus" element={<Allindus />} />
+        <Route path="INDUSTRIES" element={<Allindus />} />
         <Route path="services/Aiml" element={<Aiml />} />
         <Route path="services/Cloud" element={<Cloud />} />
         <Route path="services/Dataanalytics" element={<Dataanalytics />} />
@@ -146,13 +146,13 @@ const NavLayout = () => {
             <div className='relative px-2'>
               <Tabs className='absolute' />
             </div>
-            <NavLink to="/careers" className="p-6 ">
+            {/* <NavLink to="/careers" className="p-6 ">
               <div className='group hover:text-bloo  transition duration-300 ease-in-out'>
                 <div>CAREERS</div>
                   <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
                 </div>
               </div>  
-            </NavLink>
+            </NavLink> */}
           </div>
           <div className='justify-self-start pl-48'>
             <NavLink to="/contact" className="p-6">
@@ -190,7 +190,7 @@ const NavLayout = () => {
                 <MenuItem onClick={createHandleMenuClick('Services')}><a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/services">Services</a></MenuItem>
                 <MenuItem onClick={createHandleMenuClick('Services')}><a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/allindus">Industries</a> </MenuItem>
                 <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/resources">Resources</a> </MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/careers">Careers</a> </MenuItem>
+                {/* <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/careers">Careers</a> </MenuItem> */}
                 <MenuItem onClick={createHandleMenuClick('Resources')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/contact">Contact Us</a></MenuItem>
               </Menu>
             </Dropdown>
@@ -524,6 +524,14 @@ const OurResources = () => {
   );
 };
 
+const OurIndustries=()=>{
+  return(
+    <div>
+      kakewfn
+    </div>
+  )
+}
+
 const TABS = [
   {
     title: "ABOUT",
@@ -537,6 +545,10 @@ const TABS = [
     title: "RESOURCES",
     Component: OurResources,
   },
+  {
+    title: "INDUSTRIES",
+    Component: OurIndustries,
+  },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
 const Home = () => {
@@ -548,6 +560,7 @@ const Home = () => {
       {/* <Temp /> */}
       <Big />
       {/* <Separator /> */}
+      <Clientele />
       <Offers />
       {/* <Separatorr /> */}
       <Techs />
@@ -556,7 +569,6 @@ const Home = () => {
       <Clients />
       <Casestudies />
       <Reviews />
-      <Clientele />
       <Footer />
       <Copyright />
     </>
@@ -630,7 +642,6 @@ const Cstudiescomp = () => {
 const Allindus = () => {
   return (
     <>
-      <h2>All industries</h2>
       <Indusmain />
       <Footer />
       <Copyright />

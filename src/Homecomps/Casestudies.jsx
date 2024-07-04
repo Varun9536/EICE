@@ -4,7 +4,7 @@ import arrow from '../assets/arrow.svg';
 
 function Casestudies() {
     return (
-        <div className="font-manrope py-20 sm:py-32 lg:py-44 px-4 sm:px-6 lg:px-8">
+        <div className="font-manrope py-16 sm:py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="text-center lg:text-left order-2 lg:order-1">

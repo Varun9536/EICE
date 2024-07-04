@@ -34,7 +34,7 @@ function Footer()
     }
 
     return (
-        <footer className="bg-white text-manrope py-12 px-4 md:px-8 lg:px-16">
+        <footer className="bg-white text-manrope py-12 px-2 lg:max-w-7xl w-screen mx-auto">
   <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     {/* Company Info */}
     <div className="col-span-1 md:col-span-2 lg:col-span-1">
