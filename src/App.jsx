@@ -527,7 +527,7 @@ const OurResources = () => {
 const OurIndustries=()=>{
   return(
     <div>
-      kakewfn
+      nothing here.
     </div>
   )
 }
