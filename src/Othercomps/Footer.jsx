@@ -73,50 +73,50 @@ function Footer()
       <div className="flex flex-col text-start">
         <h1 className="py-2 text-lg font-bold">Services and Technologies</h1>
         <div className="flex flex-row flex-wrap">
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Android App Development</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">iOS App Development</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Web App Development</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">SAAS Development</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AIML</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">IOT</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DevOps</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Blockchain</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">App Consulting</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">UI/UX Consulting</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Software Testing</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React Native</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Flutter</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PHP</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ionic</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Swift</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Kotlin</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ObjectiveC</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Vue</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Angular</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jquery</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Typescript</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MySQL</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PostgreSQL</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MongoDB</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DynamoDB</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Django</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Oracle</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Apache</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ruby on Rails</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ASP.NET</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Express</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Laravel</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Docker</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Firebase</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">NodeJS</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Git</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Kubernetes</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jira</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ansible</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AWS</a>
-          <a href="/application-services" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Azure</a>
+          <a href="/services-android" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Android App Development</a>
+          <a href="/services-ios" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">iOS App Development</a>
+          <a href="/services-android" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Web App Development</a>
+          <a href="/services-ios" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">SAAS Development</a>
+          <a href="/services-aiml" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AIML</a>
+          <a href="/services-iot" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">IOT</a>
+          <a href="/services-devops" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DevOps</a>
+          <a href="/services-blockchain" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Blockchain</a>
+          <a href="/services-digitaltransformation" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</a>
+          <a href="/services-appconsulting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">App Consulting</a>
+          <a href="/services-uiuxconsulting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">UI/UX Consulting</a>
+          <a href="/services-softwaretesting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Software Testing</a>
+          <a href="/services-reactnative" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React Native</a>
+          <a href="/services-flutter" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Flutter</a>
+          <a href="/services-php" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PHP</a>
+          <a href="/services-ionic" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ionic</a>
+          <a href="/services-swift" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Swift</a>
+          <a href="/services-kotlin" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Kotlin</a>
+          <a href="/services-react" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React</a>
+          <a href="/services-objectivec" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ObjectiveC</a>
+          <a href="/services-vue" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Vue</a>
+          <a href="/services-angular" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Angular</a>
+          <a href="/services-jquery" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jquery</a>
+          <a href="/services-typescript" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Typescript</a>
+          <a href="/services-mysql" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MySQL</a>
+          <a href="/services-postgresql" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PostgreSQL</a>
+          <a href="/services-mongodb" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MongoDB</a>
+          <a href="/services-dynamodb" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DynamoDB</a>
+          <a href="/services-django" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Django</a>
+          <a href="/services-oracle" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Oracle</a>
+          <a href="/services-apache" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Apache</a>
+          <a href="/services-rubyonrails" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ruby on Rails</a>
+          <a href="/services-aspdotnet" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ASP.NET</a>
+          <a href="/services-express" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Express</a>
+          <a href="/services-laravel" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Laravel</a>
+          <a href="/services-docker" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Docker</a>
+          <a href="/services-firebase" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Firebase</a>
+          <a href="/services-nodejs" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">NodeJS</a>
+          <a href="/services-git" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Git</a>
+          <a href="/services-kubernetes" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Kubernetes</a>
+          <a href="/services-jira" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jira</a>
+          <a href="/services-ansible" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ansible</a>
+          <a href="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AWS</a>
+          <a href="/services-azure" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Azure</a>
         </div>
       </div>
 
