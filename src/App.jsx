@@ -43,6 +43,7 @@ import Iot from './Servcomps/Iot';
 import Techconsult from './Servcomps/Techconsult';
 
 import Indusmain from './Allindus/Indusmain';
+import Healthcare from './Allindus/Healthcare';
 
 import Careerform from './Othercomps/Careerform';
 import Contactform from './Othercomps/Contactform';
@@ -91,6 +92,10 @@ const App = () => {
         <Route path="Careers" element={<Careers />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="INDUSTRIES" element={<Allindus />} />
+        {/* <Route path="industries-healthcare" element={<Healthcare />} />
+        <Route path="industries-healthcare" element={<Healthcare />} />
+        <Route path="industries-healthcare" element={<Healthcare />} /> */}
+        <Route path="industries-healthcare" element={<Healthcare />} />
         <Route path="services/Aiml" element={<Aiml />} />
         <Route path="services/Cloud" element={<Cloud />} />
         <Route path="services/Dataanalytics" element={<Dataanalytics />} />
@@ -126,9 +131,9 @@ const NavLayout = () => {
         {/* laptop navbar */}
         <nav
         className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
-                   2xl:block xl:block hidden'
+                   2xl:block xl:block hidden h-[20px]]'
         >
-        <div className='bg-white grid grid-cols-3  items-center justify-center text-lg 2xl:scale-100 xl:scale-100 lg:scale-100 scale-[0.65]'>
+        <div className='grid grid-cols-3 items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]'>
           <div className='cursor-pointer justify-self-end pr-52'>
             <a href="/home">
               {/* <h1 className="text-[50px] w-[120px] text-center font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
@@ -136,14 +141,14 @@ const NavLayout = () => {
             </a>
           </div>
           <div className='flex flex-row items-center justify-center overflow-visible'>
-            <NavLink to="/home" className="p-6">
+            <NavLink to="/home" className="px-6 py-2">
               <div className='group hover:text-bloo  transition duration-300 ease-in-out'>
                 <div>HOME</div>
                   <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
                 </div>
               </div>
             </NavLink>
-            <div className='relative px-2'>
+            <div className='relative px-2 '>
               <Tabs className='absolute' />
             </div>
             {/* <NavLink to="/careers" className="p-6 ">
@@ -155,7 +160,7 @@ const NavLayout = () => {
             </NavLink> */}
           </div>
           <div className='justify-self-start pl-48'>
-            <NavLink to="/contact" className="p-6">
+            <NavLink to="/contact" className="px-6 py-2">
               <div className='transition duration-300 ease-in-out'>
                     <a href="Contact">
                         {/* <button className="transition duration-200 h-[56px] w-56 border-[3px] border-bloo hover:border-bloo hover:border-[3px] hover:bg-bloo hover:text-white text-bloo text-xl font-extrabold py-2 px-4 rounded"> */}
@@ -403,24 +408,24 @@ const OurServices = () => {
     <div className="flex flex-col items-start justify-start text-nowrap">
       <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
         <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
-        <div className="text-md text-left text-blackk">App Development</div>
+        <div className="text-md text-left font-bold text-blackk">App Development</div>
       </div>
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <FaAndroid size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">Andriod App Development</p>
+          {/* <FaAndroid size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">Andriod App Development</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <FaAppStoreIos size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">iOS App Development</p>
+          {/* <FaAppStoreIos size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">iOS App Development</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <FaLaptopCode size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">Web App Development</p>
+          {/* <FaLaptopCode size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">Web App Development</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">SAAS Development</p>
+          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">SAAS Development</p>
         </a>
 
       </div>
@@ -429,20 +434,20 @@ const OurServices = () => {
     <div className="flex flex-col items-start justify-start text-nowrap">
       <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
         <div className=''><LuCircuitBoard size={40} className="mb-2 text-bloo" /></div>
-        <div className="text-md text-center text-blackk">Emerginng Technologies</div>
+        <div className="text-md text-center font-bold text-blackk">Emerginng Technologies</div>
       </div>
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <LuBrainCircuit size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">AI & ML</p>
+          {/* <LuBrainCircuit size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">AI & ML</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <GiCircuitry size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">Internet Of Things</p>
+          {/* <GiCircuitry size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">Internet Of Things</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <SiBlockchaindotcom size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">Blockchain Development</p>
+          {/* <SiBlockchaindotcom size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">Blockchain Development</p>
         </a>
         
       </div>
@@ -451,16 +456,16 @@ const OurServices = () => {
     <div className="flex flex-col items-start justify-start text-nowrap">
       <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
         <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
-        <div className="text-md text-center text-blackk">Consultancy Services</div>
+        <div className="text-md text-center font-bold text-blackk">Consultancy Services</div>
       </div>
       <div className='gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <FaComputer size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">App Consulting</p>
+          {/* <FaComputer size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">App Consulting</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <MdDesignServices  size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">Design & UI / UX Consulting</p>
+          {/* <MdDesignServices  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">Design & UI / UX Consulting</p>
         </a>
       </div>
     </div>
@@ -468,16 +473,16 @@ const OurServices = () => {
     <div className="flex flex-col items-start justify-start text-nowrap">
       <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
         <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
-        <div className="text-md text-center text-blackk">Technical Services</div>
+        <div className="text-md text-center font-bold text-blackk">Technical Services</div>
       </div>
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <IoIosBuild size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">DevOps Services</p>
+          {/* <IoIosBuild size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">DevOps Services</p>
         </a>
         <a href='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" />
-          <p className="group-hover:text-bloo">Software Testing</p>
+          {/* <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
+          <p className="group-hover:text-bloo font-medium text-blackk/80">Software Testing</p>
         </a>
       </div>
     </div>

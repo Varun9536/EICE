@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FaApple, FaAndroid, FaReact } from 'react-icons/fa';
 import { IoMdReturnLeft } from 'react-icons/io';
-import { SiFlutter, SiIonic, SiSwift, SiKotlin, SiApple} from 'react-icons/si';
+import { SiFlutter, SiIonic, SiSwift, SiKotlin, SiApple, SiJavascript, SiPhp, SiVuedotjs, SiAngular, SiJquery, SiTypescript, SiMysql, SiPostgresql, SiApache, SiOracle, SiDjango, SiMongodb, SiAmazondynamodb, SiNodedotjs, SiRubyonrails, SiLaravel, SiExpress, SiFlask, SiFirebase, SiDocker, SiGit, SiKubernetes, SiJira, SiAnsible, SiAmazonaws, SiMicrosoftazure} from 'react-icons/si';
+import { DiDotnet } from "react-icons/di";
 import { useHref } from 'react-router-dom';
 
 const categories = [
@@ -9,7 +10,6 @@ const categories = [
   { name: "Front End", id: "frontend" },
   { name: "Database", id: "database" },
   { name: "Backend", id: "backend" },
-  { name: "CMS", id: "cms" },
   { name: "Infra and DevOps", id: "devops" }
 ];
 
@@ -21,7 +21,35 @@ const iconComponents = {
     "ionic-icon": SiIonic,
     "swift-icon": SiSwift,
     "kotlin-icon": SiKotlin,
+    "java-icon": SiJavascript,
+    "php-icon": SiPhp,
     "objectivec-icon": SiApple,
+    "vue-icon": SiVuedotjs,
+    "angular-icon": SiAngular,
+    "Ionic-icon": SiIonic,
+    "jquery-icon": SiJquery,
+    "typescript-icon": SiTypescript,
+    "mysql-icon": SiMysql,
+    "postgresql-icon": SiPostgresql,
+    "apache-icon": SiApache,
+    "oracle-icon": SiOracle,
+    "django-icon": SiDjango,
+    "mongodb-icon": SiMongodb,
+    "dynamo-icon": SiAmazondynamodb,
+    "node-icon": SiNodedotjs,
+    "rubyonrails-icon": SiRubyonrails,
+    "laravel-icon": SiLaravel,
+    "express-icon": SiExpress,
+    "aspdotnet-icon": DiDotnet,
+    "firebase-icon": SiFirebase,
+    "docker-icon": SiDocker,
+    "git-icon": SiGit,
+    "kubernetes-icon": SiKubernetes,
+    "jira-icon": SiJira,
+    "ansible-icon": SiAnsible,
+    "aws-icon": SiAmazonaws,
+    "azure-icon": SiMicrosoftazure,
+    
     
   };
 
@@ -37,11 +65,44 @@ const technologies = {
     { name: "ObjectiveC", icon: "objectivec-icon", link: "" },
     
   ],
-  frontend: [],
-  database: [],
-  backend: [],
-  cms: [],
-  devops: []
+  frontend: [
+    { name: "Vue", icon: "vue-icon", link: "" },
+    { name: "React", icon: "react-icon", link: "" },
+    { name: "Angular", icon: "angular-icon", link: "" },
+    { name: "React Native", icon: "react-icon", link: "" },
+    { name: "Ionic", icon: "ionic-icon", link: "" },
+    { name: "JQuery", icon: "jquery-icon", link: "" },
+    { name: "TypeScript", icon: "typescript-icon", link: "" },
+    { name: "PHP", icon: "php-icon", link: "" },
+  ],
+  database: [
+    { name: "MySQL", icon: "mysql-icon", link: "" },
+    { name: "PostgreSQL", icon: "postgresql-icon", link: "" },
+    { name: "MongoDB", icon: "mongodb-icon", link: "" },
+    { name: "Django", icon: "django-icon", link: "" },
+    { name: "Apache", icon: "apache-icon", link: "" },
+    { name: "Oracle", icon: "oracle-icon", link: "" },
+    { name: "DynamoDB", icon: "dynamo-icon", link: "" },
+  ],
+  backend: [
+    { name: "PHP", icon: "php-icon", link: "" },
+    { name: "Ruby On Rails", icon: "rubyonrails-icon", link: "" },
+    { name: "ASP.NET", icon: "aspdotnet-icon", link: "" },
+    { name: "Express", icon: "express-icon", link: "" },
+    { name: "Laravel", icon: "laravel-icon", link: "" },
+    { name: "Docker", icon: "docker-icon", link: "" },
+    { name: "Firebase", icon: "firebase-icon", link: "" },
+    { name: "NodeJs", icon: "node-icon", link: "" },
+
+  ],
+  devops: [
+    { name: "Git", icon: "git-icon", link: "" },
+    { name: "Docker", icon: "docker-icon", link: "" },
+    { name: "Kubernetes", icon: "kubernetes-icon", link: "" },
+    { name: "Jira", icon: "jira-icon", link: "" },
+    { name: "Ansible", icon: "ansible-icon", link: "" },
+
+  ]
 };
 
 
