@@ -6,7 +6,7 @@ const Offerdata = [
         </svg>
         `,
         title:'CLOUD SERVICES',
-        link:'../services/Cloud',
+        link:'../services-Cloud',
         fliptext:'Explore our advanced cloud services tailored to optimize efficiency and scale your operations seamlessly. We provide secure, reliable infrastructure and expert management to support your business growth in the digital age.',
     },
     {
@@ -20,7 +20,7 @@ const Offerdata = [
         </svg>
         `,
         title:'TECHNOLOGY CONSULTING',
-        link:'../services/Techconsult',
+        link:'../services-techconsultancy',
         fliptext:'We specialize in providing comprehensive technology consulting services, offering strategic guidance and customized solutions to improve operational efficiency, stimulate innovation, and facilitate digital transformation for businesses of all sizes.',
     },
     {   
@@ -30,7 +30,7 @@ const Offerdata = [
         </svg>
         `,
         title:'DIGITAL TRANSFORMATION',
-        link:'../Digitrans',
+        link:'../services-digitaltransformation',
         fliptext:'Transform your business with our customized digital transformation services. We provide tailored strategies and state-of-the-art solutions to modernize operations, improve customer experiences, and foster sustainable growth in the digital age.',
     },
     {
@@ -40,7 +40,7 @@ const Offerdata = [
         </svg>
         `,
         title:'DEVOPS',
-        link:'../services/Devops',
+        link:'../services-Devops',
         fliptext:'We provide extensive DevOps services to assist with digital transformation, innovation, and business growth in the digital space. With our knowledge in CI/CD pipelines, AWS DevOps, Azure DevOps, and GCP DevOps, we enable your team to effectively deploy, manage, and expand applications.',
     },
     {
@@ -54,7 +54,7 @@ const Offerdata = [
         </svg>
         `,
         title:`ENTERPRISE APPLICATION DEVELOPMENT`,
-        link:'../services/Entpappdev',
+        link:'../services-Enterprisepappdev',
         fliptext:'Elevate your business with our expert mobile app development service. We specialize in native, hybrid, and decentralized apps, aligning you with the mobile-first trend and enhancing brand value through customer-centric solutions.',
     },
     {
@@ -69,7 +69,7 @@ const Offerdata = [
         </svg>
         `,
         title:'AI/ML',
-        link:'../services/Aiml',
+        link:'../services-Aiml',
         fliptext:'The foundation of AI and ML is data, and our software development experts are skilled at utilizing it. We create advanced solutions to analyze various types of data, enabling you to discover growth trends and insights.',
     },
     {
@@ -87,7 +87,7 @@ const Offerdata = [
 </svg>
         `,
         title:'IOT',
-        link:'../services/Iot',
+        link:'../services-Iot',
         fliptext:'We specialize in creating scalable and secure IoT solutions that enhance efficiency, connectivity, and data insights, empowering your business to thrive in the digital age.',
     },
     {
@@ -97,7 +97,7 @@ const Offerdata = [
         </svg>
         `,
         title:'DATA ANALYTICS',
-        link:'../services/Dataanalytics',
+        link:'../services-Dataanalytics',
         fliptext:'We offer tailored Data Analytics services for the IT industry, utilizing advanced analytics to extract valuable insights, optimize operations, and drive informed decision-making, empowering businesses to efficiently achieve their strategic objectives.',
     },
     {
@@ -115,7 +115,7 @@ const Offerdata = [
 </svg>
         `,
         title:'GIS SERVICES',
-        link:'../services/Datatrans',
+        link:'../services-gis',
         fliptext:'Discover our GIS (Geographic Information System) services for accurate spatial data analysis and visualization. We provide customized solutions to maximize geographic insights for informed decision-making and effective resource management, enhancing your business strategy.',
     },
 ]

@@ -1,11 +1,11 @@
 import React from "react";
 
-function Healthcare(){
+function Financial(){
     return(
         <div>
-            Healthcare
+            Finance
         </div>
     )
 }
 
-export default Healthcare;
+export default Financial;

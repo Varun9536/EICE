@@ -48,81 +48,77 @@ const iconComponents = {
     "jira-icon": SiJira,
     "ansible-icon": SiAnsible,
     "aws-icon": SiAmazonaws,
-    "azure-icon": SiMicrosoftazure,
-    
-    
+    "azure-icon": SiMicrosoftazure, 
   };
 
 const technologies = {
   mobile: [
-    { name: "iOS", icon: "apple-icon", link: "" },
-    { name: "Android", icon: "android-icon", link: "" },
-    { name: "React Native", icon: "react-icon", link: "" },
-    { name: "Flutter", icon: "flutter-icon", link: "" },
-    { name: "Ionic", icon: "ionic-icon", link: "" },
-    { name: "Swift", icon: "swift-icon", link: "" },
-    { name: "Kotlin", icon: "kotlin-icon", link: "" },
-    { name: "ObjectiveC", icon: "objectivec-icon", link: "" },
+    { name: "iOS", icon: "apple-icon", link:"services-ios" },
+    { name: "Android", icon: "android-icon", link: "services-android" },
+    { name: "React Native", icon: "react-icon", link: "services-reactnative" },
+    { name: "Flutter", icon: "flutter-icon", link: "services-flutter" },
+    { name: "Ionic", icon: "ionic-icon", link: "services-ionic" },
+    { name: "Swift", icon: "swift-icon", link: "services-swift" },
+    { name: "Kotlin", icon: "kotlin-icon", link: "services-kotlin" },
+    { name: "ObjectiveC", icon: "objectivec-icon", link: "services-objectivec" },
     
   ],
   frontend: [
-    { name: "Vue", icon: "vue-icon", link: "" },
-    { name: "React", icon: "react-icon", link: "" },
-    { name: "Angular", icon: "angular-icon", link: "" },
-    { name: "React Native", icon: "react-icon", link: "" },
-    { name: "Ionic", icon: "ionic-icon", link: "" },
-    { name: "JQuery", icon: "jquery-icon", link: "" },
-    { name: "TypeScript", icon: "typescript-icon", link: "" },
-    { name: "PHP", icon: "php-icon", link: "" },
+    { name: "Vue", icon: "vue-icon", link: "services-vue" },
+    { name: "React", icon: "react-icon", link: "services-react" },
+    { name: "Angular", icon: "angular-icon", link: "services-angular" },
+    { name: "React Native", icon: "react-icon", link: "services-reactnative" },
+    { name: "Ionic", icon: "ionic-icon", link: "services-ionic" },
+    { name: "JQuery", icon: "jquery-icon", link: "services-jquery" },
+    { name: "TypeScript", icon: "typescript-icon", link: "services-typescript" },
+    { name: "PHP", icon: "php-icon", link: "services-php" },
   ],
   database: [
-    { name: "MySQL", icon: "mysql-icon", link: "" },
-    { name: "PostgreSQL", icon: "postgresql-icon", link: "" },
-    { name: "MongoDB", icon: "mongodb-icon", link: "" },
-    { name: "Django", icon: "django-icon", link: "" },
-    { name: "Apache", icon: "apache-icon", link: "" },
-    { name: "Oracle", icon: "oracle-icon", link: "" },
-    { name: "DynamoDB", icon: "dynamo-icon", link: "" },
+    { name: "MySQL", icon: "mysql-icon", link: "services-mysql" },
+    { name: "PostgreSQL", icon: "postgresql-icon", link: "services-postgresql" },
+    { name: "MongoDB", icon: "mongodb-icon", link: "services-mongodb" },
+    { name: "Django", icon: "django-icon", link: "services-django" },
+    { name: "Apache", icon: "apache-icon", link: "services-apache" },
+    { name: "Oracle", icon: "oracle-icon", link: "services-oracle" },
+    { name: "DynamoDB", icon: "dynamo-icon", link: "services-dynamo" },
   ],
   backend: [
-    { name: "PHP", icon: "php-icon", link: "" },
-    { name: "Ruby On Rails", icon: "rubyonrails-icon", link: "" },
-    { name: "ASP.NET", icon: "aspdotnet-icon", link: "" },
-    { name: "Express", icon: "express-icon", link: "" },
-    { name: "Laravel", icon: "laravel-icon", link: "" },
-    { name: "Docker", icon: "docker-icon", link: "" },
-    { name: "Firebase", icon: "firebase-icon", link: "" },
-    { name: "NodeJs", icon: "node-icon", link: "" },
+    { name: "PHP", icon: "php-icon", link: "services-php" },
+    { name: "Ruby On Rails", icon: "rubyonrails-icon", link: "services-rubyonrails" },
+    { name: "ASP.NET", icon: "aspdotnet-icon", link: "services-aspdotnet" },
+    { name: "Express", icon: "express-icon", link: "services-express" },
+    { name: "Laravel", icon: "laravel-icon", link: "services-laravel" },
+    { name: "Docker", icon: "docker-icon", link: "services-docker" },
+    { name: "Firebase", icon: "firebase-icon", link: "services-firebase" },
+    { name: "NodeJs", icon: "node-icon", link: "services-nodejs" },
 
   ],
   devops: [
-    { name: "Git", icon: "git-icon", link: "" },
-    { name: "Docker", icon: "docker-icon", link: "" },
-    { name: "Kubernetes", icon: "kubernetes-icon", link: "" },
-    { name: "Jira", icon: "jira-icon", link: "" },
-    { name: "Ansible", icon: "ansible-icon", link: "" },
-
+    { name: "Git", icon: "git-icon", link: "services-git" },
+    { name: "Docker", icon: "docker-icon", link: "services-docker" },
+    { name: "Kubernetes", icon: "kubernetes-icon", link: "services-kubernetes" },
+    { name: "Jira", icon: "jira-icon", link: "services-jira" },
+    { name: "AWS", icon: "aws-icon", link: "services-aws" },
+    { name: "Azure", icon: "azure-icon", link: "services-azure" },
+    { name: "Ansible", icon: "ansible-icon", link: "services-ansible" },
   ]
 };
 
 
 
 const Technology = ({ name, icon, link }) => {
-    
-    let linkk = useHref(link);
+  const IconComponent = iconComponents[icon];
 
-    const IconComponent = iconComponents[icon];
-
-    return (
-        <div className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-            <div className="overflow-hidden flex flex-col gap-2 items-center p-3">
-            <a href={linkk} className="group cursor-pointer mb-2">
-                <IconComponent size={60} className="text-blackk group-hover:text-bloo transition duration-300"/>
-            </a>
-            <span className="text-sm text-center">{name}</span>
-            </div>
-        </div>
-    )
+  return (
+    <div className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+      <div className="overflow-hidden flex flex-col gap-2 items-center p-3">
+        <a href={link} className="group cursor-pointer mb-2">
+          <IconComponent size={60} className="text-blackk group-hover:text-bloo transition duration-300"/>
+        </a>
+        <span className="text-sm text-center">{name}</span>
+      </div>
+    </div>
+  );
 };
 
 function Techs() {
@@ -134,7 +130,7 @@ function Techs() {
       <header className="text-center mb-12">
         <h1 className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl text-center mb-2 py-2">Technologies we work with</h1>
         <h1 className="text-blackk font-extrabold text-2xl sm:text-3xl lg:text-4xl text-center mb-12 py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Explore our extensive range of cutting-edge tools and platforms
         </h1>
       </header>
 
@@ -166,7 +162,7 @@ function Techs() {
             <div className="relative ">
               <div className="flex items-center justify-center">
                 <div 
-                    className="items-center justify-center flex flex-wrap"
+                    className="items-center justify-center md:flex md:flex-wrap grid grid-cols-3"
                     // className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
                 >
                     
@@ -175,6 +171,7 @@ function Techs() {
                       key={index}
                       name={tech.name}
                       icon={tech.icon}
+                      link={tech.link}
                     />
                   ))}
                 </div>

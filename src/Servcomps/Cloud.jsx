@@ -3,7 +3,7 @@ import React from "react";
 function Cloud()
 {
     return (
-        <div>AIML</div>    
+        <div>Cloud</div>    
     )
 }
 

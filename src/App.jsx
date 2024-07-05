@@ -35,15 +35,53 @@ import Servmain from './Servcomps/Servmain';
 import Aiml from './Servcomps/Aiml';
 import Cloud from './Servcomps/Cloud';
 import Dataanalytics from './Servcomps/Dataanalytics';
-import Datatrans from './Servcomps/Datatrans';
+import Gis from './Servcomps/Gis';
 import Devops from './Servcomps/Devops';
 import Digitrans from './Servcomps/Digitrans';
 import Entpappdev from './Servcomps/Entpappdev';
 import Iot from './Servcomps/Iot';
 import Techconsult from './Servcomps/Techconsult';
+import Reactnative from './Servcomps/Reactnative';
+import Reactservice from './Servcomps/Reactservice';
+import Flutter from './Servcomps/Flutter';
+import Ios from './Servcomps/Ios';
+import Android from './Servcomps/Android';
+import Kotlin from './Servcomps/Kotlin';
+import Ionic from './Servcomps/Ionic';
+import Objectivec from './Servcomps/Objectivec';
+import Swift from './Servcomps/Swift';
+import Vue from './Servcomps/Vue';
+import Angular from './Servcomps/Angular';
+import Jquery from './Servcomps/Jquery';
+import Typescript from './Servcomps/Typescript';
+import Php from './Servcomps/Php';
+import Django from './Servcomps/Django';
+import Oracle from './Servcomps/Oracle';
+import Apache from './Servcomps/Apache';
+import Mongodb from './Servcomps/Mongodb';
+import Dynamo from './Servcomps/Dynamo';
+import Postgresql from './Servcomps/Postgresql';
+import Mysql from './Servcomps/Mysql';
+import Rubyonrails from './Servcomps/Rubyonrails';
+import Aspdotnet from './Servcomps/Aspdotnet';
+import Express from './Servcomps/Express';
+import Laravel from './Servcomps/Laravel';
+import Docker from './Servcomps/Docker';
+import Firebase from './Servcomps/Firebase';
+import Nodejs from './Servcomps/Nodejs';
+import Git from './Servcomps/Git';
+import Kubernetes from './Servcomps/Kubernetes';
+import Jira from './Servcomps/Jira';
+import Aws from './Servcomps/Aws';
+import Azure from './Servcomps/Azure';
+import Ansible from './Servcomps/Ansible';
+
 
 import Indusmain from './Allindus/Indusmain';
 import Healthcare from './Allindus/Healthcare';
+import Financial from './Allindus/Financial';
+import Educational from './Allindus/Educational';
+import Digitalmedia from './Allindus/Digitalmedia';
 
 import Careerform from './Othercomps/Careerform';
 import Contactform from './Othercomps/Contactform';
@@ -92,19 +130,56 @@ const App = () => {
         <Route path="Careers" element={<Careers />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="INDUSTRIES" element={<Allindus />} />
-        {/* <Route path="industries-healthcare" element={<Healthcare />} />
+        <Route path="industries-financial" element={<Financial />} />
+        <Route path="industries-education" element={<Educational />} />
+        <Route path="industries-digitalmedia" element={<Digitalmedia />} />
         <Route path="industries-healthcare" element={<Healthcare />} />
-        <Route path="industries-healthcare" element={<Healthcare />} /> */}
-        <Route path="industries-healthcare" element={<Healthcare />} />
-        <Route path="services/Aiml" element={<Aiml />} />
-        <Route path="services/Cloud" element={<Cloud />} />
-        <Route path="services/Dataanalytics" element={<Dataanalytics />} />
-        <Route path="services/Datatrans" element={<Datatrans />} />
-        <Route path="services/Devops" element={<Devops />} />
-        <Route path="Digitrans" element={<Digitrans />} />
-        <Route path="services/Entpappdev" element={<Entpappdev />} />
-        <Route path="services/Iot" element={<Iot />} />
-        <Route path="services/Techconsult" element={<Techconsult />} />
+        
+        <Route path="services-digitaltransformation" element={<Digitrans />} />
+        <Route path="services-aiml" element={<Aiml />} />
+        <Route path="services-cloud" element={<Cloud />} />
+        <Route path="services-dataanalytics" element={<Dataanalytics />} />
+        <Route path="services-enterpriseappdev" element={<Entpappdev />} />
+        <Route path="services-gis" element={<Gis />} />
+        <Route path="services-devops" element={<Devops />} />
+        <Route path="services-iot" element={<Iot />} />
+        <Route path="services-techconsultancy" element={<Techconsult />} />
+        <Route path="services-android" element={<Android />} />
+        <Route path="services-ios" element={<Ios />} />
+        <Route path="services-flutter" element={<Flutter />} />
+        <Route path="services-swift" element={<Swift />} />
+        <Route path="services-ionic" element={<Ionic />} />
+        <Route path="services-kotlin" element={<Kotlin />} />
+        <Route path="services-objectivec" element={<Objectivec />} />
+        <Route path="services-react" element={<Reactservice />} />
+        <Route path="services-reactnative" element={<Reactnative />} />
+        <Route path="services-vue" element={<Vue />} />
+        <Route path="services-Angular" element={<Angular />} />
+        <Route path="services-jquery" element={<Jquery />} />
+        <Route path="services-php" element={<Php />} />
+        <Route path="services-typescript" element={<Typescript />} />
+        <Route path="services-mysql" element={<Mysql />} />
+        <Route path="services-postgresql" element={<Postgresql />} />
+        <Route path="services-mongodb" element={<Mongodb />} />
+        <Route path="services-django" element={<Django />} />
+        <Route path="services-apache" element={<Apache />} />
+        <Route path="services-oracle" element={<Oracle />} />
+        <Route path="services-dynamo" element={<Dynamo />} />
+        <Route path="services-Rubyonrails" element={<Rubyonrails />} />
+        <Route path="services-Aspdotnet" element={<Aspdotnet />} />
+        <Route path="services-Express" element={<Express />} />
+        <Route path="services-Laravel" element={<Laravel />} />
+        <Route path="services-Docker" element={<Docker />} />
+        <Route path="services-Firebase" element={<Firebase />} />
+        <Route path="services-Nodejs" element={<Nodejs />} />
+        <Route path="services-Git" element={<Git />} />
+        <Route path="services-kubernetes" element={<Kubernetes />} />
+        <Route path="services-jira" element={<Jira />} />
+        <Route path="services-ansible" element={<Ansible />} />
+        <Route path="services-azure" element={<Azure />} />
+        <Route path="services-aws" element={<Aws />} />
+        
+
         <Route path="casestudies" element={<Cstudiescomp />} />
         <Route path="resources/casestudies/AutoOne" element={<AutoOne />} />
         <Route path="resources/casestudies/AutoTwo" element={<AutoTwo />} />
@@ -472,7 +547,7 @@ const OurServices = () => {
     
     <div className="flex flex-col items-start justify-start text-nowrap">
       <div className="items-start justify-start py-6 text-neutral-400 transition-colors hover:text-neutral-50">
-        <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
+        <IoIosBuild size={40} className=" mb-2 text-bloo" />
         <div className="text-md text-center font-bold text-blackk">Technical Services</div>
       </div>
       <div className='flex flex-col gap-2 font-light text-md w-full justify-left'>
@@ -547,12 +622,12 @@ const TABS = [
     Component: OurServices,
   },
   {
-    title: "RESOURCES",
-    Component: OurResources,
-  },
-  {
     title: "INDUSTRIES",
     Component: OurIndustries,
+  },
+  {
+    title: "RESOURCES",
+    Component: OurResources,
   },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
 

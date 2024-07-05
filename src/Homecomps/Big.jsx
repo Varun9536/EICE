@@ -32,7 +32,7 @@ function Big() {
                     Our expert team of AI developers excels in deploying generative models such as GPT-3, GANs, and variational autoencoders.
                     </p>
                     <div className="pt-4">
-                      <a href="/resources/casestudies">
+                      <a href="/services-aiml">
                         <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
                           Explore
                         </button>
@@ -62,7 +62,7 @@ function Big() {
                       Whether you're a visionary business owner striving to lead, our array of DevOps development services enables you to thrive and innovate in the digital age.
                       </p>
                       <div className="pt-4">
-                        <a href="/resources/casestudies">
+                        <a href="/services-devops">
                           <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 
                                           border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md 
                                           hover:shadow-bloo/30 text-lg 2xl:text-xl">
@@ -96,7 +96,7 @@ function Big() {
                       leveraging expertise to foster innovation and enhance operational efficiency, capabilities, processes, and customer experiences. 
                       </p>
                       <div className="pt-4">
-                        <a href="/resources/casestudies">
+                        <a href="/services-digitaltransformation">
                           <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
                             Explore
                           </button>
@@ -244,7 +244,6 @@ function Big() {
               </div>
             </div>
         </div>
-        <div className="pb-1 shadow-sm shadow-blackk/30"></div>
     </div>
     );
 }

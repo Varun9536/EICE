@@ -1,11 +1,11 @@
 import React from "react";
 
-function Healthcare(){
+function Digitalmedia(){
     return(
         <div>
-            Healthcare
+            Digitalmedia
         </div>
     )
 }
 
-export default Healthcare;
+export default Digitalmedia;

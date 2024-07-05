@@ -65,7 +65,7 @@ function Clients() {
 function ClientLogo({ src, width, height, link }) {
     return (
         <div className="flex items-center justify-center p-4 flex-shrink-0 sm:flex-shrink">
-            <a href={link} className="cursor-pointer">
+            <a href={link} target="_blank" className="cursor-pointer">
                 <img 
                     src={src} 
                     alt="Client Logo" 
