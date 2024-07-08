@@ -1,4 +1,10 @@
-import React, { useRef } from "react";
+import React from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
+
+
 import tata from "../assets/Compressed/tata.png";
 import indianoil from "../assets/Compressed/indianoil.png";
 import pandg from "../assets/Compressed/pandg.png";
@@ -14,65 +20,83 @@ import slb from '../assets/Compressed/slb.png';
 
 function Clients() {
     const clients = [
-        { src: IIC, width: 120, height: 120, link:"https://iicdelhi.in" },
-        { src: tata, width: 150, height: 150, link:"https://tata.com"},
-        { src: indianoil, width: 110, height: 120, link:"https://iocl.com"},
-        { src: pandg, width: 130, height: 65, link:"https://in.pg.com" },
-        { src: halli, width: 120, height: 120, link:"https://halliburton.com" },
-        { src: NIC, width: 100, height: 90, link:"https://nic.in" },
-        { src: geologix, width: 120, height: 100, link:"https://geologix.com" },
-        { src: salesvu, width: 120, height: 100, link:"https://salesvu.com" },
-        { src: slb, width: 120, height: 120, link:"https://slb.com" },
-        { src: nrf, width: 120, height: 100, link:"https://nortonrosefulbright.com" },
-        { src: dgh, width: 150, height: 120, link:"https://dghindia.gov.in" },
-        { src: wapcos, width: 130, height: 130, link:"https://wapcos.co.in" }
+        { src: IIC, height: 100, scale: 1.1, link:"https://iicdelhi.in" },
+        { src: tata, height: 100, scale: 0.9, link:"https://tata.com"},
+        { src: indianoil, height: 100, scale: 1.2, link:"https://iocl.com"},
+        { src: pandg, height: 100, scale: 1.1, link:"https://in.pg.com" },
+        { src: halli, height: 100, scale: 0.5, link:"https://halliburton.com" },
+        { src: NIC, height: 100, scale: 70, link:"https://nic.in" },
+        { src: geologix, height: 100, scale: 1.1, link:"https://geologix.com" },
+        { src: salesvu, height: 100, scale: 0.9, link:"https://salesvu.com" },
+        { src: slb, height: 100, scale: 1.1, link:"https://slb.com" },
+        { src: nrf, height: 100, scale: 1.1, link:"https://nortonrosefulbright.com" },
+        { src: dgh, height: 100, scale: 1.1, link:"https://dghindia.gov.in" },
+        { src: wapcos, height: 100, scale: 1.1, link:"https://wapcos.co.in" }
     ];
 
-    const containerRef = useRef(null);
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 8000,
+        autoplaySpeed: 0,
+        cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 4,
+                }
+            }
+        ]
+    };
 
     return (
-        <div className="font-manrope bg-zinc-50 flex flex-col items-center justify-center pb-8 sm:pb-16 lg:pb-16 pt-20 sm:pt-28 lg:pt-32">
-            <div className="max-w-7xl mx-2 px-4 sm:px-6 lg:px-8">
-                <h1 className="text-center text-black font-bold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mb-8 sm:mb-12 lg:mb-16">
-                    Proudly serving <br className="sm:hidden"/>
-                    <span className="text-bloo font-semibold"> Global Clients </span>
-                     with excellence
-                </h1>
-                
-                <div className="relative w-full woverflow-hidden">
-                    <div className="sm:w-full w-screen px-6">
-                    <div ref={containerRef} className=" rounded-xl py-8 sm:py-12 overflow-x-auto hide-scrollbar">
-                    {/* <div ref={containerRef} className="bg-white rounded-xl py-8 sm:py-12 overflow-x-auto hide-scrollbar"> */}
-                        <div className="flex flex-nowrap gap-8 items-center px-4 sm:px-0 min-w-max sm:grid sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 sm:min-w-0 justify-center">
-                            {clients.map((client, index) => (
-                                <ClientLogo 
-                                    key={index} 
-                                    src={client.src} 
-                                    width={client.width} 
-                                    height={client.height}
-                                    link={client.link}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                    </div>
+        <div className="font-manrope bg-blue-50/20 flex flex-col items-center justify-centerpy-1">
+            <div className="w-screen mx-2 px-4">
+                <div className=" relative overflow-hidden">
+                    <Slider {...settings}>
+                        {clients.map((client, index) => (
+                            <ClientLogo 
+                            key={index} 
+                            link={client.link}
+                            // height={client.height}
+                            scale={client.scale}
+                            src={client.src} 
+                            />
+                        ))}
+                    </Slider>
                 </div>
             </div>
         </div>
     )
 }
 
-function ClientLogo({ src, width, height, link }) {
+function ClientLogo({ src, width, height, link, scale}) {
     return (
-        <div className="flex items-center justify-center p-4 flex-shrink-0 sm:flex-shrink">
-            <a href={link} target="_blank" className="cursor-pointer">
+        <div className="flex items-center justify-center p-4">
+            <Link to={`/${link}`} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 <img 
-                    src={src} 
-                    alt="Client Logo" 
+                    src={src}
+                    alt="Client Logo"
                     style={{ width: `${width}px`, height: `${height}px` }}
-                    className="object-contain transition-all duration-300 filter saturate-0 hover:saturate-100" 
+                    className={`max-h-20 object-contain transition-all duration-300 filter saturate-0 hover:saturate-100 scale-${scale}`}
                 />
-            </a>
+            </Link>
         </div>
     );
 }

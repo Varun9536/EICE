@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import aiml from "../assets/Compressed/aiml.svg";
-import devops from "../assets/Compressed/devops.svg";
-import digitrans from '../assets/Compressed/digitrans.svg';
+import genai from "../assets/Compressed/genai.png";
+import devops from "../assets/Compressed/devops.png";
+import digitrans from '../assets/Compressed/digitrans.png';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import hexagon from '../assets/hexagon.svg';
+import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
 
 
 function Big() {
@@ -31,17 +31,22 @@ function Big() {
                     As a specialized artificial intelligence development company, we focus on creating cutting-edge Generative AI software solutions. 
                     Our expert team of AI developers excels in deploying generative models such as GPT-3, GANs, and variational autoencoders.
                     </p>
-                    <div className="pt-4">
-                      <a href="/services-aiml">
-                        <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
-                          Explore
+                    <div className="pt-4 flex flex-row lg:flex-nowrap flex-wrap gap-4">
+                      <Link to="/services-aiml">
+                        <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                          Let's Connect
                         </button>
-                      </a>
+                      </Link>
+                      <Link to="/services-aiml">
+                        <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                          Learn More
+                        </button>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] 2xl:pl-2 scale-100">
-                    <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
-                      <img className="w-full h-full rounded-lg " src={aiml} alt="Generative AI" />
+                    <div className="w-[30rem] h-[30rem] rounded-lg  overflow-hidden">
+                      <img className="w-full h-full rounded-lg " src={genai} alt="Generative AI" />
                     </div>
                   </div>
                 </div>
@@ -61,19 +66,22 @@ function Big() {
                       Being a top DevOps development firm, we specialize in optimizing your business's infrastructure and development operations. Maximize your business potential with our customized DevOps solutions. 
                       Whether you're a visionary business owner striving to lead, our array of DevOps development services enables you to thrive and innovate in the digital age.
                       </p>
-                      <div className="pt-4">
-                        <a href="/services-devops">
-                          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 
-                                          border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md 
-                                          hover:shadow-bloo/30 text-lg 2xl:text-xl">
-                            Explore
+                      <div className="pt-4 flex flex-row lg:flex-nowrap flex-wrap gap-4">
+                        <Link to="/contact">
+                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900 hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                            Let's Connect
                           </button>
-                        </a>
+                        </Link>
+                        <Link to="/services-devops">
+                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                            Learn More
+                          </button>
+                        </Link>
                       </div>
                     </div>
                     <div className=" flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
-                      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg  overflow-hidden">
-                        <img className="w-full h-full rounded-lg" src={devops} alt="DevOps" />
+                      <div className="w-[30rem] h-[30rem] rounded-lg  overflow-hidden">
+                        <img className="w-full h-full scale-90 rounded-lg" src={devops} alt="DevOps" />
                       </div>
                     </div>
                   </div>
@@ -92,20 +100,25 @@ function Big() {
                         <span className="text-bloo font-bold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span>
                       </h1>
                       <p className="text-blackk/80 text-xl sm:text-xl">
-                      As the digital landscape gains significance, businesses are adopting digital strategies and consulting to meet evolving consumer preferences. Flexsin offers tailored digital transformation services, 
+                      As the digital landscape gains significance, businesses are adopting digital strategies and consulting to meet evolving consumer preferences. Offers tailored digital transformation services, 
                       leveraging expertise to foster innovation and enhance operational efficiency, capabilities, processes, and customer experiences. 
                       </p>
-                      <div className="pt-4">
-                        <a href="/services-digitaltransformation">
-                          <button className="py-4 px-24 font-semibold rounded transition duration-200 border-2 border-bloo hover:bg-bloo/90 bg-bloo text-white hover:shadow-md hover:shadow-bloo/30 text-lg 2xl:text-xl">
-                            Explore
+                      <div className="pt-4 flex flex-row lg:flex-nowrap flex-wrap gap-4">
+                        <Link to="/services-aiml">
+                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                            Let's Connect
                           </button>
-                        </a>
+                        </Link>
+                        <Link to="/services-digitaltransformation">
+                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                            Learn More
+                          </button>
+                        </Link>
                       </div>
                     </div>
                     <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
-                      <div className="w-full max-w-[480px] h-[320px] 2xl:w-[30rem] 2xl:h-[30rem] rounded-lg overflow-visible">
-                        <img className="w-full h-full pb-12 rounded-lg overflow-visible" src={digitrans} alt="Digital Transformation" />
+                      <div className="w-[30rem] h-[30rem] rounded-lg overflow-visible">
+                        <img className="w-full h-full pb-12 rounded-lg overflow-visible scale-110" src={digitrans} alt="Digital Transformation" />
                       </div>
                     </div>
                   </div>
@@ -156,8 +169,8 @@ function Big() {
 
     return (
         <div>
-          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:py-40 max-h-[1000px] xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
-            <div className="w-full h-full bg-bloo/15 -rotate-45 absolute z-1 left-[50%] blur-[300px]"></div>
+          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40 2xl:pt-20 max-h-[1200px] xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
+            {/* <div className="w-full h-full bg-bloo/15 -rotate-45 absolute z-1 left-[50%] blur-[300px]"></div> */}
             {/* <div className="left-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
             <div className="right-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
             <div className="right-[25%] w-full h-full scale-75 -rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
@@ -208,13 +221,14 @@ function Big() {
             <div className="">
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
-            <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
+            <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px]  w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
+                <div className="bg-blend-overlay bg-cover bg-bannerbg w-full h-full absolute inset-0 lg:scale-110 lg:rotate-0 rotate-90"></div>
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 ">
                     <div onClick={prevSlide} className='rounded-full text-blackk/50 cursor-pointer'>
                         <BsChevronLeft size={30} />
                     </div>
                 </div>
-                <div className="w-full sm:px-16 2xl:h-[500px]"> {/* Added padding here */}
+                <div className="w-full sm:px-16 2xl:h-[500px] flex items-center justify-center"> {/* Added padding here */}
                     <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
                         <CSSTransition
                             key={currentIndex}
@@ -232,12 +246,12 @@ function Big() {
                         <BsChevronRight size={30} />
                     </div>
                 </div>
-                <div className="cursor-pointer absolute -bottom-[20%] left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+                <div className="cursor-pointer absolute -bottom-[20%] left-1/2 transform -translate-x-1/2 flex space-x-6 z-30">
                   {slides.map((slide, slideIndex) => (
-                      <RxDotFilled 
+                      <div  
                           size={40}
                           key={slideIndex}
-                          className={currentIndex === slideIndex ? 'text-blue-900' : 'text-blue-900/30'} 
+                          className={ `${currentIndex === slideIndex ? 'px-3 py-1 rounded-xl bg-blue-900' : 'px-3 py-1 rounded-xl bg-blue-900/30'}`}
                           onClick={() => goToSlide(slideIndex)} 
                       />
                   ))}

@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { useHref } from "react-router-dom";
 import arrowblue from '../assets/arrowblue.svg';
+import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
+
 
 function Offeritem({ id, svg, title, link, fliptext }) {
     const [showDetails, setShowDetails] = useState(false);
     const handleMouseEnter = () => setShowDetails(true);
     const handleMouseLeave = () => setShowDetails(false);
-    const href = useHref(link);
+   
 
     return (
         <div 
@@ -28,13 +30,13 @@ function Offeritem({ id, svg, title, link, fliptext }) {
                 <p className="font-manrope text-blackk text-left sm:text-lg">
                     {fliptext}
                 </p>
-                <a
-                    href={href}
+                <Link
+                    to={`${link}`}
                     rel="noopener noreferrer"
                     className="flex items-center justify-center py-2 px-4 transition duration-200 border-2 border-bloo hover:shadow-md hover:shadow-bloo/30 text-bloo font-semibold rounded text-sm sm:text-base"
                 >
                     Learn More <img src={arrowblue} alt="" className="ml-2 w-4 h-4" />
-                </a>
+                </Link>
             </div>
         </div>
     );

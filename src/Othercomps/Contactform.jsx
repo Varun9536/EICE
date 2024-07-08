@@ -1,118 +1,130 @@
-import React from "react";
-import { useState } from "react";
-import { Prev } from "react-bootstrap/esm/PageItem";
+import React, { useState } from "react";
 
-function Contactform()
-{
+function ContactForm() {
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
 
-    const [formvalues, setformvalues] = useState(
-        {
-        name : "", 
-        email : "", 
-        number: "",
-        message: "",
-    })
+  const handleInputChange = (e) => {
+    setFormValues((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
-    const putvalue = (e) =>
-    {
-        setformvalues((prev) => {
-            return({...prev, [e.target.name]: e.target.value})
-        })
-    }
-
-    const printvalues = async () =>
-    {
-        let a = await fetch("https://eice-website.onrender.com/v1/form/userdata", {
-            method : 'post',
-            body : JSON.stringify({email:formvalues.email, number:formvalues.number, name:formvalues.name, message:formvalues.message}),
-            headers : {
-                "Content-Type" : "application/json"
-            }
-        })
-
-        a = await a.json()
-        if(a.result==='successful')
-        {
-            console.log(a.response)
-            alert(`Message Sent Successfully`)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("https://eice-website.onrender.com/v1/form/userdata", {
+        method: 'POST',
+        body: JSON.stringify(formValues),
+        headers: {
+          "Content-Type": "application/json"
         }
-        
+      });
+      const data = await response.json();
+      if (data.result === 'successful') {
+        alert(`Message Sent Successfully`);
+        setFormValues({ name: "", email: "", number: "", message: "" });
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Failed to send message. Please try again.");
     }
+  };
 
-    return (
-        <div className="font-manrope
-                        2xl:grid 2xl:grid-cols-2
-                        2xl:pb-40 2xl:pt-40 2xl:p-12
-                        2xl:ml-[400px] 2xl:mr-[400px]
-
-                        ">
-            
-            <div className="w-full h-full flex flex-col items-center justify-center text-center gap-4">
-                <div className="w-full h-full shadow-lg shadow-blackk/50 p-12 grid grid-cols-1 gap-4">
-                    <h1 className="text-left font-semibold text-bloo 2xl:text-3xl ">Contact Us</h1>
-                    <input onChange={putvalue} type="text" name="name" id="name" placeholder="Name" className="border-2 border-black/30 rounded-md p-2" />
-                    <input onChange={putvalue} type="email" name="email" id="email" placeholder="Email" className="border-2 border-black/30 rounded-md p-2"/>
-                    <input onChange={putvalue} type="text" name="number" id="number" placeholder="Number" className="border-2 border-black/30 rounded-md p-2"/>
-                    <textarea onChange={putvalue} name="message" id="message" placeholder="Message" className="h-[200px] border-2 border-black/30 rounded-md p-2"></textarea>
-                    <div className="2xl:pl-4 2xl:pt-2">
-                        <button 
-                        onClick={printvalues}
-                        className="flex flex-row items-center justify-center transition duration-200 border-bloo border-[2px] hover:bg-bloo/90 bg-bloo text-white  hover:shadow-md hover:shadow-bloo/30 font-semibold py-2 px-2 rounded
-                                            2xl:w-[234px] 2xl:h-[56px] 2xl:text-xl 2xl:p-0 2xl:scale-100
-                                            scale-75 -ml-4 h-[64px] w-[240px] text-2xl">
-                            {'Submit'}
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div className="font-manrope flex flex-col w-full h-full shadow-lg shadow-blackk/50 ml-12 pl-10">
-                <div className="text-center text-bloo font-semibold text-3xl pb-4 pt-2">Addresses</div>
-            <div className=" grid grid-cols-2 gap-4 items-center justify-center text-center">
-                <div className="border-2 border-bloo/40 h-[15rem] w-[15rem]">
-                    <h1 className="text-xl text-blackk font-semibold">United States</h1>
-                    <div className="text-left pl-2 pr-2 pt-2 leading-7">    
-                        EICE International <br />
-                        440 Cobia Drive, #901 Katy, Texas 77494 <br />
-                        +1 (832) 982-1500
-                    </div>
-                    <p className="text-left pl-2 pt-1 text-blue-700 hover:underline"><a href="mailto:info@eiceinternational.com">info@eiceinternational.com</a></p>
-                </div>
-                <div className="border-2 border-bloo/40 h-[15rem] w-[15rem]">
-                    <h1 className="text-xl text-blackk font-semibold">India</h1>
-                    <div className="text-left pl-2 pr-2 pt-2 leading-7">    
-                        EICE Consultants & Engineers Private Ltd. <br />
-                        B-8 Second Floor Sec-60, Noida 201301 <br />
-                        +91 (120) 4355910
-                    </div>
-                    <p className="text-left pl-2 pt-1 text-blue-700 hover:underline"><a href="mailto:info@eiceinternational.com">info@eiceinternational.com</a></p>
-                    
-                </div>
-                <div className="border-2 border-bloo/40 h-[15rem] w-[15rem]">
-                    <h1 className="text-xl text-blackk font-semibold">Canada</h1>
-                    <div className="text-left pl-2 pr-2 pt-2 leading-7">    
-                        EICE Canada ULC <br />
-                        20-15 27th Street NE Calgary <br />
-                        +1 (403) 903-8225
-                    </div>
-                    <p className="text-left pl-2 pt-1 text-blue-700 hover:underline"><a href="mailto:info@eiceinternational.com">info@eiceinternational.com</a></p>
-
-                </div>
-                <div className="border-2 border-bloo/40 h-[15rem] w-[15rem]">
-                    <h1 className="text-xl text-blackk font-semibold">China</h1>
-                    <div className="text-left pl-2 pr-2 pt-2 leading-7">    
-                        Beijing OGT Inc. <br />
-                        205, Beikong Science & Technology Plaza Changping, Beijing <br />
-                        +86 139 0128 3332
-                    </div>
-                    <p className="text-left pl-2 pt-1 text-blue-700 hover:underline"><a href="mailto:ogtech@vip.sina.com">ogtech@vip.sina.com,</a></p>
-                    <p className="text-left pl-2 pt-1 text-blue-700 hover:underline"><a href="mailto:info@eiceinternational.com">info@eiceinternational.com</a></p>
-
-                </div>
-            </div>
-
-            </div>
+  return (
+    <div className="font-manrope max-w-7xl mx-auto px-4 py-12 pt-28 sm:px-6 lg:px-8 lg:py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="bg-white rounded-lg shadow-lg shadow-blackk/20 p-8">
+          <h2 className="text-2xl font-semibold text-bloo mb-6">Contact Us</h2>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="text"
+              name="name"
+              value={formValues.name}
+              onChange={handleInputChange}
+              placeholder="Name"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              value={formValues.email}
+              onChange={handleInputChange}
+              placeholder="Email"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+              required
+            />
+            <input
+              type="tel"
+              name="number"
+              value={formValues.number}
+              onChange={handleInputChange}
+              placeholder="Phone Number"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+              required
+            />
+            <textarea
+              name="message"
+              value={formValues.message}
+              onChange={handleInputChange}
+              placeholder="Message"
+              rows="4"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo resize-none"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full bg-bloo text-white font-semibold py-2 px-4 rounded-md hover:bg-bloo-dark transition duration-300 ease-in-out"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-    )
+
+        <div className="bg-white rounded-lg shadow-lg shadow-blackk/20 p-8">
+          <h2 className="text-2xl font-semibold text-bloo mb-6 text-center">Addresses</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <AddressCard
+              country="United States"
+              company="EICE International"
+              address="440 Cobia Drive, #901 Katy, Texas 77494"
+              phone="+1 (832) 982-1500"
+              email="info@eiceinternational.com"
+            />
+            <AddressCard
+              country="India"
+              company="EICE Consultants & Engineers Private Ltd."
+              address="B-8 Second Floor Sec-60, Noida 201301"
+              phone="+91 (120) 4355910"
+              email="info@eiceinternational.com"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Contactform;
+function AddressCard({ country, company, address, phone, email }) {
+  return (
+    <div className="border-2 border-bloo/40 rounded-lg p-4 h-full flex flex-col justify-between">
+      <div>
+        <h3 className="text-xl font-semibold text-blackk mb-2">{country}</h3>
+        <p className="text-sm mb-2">{company}</p>
+        <p className="text-sm mb-2">{address}</p>
+        <p className="text-sm mb-2">{phone}</p>
+      </div>
+      <a href={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
+        {email}
+      </a>
+    </div>
+  );
+}
+
+export default ContactForm;

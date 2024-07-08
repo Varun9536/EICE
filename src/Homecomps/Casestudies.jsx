@@ -1,6 +1,8 @@
 import React from "react";
 import laptop from "../assets/Compressed/Laptop.png";
 import arrow from '../assets/arrow.svg';
+import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
+
 
 function Casestudies() {
     return (
@@ -15,9 +17,9 @@ function Casestudies() {
                             Discover our innovative solutions across industries through detailed case studies
                         </h1>
                         <div className="flex justify-center lg:justify-start py-1">
-                            <a href="/casestudies" className="inline-flex items-center justify-center py-4 px-24 border-2 border-bloo bg-bloo text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30">
+                            <Link to="/casestudies" className="inline-flex items-center justify-center py-4 px-24 border-2 border-bloo bg-bloo text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30">
                                 Explore <img src={arrow} alt="" className="ml-2 w-5 h-5" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="flex justify-center items-center order-1 lg:order-2">

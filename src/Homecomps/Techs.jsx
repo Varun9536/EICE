@@ -4,6 +4,8 @@ import { IoMdReturnLeft } from 'react-icons/io';
 import { SiFlutter, SiIonic, SiSwift, SiKotlin, SiApple, SiJavascript, SiPhp, SiVuedotjs, SiAngular, SiJquery, SiTypescript, SiMysql, SiPostgresql, SiApache, SiOracle, SiDjango, SiMongodb, SiAmazondynamodb, SiNodedotjs, SiRubyonrails, SiLaravel, SiExpress, SiFlask, SiFirebase, SiDocker, SiGit, SiKubernetes, SiJira, SiAnsible, SiAmazonaws, SiMicrosoftazure} from 'react-icons/si';
 import { DiDotnet } from "react-icons/di";
 import { useHref } from 'react-router-dom';
+import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
+
 
 const categories = [
   { name: "Mobile", id: "mobile" },
@@ -112,9 +114,9 @@ const Technology = ({ name, icon, link }) => {
   return (
     <div className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
       <div className="overflow-hidden flex flex-col gap-2 items-center p-3">
-        <a href={link} className="group cursor-pointer mb-2">
+        <Link to={link} className="group cursor-pointer mb-2">
           <IconComponent size={60} className="text-blackk group-hover:text-bloo transition duration-300"/>
-        </a>
+        </Link>
         <span className="text-sm text-center">{name}</span>
       </div>
     </div>
