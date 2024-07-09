@@ -15,7 +15,7 @@ function Offers() {
                         Unlocking Innovation: <br className="sm:hidden"/>Explore Our Suite of Solutions for Your Digital Evolution
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center">
                     {Ouroffers.map(project => (
                         <Offeritem
                             key={project.id}
