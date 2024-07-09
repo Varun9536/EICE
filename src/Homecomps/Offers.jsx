@@ -4,7 +4,7 @@ import Ouroffers from '../Data/Ouroffers'
 
 function Offers() {
     return (
-        // bg-bgplate bg-cover
+        // 
         <div className="">
             <div className="text-manrope  px-4 py-12 sm:py-12 md:py-16 lg:py-24 xl:py-32 2xl:py-32 max-w-7xl mx-auto">
                 <div className="flex flex-col items-center justify-center mb-12 sm:mb-16 md:mb-20">
@@ -15,7 +15,7 @@ function Offers() {
                         Unlocking Innovation: <br className="sm:hidden"/>Explore Our Suite of Solutions for Your Digital Evolution
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
                     {Ouroffers.map(project => (
                         <Offeritem
                             key={project.id}

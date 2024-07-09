@@ -53,7 +53,7 @@ const Offerdata = [
         <path d="M48.5624 37.3887H10.5009C9.93965 37.3887 9.48047 37.8479 9.48047 38.4091C9.48047 38.9703 9.93965 39.4295 10.5009 39.4295H48.5114C49.0727 39.4295 49.5318 38.9703 49.5318 38.4091C49.5318 37.8479 49.1236 37.3887 48.5624 37.3887Z" fill="#01b0f1"/>
         </svg>
         `,
-        title:`ENTERPRISE APPLICATION DEVELOPMENT`,
+        title:`ENTERPRISE APP DEVELOPMENT`,
         link:'/services-enterpriseappdev',
         fliptext:'Elevate your business with our expert mobile app development service. We specialize in native, hybrid, and decentralized apps, aligning you with the mobile-first trend and enhancing brand value through customer-centric solutions.',
     },

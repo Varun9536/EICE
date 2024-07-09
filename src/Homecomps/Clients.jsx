@@ -66,17 +66,17 @@ function Clients() {
     };
 
     return (
-        <div className="font-manrope bg-blue-50/20 flex flex-col items-center justify-centerpy-1">
+        <div className="font-manrope flex flex-col items-center justify-centerpy-1">
             <div className="w-screen mx-2 px-4">
                 <div className=" relative overflow-hidden">
                     <Slider {...settings}>
                         {clients.map((client, index) => (
                             <ClientLogo 
-                            key={index} 
-                            link={client.link}
-                            // height={client.height}
-                            scale={client.scale}
-                            src={client.src} 
+                                key={index} 
+                                link={client.link}
+                                // height={client.height}
+                                scale={client.scale}
+                                src={client.src} 
                             />
                         ))}
                     </Slider>
