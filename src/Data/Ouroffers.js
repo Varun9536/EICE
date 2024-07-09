@@ -7,7 +7,7 @@ const Offerdata = [
         `,
         title:'CLOUD SERVICES',
         link:'/services-cloud',
-        fliptext:'Explore our advanced cloud services tailored to optimize efficiency and scale your operations seamlessly. We provide secure, reliable infrastructure and expert management to support your business growth in the digital age.',
+        fliptext:'Explore our advanced cloud services tailored to optimize efficiency and scale your operations seamlessly. We help provide secure, reliable infrastructure and expert management to support your business growth in the digital age.',
     },
     {
         id:2,

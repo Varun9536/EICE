@@ -1,9 +1,12 @@
 import React from "react";
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
 
 function Django()
 {
     return (
-        <div>Django</div>    
+        <div>Django<Footer />
+            <Copyright /></div>    
     )
 }
 

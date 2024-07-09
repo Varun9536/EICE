@@ -1,9 +1,12 @@
 import React from "react";
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
 
 function Rubyonrails()
 {
     return (
-        <div>Rubyonrails</div>    
+        <div>Rubyonrails<Footer />
+            <Copyright /></div>    
     )
 }
 

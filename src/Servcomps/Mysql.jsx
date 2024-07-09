@@ -1,9 +1,12 @@
 import React from "react";
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
 
 function Mysql()
 {
     return (
-        <div>Mysql</div>    
+        <div>Mysql<Footer />
+            <Copyright /></div>    
     )
 }
 

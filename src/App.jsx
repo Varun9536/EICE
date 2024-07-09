@@ -487,79 +487,79 @@ const OurServices = () => {
         <div className="text-md text-left font-bold text-blackk">App Development</div>
       </div>
       <div className='flex flex-col font-light text-md w-full justify-left'>
-        <Link to='' className='group flex flex-wrap gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-android' className='group flex flex-wrap gap-2 items-center justify-left cursor-pointer'>
           {/* <FaAndroid size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Andriod App Development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-ios' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <FaAppStoreIos size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">iOS App Development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-enterpriseappdev' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <FaLaptopCode size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Web App Development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-saas' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">SAAS Development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-reactnative' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">React Native</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-react' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">React Development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-flutter' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Flutter Development</p>
         </Link >
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-kotlin' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Kotlin Development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-objectivec' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">ObjectiveC development</p>
         </Link >
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-vue' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">VueJS development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-angular' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">AngularJs</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-ionic' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Ionic development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-typescript' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Typescript development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-php' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">PHP development</p>
         </Link>
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-mysql' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">MySQL development</p>
         </Link >
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-mongodb' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">MongoDB development</p>
         </Link >
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-oracle' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Oracle development</p>
         </Link >
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-aspdotnet' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">ASP.NET development</p>
         </Link >
-        <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+        <Link to='services-laravel' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
           {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
           <p className="group-hover:text-bloo font-medium text-blackk/80">Laravel development</p>
         </Link>
@@ -575,19 +575,19 @@ const OurServices = () => {
           <div className="text-md text-center font-bold text-blackk">Emerginng Technologies</div>
         </div>
         <div className='flex flex-col font-light text-md w-full justify-left'>
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-aiml' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <LuBrainCircuit size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">AI & ML</p>
           </Link>
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-iot' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <GiCircuitry size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">Internet Of Things</p>
           </Link >
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-blockchain' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <SiBlockchaindotcom size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">Blockchain Development</p>
           </Link >
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-gis' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">Oil and Gas</p>
           </Link >
@@ -600,11 +600,11 @@ const OurServices = () => {
           <div className="text-md text-center font-bold text-blackk">Consultancy Services</div>
         </div>
         <div className='gap-2 font-light text-md w-full justify-left'>
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-enterpriseappdev' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <FaComputer size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">App Consulting</p>
           </Link >
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-uiux' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <MdDesignServices  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">Design & UI / UX Consulting</p>
           </Link >
@@ -620,7 +620,7 @@ const OurServices = () => {
           <div className="text-md text-center font-bold text-blackk">Technical Services</div>
         </div>
         <div className='flex flex-col font-light text-md w-full justify-left'>
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-devops' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <IoIosBuild size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">DevOps Services</p>
           </Link >
@@ -632,7 +632,7 @@ const OurServices = () => {
             {/* <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">Azure</p>
           </Link>
-          <Link to='' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
+          <Link to='services-testing' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
             {/* <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
             <p className="group-hover:text-bloo font-medium text-blackk/80">Software Testing</p>
           </Link >
@@ -782,7 +782,7 @@ const Resources = () => {
   return(
     <>
       <h1>Resources</h1>
-      <h2><a href="casestudies">casestudies</a></h2>
+      <h2><Link to="/casestudies">casestudies</Link></h2>
       <Footer />
       <Copyright />
     </>

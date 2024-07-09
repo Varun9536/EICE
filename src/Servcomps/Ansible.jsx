@@ -1,9 +1,13 @@
 import React from "react";
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
+
 
 function Ansible()
 {
     return (
-        <div>Ansible</div>    
+        <div>Ansible<Footer />
+            <Copyright /></div>    
     )
 }
 

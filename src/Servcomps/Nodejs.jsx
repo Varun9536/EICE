@@ -1,9 +1,12 @@
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
 import React from "react";
 
 function Nodejs()
 {
     return (
-        <div>Nodejs</div>    
+        <div>Nodejs<Footer />
+            <Copyright /></div>    
     )
 }
 

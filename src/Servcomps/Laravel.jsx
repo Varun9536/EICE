@@ -1,9 +1,12 @@
 import React from "react";
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
 
 function Laravel()
 {
     return (
-        <div>Laravel</div>    
+        <div>Laravel<Footer />
+            <Copyright /></div>    
     )
 }
 

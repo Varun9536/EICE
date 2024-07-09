@@ -1,8 +1,12 @@
 import React from "react";
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
+
 function Jquery()
 {
     return(
-        <div>Jquery</div>
+        <div>Jquery<Footer />
+            <Copyright /></div>
     )
 }
 export default Jquery;

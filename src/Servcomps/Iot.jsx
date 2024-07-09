@@ -1,9 +1,12 @@
 import React from "react";
+import Footer from "../Othercomps/Footer";
+import Copyright from "../Othercomps/Copyright";
 
 function Iot()
 {
     return (
-        <div>IOT</div>    
+        <div>IOT<Footer />
+            <Copyright /></div>    
     )
 }
 

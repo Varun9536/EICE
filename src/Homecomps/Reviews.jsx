@@ -1,7 +1,7 @@
+
 import React, { useState, useEffect } from "react";
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function Reviews() {
     const testimonials = [
@@ -30,47 +30,39 @@ function Reviews() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 2 : prevIndex - 2));
     };
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+        setCurrentIndex((prevIndex) => (prevIndex >= testimonials.length - 2 ? 0 : prevIndex + 2));
     };
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 7000);
+        const interval = setInterval(nextSlide, 10000);
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="text-blackk bg-zinc-50 bg-cover py-32 px-4 sm:px-6 lg:px-8">
-        {/* <div className="text-blackk bg-testimonial bg-blend-overlay bg-white/30 bg-cover py-16 px-4 sm:px-6 lg:px-8"> */}
+        <div className="text-blackk bg-zinc-50 py-32 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-                <h1 className="text-center text-bloo font-bold text-3xl md:text-4xl mb-8">
+                <h1 className="text-center text-bloo font-bold text-3xl md:text-4xl mb-12">
                     Testimonials
                 </h1>
                 
                 <div className="relative">
-                    <TransitionGroup>
-                        <CSSTransition
-                            key={currentIndex}
-                            timeout={500}
-                            classNames="fade"
-                            exit={false}
-                        >
-                            <div className="w-full p-4 flex items-center justify-center">
-                            <div className="text-center">
-                                <p className="font-semibold italic text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 max-w-4xl mx-auto">
-                                    "{testimonials[currentIndex].quote}"
+                    <div className="flex flex-col md:flex-row gap-8 px-16">
+                        {[currentIndex, currentIndex + 1].map((index) => (
+                            <div key={index} className="flex-1 bg-white p-6 rounded-lg shadow-md">
+                                <p className="font-semibold italic text-lg mb-6">
+                                    "{testimonials[index].quote}"
                                 </p>
                                 <div className="font-semibold">
-                                    <p className="font-bold text-xl md:text-xl mb-1">{`- `}{testimonials[currentIndex].name}</p>
-                                    <p className="text-bloo italic text-md md:text-2xl">{testimonials[currentIndex].title}</p>
+                                    <p className="font-bold text-xl mb-1">{testimonials[index].name}</p>
+                                    <p className="text-bloo italic">{testimonials[index].title}</p>
                                 </div>
                             </div>
-                            </div>
-                        </CSSTransition>
-                    </TransitionGroup>
+                        ))}
+                    </div>
 
                     <button 
                         onClick={prevSlide} 
@@ -86,14 +78,14 @@ function Reviews() {
                     </button>
                 </div>
 
-                <div className="flex justify-center mt-6 space-x-2">
-                    {testimonials.map((_, index) => (
-                        <RxDotFilled 
-                            key={index}
-                            size={30}
-                            className={`cursor-pointer ${currentIndex === index ? 'text-blue-900' : 'text-blue-900/30'}`}
-                            onClick={() => setCurrentIndex(index)}
-                        />
+                <div className="flex justify-center pt-8 space-x-2">
+                    {Array.from({ length: Math.ceil(testimonials.length / 2) }).map((_, index) => (
+                        <div  
+                                size={40}
+                                key={index}
+                                className={ `${currentIndex === (index*2) ? 'px-3 py-1 rounded-xl bg-blue-900' : 'px-3 py-1 rounded-xl bg-blue-900/30'}`}
+                                onClick={() => setCurrentIndex(index * 2)} 
+                            />
                     ))}
                 </div>
             </div>
