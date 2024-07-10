@@ -32,7 +32,7 @@ function Big() {
                     Our expert team of AI developers excels in deploying generative models such as GPT-3, GANs, and variational autoencoders.
                     </p>
                     <div className="pt-4 flex flex-row lg:flex-nowrap flex-wrap gap-4">
-                      <Link to="/services-aiml">
+                      <Link to="/contact">
                         <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
                           Let's Connect
                         </button>

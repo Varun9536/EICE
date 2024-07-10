@@ -26,6 +26,7 @@ export default {
         'bgplate' : "url('./assets/Compressed/bgplate.png')",
         'bannerai' : "url('./assets/Compressed/bannerai.png')",
         'indusbanner' : "url('./assets/Compressed/indusbanner.png')",
+        'talkbanner' : "url('./assets/Compressed/talkbanner.png')",
 
 
       },

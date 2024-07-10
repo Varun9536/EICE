@@ -17,7 +17,6 @@ import Footer from './Othercomps/Footer';
 import Reviews from './Homecomps/Reviews';
 import Casestudies from './Homecomps/Casestudies';
 import Techs from './Homecomps/Techs';
-import Temp from './Homecomps/Temp';
 import Process from './Homecomps/Process';
 
 import Copyright from './Othercomps/Copyright';
