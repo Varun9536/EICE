@@ -9,7 +9,7 @@ function Offeritem({ id, svg, title, link, fliptext }) {
 
     return (
         <Link to={link}
-            className="bg-white px-2 rounded-md overflow-hidden  hover:shadow-lg hover:shadow-blackk/30 hover:border  hover:cursor-pointer duration-500  w-full h-80"
+            className="bg-white px-2 rounded-md overflow-hidden hover:shadow-lg hover:shadow-blackk/30 hover:border  hover:cursor-pointer duration-500  w-full "
         >
             <div className={`p-8 flex flex-row gap-12 `}>
                 <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 ">

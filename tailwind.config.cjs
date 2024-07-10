@@ -24,6 +24,9 @@ export default {
         'cstdmain' : "url('./assets/Compressed/cstdmain.png')",
         'bannerbg' : "url('./assets/Compressed/bannerbg.png')",
         'bgplate' : "url('./assets/Compressed/bgplate.png')",
+        'bannerai' : "url('./assets/Compressed/bannerai.png')",
+        'indusbanner' : "url('./assets/Compressed/indusbanner.png')",
+
 
       },
       animation: {

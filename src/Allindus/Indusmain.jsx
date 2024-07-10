@@ -1,4 +1,6 @@
 import React from "react";
+import Reviews from "../Homecomps/Reviews";
+
 import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
 import { IoIosCash } from "react-icons/io";
@@ -6,123 +8,87 @@ import { SiEducative } from "react-icons/si";
 import { BiPencil } from "react-icons/bi";
 import { MdPermMedia } from "react-icons/md";
 import { BsTruck } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
-function Indusmain()
-{
-    return (
-        <div className="font-manrope lg:max-w-7xl mx-auto w-screen 2xl:py-20 py-44">
-            <div>
-                <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Core Industries</h1>
-                <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">How we affect the world with our work</h2>
-            </div>
-            <div className="items-center justify-center grid lg:grid-cols-2 grid-cols-1 gap-12 py-12 px-2">
-                <a href="home" className="cursor-pointer border-2 border-bloo/50 shadow-sm shadow-bloo/70 w-full h-full rounded-md p-4 group hover:bg-bloo/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-bloo/20">
-                                <FaOilCan size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Oil and Gas</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-                <a className="cursor-pointer border-2 border-purple-400/50 shadow-sm shadow-purple-400/70 w-full h-full rounded-md p-4 group hover:bg-purple-400/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-purple-400/20">
-                                <BiPencil size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Educational</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="home" className="cursor-pointer border-2 border-emerald-400/50 shadow-sm shadow-emerald-400/70 w-full h-full rounded-md p-4 group hover:bg-emerald-400/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-emerald-400/20">
-                                <GoLaw size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Legal</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-                <a className="cursor-pointer border-2 border-amber-400/50 shadow-sm shadow-amber-400/70 w-full h-full rounded-md p-4 group hover:bg-amber-400/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-amber-400/20">
-                                <FaSyringe size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Healthcare</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="home" className="cursor-pointer border-2 border-pink-400/50 shadow-sm shadow-pink-400/70 w-full h-full rounded-md p-4 group hover:bg-pink-400/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-pink-400/20">
-                                <MdPermMedia size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Digital Media</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-                <a className="cursor-pointer border-2 border-rose-600/50 shadow-sm shadow-rose-600/70 w-full h-full rounded-md p-4 group hover:bg-rose-600/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-rose-600/20">
-                                <IoIosCash size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Financial</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="home" className="cursor-pointer border-2 border-amber-600/50 shadow-sm shadow-amber-600/70 w-full h-full rounded-md p-4 group hover:bg-amber-600/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-amber-600/20">
-                                <BsTruck size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Logistics</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-                <a className="cursor-pointer border-2 border-rose-400/50 shadow-sm shadow-rose-400/70 w-full h-full rounded-md p-4 group hover:bg-rose-400/5  transition duration-200">
-                    <div className="flex flex-row gap-8 group-hover:scale-[.98] transition duration-300">
-                        <div className="flex items-center justify-center">
-                            <div className="p-4 rounded-full bg-rose-400/20">
-                                <FaBusinessTime size={60} className="text-blackk"/>
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="font-semibold text-2xl py-2">Enterprise</h1>
-                            <p className="font-bold text-blackk/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio! Neque aut eum nobis reprehenderit ducimus quasi ex iste atque, facilis, eos dolore!</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+
+const IndustryCard = ({ to, color, Icon, title, description }) => (
+  <Link to={to} className={`cursor-pointer hover:border-bloo/50 hover:shadow-lg hover:shadow-bloo/30 w-full rounded-md p-4 group hover:bg-bloo/5 transition duration-500`}>
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 group-hover:scale-[.98] transition duration-300">
+      <div className="flex items-center justify-center">
+        <div className={`p-4 rounded-full bg-${color}-400/20`}>
+          <Icon size={40} className="text-blackk"/>
         </div>
-    )
+      </div>
+      <div>
+        <h3 className="font-semibold text-xl sm:text-2xl py-2">{title}</h3>
+        <p className="font-medium text-blackk/60 text-sm sm:text-base">{description}</p>
+      </div>
+    </div>
+  </Link>
+);
+
+function Indusmain() {
+  const industries = [
+    { color: "blue", Icon: FaOilCan, title: "Oil and Gas", to:"/" },
+    { color: "purple", Icon: BiPencil, title: "Educational", to:"/" },
+    { color: "emerald", Icon: GoLaw, title: "Legal", to:"/" },
+    { color: "amber", Icon: FaSyringe, title: "Healthcare", to:"/" },
+    { color: "pink", Icon: MdPermMedia, title: "Digital Media", to:"/" },
+    { color: "rose", Icon: IoIosCash, title: "Financial", to:"/" },
+    { color: "amber", Icon: BsTruck, title: "Logistics", to:"/" },
+    { color: "rose", Icon: FaBusinessTime, title: "Enterprise", to:"/" },
+  ];
+
+  return (
+    <div>
+        <div className="font-manrope max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+            <section className="text-center mb-12 sm:mb-16">
+                <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+                Empowering Industries With <span className="text-bloo">Digital Excellence</span>
+                </h1>
+                <p className="text-blackk/70 font-medium text-base sm:text-lg max-w-3xl mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere impedit, nostrum minima suscipit quidem corporis eos assumenda animi perspiciatis.
+                </p>
+            </section>
+
+            <div className="w-full max-w-screen-2xl mx-auto mb-12 sm:mb-16">
+                <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-lg"></div>
+            </div>
+
+            <section className="text-center py-20">
+                <h2 className="text-bloo font-bold text-2xl sm:text-3xl mb-2">Core Industries</h2>
+                <h3 className="text-blackk font-bold text-xl sm:text-2xl lg:text-3xl">How we affect the world with our work</h3>
+            </section>
+
+            <div className=" grid sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
+                {industries.map((industry, index) => (
+                <IndustryCard
+                    key={index}
+                    to={industry.to}
+                    color={industry.color}
+                    Icon={industry.Icon}
+                    title={industry.title}
+                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quibusdam aspernatur qui reiciendis et voluptatum distinctio!"
+                />
+                ))}
+            </div>
+
+            <div className="pt-32 grid lg:grid-cols-2 grid-cols-1 gap-20">
+                <h1 className="text-bloo font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 flex items-center justify-center">
+                    Why Choose EICE
+                </h1>
+                <h1 className="text-blackk font-bold text-xl sm:text-2xl lg:text-3xl mb-4">
+                    <span className="text-bloo">Partner With EICE</span> to transform your business
+                    and stay ahead in your industry. Our expertise, dedication, and innovative solutions
+                    will help you <span className="text-bloo">achieve your goals</span> and drive sustained success.
+                </h1>
+            </div>
+
+        </div>
+        <Reviews />
+    </div>
+
+  );
 }
 
 export default Indusmain;
