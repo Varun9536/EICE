@@ -122,20 +122,20 @@ function Digitrans()
 {
     return (
        <div>
-            <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-24">
+            <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
                 <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
                     <div className="absolute inset-0 left-[10%]">
                             <img src={servicebannerpattern} alt="" />
                     </div>
-                    <div className="flex lg:flex-row flex-col py-20 items-center">
+                    <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
                         <div className="w-full">
                             <h1 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">Digital Transformation</h1>
                             <h2 className="text-blackk font-light sm:text-3xl text-2xl pb-4 pt-2">
                                 {"Revolutionize Your Business: Harness the Power of Digital for Sustainable Growth"}
                             </h2>
                         </div>
-                        <div className="flex items-center justify-end">
-                            <div className="w-7/12">
+                        <div className="lg:flex hidden items-center justify-end ">
+                            <div className="lg:w-7/12 w-1/2">
                                 <img src={dtransbanner} alt="" className="rounded-full"/>
                             </div>
                         </div>
@@ -200,13 +200,13 @@ function Digitrans()
                     </div>
                 </div>
             </div>
-            <div className="pb-32">
-                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-24 pb-16">
+            <div className="bg-zinc-50 pb-32 text-justify my-24">
+                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
                     <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Why Choose EICE</h1>
                     <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Key Advantages of Partnering with EICE for Your Digital Transformation Journey</h2>
                 </div>    
-                <div className="bg-zinc-50">
-                    <div className="relative px-4 font-manrope mx-auto sm:max-w-7xl w-screen py-20">
+                <div className="">
+                    <div className="relative px-4 font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
                         <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
