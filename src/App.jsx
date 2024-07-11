@@ -265,7 +265,7 @@ const NavLayout = () => {
               <MenuButton className='scale-[0.6] -mr-1'>
                 <div ><span><img src={menu} alt="" className='' /></span></div>
               </MenuButton>
-              <Menu className='font-semibold'>
+              <Menu className='font-semibold z-50'>
                 <MenuItem onClick={createHandleMenuClick('Home')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/">Home</Link></MenuItem>
                 <MenuItem onClick={createHandleMenuClick('About Us')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to='/about'>About Us</Link></MenuItem>
                 <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/services">Services</Link></MenuItem>
