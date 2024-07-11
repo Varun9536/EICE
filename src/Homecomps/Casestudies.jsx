@@ -17,7 +17,7 @@ function Casestudies() {
                             Discover our innovative solutions across industries through detailed case studies
                         </h1>
                         <div className="flex justify-center lg:justify-start py-1">
-                            <Link to="/casestudies" className="inline-flex items-center justify-center py-4 px-24 border-2 border-bloo bg-bloo text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30">
+                            <Link to="/casestudies" className="inline-flex items-center justify-center py-4 px-24 border-2 border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30">
                                 Explore <img src={arrow} alt="" className="ml-2 w-5 h-5" />
                             </Link>
                         </div>

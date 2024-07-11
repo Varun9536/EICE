@@ -231,7 +231,7 @@ const NavLayout = () => {
       <NavLink to="/contact" className="px-4 py-1">
         <div className='transition duration-300 ease-in-out'>
           <Link to="/contact">
-            <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 h-10 w-28 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30 bg-bloo text-white text-sm font-semibold py-1 px-3 rounded"> 
+            <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 h-10 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30 bg-blue-900 text-white text-sm font-semibold py-1 px-3 rounded"> 
               Contact Us
             </button>
           </Link>
