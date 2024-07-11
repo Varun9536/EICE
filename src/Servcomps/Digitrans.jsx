@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import laptop from "../assets/Compressed/Laptop.png";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
 
@@ -10,6 +13,110 @@ import dtconsulting from "../assets/Compressed/dtconsulting.svg";
 
 import Footer from '../Othercomps/Footer.jsx';
 import Copyright from '../Othercomps/Copyright.jsx';
+
+const industries = [
+    { name: "OIL AND GAS INDUSTRY", id: "oil" },
+    { name: "AUTOMOBILE INDUSTRY", id: "auto" },
+    { name: "HEALTHCARE INDUSTRY", id: "health" }
+  ];
+  
+  const projects = {
+    oil: [
+      { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },
+      { title: "Energy Trading Platform", description: "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%." }
+    ],
+    auto: [
+      { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },
+      { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },
+      { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },
+      { title: "Connected Car Platform", description: "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles." },
+      { title: "Manufacturing Process Optimization", description: "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control." }
+    ],
+    health: [
+      { title: "AI-Powered Diagnostic Tool", description: "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods." },
+      { title: "Telemedicine Platform", description: "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations." }
+    ]
+  };
+  
+  const CaseStudy = ({ title, description, image }) => (
+    <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <img 
+          src={image}
+          alt={title} 
+          className="w-full h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
+        />
+        <div className="p-4">
+          <h3 className="font-bold text-lg mb-2">{title}</h3>
+          <p className="text-gray-600 text-sm">{description}</p>
+        </div>
+      </div>
+    </div>
+  );
+  
+  function Cstdmain() {
+    const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
+    const sliderRefs = useRef({});
+  
+    return (
+      <div className="font-manrope">
+                <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
+                    Case Studies
+                </h2>
+                <h1 className="text-blackk text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
+                    Explore how we digitally transformed other businesses
+                </h1>
+        <main className="container mx-auto px-4 max-w-7xl">
+          <nav className="mb-12">
+            <ul className="flex flex-wrap justify-center gap-4">
+              {industries.map((industry) => (
+                <li key={industry.id}>
+                  <button
+                    onClick={() => setActiveIndustry(industry.id)}
+                    className={`px-4 py-2 rounded-full transition ${
+                      activeIndustry === industry.id
+                        ? "bg-bloo text-white"
+                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                    }`}
+                  >
+                    {industry.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+  
+          {industries.map((industry) => (
+            <section
+              key={industry.id}
+              className={` mb-12 ${activeIndustry === industry.id ? "block" : "hidden"}`}
+            >
+              <h2 className="text-2xl font-bold mb-6">{industry.name}</h2>
+              <div className="relative">
+                
+                <div className="mx-auto sm:max-w-7xl w-screen">
+                  <div
+                    ref={(el) => (sliderRefs.current[industry.id] = el)}
+                    className="grid lg:grid-cols-3 grid-cols-2 py-4 space-x-6 pb-6 scrollbar-hide"
+                  >
+                    {projects[industry.id].map((project, index) => (
+                      <CaseStudy
+                        key={index}
+                        title={project.title}
+                        description={project.description}
+                        image={laptop}
+                      />
+                    ))}
+                  </div>
+                </div>
+               
+              </div>
+            </section>
+          ))}
+        </main>
+      </div>
+    );
+  }
 
 function Digitrans()
 {
@@ -139,6 +246,7 @@ function Digitrans()
                     </div>
                 </div>
             </div>
+            <Cstdmain />
             <Footer/>
             <Copyright />
        </div>
