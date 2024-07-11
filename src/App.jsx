@@ -207,9 +207,8 @@ const NavLayout = () => {
       <div className='relative overflow-hidden'>
         {/* laptop navbar */}
         <nav
-  className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
-             2xl:block xl:block hidden'
->
+        className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
+             2xl:block xl:block hidden'>
   <div className='grid grid-cols-3 items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]'>
     <div className='cursor-pointer justify-self-end pr-52'>
       <Link to="/">
@@ -224,14 +223,14 @@ const NavLayout = () => {
         </div>
       </NavLink>
       <div className='relative px-2'>
-        <Tabs className='absolute' />
+        <Tabs className='absol  ute' />
       </div>
     </div>
     <div className='justify-self-start pl-48'>
       <NavLink to="/contact" className="px-4 py-1">
         <div className='transition duration-300 ease-in-out'>
           <Link to="/contact">
-            <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 h-10 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30 bg-blue-900 text-white text-sm font-semibold py-1 px-3 rounded"> 
+            <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 py-2 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold  px-3 rounded"> 
               Contact Us
             </button>
           </Link>
