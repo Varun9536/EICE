@@ -266,13 +266,13 @@ const NavLayout = () => {
                 <div ><span><img src={menu} alt="" className='' /></span></div>
               </MenuButton>
               <Menu className='font-semibold'>
-                <MenuItem onClick={createHandleMenuClick('Home')}><a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/">Home</a></MenuItem>
-                <MenuItem onClick={createHandleMenuClick('About Us')}><a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href='/about'>About Us</a></MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Services')}><a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/services">Services</a></MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Services')}><a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/allindus">Industries</a> </MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/resources">Resources</a> </MenuItem>
+                <MenuItem onClick={createHandleMenuClick('Home')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/">Home</Link></MenuItem>
+                <MenuItem onClick={createHandleMenuClick('About Us')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to='/about'>About Us</Link></MenuItem>
+                <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/services">Services</Link></MenuItem>
+                <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/allindus">Industries</Link> </MenuItem>
+                <MenuItem onClick={createHandleMenuClick('Contact Us')}> <Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/resources">Resources</Link> </MenuItem>
                 {/* <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/careers">Careers</a> </MenuItem> */}
-                <MenuItem onClick={createHandleMenuClick('Resources')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/contact">Contact Us</a></MenuItem>
+                <MenuItem onClick={createHandleMenuClick('Resources')}> <Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/contact">Contact Us</Link></MenuItem>
               </Menu>
             </Dropdown>
           </div>
