@@ -1,4 +1,5 @@
 import React from "react";
+import Offers from "../Homecomps/Offers";
 
 import {
   FiArrowRight,
@@ -31,6 +32,7 @@ function Servmain()
             <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">Explore what we offer</h2>
             <h2 className="text-blackk/60 font-semibold sm:text-3xl py-4 text-2xl sm:leading-tight leading-snug text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus quo sunt tenetur rerum eius, dolorem harum expedita? Ullam molestiae consectetur quis inventore vero minima non. Enim suscipit totam nihil?</h2>
           </div>
+          <Offers />
           {/* <div className="2xl:pt-32 2xl:pb-20 pt-32 pb-20 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
             <div>
               <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">Our Flagship Services</h1>
@@ -391,6 +393,7 @@ function Servmain()
           <div>
             {/* Technical Services */}
           </div>
+          
         </div>
       )
     }

@@ -27,10 +27,10 @@ function Process()
                         </div>
 
                         <div className="flex flex-col gap-20 items-center w-full h-full justify-center max-w-7xl mx-auto">
-                            <div className="p-4 px-8 grid md:grid-cols-2 grid-cols-1 gap-2">
+                            <div className="p-4 px-8 grid md:grid-cols-2 grid-cols-1 gap-12">
                                 <div className="justify-self-center bg-bannerai bg-cover w-[41vh] h-[38.3vh] scale-[1.1]"></div>
                                 <div>
-                                    <div className="justify-center flex flex-col pt-20 w-full h-full">
+                                    <div className="justify-center flex flex-col w-full h-full">
                                         <h2 className="text-4xl font-bold text-blackk">Generative AI</h2>
                                         <h2 className="text-2xl font-bold text-blackk/70">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sed iure ex necessitatibus tenetur, porro at obcaecati veritatis officia quos illo voluptatibus consequuntur. Aliquid aspernatur eaque quam voluptate nam. Quo!</h2>
                                     </div>
@@ -77,10 +77,10 @@ function Process()
                             </div>
                         </div>
                         <div className="pt-40 flex flex-col gap-20 items-center w-full h-full justify-center max-w-7xl mx-auto">
-                            <div className="p-4 px-8 grid md:grid-cols-2 grid-cols-1 gap-2">
-                                <div className="justify-self-center bg-bannerai  bg-cover w-[41vh] h-[38.3vh] scale-[1.1]"></div>
+                            <div className="p-4 px-8 grid md:grid-cols-2 grid-cols-1 gap-12">
+                                <div className="md:order-last justify-self-center bg-mobdevhome bg-cover w-[48vh] h-[38.8vh] scale-[1.1]"></div>
                                 <div>
-                                    <div className="justify-center flex flex-col w-full h-full pt-20">
+                                    <div className="justify-center flex flex-col w-full h-full">
                                         <h2 className="text-4xl font-bold text-blackk">App Development</h2>
                                         <h2 className="text-2xl font-bold text-blackk/70">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sed iure ex necessitatibus tenetur, porro at obcaecati veritatis officia quos illo voluptatibus consequuntur. Aliquid aspernatur eaque quam voluptate nam. Quo!</h2>
                                     </div>

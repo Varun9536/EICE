@@ -269,7 +269,7 @@ const NavLayout = () => {
                 <MenuItem onClick={createHandleMenuClick('Home')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/">Home</Link></MenuItem>
                 <MenuItem onClick={createHandleMenuClick('About Us')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to='/about'>About Us</Link></MenuItem>
                 <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/services">Services</Link></MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/allindus">Industries</Link> </MenuItem>
+                <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/INDUSTRIES">Industries</Link> </MenuItem>
                 <MenuItem onClick={createHandleMenuClick('Contact Us')}> <Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/resources">Resources</Link> </MenuItem>
                 {/* <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/careers">Careers</a> </MenuItem> */}
                 <MenuItem onClick={createHandleMenuClick('Resources')}> <Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/contact">Contact Us</Link></MenuItem>
@@ -279,7 +279,7 @@ const NavLayout = () => {
         </div>
       </nav>
 
-      <main className='overflow-hidden 
+      <main className=' 
                        2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100'>
         <Outlet />
       </main>
@@ -478,7 +478,7 @@ const Aboutus = () => {
 
 const OurServices = () => {
   return (
-<div className="p-2">
+<div className="p-2 h-[65vh] overflow-y-auto no-scrollbar">
   <div className="grid grid-cols-2 gap-4 items-start justify-start">
     
     <div className="flex flex-col items-start justify-start text-nowrap">
@@ -718,9 +718,16 @@ const Home = () => {
       {/* <Temp /> */}
       <Big />
       {/* <Separator /> */}
-      <Process />
+      <div className="flex flex-col items-center justify-center pt-28 mb-4 sm:mb-8 md:mb-12">
+        <p className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl mb-4 py-1">
+            Core Services
+        </p>
+        <h2 className="text-blackk font-extrabold text-center text-2xl sm:text-3xl md:text-4xl lg:text-[36px] max-w-4xl py-1">
+            Unlocking Innovation: <br className="sm:hidden"/>Explore Our Suite of Solutions for Your Digital Evolution
+        </h2>
+      </div>
       <Offers />
-
+      <Process />
       <Clientele />
       {/* <Separatorr /> */}
       <Techs />

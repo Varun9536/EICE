@@ -27,6 +27,7 @@ export default {
         'bannerai' : "url('./assets/Compressed/bannerai.png')",
         'indusbanner' : "url('./assets/Compressed/indusbanner.png')",
         'talkbanner' : "url('./assets/Compressed/talkbanner.png')",
+        'mobdevhome' : "url('./assets/Compressed/mobdevhome.png')",
 
 
       },

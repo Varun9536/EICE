@@ -170,54 +170,6 @@ function Big() {
     return (
         <div>
           <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40 2xl:pt-20 max-h-[1200px] xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
-            {/* <div className="w-full h-full bg-bloo/15 -rotate-45 absolute z-1 left-[50%] blur-[300px]"></div> */}
-            {/* <div className="left-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
-            <div className="right-[50%] w-full h-full scale-75 rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
-            <div className="right-[25%] w-full h-full scale-75 -rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div>
-            <div className="left-[25%] w-full h-full scale-75 -rotate-45 bg-bloo/5 absolute z-1 blur-[70px]"></div> */}
-
-
-            {/* <div className="z-20 overflow-hidden h-auto absolute bottom-0 left-0 
-                            2xl:scale-[.8] 2xl:w-1/2 2xl:h-auto 2xl:-ml-60 2xl:-mb-48 2xl:1/2 2xl:block 
-                            xl:scale-100 xl:w-1/2 xl:h-auto xl:-ml-60 xl:-mb-48 2xl:1/2 xl:block 
-                            sm:-ml-24 sm:-mb-20
-                            -mb-48 -ml-48 scale-75 hidden">
-                <img 
-                    className="w-1/2 h-auto object-top-right animate-spin-slow" 
-                    src={hexagon}
-                    alt="" 
-                />
-            </div>  
-            <div className="z-20 overflow-hidden h-auto absolute top-0 right-0
-                            2xl:scale-[.8] 2xl:w-1/2 2xl:h-auto 2xl:-mr-[40rem] 2xl:-mt-64 2xl:block
-                            xl:scale-100 xl:w-1/2 xl:h-auto xl:-mr-[32rem] xl:-mt-64 xl:block
-
-                            sm:-mr-80 sm:-mt-24
-                            -mr-[34rem] -mt-[9.5rem] scale-[.6] hidden">
-                <img
-                    className="w-1/2 h-auto object-left-bottom animate-spin-slow"
-                    src={hexagon}
-                    alt=""
-                />
-            </div> */}
-            {/* <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute top-0 left-0 w-1/2 h-full overflow-hidden">
-                <img 
-                  src={hexagon} 
-                  alt="" 
-                  className="w-auto h-full max-w-none object-contain -ml-16 scale-[0.6] sm:scale-75 xl:scale-60 2xl:scale-[.65] "
-                />
-              </div>
-              
-              <div className="absolute top-0 right-0 w-1/2 h-full overflow-hidden scale-x-[-1]">
-                <img 
-                  src={hexagon} 
-                  alt="" 
-                  className="w-auto h-full max-w-none object-contain -ml-16 scale-[0.6] sm:scale-75 xl:scale-60 2xl:scale-[.65]"
-                />
-              </div>
-            </div> */}
-
             <div className="">
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
