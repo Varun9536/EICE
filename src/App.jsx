@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import logo from './assets/logo.svg';
 
 
-import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
+import {Routes, Route, Outlet, NavLink, Link, BrowserRouter } from 'react-router-dom';
 
 import Big from './Homecomps/Big';
 import Offers from './Homecomps/Offers';
@@ -118,8 +118,10 @@ import { SiBlockchaindotcom } from "react-icons/si";
 
 const App = () => {
   return (
-    <Routes>
-      <Route element={<NavLayout />}>
+    <BrowserRouter>
+    <NavLayout/>
+      <Routes>
+      {/* <Route element={<NavLayout />}> */}
         {/* <Route index element={<Home />} /> */}
         <Route path="/" element={<Home />} />
         {/* <Route path="/home" element={<Home />} /> */}
@@ -182,8 +184,9 @@ const App = () => {
         <Route path="resources/casestudies/AutoThree" element={<AutoThree />} />
         <Route path="resources/casestudies/AutoFour" element={<AutoFour />} />
         <Route path="*" element={<div className='font-manrope font-base text-3xl'><p>{`There's nothing here: 404`}</p></div>} />
-      </Route>
+      {/* </Route> */}
     </Routes>
+    </BrowserRouter>
   );
 };
 

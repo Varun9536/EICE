@@ -48,7 +48,6 @@ function Reviews() {
                 <h1 className="text-center text-bloo font-bold text-3xl md:text-4xl mb-12">
                     Testimonials
                 </h1>
-                
                 <div className="relative">
                     <div className="flex flex-col md:flex-row gap-8 px-16">
                         {[currentIndex, currentIndex + 1].map((index) => (

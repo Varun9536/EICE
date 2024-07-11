@@ -53,7 +53,7 @@ function Indusmain() {
             </section>
 
             <div className="w-full max-w-screen-2xl mx-auto mb-12 sm:mb-16">
-                <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-lg"></div>
+                <div className="bg-indusbanner w-full h-0 pb-[40%]  sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-lg"></div>
             </div>
 
             <section className="text-center py-20">
