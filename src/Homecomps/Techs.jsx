@@ -113,11 +113,11 @@ const Technology = ({ name, icon, link }) => {
 
   return (
     <div className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-      <div className="overflow-hidden flex flex-col gap-2 items-center p-3">
-        <Link to={link} className="group cursor-pointer mb-2">
+      <div className="group  cursor-pointer overflow-hidden flex flex-col gap-2 items-center p-3">
+        <Link to={link} className=" mb-2">
           <IconComponent size={60} className="text-blackk group-hover:text-bloo transition duration-300"/>
         </Link>
-        <span className="text-sm text-center">{name}</span>
+        <span className="group-hover:underline group-hover:text-bloo transition duration-300 text-blackk font-semibold text-sm text-center">{name}</span>
       </div>
     </div>
   );
@@ -144,7 +144,7 @@ function Techs() {
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-4 py-2 rounded-full transition ${
                   activeCategory === category.id
-                    ? "bg-bloo text-white"
+                    ? "bg-blue-900 text-white"
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                 }`}
               >

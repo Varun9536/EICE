@@ -82,6 +82,13 @@ import Healthcare from './Allindus/Healthcare';
 import Financial from './Allindus/Financial';
 import Educational from './Allindus/Educational';
 import Digitalmedia from './Allindus/Digitalmedia';
+import { GoLaw } from "react-icons/go";
+import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
+import { IoIosCash } from "react-icons/io";
+import { SiEducative } from "react-icons/si";
+import { BiPencil } from "react-icons/bi";
+import { MdPermMedia } from "react-icons/md";
+import { BsTruck } from "react-icons/bs";
 
 import Careerform from './Othercomps/Careerform';
 import Contactform from './Othercomps/Contactform';
@@ -674,8 +681,47 @@ const OurResources = () => {
 
 const OurIndustries=()=>{
   return(
-    <div>
-      nothing here.
+    <div className='grid grid-cols-3 gap-12 p-6'>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <FaOilCan size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Oil and Gas</span>
+        </Link>
+      </div>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <FaSyringe size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Healthcare</span>
+        </Link>
+      </div>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <GoLaw size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Legal</span>
+        </Link>
+      </div>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <BiPencil size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Education</span>
+        </Link>
+      </div>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <IoIosCash size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Financial</span>
+        </Link>
+      </div>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <MdPermMedia size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Digital Media</span>
+        </Link>
+      </div>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <BsTruck size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Logistics</span>
+        </Link>
+      </div>
+      <div className='group'>
+        <Link to='/industries' className=' flex flex-row gap-4'>
+          <FaBusinessTime size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Enterprise</span>
+        </Link>
+      </div>
     </div>
   )
 }
