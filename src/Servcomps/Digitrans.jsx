@@ -122,16 +122,16 @@ function Digitrans()
 {
     return (
        <div>
-            <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 2xl:pt-2 pt-16">
+            <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-24">
                 <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
-                <div className="absolute inset-0 left-[10%]">
-                        <img src={servicebannerpattern} alt="" />
-                </div>
+                    <div className="absolute inset-0 left-[10%]">
+                            <img src={servicebannerpattern} alt="" />
+                    </div>
                     <div className="flex lg:flex-row flex-col py-20 items-center">
                         <div className="w-full">
                             <h1 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">Digital Transformation</h1>
                             <h2 className="text-blackk font-light sm:text-3xl text-2xl pb-4 pt-2">
-                                {`"Revolutionize Your Business: Harness the Power of Digital for Sustainable Growth"`}
+                                {"Revolutionize Your Business: Harness the Power of Digital for Sustainable Growth"}
                             </h2>
                         </div>
                         <div className="flex items-center justify-end">
@@ -142,26 +142,31 @@ function Digitrans()
                     </div>       
                 </div>    
             </div>
-            <div>
-                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-28">
-                    <div className="grid grid-cols-2 gap-12 items-center justify-center">
+
+            <div className="py-16 md:py-20 lg:py-28">
+                <div className="relative font-manrope mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
-                            <h1 className="text-blackk font-bold sm:text-5xl text-3xl sm:leading-tight leading-snug">
+                            <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                                 Embrace the Digital Future: 
                                 <span className="text-bloo"> Transformation </span>
                                 for Competitive Advantage
                             </h1>
                         </div>
                         <div>
-                            <p className="font-medium text-justify text-lg">
-                                In today's rapidly evolving digital landscape, businesses must adapt to stay relevant. At EICE, we offer comprehensive digital transformation services to propel your organization into the future. <br /><br />
-                                Our strategic approach ensures alignment with your business objectives. Our experts combine industry insights with cutting-edge technologies to implement solutions that drive meaningful change. <br /><br />
+                            <p className="font-medium text-base sm:text-lg text-justify">
+                                In today's rapidly evolving digital landscape, businesses must adapt to stay relevant. At EICE, we offer comprehensive digital transformation services to propel your organization into the future.
+                            </p>
+                            <p className="font-medium text-base sm:text-lg text-justify mt-4">
+                                Our strategic approach ensures alignment with your business objectives. Our experts combine industry insights with cutting-edge technologies to implement solutions that drive meaningful change.
+                            </p>
+                            <p className="font-medium text-base sm:text-lg text-justify mt-4">
                                 We develop strategies that not only meet your goals but also enhance operational efficiency, capabilities, and customer experiences. Partner with EICE to navigate the digital revolution and achieve long-term success in the digital age.
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>  
             <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20">
                 <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Core Competencies</h1>
                 <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Our Digital Transformation Expertise</h2>
