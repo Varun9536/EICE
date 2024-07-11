@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import { CgLayoutGridSmall } from "react-icons/cg";
 
 function Reviews() {
     const testimonials = [
@@ -43,7 +44,8 @@ function Reviews() {
     }, []);
 
     return (
-        <div className="text-blackk bg-zinc-50 py-32 px-4 sm:px-6 lg:px-8">
+        <div className="bg-zinc-50 relative text-blackk py-24 px-4 sm:px-6 lg:px-8">
+            
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-center text-bloo font-bold text-3xl md:text-4xl mb-12">
                     Testimonials

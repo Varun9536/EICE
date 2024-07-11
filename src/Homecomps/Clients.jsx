@@ -66,7 +66,7 @@ function Clients() {
     };
 
     return (
-        <div className="font-manrope flex flex-col items-center justify-centerpy-1">
+        <div className="bg-zinc-50 font-manrope flex flex-col items-center justify-center pt-6 py-1">
             <div className="w-screen mx-2 px-4">
                 <div className=" relative overflow-hidden">
                     <Slider {...settings}>

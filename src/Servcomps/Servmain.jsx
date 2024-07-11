@@ -22,6 +22,7 @@ import { TbLetterA, TbLetterI } from "react-icons/tb";
 
 
 import consultancy from "../assets/Compressed/consultancy.jpg";
+import { Link } from "react-router-dom";
 function Servmain() {
     return (
         <div className="">
@@ -41,7 +42,7 @@ function Servmain() {
                     </div>
                     <div>
                         <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pt-12">
-                            <a className="group cursor-pointer hover:bg-emerald-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
+                            <Link to="/services-digitaltransformation" className="group cursor-pointer hover:bg-emerald-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
                                 <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
                                     <div className="flex w-full h-full items-center justify-start px-2 pb-2">
                                         <LuCloudCog size={100} className="text-bloo"/>
@@ -55,8 +56,8 @@ function Servmain() {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a className="group cursor-pointer hover:bg-fuchsia-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
+                            </Link>
+                            <Link to="/services-devops" className="group cursor-pointer hover:bg-fuchsia-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
                                 <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
                                     <div className="flex w-full h-full items-center justify-start px-2 pb-2">
                                         <IoIosBuild size={100} className="text-bloo"/>
@@ -70,8 +71,8 @@ function Servmain() {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a className="group cursor-pointer hover:bg-yellow-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
+                            </Link>
+                            <Link to="/services-aiml" className="group cursor-pointer hover:bg-yellow-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
                                 <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
                                     <div className="flex w-full h-full items-center justify-start px-2 pb-2">
                                         <div className="grid grid-cols-2 gap-0">
@@ -88,7 +89,7 @@ function Servmain() {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

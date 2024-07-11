@@ -116,10 +116,13 @@ import { SiBlockchaindotcom } from "react-icons/si";
 // import Separatorr from './Othercomps/Separatorr';
 // import Separatorrr from './Othercomps/Separatorrr';
 
+import ScrollToTop from './ScrollToTop.jsx';
+import Talktous from './Othercomps/Talktous.jsx';
 const App = () => {
   return (
     <BrowserRouter>
     <NavLayout/>
+    <ScrollToTop />
       <Routes>
       {/* <Route element={<NavLayout />}> */}
         {/* <Route index element={<Home />} /> */}
@@ -204,51 +207,39 @@ const NavLayout = () => {
       <div className='relative overflow-hidden'>
         {/* laptop navbar */}
         <nav
-        className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
-                   2xl:block xl:block hidden h-[20px]]'
-        >
-        <div className='grid grid-cols-3 items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]'>
-          <div className='cursor-pointer justify-self-end pr-52'>
-            {/* <a href="/home">
-              <img src={logo} alt="" className='scale-150'/>
-            </a> */}
-            <Link to="/">
-              <img src={logo} alt="" className='scale-150'/>
-            </Link>
-          </div>
-          <div className='flex flex-row items-center justify-center overflow-visible'>
-            <NavLink to="/" className="px-6 py-2">
-              <div className='group hover:text-bloo  transition duration-300 ease-in-out'>
-                <div>HOME</div>
-                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
-                </div>
-              </div>
-            </NavLink>
-            <div className='relative px-2 '>
-              <Tabs className='absolute' />
-            </div>
-            {/* <NavLink to="/careers" className="p-6 ">
-              <div className='group hover:text-bloo  transition duration-300 ease-in-out'>
-                <div>CAREERS</div>
-                  <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'>
-                </div>
-              </div>  
-            </NavLink> */}
-          </div>
-          <div className='justify-self-start pl-48'>
-            <NavLink to="/contact" className="px-6 py-2">
-              <div className='transition duration-300 ease-in-out'>
-                    <Link to="/contact">
-                        {/* <button className="transition duration-200 h-[56px] w-56 border-[3px] border-bloo hover:border-bloo hover:border-[3px] hover:bg-bloo hover:text-white text-bloo text-xl font-extrabold py-2 px-4 rounded"> */}
-                        <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 h-[56px] w-[120px] hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30 bg-bloo text-white text-lg font-semibold py-2 px-4 rounded"> 
-                            {`Let's Talk`}
-                        </button>
-                    </Link>
-                </div>
-            </NavLink>
-          </div>
+  className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
+             2xl:block xl:block hidden'
+>
+  <div className='grid grid-cols-3 items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]'>
+    <div className='cursor-pointer justify-self-end pr-52'>
+      <Link to="/">
+        <img src={logo} alt="" className='h-8 w-auto'/>
+      </Link>
+    </div>
+    <div className='flex flex-row items-center justify-center overflow-visible'>
+      <NavLink to="/" className="px-4 py-1">
+        <div className='group hover:text-bloo transition duration-300 ease-in-out'>
+          <div>HOME</div>
+          <div className='bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>
         </div>
-      </nav>
+      </NavLink>
+      <div className='relative px-2'>
+        <Tabs className='absolute' />
+      </div>
+    </div>
+    <div className='justify-self-start pl-48'>
+      <NavLink to="/contact" className="px-4 py-1">
+        <div className='transition duration-300 ease-in-out'>
+          <Link to="/contact">
+            <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 h-10 w-28 hover:bg-bloo/90 hover:shadow-md hover:shadow-bloo/30 bg-bloo text-white text-sm font-semibold py-1 px-3 rounded"> 
+              Contact Us
+            </button>
+          </Link>
+        </div>
+      </NavLink>
+    </div>
+  </div>
+</nav>
       <div className='bg-black'></div>
 
       {/* phone navbar */}
@@ -351,7 +342,7 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
               />
           </Link>
         </div>
-        <div className='bg-bloo h-1 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>  
+        <div className='bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>  
       </div>
     </button>
   );
@@ -727,15 +718,15 @@ const Home = () => {
         </h2>
       </div>
       <Offers />
-      <Process />
-      <Clientele />
       {/* <Separatorr /> */}
       <Techs />
       <Solutions />
       {/* <Separatorrr /> */}
       <Casestudies />
       <Reviews />
+      <Talktous /> 
       <Clients />
+      <Clientele />
       <Footer />
       <Copyright />
     </>
