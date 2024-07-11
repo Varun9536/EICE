@@ -84,13 +84,14 @@ function Cstdmain() {
             key={industry.id}
             className={`py-12 mb-12 ${activeIndustry === industry.id ? "block" : "hidden"}`}
           >
-            <h2 className="text-2xl font-bold mb-6">{industry.name}</h2>
+            <h2 className="text-2xl font-bold px-4 mb-6">{industry.name}</h2>
             <div className="relative">
               
               <div className="mx-auto sm:max-w-7xl w-screen">
                 <div
+                // grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-2
                   ref={(el) => (sliderRefs.current[industry.id] = el)}
-                  className="grid lg:grid-cols-3 grid-cols-2 py-4 space-x-6 pb-6 scrollbar-hide"
+                  className="flex flex-wrap px-1 sm:px-4 py-4 pb-6 scrollbar-hide"
                 >
                   {projects[industry.id].map((project, index) => (
                     <CaseStudy

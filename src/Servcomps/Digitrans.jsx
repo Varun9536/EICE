@@ -91,13 +91,13 @@ const industries = [
               key={industry.id}
               className={` mb-12 ${activeIndustry === industry.id ? "block" : "hidden"}`}
             >
-              <h2 className="text-2xl font-bold mb-6">{industry.name}</h2>
+              <h2 className="text-2xl px-4 font-bold mb-6">{industry.name}</h2>
               <div className="relative">
                 
                 <div className="mx-auto sm:max-w-7xl w-screen">
                   <div
                     ref={(el) => (sliderRefs.current[industry.id] = el)}
-                    className="grid lg:grid-cols-3 grid-cols-2 py-4 space-x-6 pb-6 scrollbar-hide"
+                    className="flex flex-wrap px-1 sm:px-4 py-4 pb-6 scrollbar-hide"
                   >
                     {projects[industry.id].map((project, index) => (
                       <CaseStudy
@@ -165,7 +165,7 @@ function Digitrans()
             <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20">
                 <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Core Competencies</h1>
                 <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Our Digital Transformation Expertise</h2>
-                <div className="grid grid-cols-3 gap-6 pt-16">
+                <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-16">
                     <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
                         <div className="h-1/2 rounded-full bg-bloo/10">
                             <img src={dtdigital} alt="" />
@@ -201,7 +201,7 @@ function Digitrans()
                     <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Key Advantages of Partnering with EICE for Your Digital Transformation Journey</h2>
                 </div>    
                 <div className="bg-zinc-50">
-                    <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20">
+                    <div className="relative px-4 font-manrope mx-auto sm:max-w-7xl w-screen py-20">
                         <div className="py-6 flex flex-row gap-10 items-center justify-center">
                             <FiCheckCircle size={30} className="text-emerald-500"/>
                             <p className="text-wrap text-2xl">
