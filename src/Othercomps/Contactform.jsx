@@ -89,7 +89,7 @@ function ContactForm() {
 
         <div className="bg-white rounded-lg shadow-lg shadow-blackk/20 p-8">
           <h2 className="text-2xl font-semibold text-bloo mb-6 text-center">Addresses</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-8">
             <AddressCard
               country="United States"
               company="EICE International"
