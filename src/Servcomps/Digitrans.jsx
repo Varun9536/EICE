@@ -13,6 +13,11 @@ import dtconsulting from "../assets/Compressed/dtconsulting.svg";
 
 import Footer from '../Othercomps/Footer.jsx';
 import Copyright from '../Othercomps/Copyright.jsx';
+import TalkToUs from '../Othercomps/Talktous';
+import Reviews from '../Homecomps/Reviews';
+import Clients from '../Homecomps/Clients';
+import Clientele from '../Homecomps/Clientele';
+
 
 const industries = [
     { name: "OIL AND GAS INDUSTRY", id: "oil" },
@@ -39,16 +44,16 @@ const industries = [
   };
   
   const CaseStudy = ({ title, description, image }) => (
-    <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
         <img 
           src={image}
           alt={title} 
-          className="w-full h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
+          className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
         />
-        <div className="p-4">
-          <h3 className="font-bold text-lg mb-2">{title}</h3>
-          <p className="text-gray-600 text-sm">{description}</p>
+        <div className="p-3 md:p-4">
+          <h3 className="font-bold text-sm sm:text-base md:text-lg mb-1 sm:mb-2">{title}</h3>
+          <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
         </div>
       </div>
     </div>
@@ -56,24 +61,23 @@ const industries = [
   
   function Cstdmain() {
     const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
-    const sliderRefs = useRef({});
   
     return (
-      <div className="font-manrope">
-                <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
-                    Case Studies
-                </h2>
-                <h1 className="text-blackk text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
-                    Explore how we digitally transformed other businesses
-                </h1>
-        <main className="container mx-auto px-4 max-w-7xl">
-          <nav className="mb-12">
-            <ul className="flex flex-wrap justify-center gap-4">
+      <div className="font-manrope px-4 sm:px-6 lg:px-8">
+        <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
+          Case Studies
+        </h2>
+        <h1 className="text-blackk max-w-7xl mx-auto text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
+          Explore how we digitally transformed other businesses
+        </h1>
+        <main className="container mx-auto max-w-7xl">
+          <nav className="mb-8 sm:mb-12">
+            <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
               {industries.map((industry) => (
                 <li key={industry.id}>
                   <button
                     onClick={() => setActiveIndustry(industry.id)}
-                    className={`px-4 py-2 rounded-full transition ${
+                    className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
                       activeIndustry === industry.id
                         ? "bg-bloo text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -89,27 +93,18 @@ const industries = [
           {industries.map((industry) => (
             <section
               key={industry.id}
-              className={` mb-12 ${activeIndustry === industry.id ? "block" : "hidden"}`}
+              className={`mb-12 px-2 ${activeIndustry === industry.id ? "block" : "hidden"}`}
             >
-              <h2 className="text-2xl px-4 font-bold mb-6">{industry.name}</h2>
-              <div className="relative">
-                
-                <div className="mx-auto sm:max-w-7xl w-screen">
-                  <div
-                    ref={(el) => (sliderRefs.current[industry.id] = el)}
-                    className="flex flex-wrap px-1 sm:px-4 py-4 pb-6 scrollbar-hide"
-                  >
-                    {projects[industry.id].map((project, index) => (
-                      <CaseStudy
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        image={laptop}
-                      />
-                    ))}
-                  </div>
-                </div>
-               
+              <h2 className="text-xl px-2 sm:text-2xl font-bold mb-4 sm:mb-6">{industry.name}</h2>
+              <div className="flex flex-wrap -mx-2">
+                {projects[industry.id].map((project, index) => (
+                  <CaseStudy
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    image={laptop}
+                  />
+                ))}
               </div>
             </section>
           ))}
@@ -122,7 +117,7 @@ function Digitrans()
 {
     return (
        <div>
-            <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
+            <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
                 <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
                     <div className="absolute inset-0 left-[10%]">
                             <img src={servicebannerpattern} alt="" />
@@ -144,7 +139,7 @@ function Digitrans()
             </div>
 
             <div className="py-16 md:py-20 lg:py-28">
-                <div className="relative font-manrope mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div className="relative font-manrope mx-auto px-4 lg:px-4 max-w-7xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
@@ -252,6 +247,10 @@ function Digitrans()
                 </div>
             </div>
             <Cstdmain />
+            <Reviews />
+            <TalkToUs />
+            <Clients />
+            <Clientele />
             <Footer/>
             <Copyright />
        </div>

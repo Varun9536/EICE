@@ -13,7 +13,7 @@ import { FaArrowRight } from "react-icons/fa";
 function Scopes()
 {
     return(
-        <div className="font-manrope mx-auto sm:px-6 px-4 sm:max-w-7xl w-screen sm:pt-24 sm:pb-36 py-4">
+        <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen sm:pt-24 sm:pb-36 py-4">
             <div className="text-center text-blackk font-bold sm:text-4xl text-3xl">
                 <div className="flex flex-col items-center justify-center text-center sm:pb-6 pb-2">
                     <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4">Engage with Us</h1>

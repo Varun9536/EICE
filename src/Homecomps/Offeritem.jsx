@@ -11,7 +11,7 @@ function Offeritem({ id, svg, title, link, fliptext }) {
         <Link to={link}
             className="sm:w-full w-screen"
         >
-            <div className="px-4 w-full flex items-center justify-center">
+            <div className="lg:px-0 px-4 w-full flex items-center justify-center">
                 <div className={`p-8 flex flex-row gap-12 bg-white rounded-md overflow-hidden hover:shadow-lg hover:shadow-blackk/30 hover:border  hover:cursor-pointer duration-500 `}>
                     <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 ">
                         <div className="rounded-full bg-bloo/10 w-full h-full flex items-center justify-center">

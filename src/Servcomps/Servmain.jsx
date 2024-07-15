@@ -38,10 +38,10 @@ function Servmain() {
                 <div className="py-32 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
                     <div>
                         <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">Our Flagship Services</h1>
-                        <h2 className="text-blackk/60 font-medium py-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Discover EICE's core offerings that drive innovation and efficiency across industries. Our flagship services are designed to give your business a competitive edge in the digital landscape.</h2>
+                        <h2 className="text-blackk/60 font-medium py-4 px-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Discover EICE's core offerings that drive innovation and efficiency across industries. Our flagship services are designed to give your business a competitive edge in the digital landscape.</h2>
                     </div>
                     <div>
-                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pt-12">
+                        <div className="grid lg:grid-cols-3 px-4 grid-cols-1 gap-6 pt-12">
                             <Link to="/services-digitaltransformation" className="group cursor-pointer hover:bg-emerald-200/10 transition duration-200 rounded-md p-8 w-full h-full border-bloo/30 border-2 shadow-md shadow-bloo/50">
                                 <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
                                     <div className="flex w-full h-full items-center justify-start px-2 pb-2">
@@ -101,45 +101,45 @@ function Servmain() {
             <div className="py-16 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
               <div>
                 <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">Emerging Technologies</h1>
-                <h2 className="text-blackk/60 font-medium py-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Stay ahead of the curve with EICE's expertise in cutting-edge technologies. We help businesses leverage the latest innovations to create new opportunities and drive unprecedented growth.</h2>
+                <h2 className="text-blackk/60 font-medium p-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Stay ahead of the curve with EICE's expertise in cutting-edge technologies. We help businesses leverage the latest innovations to create new opportunities and drive unprecedented growth.</h2>
                 <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
               </div>
               <div>
-                  <div className="grid grid-cols-4 gap-1 pt-16">
-                    <div className="w-full h-full p-4 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full py-2">
+                  <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 xl:gap-16 gap-8 pt-16">
+                    <div className="w-full h-full sm:py-8 py-2 flex flex-col">
+                        <div className="h-1/2 rounded-full py-2 px-4">
                             <LuBrainCircuit size={60} className="text-bloo"/>
                         </div>
                         <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold text-start px-8 pb-2 text-xl">AI & ML</h1>
-                            <p className="text-left px-8">Unlock the potential of your data with our AI and Machine Learning solutions. EICE helps you implement intelligent systems that learn and improve over time.</p>
+                            <h1 className="font-semibold text-start px-4 pb-2 text-xl">AI & ML</h1>
+                            <p className="text-left px-4">Unlock the potential of your data with our AI and Machine Learning solutions. EICE helps you implement intelligent systems that learn and improve over time.</p>
                         </div>
                     </div>
-                    <div className="w-full h-full p-4 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full py-2">
+                    <div className="w-full h-full lg:py-8 py-2 flex flex-col">
+                        <div className="h-1/2 rounded-full py-2 px-4">
                             <GiCircuitry size={60} className="text-bloo"/>
                         </div>
                         <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-start px-8 text-xl">Internet of Things</h1>
-                            <p className="text-left px-8">Connect your devices and gather valuable data with EICE's IoT solutions. We help you create smart, interconnected systems that drive efficiency and innovation.</p>
+                            <h1 className="font-semibold pb-2 text-start px-4 text-xl">Internet of Things</h1>
+                            <p className="text-left px-4">Connect your devices and gather valuable data with EICE's IoT solutions. We help you create smart, interconnected systems that drive efficiency and innovation.</p>
                         </div>
                     </div>
-                    <div className="w-full h-full p-4 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full py-2">
+                    <div className="w-full h-full lg:py-8 py-2 flex flex-col">
+                        <div className="h-1/2 rounded-full py-2 px-4">
                           <SiBlockchaindotcom size={60} className="text-bloo"/>
                         </div>
                         <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-start px-8 text-xl">Blockchain Development</h1>
-                            <p className="text-left px-8">Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.</p>    
+                            <h1 className="font-semibold pb-2 text-start px-4 text-xl">Blockchain Development</h1>
+                            <p className="text-left px-4">Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.</p>    
                         </div>
                     </div>
-                    <div className="w-full h-full p-4 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full py-2">
+                    <div className="w-full h-full lg:py-8 py-2 flex flex-col ">
+                        <div className="h-1/2 rounded-full py-2 px-4">
                             <LuBrainCircuit size={60} className="text-bloo"/>
                         </div>
                         <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-start px-8 text-xl">Edge Computing</h1>
-                            <p className="text-left px-8">Improve response times and save bandwidth with EICE's edge computing solutions. We bring computation and data storage closer to your devices for faster, more efficient processing.</p>
+                            <h1 className="font-semibold pb-2 text-start px-4 text-xl">Edge Computing</h1>
+                            <p className="text-left px-4">Improve response times and save bandwidth with EICE's edge computing solutions. We bring computation and data storage closer to your devices for faster, more efficient processing.</p>
                         </div>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ function Servmain() {
               <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
             </div>
             <div className="">
-                <div className="grid grid-cols-3 gap-6 pt-16">
+                <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">
                   <div className="w-full h-full border-2 border-bloo rounded-lg shadow-md shadow-bloo/30 p-8 py-16 flex flex-col items-center justify-center">
                       <div className="h-1/2 rounded-full bg-bloo/10">
                           <FaAndroid size={60} className="text-bloo"/>
@@ -206,32 +206,33 @@ function Servmain() {
           </div>
         </div>
         <div className="py-28 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
-  <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
-    <div className="relative flex items-center justify-center text-center scale-90 w-full h-full rounded-xl">
-      <img src={consultancy} alt="" className="absolute inset-0 object-cover w-full h-full rounded-xl"/>
-      <div className="absolute inset-0 w-full h-full bg-cyan-300/90 rounded-xl"></div>
-      <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-6xl text-left p-8">
-        <h1>Consultancy Services</h1>
-        <FaPeopleArrows size={100} className="text-white"/>
-      </div>
-    </div>
-    <div>
-      <div className="py-6 flex flex-row gap-10 items-center justify-center">
-        <FaComputer size={190} className="text-bloo"/>
-        <p className="text-wrap text-lg">
-          <span className="text-lg font-semibold">App Consulting: </span>
-          EICE provides expert guidance on app strategy, development, and optimization. Our consultants help you make informed decisions about technology stack, user experience, and market positioning to ensure your app's success.
-        </p>
-      </div>
-      <div className="py-6 flex flex-row gap-10 items-center justify-center">
-        <MdDesignServices size={190} className="text-bloo"/>
-        <p className="text-wrap text-lg">
-          <span className="text-lg font-semibold">Design & UI / UX Consulting: </span>
-          Our design experts at EICE help you create intuitive, engaging user interfaces and experiences. We analyze user behavior, conduct usability testing, and implement best practices to ensure your digital products are both beautiful and functional.
-        </p>
-      </div>
+        <div className="grid lg:grid-cols-2 grid-cols-1 px-3 gap-12">
+  <div className="relative flex  items-center justify-center text-center w-full h-[300px] lg:h-full rounded-xl">
+    <img src={consultancy} alt="" className="absolute inset-0 object-cover w-full h-full rounded-xl"/>
+    <div className="absolute inset-0 w-full h-full bg-cyan-300/90 rounded-xl"></div>
+    <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-4xl lg:text-6xl text-left p-4 lg:p-8">
+      <h1>Consultancy Services</h1>
+      <FaPeopleArrows size={60} className="text-white lg:hidden"/>
+      <FaPeopleArrows size={100} className="text-white hidden lg:block"/>
     </div>
   </div>
+  <div>
+    <div className="py-6 flex flex-col lg:flex-row gap-6 lg:gap-10 items-center justify-center">
+      <FaComputer size={100} className="text-bloo lg:size-[190px]"/>
+      <p className="text-wrap text-base lg:text-lg">
+        <span className="text-base lg:text-lg font-semibold">App Consulting: </span>
+        EICE provides expert guidance on app strategy, development, and optimization. Our consultants help you make informed decisions about technology stack, user experience, and market positioning to ensure your app's success.
+      </p>
+    </div>
+    <div className="py-6 flex flex-col lg:flex-row gap-6 lg:gap-10 items-center justify-center">
+      <MdDesignServices size={100} className="text-bloo lg:size-[190px]"/>
+      <p className="text-wrap text-base lg:text-lg">
+        <span className="text-base lg:text-lg font-semibold">Design & UI / UX Consulting: </span>
+        Our design experts at EICE help you create intuitive, engaging user interfaces and experiences. We analyze user behavior, conduct usability testing, and implement best practices to ensure your digital products are both beautiful and functional.
+      </p>
+    </div>
+  </div>
+</div>
 </div>
 <div>
   {/* Technical Services */}

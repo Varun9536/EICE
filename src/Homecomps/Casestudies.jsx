@@ -9,7 +9,7 @@ function Casestudies() {
         <div className="font-manrope py-16 sm:py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div className="text-center lg:text-left order-2 lg:order-1">
+                    <div className="text-center px-4 lg:text-left order-2 lg:order-1">
                         <h2 className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl mb-4 py-1">
                             Case Studies
                         </h2>

@@ -3,7 +3,7 @@ import React from "react";
 function Company()
 {
     return (
-        <div className="font-manrope mx-auto sm:px-6 px-4 sm:max-w-7xl w-screen sm:pt-28 pt-36 pb-16">
+        <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen sm:pt-28 pt-36 pb-16">
             {/* <div className="w-full h-full bg-bloo/5 -rotate-45 absolute left-[75%] blur-[400px]"></div> */}
             
             <div className="text-center pb-24">

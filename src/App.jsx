@@ -216,8 +216,8 @@ const NavLayout = () => {
         <nav
         className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
              2xl:block xl:block hidden'>
-  <div className='grid grid-cols-3 items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]'>
-    <div className='cursor-pointer justify-self-end pr-52'>
+  <div className='grid grid-cols-3 max-w-7xl mx-auto items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]'>
+    <div className='cursor-pointer px-4'>
       <Link to="/">
         <img src={logo} alt="" className='h-8 w-auto'/>
       </Link>
@@ -230,10 +230,10 @@ const NavLayout = () => {
         </div>
       </NavLink>
       <div className='relative px-2'>
-        <Tabs className='absol  ute' />
+        <Tabs className='absolute' />
       </div>
     </div>
-    <div className='justify-self-start pl-48'>
+    <div className='justify-self-end px-4'>
       <NavLink to="/contact" className="px-4 py-1">
         <div className='transition duration-300 ease-in-out'>
           <Link to="/contact">

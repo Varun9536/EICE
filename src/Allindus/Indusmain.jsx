@@ -1,6 +1,8 @@
 import React from "react";
 import Reviews from "../Homecomps/Reviews";
 import Talktous from "../Othercomps/Talktous";
+import Clients from '../Homecomps/Clients';
+import Clientele from '../Homecomps/Clientele';
 
 import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
@@ -87,6 +89,8 @@ function Indusmain() {
         </div>
         <Reviews />
         <Talktous />
+        <Clients />
+        <Clientele />
     </div>
   );
 }

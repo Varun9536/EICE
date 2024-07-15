@@ -3,6 +3,8 @@ import Footer from '../Othercomps/Footer';
 import Copyright from '../Othercomps/Copyright';
 import TalkToUs from '../Othercomps/Talktous';
 import Reviews from '../Homecomps/Reviews';
+import Clients from '../Homecomps/Clients';
+import Clientele from '../Homecomps/Clientele';
 
 
 import { FaCloud, FaDatabase } from "react-icons/fa";
@@ -78,7 +80,7 @@ function Cstdmain() {
               <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
                   Case Studies
               </h2>
-              <h1 className="text-blackk text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
+              <h1 className="text-blackk max-w-7xl mx-auto text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
                   Explore how we digitally transformed other businesses
               </h1>
       <main className="container mx-auto px-4 max-w-7xl">
@@ -148,12 +150,12 @@ function Healthcare() {
   return (
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-16">
-        <div className="sm:max-w-7xl py-4 px-2 w-screen mx-auto grid grid-cols-3">
+        <div className="sm:max-w-7xl xl:pt-8 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
           <img src={healthrect1} alt="" />
           <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" />
         </div>
-        <div className="max-w-3xl mx-auto text-center xl:pt-8 pt-32 xl:pb-12 pb-4 flex flex-col gap-2">
+        <div className="max-w-3xl mx-auto text-center px-8 pt-4 pb-8 flex flex-col gap-2">
           <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
             Transforming <span className="text-bloo">Healthcare</span> with Innovative Technology 
           </h1>
@@ -170,7 +172,7 @@ function Healthcare() {
           </h1>
         </div>
         <div className="sm:max-w-7xl w-screen mx-auto px-4 pb-12">
-            <div className="grid grid-cols-2 lg:gap-12 gap-6 items-center justify-center">
+            <div className="grid lg:grid-cols-3 grid-cols-3 lg:gap-12 gap-6 items-center justify-center">
                 <div className="flex flex-col gap-2">
                 {services.map((service) => (
                     <button
@@ -186,10 +188,10 @@ function Healthcare() {
                     </button>
                 ))}
                 </div>
-                <div className="relative h-full rounded-xl">
+                <div className="relative h-full rounded-xl w-full col-span-2">
                 {services.map((service) => (
                     service.id === activeService && (
-                    <div key={service.id} className="p-4 h-full rounded-xl">
+                    <div key={service.id} className="p-4 w-full h-full rounded-xl">
                         <img 
                         src={service.image}
                         alt={service.name} 
@@ -244,6 +246,8 @@ function Healthcare() {
       <Cstdmain />
       <Reviews />
       <TalkToUs />
+      <Clients />
+      <Clientele />
       <Footer />
       <Copyright />
     </div>
