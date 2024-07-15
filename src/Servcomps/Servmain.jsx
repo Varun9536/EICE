@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Offers from "../Homecomps/Offers";
 
 import {
@@ -24,9 +25,25 @@ import { TbLetterA, TbLetterI } from "react-icons/tb";
 import consultancy from "../assets/Compressed/consultancy.jpg";
 import { Link } from "react-router-dom";
 function Servmain() {
+    const location = useLocation();
+
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        const scrollTo = searchParams.get('scrollTo');
+
+        if (scrollTo) {
+        const element = document.getElementById(scrollTo);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    }, [location]);
     return (
+        
         <div className="">
-          <div className="2xl:pt-16 pt-36 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
+            
+          <div className=" relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
+          <div className='2xl:pt-16 pt-36'></div>
             <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Our Services</h1>
             <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">Explore what we offer</h2>
             <h2 className="text-blackk/60 font-semibold sm:text-3xl py-4 text-2xl sm:leading-tight leading-snug text-center">At EICE, we offer a comprehensive suite of tech services designed to propel your business into the digital future. From cutting-edge app development to strategic consultancy, we're here to transform your ideas into reality.</h2>
@@ -34,6 +51,7 @@ function Servmain() {
           <Offers />
     
           <div className="py-20">
+          <div id='flagshipServices'></div>
             <div className="bg-zinc-50">
                 <div className="py-32 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
                     <div>
@@ -98,13 +116,14 @@ function Servmain() {
           </div>
           
           <div className="">
-            <div className="py-16 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
-              <div>
+            <div id='emergingTechnologies' className='py-16'></div>
+            <div className=" relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
+              <div >
                 <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">Emerging Technologies</h1>
                 <h2 className="text-blackk/60 font-medium p-4 sm:text-2xl text-xl sm:leading-tight leading-snug text-center">Stay ahead of the curve with EICE's expertise in cutting-edge technologies. We help businesses leverage the latest innovations to create new opportunities and drive unprecedented growth.</h2>
                 <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
               </div>
-              <div>
+              <div >
                   <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 xl:gap-16 gap-8 pt-16">
                     <div className="w-full h-full sm:py-8 py-2 flex flex-col">
                         <div className="h-1/2 rounded-full py-2 px-4">
@@ -147,7 +166,7 @@ function Servmain() {
             </div>
           </div>
 
-        <div className="bg-zinc-50">
+        <div className="bg-zinc-50" id='appDevelopment'>
         <div className="py-32 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
             <div>
               <h1 className="text-bloo font-light sm:text-5xl text-4xl pb-4 text-center">App Development Services</h1>
@@ -205,7 +224,7 @@ function Servmain() {
             </div>
           </div>
         </div>
-        <div className="py-28 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
+        <div id='consultancy' className="py-28 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
         <div className="grid lg:grid-cols-2 grid-cols-1 px-3 gap-12">
   <div className="relative flex  items-center justify-center text-center w-full h-[300px] lg:h-full rounded-xl">
     <img src={consultancy} alt="" className="absolute inset-0 object-cover w-full h-full rounded-xl"/>

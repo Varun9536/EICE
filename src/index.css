@@ -7,6 +7,8 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
 .hide-scrollbar {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */

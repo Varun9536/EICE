@@ -46,7 +46,7 @@ function Reviews() {
     return (
         <div className="bg-zinc-50 relative text-blackk py-24 px-4 sm:px-6 lg:px-8">
             
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto px-4">
                 <h1 className="text-center text-bloo font-bold text-3xl md:text-4xl mb-12">
                     Testimonials
                 </h1>

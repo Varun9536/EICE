@@ -223,7 +223,7 @@ const NavLayout = () => {
       </Link>
     </div>
     <div className='flex flex-row items-center justify-center overflow-visible'>
-      <NavLink to="/" className="px-4 py-1">
+      <NavLink to="/" className="px-6 py-1">
         <div className='group hover:text-bloo transition duration-300 ease-in-out'>
           <div>HOME</div>
           <div className='bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>
@@ -372,7 +372,7 @@ const Content = ({ selected, dir }) => {
       }}
       // style={'z-offset:1000'}
       // give width down here for standard sizing, 450px was older one, rn 729
-      className="absolute overflow-visible z-50 left-0 transform -translate-x-1/2 top-16 w-[90vw] max-w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
+      className="absolute overflow-visible z-50 left-0 transform -translate-x-1/2 top-16 w-[90vw] max-w-[790px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
       // className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
     >
       <Bridge />
@@ -441,32 +441,70 @@ const Nub = ({ selected }) => {
 
 const Aboutus = () => {
   return (
-    <div className='w-11/12 flex flex-col items-center justify-center text-center'>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-wrap'>
-        <div className='w-full'>
-          <h1>Who We Are</h1>
-          <p className='text-wrap font-medium text-blackk/80 text-left text-[15px]'>
-          We are a global IT services and consulting firm that has grown from a small, passionate team to over 200 professional technologists.
-          We specialize in innovative strategies that bridge technology solutions with business concepts.</p>  
+    <div className='grid grid-cols-3 p-1 gap-4'>
+      <div>
+        <div>
+          <div className='h-full justify-center items-center'>
+          <div className='bg-bloo w-full h-full rounded-md'>
+            <div className='text-white grid grid-cols-2 p-1'>
+              <div className='p-2'>
+                <h1>Since</h1>
+                <h2 className='font-extrabold text-3xl'>2005</h2>
+              </div>
+              <div className='p-2'>
+                <h1>Projects</h1>
+                <h2 className='font-extrabold text-3xl'>150+</h2>
+              </div>
+              <div className='p-2'>
+                <h1>Clients</h1>
+                <h2 className='font-extrabold text-3xl'>60+</h2>
+              </div>
+              <div className='p-2'>
+                <h1>Countries</h1>
+                <h2 className='font-extrabold text-3xl'>10+</h2>
+              </div>
+            </div>
+            <div className='p-1 text-white text-sm px-4'>
+              <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact
+                Learn more about us and contact u
+              </h1>
+            </div>
+            <div className='p-3'>
+              <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
+            </div>
+          </div>
+          
         </div>
-        <div className='w-full'>
-          <h1>What We Do</h1>
-          <p className='text-wrap font-medium text-blackk/80 text-left text-[15px]'>We partner with both global industry leaders and startups to turn innovative ideas into reality using exceptional custom software and integrated models, delivering cutting-edge IT solutions.</p>  
-        </div>
-        <div className='w-full'>
-          Mission and Vision
-        <p className='text-wrap font-medium text-blackk/80 text-left text-[15px]'> Client Satisfaction is our primary mission, we empower them with innovative technology solutions that drive growth and ensure sustainable success.
-        Our vision is to be a global leader in IT services, offering top-tier software development.
-        </p>  
         </div>
       </div>
-      <div>
-        <Link to="/about">
-          <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
-            <span>Learn more</span>
-            <FiArrowRight />
-          </button>
-        </Link>
+      <div className='col-span-2'>
+        <div>
+          <div className=' flex flex-col items-center justify-center'>
+            <div className='flex flex-col text-justify gap-6 text-wrap'>
+              <div className='w-full'>
+                <h1>Who We Are</h1>
+                <p className='text-wrap text-justify font-medium text-blackk/80 text-[15px]'>
+                We are a global IT services and consulting firm with over 200 professional technologists, specializing in innovative strategies that bridge technology and business solutions.</p>  
+              </div>
+              <div className='w-full'>
+                <h1>What We Do</h1>
+                <p className='text-wrap text-justify font-medium text-blackk/80 text-[15px]'>We partner with global leaders and startups to turn ideas into reality through custom software and integrated models, delivering cutting-edge IT solutions.</p>  
+              </div>
+              <div className='w-full'>
+                Mission and Vision
+              <p className='text-wrap text-justify font-medium text-blackk/80 text-[15px]'> Our mission is to ensure client satisfaction through innovative technology solutions that drive growth. Our vision is to be a global leader in IT services and software development.</p>  
+              </div>
+            </div>
+            <div>
+              <Link to="/about">
+                <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
+                  <span>Learn more</span>
+                  <FiArrowRight />
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -475,252 +513,193 @@ const Aboutus = () => {
 
 const OurServices = () => {
   return (
-<div className="p-2 h-[65vh] overflow-y-auto no-scrollbar">
-  <div className="grid grid-cols-2 gap-4 items-start justify-start">
-    
-    <div className="flex flex-col items-start justify-start text-nowrap">
-      <div className="items-start justify-start py-1 text-neutral-400 transition-colors hover:text-neutral-50">
-        <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
-        <div className="text-md text-left font-bold text-blackk">App Development</div>
-      </div>
-      <div className='flex flex-col font-light text-md w-full justify-left'>
-        <Link to='services-android' className='group flex flex-wrap gap-2 items-center justify-left cursor-pointer'>
-          {/* <FaAndroid size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Andriod App Development</p>
-        </Link>
-        <Link to='services-ios' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <FaAppStoreIos size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">iOS App Development</p>
-        </Link>
-        <Link to='services-enterpriseappdev' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <FaLaptopCode size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Web App Development</p>
-        </Link>
-        <Link to='services-saas' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">SAAS Development</p>
-        </Link>
-        <Link to='services-reactnative' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">React Native</p>
-        </Link>
-        <Link to='services-react' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">React Development</p>
-        </Link>
-        <Link to='services-flutter' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Flutter Development</p>
-        </Link >
-        <Link to='services-kotlin' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Kotlin Development</p>
-        </Link>
-        <Link to='services-objectivec' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">ObjectiveC development</p>
-        </Link >
-        <Link to='services-vue' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">VueJS development</p>
-        </Link>
-        <Link to='services-angular' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">AngularJs</p>
-        </Link>
-        <Link to='services-ionic' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Ionic development</p>
-        </Link>
-        <Link to='services-typescript' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Typescript development</p>
-        </Link>
-        <Link to='services-php' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">PHP development</p>
-        </Link>
-        <Link to='services-mysql' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">MySQL development</p>
-        </Link >
-        <Link to='services-mongodb' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">MongoDB development</p>
-        </Link >
-        <Link to='services-oracle' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Oracle development</p>
-        </Link >
-        <Link to='services-aspdotnet' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">ASP.NET development</p>
-        </Link >
-        <Link to='services-laravel' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-          {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-          <p className="group-hover:text-bloo font-medium text-blackk/80">Laravel development</p>
-        </Link>
+<div className="p-1">
+  <div className='grid grid-cols-3 gap-4'>
+    <div>
+    <div className='h-full justify-center items-center'>
+        <div className='bg-bloo w-full h-full rounded-md'>
+          <div className='text-white grid grid-cols-2 p-1'>
+            <div className='p-2'>
+              <h1>Since</h1>
+              <h2 className='font-extrabold text-3xl'>2005</h2>
+            </div>
+            <div className='p-2'>
+              <h1>Projects</h1>
+              <h2 className='font-extrabold text-3xl'>150+</h2>
+            </div>
+            <div className='p-2'>
+              <h1>Clients</h1>
+              <h2 className='font-extrabold text-3xl'>60+</h2>
+            </div>
+            <div className='p-2'>
+              <h1>Countries</h1>
+              <h2 className='font-extrabold text-3xl'>10+</h2>
+            </div>
+          </div>
+          <div className='p-1 text-white text-sm px-4'>
+            <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact
+              Explore what we offer in the services sector and how we transform our clients' businesses helping them grow to newer heights
+            </h1>
+          </div>
+          <div className='p-3'>
+            <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
+          </div>
+        </div>
         
-
       </div>
     </div>
-    
-    <div className='flex flex-col gap-6'>
-      <div className="flex flex-col items-start justify-start text-nowrap">
-        <div className="items-start justify-start py-1 text-neutral-400 transition-colors hover:text-neutral-50">
-          <div className=''><LuCircuitBoard size={40} className="mb-2 text-bloo" /></div>
-          <div className="text-md text-center font-bold text-blackk">Emerginng Technologies</div>
-        </div>
-        <div className='flex flex-col font-light text-md w-full justify-left'>
-          <Link to='services-aiml' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <LuBrainCircuit size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">AI & ML</p>
-          </Link>
-          <Link to='services-iot' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <GiCircuitry size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Internet Of Things</p>
-          </Link >
-          <Link to='services-blockchain' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <SiBlockchaindotcom size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Blockchain Development</p>
-          </Link >
-          <Link to='services-gis' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <GrCloudSoftware size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Oil and Gas</p>
-          </Link >
+    <div className='col-span-2'>
+    <div className="grid grid-cols-2 gap-8 items-start justify-start">
+      <Link to='/services?scrollTo=appDevelopment' className="group cursor-pointer  py-1 text-neutral-400 transition-colors">
+          <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
+          <div className="text-md text-left font-bold text-blackk">App Development</div>
           
-        </div>
-      </div>
-      <div className="flex flex-col items-start justify-start text-nowrap">
-        <div className="items-start justify-start pt-2 text-neutral-400 transition-colors hover:text-neutral-50">
+          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          <h1 className='text-sm pt-1'>Leveraging 15+ years of expertise, EICE has delivered over 150 innovative app projects across 10+ countries, enhancing digital experiences for 60+ clients.</h1>
+      </Link>
+      <Link to='/services?scrollTo=emergingTechnologies' className="group cursor-pointer py-1 text-neutral-400 transition-colors ">
+          <div className=''><LuCircuitBoard size={40} className="mb-2 text-bloo" /></div>
+          <div className="text-md text-left font-bold text-blackk">Emerginng Technologies</div>
+
+          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          <h1 className='text-sm pt-1'>EICE pioneers in integrating emerging technologies, backed by a wealth of experience and a global reach of over 10 countries, transforming industries and driving growth.</h1>
+      </Link>
+      <Link to='/services?scrollTo=consultancy' className="group cursor-pointer  pt-2 text-neutral-400 transition-colors ">
           <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
-          <div className="text-md text-center font-bold text-blackk">Consultancy Services</div>
-        </div>
-        <div className='gap-2 font-light text-md w-full justify-left'>
-          <Link to='services-enterpriseappdev' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <FaComputer size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">App Consulting</p>
-          </Link >
-          <Link to='services-uiux' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <MdDesignServices  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Design & UI / UX Consulting</p>
-          </Link >
-          <Link to='/services-digitaltransformation' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <MdDesignServices  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Digital Transformation</p>
-          </Link >
-        </div>
-      </div>
-      <div className="flex flex-col items-start justify-start text-nowrap">
-        <div className="items-start justify-start py-1 text-neutral-400 transition-colors hover:text-neutral-50">
+          <div className="text-md text-left font-bold text-blackk">Consultancy Services</div>
+
+          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          <h1 className='text-sm pt-1'>Our consultancy services at EICE draw on 15+ years of industry insight, assisting 60+ clients in successfully navigating complex projects across 10+ countries.</h1>
+      </Link>
+      <Link to='/services?scrollTo=flagshipServices' className="group cursor-pointer  py-1 text-neutral-400 transition-colors ">
           <IoIosBuild size={40} className=" mb-2 text-bloo" />
-          <div className="text-md text-center font-bold text-blackk">Technical Services</div>
-        </div>
-        <div className='flex flex-col font-light text-md w-full justify-left'>
-          <Link to='services-devops' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <IoIosBuild size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">DevOps Services</p>
-          </Link >
-          <Link to='services-docker' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Docker</p>
-          </Link >
-          <Link to='/services-azure' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Azure</p>
-          </Link>
-          <Link to='services-testing' className='group flex flex-row gap-2 items-center justify-left cursor-pointer'>
-            {/* <FaFileCircleCheck  size={20} className="group-hover:text-bloo text-blackk transition duration-200" /> */}
-            <p className="group-hover:text-bloo font-medium text-blackk/80">Software Testing</p>
-          </Link >
-        </div>
-      </div>
+          <div className="text-md text-left font-bold text-blackk">Flagship Services</div>
+
+          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          <h1 className='text-sm pt-1'>EICE provides robust technical services with a proven track record of 150+ projects, ensuring operational excellence for clients in over 10 countries.</h1>
+      </Link>
     </div>
-   
-  </div>
-</div>
+    </div>
+    </div>
+    </div>
   );
 };
 
 const OurResources = () => {
   return (
     <div className="p-6">
-      <div className="grid grid-cols-2 gap-6">
-        <Link to="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover text-blackk"
-            src=""
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium text-bloo">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </Link >
-        <Link to="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover text-blackk"
-            src=""
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium text-bloo">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </Link>
-      </div>
-      <button className="mt-4 flex items-center gap-1 text-sm text-bloo">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
+      
     </div>
   );
 };
 
 const OurIndustries=()=>{
   return(
-    <div className='grid grid-cols-3 gap-12 p-6'>
-      <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
-          <FaOilCan size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Oil and Gas</span>
-        </Link>
+    <div className='grid grid-cols-3'>
+      <div className=''>
+        <div className='bg-bloo w-full h-full rounded-md'>
+          <div className='text-white grid grid-cols-2 p-1'>
+            <div className='p-2'>
+              <h1>Since</h1>
+              <h2 className='font-extrabold text-3xl'>2005</h2>
+            </div>
+            <div className='p-2'>
+              <h1>Projects</h1>
+              <h2 className='font-extrabold text-3xl'>150+</h2>
+            </div>
+            <div className='p-2'>
+              <h1>Clients</h1>
+              <h2 className='font-extrabold text-3xl'>60+</h2>
+            </div>
+            <div className='p-2'>
+              <h1>Countries</h1>
+              <h2 className='font-extrabold text-3xl'>10+</h2>
+            </div>
+          </div>
+          <div className='p-1 text-white text-sm px-4'>
+            <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact</h1>
+          </div>
+          <div className='p-3'>
+            <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
+          </div>
+        </div>
+        
       </div>
-      <div className='group'>
-        <Link to='/industries-healthcare' className=' flex flex-row gap-4'>
-          <FaSyringe size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Healthcare</span>
-        </Link>
-      </div>
-      <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
-          <GoLaw size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Legal</span>
-        </Link>
-      </div>
-      <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
-          <BiPencil size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Education</span>
-        </Link>
-      </div>
-      <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
-          <IoIosCash size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Financial</span>
-        </Link>
-      </div>
-      <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
-          <MdPermMedia size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Digital Media</span>
-        </Link>
-      </div>
-      <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
-          <BsTruck size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Logistics</span>
-        </Link>
-      </div>
-      <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
-          <FaBusinessTime size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Enterprise</span>
-        </Link>
+      <div className='col-span-2'>
+        <div className='grid grid-cols-2 gap-8 p-6'>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <FaOilCan size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Oil and Gas</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          </div>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries-healthcare' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <FaSyringe size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Healthcare</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          </div>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <GoLaw size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Legal</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          </div>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <BiPencil size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Education</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          </div>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <IoIosCash size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Financial</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          </div>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <MdPermMedia size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Digital Media</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            </div>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <BsTruck size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Logistics</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          </div>
+          <div className='group flex flex-col gap-1'>
+            <Link to='/industries' className='flex flex-row gap-4 items-center'>
+              <div className='icon-wrapper'>
+                <FaBusinessTime size={30} className='group-hover:text-bloo transition duration-300' />
+              </div>
+              <span className='group-hover:text-bloo transition duration-300'>Enterprise</span>
+            </Link>
+            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+          </div>
+        </div>
       </div>
     </div>
   )
