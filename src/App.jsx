@@ -443,21 +443,20 @@ const Aboutus = () => {
   return (
     <div className='grid grid-cols-3 p-1 gap-4'>
       <div>
-        <div>
           <div className='h-full justify-center items-center'>
           <div className='bg-bloo w-full h-full rounded-md'>
             <div className='text-white grid grid-cols-2 p-1'>
               <div className='p-2'>
                 <h1>Since</h1>
                 <h2 className='font-extrabold text-3xl'>2005</h2>
-              </div>
+              </div>  
               <div className='p-2'>
                 <h1>Projects</h1>
                 <h2 className='font-extrabold text-3xl'>150+</h2>
               </div>
               <div className='p-2'>
                 <h1>Clients</h1>
-                <h2 className='font-extrabold text-3xl'>60+</h2>
+                <h2 className='font-extrabold text-3xl'>60+</h2>  
               </div>
               <div className='p-2'>
                 <h1>Countries</h1>
@@ -475,7 +474,7 @@ const Aboutus = () => {
           </div>
           
         </div>
-        </div>
+        
       </div>
       <div className='col-span-2'>
         <div>

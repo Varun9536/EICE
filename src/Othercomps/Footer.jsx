@@ -75,31 +75,32 @@ function Footer()
       <div className="flex flex-col text-start">
         <h1 className="px-3 py-2 text-lg font-bold">Services and Technologies</h1>
         <div className="flex flex-row flex-wrap">
-          <Link to="/services-android" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Android App Development</Link>
-          <Link to="/services-ios" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">iOS App Development</Link>
-          <Link to="/services-android" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Web App Development</Link>
-          <Link to="/services-ios" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">SAAS Development</Link>
+          <Link to="/services-digitaltransformation" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</Link>
           <Link to="/services-aiml" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AIML</Link>
           <Link to="/services-iot" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">IOT</Link>
           <Link to="/services-devops" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DevOps</Link>
-          <Link to="/services-blockchain" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Blockchain</Link>
-          <Link to="/services-digitaltransformation" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</Link>
-          <Link to="/services-appconsulting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">App Consulting</Link>
           <Link to="/services-uiuxconsulting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">UI/UX Consulting</Link>
-          <Link to="/services-softwaretesting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Software Testing</Link>
+          <Link to="/services-aspdotnet" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ASP.NET</Link>
+          <Link to="/services-react" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React</Link>
           <Link to="/services-reactnative" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React Native</Link>
+          <Link to="/services-laravel" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Laravel</Link>
+          <Link to="/services-mysql" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MySQL</Link>
+          <Link to="/services-android" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Android App Development</Link>
+          <Link to="/services-ios" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">iOS App Development</Link>
+          <Link to="/services-enterpriseappdev" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Web App Development</Link>
+          <Link to="/services-blockchain" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Blockchain</Link>
+          <Link to="/services-appconsulting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">App Consulting</Link>
+          <Link to="/services-softwaretesting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Software Testing</Link>
           <Link to="/services-flutter" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Flutter</Link>
           <Link to="/services-php" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PHP</Link>
           <Link to="/services-ionic" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ionic</Link>
           <Link to="/services-swift" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Swift</Link>
           <Link to="/services-kotlin" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Kotlin</Link>
-          <Link to="/services-react" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React</Link>
           <Link to="/services-objectivec" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ObjectiveC</Link>
           <Link to="/services-vue" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Vue</Link>
           <Link to="/services-angular" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Angular</Link>
           <Link to="/services-jquery" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jquery</Link>
           <Link to="/services-typescript" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Typescript</Link>
-          <Link to="/services-mysql" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MySQL</Link>
           <Link to="/services-postgresql" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PostgreSQL</Link>
           <Link to="/services-mongodb" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MongoDB</Link>
           <Link to="/services-dynamodb" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DynamoDB</Link>
@@ -107,9 +108,7 @@ function Footer()
           <Link to="/services-oracle" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Oracle</Link>
           <Link to="/services-apache" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Apache</Link>
           <Link to="/services-rubyonrails" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ruby on Rails</Link>
-          <Link to="/services-aspdotnet" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ASP.NET</Link>
           <Link to="/services-express" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Express</Link>
-          <Link to="/services-laravel" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Laravel</Link>
           <Link to="/services-docker" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Docker</Link>
           <Link to="/services-firebase" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Firebase</Link>
           <Link to="/services-nodejs" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">NodeJS</Link>

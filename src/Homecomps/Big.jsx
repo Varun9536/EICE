@@ -169,7 +169,7 @@ function Big() {
 
     return (
         <div>
-          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40 2xl:pt-20 2xl:max-h-[1200px] h-full xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
+          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40 2xl:pt-20 2xl:max-h-[1200px] h-full xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-32 pl-4 pr-4">
             <div className="">
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
