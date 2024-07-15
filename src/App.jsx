@@ -537,7 +537,7 @@ const OurServices = () => {
           </div>
           <div className='p-1 text-white text-sm px-4'>
             <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact
-              Explore what we offer in the services sector and how we transform our clients' businesses helping them grow to newer heights
+              Explore what we offer in the IT sector and how we transform our clients' businesses helping them grow to newer heights
             </h1>
           </div>
           <div className='p-3'>
@@ -586,8 +586,48 @@ const OurServices = () => {
 
 const OurResources = () => {
   return (
-    <div className="p-6">
-      
+    <div className="p-1 grid-cols-2 grid gap-4">
+      <Link to='/casestudies' className='group cursor-pointer grid grid-rows-3 order-last  rounded-md'>
+        <div className='row-span-2 w-full h-full bg-laptopcstudy bg-contain bg-no-repeat saturate-0 group-hover:saturate-100 transition duration-500'></div>
+        <div className=''>
+          <h1 className='text-center'>Case Studies</h1>
+          <h1 className='w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white'></h1>
+          <h1 className='text-sm pt-2 text-blackk/50'>Take a look at our track record and explore our detailed case studies and learn how we transform other people's businesses.</h1>
+        </div>
+      </Link>
+      <div>
+        <div className='h-full justify-center items-center'>
+            <div className='bg-bloo w-full h-full rounded-md'>
+              <div className='text-white grid grid-cols-2 p-1'>
+                <div className='p-2'>
+                  <h1>Since</h1>
+                  <h2 className='font-extrabold text-3xl'>2005</h2>
+                </div>
+                <div className='p-2'>
+                  <h1>Projects</h1>
+                  <h2 className='font-extrabold text-3xl'>150+</h2>
+                </div>
+                <div className='p-2'>
+                  <h1>Clients</h1>
+                  <h2 className='font-extrabold text-3xl'>60+</h2>
+                </div>
+                <div className='p-2'>
+                  <h1>Countries</h1>
+                  <h2 className='font-extrabold text-3xl'>10+</h2>
+                </div>
+              </div>
+              <div className='p-1 text-white text-sm px-4'>
+                <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact
+                  Explore what we offer in the IT sector and how we transform our clients' businesses helping them grow to newer heights
+                </h1>
+              </div>
+              <div className='p-3'>
+                <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
+              </div>
+            </div>
+            
+          </div>
+        </div>
     </div>
   );
 };
