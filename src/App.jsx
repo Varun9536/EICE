@@ -211,7 +211,7 @@ const NavLayout = () => {
 
   return (
     <>
-      <div className='relative overflow-hidden'>
+      <div className='relative overflow-visible'>
         {/* laptop navbar */}
         <nav
         className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
@@ -249,7 +249,7 @@ const NavLayout = () => {
       <div className='bg-black'></div>
 
       {/* phone navbar */}
-      <nav className='2xl:hidden xl:hidden  flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
+      <nav className='2xl:hidden xl:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
         <div className='curosr-pointer pl-3'>
           <Link to="/">
             {/* <h1 className="text-3xl w-[120px] text-start font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
@@ -688,7 +688,7 @@ const OurIndustries=()=>{
         </Link>
       </div>
       <div className='group'>
-        <Link to='/industries' className=' flex flex-row gap-4'>
+        <Link to='/industries-healthcare' className=' flex flex-row gap-4'>
           <FaSyringe size={30} className='group-hover:text-bloo transition duration-300'/> <span className='group-hover:text-bloo  transition duration-300'>Healthcare</span>
         </Link>
       </div>
@@ -754,7 +754,7 @@ const Home = () => {
       {/* <Temp /> */}
       <Big />
       {/* <Separator /> */}
-      <div className="flex flex-col items-center justify-center pt-28 mb-4 sm:mb-8 md:mb-12">
+      <div className="flex flex-col items-center justify-center xl:pt-28 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
         <p className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl mb-4 py-1">
             Core Services
         </p>
@@ -762,7 +762,9 @@ const Home = () => {
             Unlocking Innovation: <br className="sm:hidden"/>Explore Our Suite of Solutions for Your Digital Evolution
         </h2>
       </div>
-      <Offers />
+      <div className='mx-auto px-2'>
+        <Offers />
+      </div>
       {/* <Separatorr /> */}
       <Techs />
       <Solutions />

@@ -148,28 +148,22 @@ function Healthcare() {
   return (
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-16">
-        <div className="max-w-3xl mx-auto text-center xl:pt-8 pt-32 xl:pb-12 pb-4 flex flex-col gap-2">
-          <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
-            Transforming <span className="text-bloo">Healthcare</span> with Innovative Technology 
-          </h1>
-          <p className="text-blackk/70 font-medium text-base sm:text-lg max-w-3xl mx-auto">
-            EICE empowers businesses to thrive in the digital age by leveraging cutting-edge technologies and innovative strategies, revolutionizing operations and enhancing competitiveness.
-          </p>
-        </div>
         <div className="sm:max-w-7xl py-4 px-2 w-screen mx-auto grid grid-cols-3">
           <img src={healthrect1} alt="" />
           <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" />
         </div>
-        <div className="sm:max-w-3xl w-screen mx-auto text-center xl:py-12 py-8">
-          <h1 className="text-blackk font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">
-            Healthcare Industry Solutions 
+        <div className="max-w-3xl mx-auto text-center xl:pt-8 pt-32 xl:pb-12 pb-4 flex flex-col gap-2">
+          <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Transforming <span className="text-bloo">Healthcare</span> with Innovative Technology 
           </h1>
-          <p className="text-blackk/70 font-medium text-base sm:text-lg max-w-3xl mx-auto">
+          <p className="text-blackk/70 font-medium text-base text-justify sm:text-lg max-w-3xl mx-auto">
+            EICE empowers businesses to thrive in the digital age by leveraging cutting-edge technologies and innovative strategies, revolutionizing operations and enhancing competitiveness.
             At EICE, we understand the critical role technology plays in modern healthcare. Our comprehensive solutions are designed to enhance patient care, streamline operations, and support healthcare
             providers in delivering the highest standards of service. From hospitals and clinics to pharmaceutical companies and research institutions, we cater to diverse needs accross the healthcare sector.
           </p>
         </div>
+        
         <div className="sm:max-w-3xl w-screen mx-auto text-center xl:pt-16 pt-8 xl:pb-6 pb-4">
           <h1 className="text-blackk font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">
             Key Services

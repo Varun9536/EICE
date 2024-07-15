@@ -20,8 +20,8 @@ function Big() {
     const slides = [
         {
             content: (
-                <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
+                <div className="container mx-auto my-auto px-1 pt-0 sm:pt-0 sm:max-w-[1300px]">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col space-y-6">
                     <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
                       Transforming your Business through
@@ -55,8 +55,8 @@ function Big() {
         },   
         {
             content: (
-                <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
-                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
+                <div className="container mx-auto my-auto pt-0 px-1 sm:pt-0 sm:max-w-[1300px]">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col space-y-6">
                       <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
                         Improving your Efficiency with
@@ -92,8 +92,8 @@ function Big() {
         {
             content: (
              
-                <div className="container mx-auto my-auto pt-8 sm:p-0 sm:max-w-[1300px]">
-                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
+                <div className="container mx-auto my-auto pt-0 px-1 sm:p-0 sm:max-w-[1300px]">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col space-y-6">
                       <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
                         Driving business Growth with
@@ -169,18 +169,18 @@ function Big() {
 
     return (
         <div>
-          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40 2xl:pt-20 max-h-[1200px] xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
+          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40 2xl:pt-20 2xl:max-h-[1200px] h-full xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-44 pl-4 pr-4">
             <div className="">
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
-            <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px]  w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
+            <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] h-full  w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
                 <div className="bg-blend-overlay bg-cover bg-bannerbg w-full h-full absolute inset-0 lg:scale-110 lg:rotate-0 rotate-90"></div>
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-30 ">
+                <div className="absolute lg:block hidden left-0 top-1/2 transform -translate-y-1/2 z-30 ">
                     <div onClick={prevSlide} className='rounded-full text-blackk/50 cursor-pointer'>
                         <BsChevronLeft size={30} />
                     </div>
                 </div>
-                <div className="w-full sm:px-16 2xl:h-[500px] flex items-center justify-center"> {/* Added padding here */}
+                <div className="w-full sm:px-16 px-4 2xl:h-[500px] h-full flex items-center justify-center"> {/* Added padding here */}
                     <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
                         <CSSTransition
                             key={currentIndex}
@@ -193,7 +193,7 @@ function Big() {
                     </TransitionGroup>
                     
                 </div>
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-30 ">
+                <div className="absolute lg:block hidden right-0 top-1/2 transform -translate-y-1/2 z-30 ">
                     <div onClick={nextSlide} className='rounded-full text-blackk/50 cursor-pointer '>
                         <BsChevronRight size={30} />
                     </div>
