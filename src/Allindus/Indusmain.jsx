@@ -44,7 +44,7 @@ function Indusmain() {
   return (
     <div>
         <div className="font-manrope max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-            <section className="text-center mb-12 sm:mb-16">
+            <section className="text-center mb-4 sm:mb-6">
                 <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
                 Driving <span className="text-bloo">Digital Transformation</span> Across Industries
                 </h1>
@@ -53,7 +53,7 @@ function Indusmain() {
                 </p>
             </section>
 
-            <div className="w-full max-w-screen-2xl mx-auto mb-12 sm:mb-16">
+            <div className="w-full scale-[.7] max-w-screen-2xl mx-auto mb-4 sm:mb-6">
                 <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-lg"></div>
             </div>
 
