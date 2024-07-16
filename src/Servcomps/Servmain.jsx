@@ -68,7 +68,7 @@ function Servmain() {
                                     <div>
                                         <div className="flex flex-col p-2 text-start justify-end">
                                             <h1 className="text-blackk z-20 px-2 font-bold text-4xl pb-4">Digital Transformation</h1>
-                                            <p className="z-20 text-blackk/90 text-lg px-2 text-left font-medium">
+                                            <p className="z-20 text-blackk/90 text-justify text-lg px-2  font-medium">
                                                 Revolutionize your business with EICE's digital transformation services. We help you leverage cutting-edge technologies to streamline operations, enhance customer experiences, and drive growth.
                                             </p>
                                         </div>

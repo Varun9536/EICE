@@ -27,7 +27,7 @@ function Big() {
                       Transforming your Business through
                       <span className="text-bloo font-bold block mt-2">Generative AI</span>
                     </h1>
-                    <p className="text-blackk/80 text-xl sm:text-xl">
+                    <p className="text-blackk/80 text-xl text-justify sm:text-xl">
                     As a specialized artificial intelligence development company, we focus on creating cutting-edge Generative AI software solutions. 
                     Our expert team of AI developers excels in deploying generative models such as GPT-3, GANs, and variational autoencoders.
                     </p>
@@ -44,7 +44,7 @@ function Big() {
                       </Link>
                     </div>
                   </div>
-                  <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] 2xl:pl-2 scale-100">
+                  <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] scale-[.9] 2xl:pl-2">
                     <div className="w-[30rem] h-[30rem] rounded-lg  overflow-hidden">
                       <img className="w-full h-full rounded-lg " src={genai} alt="Generative AI" />
                     </div>
@@ -62,7 +62,7 @@ function Big() {
                         Improving your Efficiency with
                         <span className="text-bloo font-bold block mt-2">DevOps</span>
                       </h1>
-                      <p className="text-blackk/80 text-xl sm:text-xl">
+                      <p className="text-blackk/80 text-xl sm:text-xl text-justify">
                       Being a top DevOps development firm, we specialize in optimizing your business's infrastructure and development operations. Maximize your business potential with our customized DevOps solutions. 
                       Whether you're a visionary business owner striving to lead, our array of DevOps development services enables you to thrive and innovate in the digital age.
                       </p>
@@ -79,7 +79,7 @@ function Big() {
                         </Link>
                       </div>
                     </div>
-                    <div className=" flex justify-center 2xl:justify-end 2xl:scale-[1] scale-100">
+                    <div className=" flex justify-center 2xl:justify-end 2xl:scale-[1] scale-[.9]">
                       <div className="w-[30rem] h-[30rem] rounded-lg  overflow-hidden">
                         <img className="w-full h-full scale-90 rounded-lg" src={devops} alt="DevOps" />
                       </div>
@@ -116,7 +116,7 @@ function Big() {
                         </Link>
                       </div>
                     </div>
-                    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-100">
+                    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-[.9]">
                       <div className="w-[30rem] h-[30rem] rounded-lg overflow-visible">
                         <img className="w-full h-full pb-12 rounded-lg overflow-visible scale-110" src={digitrans} alt="Digital Transformation" />
                       </div>
