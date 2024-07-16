@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import logo from './assets/logo.svg';
 
 
-import {Routes, Route, Outlet, NavLink, Link, BrowserRouter } from 'react-router-dom';
+import {Routes, Route, Outlet, NavLink, Link, BrowserRouter , HashRouter } from 'react-router-dom';
 
 import Big from './Homecomps/Big';
 import Offers from './Homecomps/Offers';
@@ -127,7 +127,7 @@ import ScrollToTop from './ScrollToTop.jsx';
 import Talktous from './Othercomps/Talktous.jsx';
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <NavLayout/>
     <ScrollToTop />
       <Routes>
@@ -196,7 +196,7 @@ const App = () => {
         <Route path="*" element={<div className='font-manrope font-base text-3xl'><p>{`There's nothing here: 404`}</p></div>} />
       {/* </Route> */}
     </Routes>
-    </BrowserRouter>
+     </HashRouter>
   );
 };
 
