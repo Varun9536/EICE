@@ -12,16 +12,16 @@ function Solutions() {
     ];
 
     return (
-        <div className="font-manrope py-16 sm:py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
-                <h2 className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl text-center mb-2 py-2">
+        <div className="font-manrope py-12 sm:py-12 lg:py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto ">
+                <h2 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2 ">
                     Industries We Serve
                 </h2>
-                <h1 className="text-blackk font-extrabold text-2xl sm:text-3xl lg:text-4xl text-center mb-12 py-2">
+                <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
                     IT & Software Development Solutions for Industries
                 </h1>
 
-                <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 py-6">
+                <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-12">
                     {industries.map((industry, index) => (
                         <IndustryCard key={index} {...industry} />
                     ))}
@@ -39,7 +39,7 @@ function Solutions() {
 
 function IndustryCard({ name, description, bgClass, link }) {
     return (
-        <div className={`relative ${bgClass} bg-cover rounded-lg cursor-pointer transition duration-200 hover:shadow-lg hover:shadow-blackk h-64 sm:h-80 lg:h-96`}>
+        <div className={`relative ${bgClass} bg-cover rounded-lg cursor-pointer transition duration-200 hover:shadow-lg hover:shadow-blackk h-[20rem] sm:h-[25rem] lg:h-[30rem]`}>
             <a href={`/${link}`} className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-20% via-stone-800/95 via-20% to-transparent rounded-lg flex flex-col justify-end p-4">
                 <h3 className="text-stone-100 font-extrabold text-2xl sm:text-3xl mb-2">
                     {name}

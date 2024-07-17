@@ -127,11 +127,13 @@ function Techs() {
   const [activeCategory, setActiveCategory] = useState(categories[0].id);
 
   return (
-    <div className='bg-zinc-50 py-20'>
-    <div className="container mx-auto px-4 py-8 font-manrope">
-      <header className="text-center mb-12">
-        <h1 className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl text-center mb-2 py-2">Technologies we work with</h1>
-        <h1 className="text-blackk font-extrabold text-2xl sm:text-3xl lg:text-4xl text-center mb-12 py-2">
+    <div className=''>
+<div className="bg-bgplate bg-cover py-16"></div>
+    <div className='bg-zinc-50'>
+    <div className="container  mx-auto px-4 font-manrope">
+      <header className="text-center mb-10">
+        <h1 className="text-bloo font-bold text-xl sm:text-xl lg:text-2xl  py-2">Technologies we work with</h1>
+        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
           Explore our extensive range of cutting-edge tools and platforms
         </h1>
       </header>
@@ -183,6 +185,9 @@ function Techs() {
         ))}
       </main>
     </div>
+    </div>
+    <div className="bg-bgplate bg-cover py-16 rotate-180"></div>
+
     </div>
   );
 }

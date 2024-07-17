@@ -774,8 +774,8 @@ const Home = () => {
       <Clients />
 
       {/* <Separator /> */}
-      <div className="flex flex-col items-center justify-center xl:pt-20 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
-        <p className="text-bloo font-bold text-xl sm:text-xl lg:text-2xl mb-4 py-1">
+      <div className="flex flex-col gap-0.5 items-center justify-center xl:pt-20 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
+        <p className="text-bloo font-bold text-xl sm:text-xl lg:text-2xl  py-2">
             Core Services
         </p>
         <h2 className="text-blackk font-bold text-center text-2xl sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">

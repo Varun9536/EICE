@@ -5,9 +5,9 @@ function Offeritem({ svg, title, link, fliptext }) {
     return (
         <Link to={link} className="sm:w-full w-screen block pb-4">
             <div className="lg:px-0 px-4 w-full ">
-                <div className={`p-4 h-[180px] grid grid-cols-5 gap-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-transparent hover:border-gray-200`}>
+                <div className={`p-4 lg:h-[180px] h-[220px] grid grid-cols-5 gap-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-transparent hover:border-gray-200`}>
                     <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
-                        <div className="rounded-full bg-bloo/10 w-full h-full flex items-center justify-center">
+                        <div className="rounded-full bg-bloo/5 w-full h-full flex items-center justify-center">
                             <img
                                 src={svg}
                                 alt="svg"

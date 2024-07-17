@@ -165,49 +165,54 @@ function Big() {
     }, [currentIndex])
 
     return (
-        <div>
-          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40  2xl:max-h-[1200px] h-full xl:px-16  xl:pb-32 items-center justify-center pb-24  pl-4 pr-4">
-            <div className="">
-                {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
-            </div>
-            <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] h-full  w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
-                <div className="bg-blend-overlay bg-cover bg-bannerbg w-full h-full absolute inset-0 lg:scale-110 lg:rotate-0 rotate-90"></div>
-                <div className="absolute lg:block hidden left-0 top-1/2 transform -translate-y-1/2 z-30 ">
-                    <div onClick={prevSlide} className='rounded-full text-blackk/50 cursor-pointer'>
-                        <BsChevronLeft size={30} />
-                    </div>
-                </div>
-                <div className="w-full sm:px-16 pt-16 px-4 2xl:h-[500px] h-full flex items-center justify-center"> {/* Added padding here */}
-                    <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
-                        <CSSTransition
-                            key={currentIndex}
-                            timeout={500}
-                            classNames="fade"
-                            exit={false}
-                        >
-                            {slides[currentIndex].content}
-                        </CSSTransition>
-                    </TransitionGroup>
-                    
-                </div>
-                <div className="absolute lg:block hidden right-0 top-1/2 transform -translate-y-1/2 z-30 ">
-                    <div onClick={nextSlide} className='rounded-full text-blackk/50 cursor-pointer '>
-                        <BsChevronRight size={30} />
-                    </div>
-                </div>
-                <div className="cursor-pointer absolute -bottom-[20%] left-1/2 transform -translate-x-1/2 flex space-x-6 z-30">
+      <div>
+      <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40  2xl:max-h-[1200px] h-full xl:px-16  xl:pb-32 items-center justify-center pb-24  pl-4 pr-4">
+          <div className="">
+              {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
+          </div>
+          <div className='z-20 2xl:flex 2xl:flex-row 2xl:max-h-[1000px] h-full  w-screen relative group 2xl:items-center 2xl:text-balance text-left'>
+              <div className="bg-blend-overlay bg-cover bg-bannerbg w-full h-full absolute inset-0 lg:scale-110 lg:rotate-0 rotate-90"></div>
+              <div className="absolute lg:block hidden left-0 top-1/2 transform -translate-y-1/2 z-30 ">
+                  <div 
+                      onClick={prevSlide} 
+                      className={`rounded-full cursor-pointer ${currentIndex === 0 ? 'text-white' : 'text-blackk/50'}`}
+                  >
+                      <BsChevronLeft size={30} />
+                  </div>
+              </div>
+              <div className="w-full sm:px-16 pt-16 px-4 2xl:h-[500px] h-full flex items-center justify-center">
+                  <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
+                      <CSSTransition
+                          key={currentIndex}
+                          timeout={500}
+                          classNames="fade"
+                          exit={false}
+                      >
+                          {slides[currentIndex].content}
+                      </CSSTransition>
+                  </TransitionGroup>
+              </div>
+              <div className="absolute lg:block hidden right-0 top-1/2 transform -translate-y-1/2 z-30 ">
+                  <div 
+                      onClick={nextSlide} 
+                      className={`rounded-full cursor-pointer ${currentIndex === slides.length - 1 ? 'text-white' : 'text-blackk/50'}`}
+                  >
+                      <BsChevronRight size={30} />
+                  </div>
+              </div>
+              <div className="cursor-pointer absolute -bottom-[20%] left-1/2 transform -translate-x-1/2 flex space-x-6 z-30">
                   {slides.map((slide, slideIndex) => (
                       <div  
                           size={40}
                           key={slideIndex}
-                          className={ `${currentIndex === slideIndex ? 'px-3 py-1 rounded-xl bg-blue-900' : 'px-3 py-1 rounded-xl bg-blue-900/30'}`}
+                          className={`${currentIndex === slideIndex ? 'px-3 py-1 rounded-xl bg-blue-900' : 'px-3 py-1 rounded-xl bg-blue-900/30'}`}
                           onClick={() => goToSlide(slideIndex)} 
                       />
                   ))}
               </div>
-            </div>
-        </div>
-    </div>
+          </div>
+      </div>
+  </div>
     );
 }
 
