@@ -771,12 +771,14 @@ const Home = () => {
 
       {/* <Temp /> */}
       <Big />
+      <Clients />
+
       {/* <Separator /> */}
-      <div className="flex flex-col items-center justify-center xl:pt-28 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
-        <p className="text-bloo font-bold text-xl sm:text-2xl lg:text-3xl mb-4 py-1">
+      <div className="flex flex-col items-center justify-center xl:pt-20 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
+        <p className="text-bloo font-bold text-xl sm:text-xl lg:text-2xl mb-4 py-1">
             Core Services
         </p>
-        <h2 className="text-blackk font-extrabold text-center text-2xl sm:text-3xl md:text-4xl lg:text-[36px] max-w-4xl py-1">
+        <h2 className="text-blackk font-bold text-center text-2xl sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">
             Unlocking Innovation: <br className="sm:hidden"/>Explore Our Suite of Solutions for Your Digital Evolution
         </h2>
       </div>
@@ -790,7 +792,6 @@ const Home = () => {
       <Casestudies />
       <Reviews />
       <Talktous /> 
-      <Clients />
       <Clientele />
       <Footer />
       <Copyright />

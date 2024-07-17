@@ -6,8 +6,8 @@ function Offers() {
     return (
         // 
         <div className="">
-            <div className="text-manrope  px-4 py-12 sm:py-12 md:py-16 lg:py-16 xl:py-20 2xl:py-20 max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center">
+            <div className="text-manrope px-4 py-2 sm:py-2 max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y- justify-items-center">
                     {Ouroffers.map(project => (
                         <Offeritem
                             key={project.id}

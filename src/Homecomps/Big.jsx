@@ -20,31 +20,30 @@ function Big() {
     const slides = [
         {
             content: (
-                <div className="container mx-auto my-auto px-1 pt-0 sm:pt-0 sm:max-w-[1300px]">
+                <div className="container mx-auto  my-auto px-1 sm:pt-0 sm:max-w-[1300px]">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   <div className="flex flex-col space-y-6">
-                    <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+                    <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-[56px] font-base font-semibold leading-tight">
                       Transforming your Business through
-                      <span className="text-bloo font-bold block mt-2">Generative AI</span>
+                      <span className="text-bloo font-semibold block mt-2">Generative AI</span>
                     </h1>
-                    <p className="text-blackk/80 text-xl text-justify sm:text-xl">
-                    As a specialized artificial intelligence development company, we focus on creating cutting-edge Generative AI software solutions. 
-                    Our expert team of AI developers excels in deploying generative models such as GPT-3, GANs, and variational autoencoders.
+                    <p className="text-blackk/80 text-lg text-left pr-16 sm:text-lg">
+                    As a focused AI development company, we leverage models like GPT-3, GANs, and variational autoencoders. Our expertise transforms data into innovative solutions, enhancing business capabilities and driving technological advancements.
                     </p>
                     <div className="pt-4 flex flex-row lg:flex-nowrap flex-wrap gap-4">
                       <Link to="/contact">
-                        <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                        <button className="text-nowrap py-4 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md  text-lg 2xl:text-xl">
                           Let's Connect
                         </button>
                       </Link>
                       <Link to="/services-aiml">
-                        <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
+                        <button className="text-nowrap py-4 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md  text-lg 2xl:text-xl">
                           Learn More
                         </button>
                       </Link>
                     </div>
                   </div>
-                  <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] scale-[.9] 2xl:pl-2">
+                  <div className="flex justify-center 2xl:justify-end 2xl:scale-[1] scale-[.9] 2xl:pl-2">
                     <div className="w-[30rem] h-[30rem] rounded-lg  overflow-hidden">
                       <img className="w-full h-full rounded-lg " src={genai} alt="Generative AI" />
                     </div>
@@ -58,26 +57,25 @@ function Big() {
                 <div className="container mx-auto my-auto pt-0 px-1 sm:pt-0 sm:max-w-[1300px]">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col space-y-6">
-                      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+                      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
                         Improving your Efficiency with
-                        <span className="text-bloo font-bold block mt-2">DevOps</span>
+                        <span className="text-bloo font-semibold block mt-2">DevOps</span>
                       </h1>
-                      <p className="text-blackk/80 text-xl sm:text-xl text-justify">
-                      Being a top DevOps development firm, we specialize in optimizing your business's infrastructure and development operations. Maximize your business potential with our customized DevOps solutions. 
-                      Whether you're a visionary business owner striving to lead, our array of DevOps development services enables you to thrive and innovate in the digital age.
+                      <p className="text-blackk/80 text-lg text-left sm:text-xl ">
+                      As a top DevOps development firm, we specialize in optimizing your business's infrastructure and operations. Our customized DevOps solutions empower visionary business owners to lead, thrive, and innovate in the digital age.
                       </p>
                       <div className="pt-4 flex flex-row lg:flex-nowrap flex-wrap gap-4">
-                        <Link to="/contact">
-                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900 hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
-                            Let's Connect
-                          </button>
-                        </Link>
-                        <Link to="/services-devops">
-                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
-                            Learn More
-                          </button>
-                        </Link>
-                      </div>
+                      <Link to="/contact">
+                        <button className="text-nowrap py-4 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md  text-lg 2xl:text-xl">
+                          Let's Connect
+                        </button>
+                      </Link>
+                      <Link to="/services-devops">
+                        <button className="text-nowrap py-4 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md  text-lg 2xl:text-xl">
+                          Learn More
+                        </button>
+                      </Link>
+                    </div>
                     </div>
                     <div className=" flex justify-center 2xl:justify-end 2xl:scale-[1] scale-[.9]">
                       <div className="w-[30rem] h-[30rem] rounded-lg  overflow-hidden">
@@ -95,30 +93,29 @@ function Big() {
                 <div className="container mx-auto my-auto pt-0 px-1 sm:p-0 sm:max-w-[1300px]">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col space-y-6">
-                      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-base leading-tight">
+                      <h1 className="text-blackk text-5xl sm:text-5xl 2xl:text-6xl font-semibold leading-tight">
                         Driving business Growth with
-                        <span className="text-bloo font-bold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span>
+                        <span className="text-bloo font-semibold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span>
                       </h1>
-                      <p className="text-blackk/80 text-xl sm:text-xl">
-                      As the digital landscape gains significance, businesses are adopting digital strategies and consulting to meet evolving consumer preferences. Offers tailored digital transformation services, 
-                      leveraging expertise to foster innovation and enhance operational efficiency, capabilities, processes, and customer experiences. 
+                      <p className="text-blackk/80 text-lg text-left pr-16">
+                      As the digital landscape evolves, businesses need effective strategies. We offer tailored digital transformation services, using our expertise to drive innovation, enhance efficiency, and improve processes and customer experiences.
                       </p>
                       <div className="pt-4 flex flex-row lg:flex-nowrap flex-wrap gap-4">
-                        <Link to="/services-aiml">
-                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
-                            Let's Connect
-                          </button>
-                        </Link>
-                        <Link to="/services-digitaltransformation">
-                          <button className="text-nowrap py-6 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md hover:shadow-blue-900/30 text-lg 2xl:text-xl">
-                            Learn More
-                          </button>
-                        </Link>
-                      </div>
+                      <Link to="/contact">
+                        <button className="text-nowrap py-4 px-24 font-semibold rounded transition duration-200 border-2 border-blue-900  hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md  text-lg 2xl:text-xl">
+                          Let's Connect
+                        </button>
+                      </Link>
+                      <Link to="/services-digitaltransformation">
+                        <button className="text-nowrap py-4 px-24 font-semibold rounded transition duration-200  border-2 border-blue-900 text-blue-900 hover:shadow-md  text-lg 2xl:text-xl">
+                          Learn More
+                        </button>
+                      </Link>
                     </div>
-                    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1.15] overflow-visible scale-[.9]">
+                    </div>
+                    <div className="flex justify-center 2xl:justify-end 2xl:scale-[1] overflow-visible scale-[.9]">
                       <div className="w-[30rem] h-[30rem] rounded-lg overflow-visible">
-                        <img className="w-full h-full pb-12 rounded-lg overflow-visible scale-110" src={digitrans} alt="Digital Transformation" />
+                        <img className="w-full h-full rounded-lg overflow-visible scale-110" src={digitrans} alt="Digital Transformation" />
                       </div>
                     </div>
                   </div>
@@ -169,7 +166,7 @@ function Big() {
 
     return (
         <div>
-          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40 2xl:pt-20 2xl:max-h-[1200px] h-full xl:px-16 xl:pt-32 xl:pb-32 items-center justify-center pb-24 pt-32 pl-4 pr-4">
+          <div className="relative overflow-hidden font-manrope flex text-blackk 2xl:pb-40  2xl:max-h-[1200px] h-full xl:px-16  xl:pb-32 items-center justify-center pb-24  pl-4 pr-4">
             <div className="">
                 {/* <div className="absolute inset-0 z-10 backdrop-filter backdrop-blur-[30px] bg-white/50"></div>     */}
             </div>
@@ -180,7 +177,7 @@ function Big() {
                         <BsChevronLeft size={30} />
                     </div>
                 </div>
-                <div className="w-full sm:px-16 px-4 2xl:h-[500px] h-full flex items-center justify-center"> {/* Added padding here */}
+                <div className="w-full sm:px-16 pt-16 px-4 2xl:h-[500px] h-full flex items-center justify-center"> {/* Added padding here */}
                     <TransitionGroup className='scale-100 rounded-2xl bg-center bg-cover transition duration-500 2xl:h-full flex items-center'>
                         <CSSTransition
                             key={currentIndex}

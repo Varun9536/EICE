@@ -7,7 +7,7 @@ const Offerdata = [
         `,
         title:'CLOUD SERVICES',
         link:'/services-cloud',
-        fliptext:'Explore our advanced cloud services tailored to optimize efficiency and scale your operations seamlessly. We help provide secure, reliable infrastructure and expert management to support your business growth in the digital age.',
+        fliptext:'Explore our advanced cloud services for efficient, scalable operations. We provide secure, reliable infrastructure and expert management to support your business growth and success in the digital age.',
     },
     {
         id:2,
@@ -21,7 +21,7 @@ const Offerdata = [
         `,
         title:'TECHNOLOGY CONSULTING',
         link:'/services-techconsultancy',
-        fliptext:'We specialize in providing comprehensive technology consulting services, offering strategic guidance and customized solutions to improve operational efficiency, stimulate innovation, and facilitate digital transformation for businesses of all sizes.',
+        fliptext:'We offer comprehensive technology consulting services, providing strategic guidance and tailored solutions to boost efficiency, drive innovation, and achieve digital transformation for businesses of all sizes.',
     },
     {   
         id:3,
@@ -31,7 +31,7 @@ const Offerdata = [
         `,
         title:'DIGITAL TRANSFORMATION',
         link:'/services-digitaltransformation',
-        fliptext:'Transform your business with our customized digital transformation services. We provide tailored strategies and state-of-the-art solutions to modernize operations, improve customer experiences, and foster sustainable growth in the digital age.',
+        fliptext:'Transform your business with our digital transformation services. We offer tailored strategies and cutting-edge solutions to modernize operations, enhance customer experiences, and drive sustainable growth in the digital age.',
     },
     {
         id:4,
@@ -41,7 +41,7 @@ const Offerdata = [
         `,
         title:'DEVOPS',
         link:'/services-devops',
-        fliptext:'We provide extensive DevOps services to assist with digital transformation, innovation, and business growth in the digital space. With our knowledge in CI/CD pipelines, AWS DevOps, Azure DevOps, and GCP DevOps, we enable your team to effectively deploy, manage, and expand applications.',
+        fliptext:'We provide DevOps services for digital transformation and growth, with expertise in CI/CD pipelines, AWS, Azure, and GCP to help deploy, manage, and expand applications effectively.',
     },
     {
         id:5,
@@ -55,7 +55,7 @@ const Offerdata = [
         `,
         title:`ENTERPRISE APP DEVELOPMENT`,
         link:'/services-enterpriseappdev',
-        fliptext:'Elevate your business with our expert mobile app development service. We specialize in native, hybrid, and decentralized apps, aligning you with the mobile-first trend and enhancing brand value through customer-centric solutions.',
+        fliptext:'Elevate your business with our mobile app development services. We specialize in native, hybrid, and decentralized apps to boost brand value and align with the mobile-first trend.',
     },
     {
         id:6,
@@ -70,7 +70,7 @@ const Offerdata = [
         `,
         title:'AI/ML',
         link:'/services-aiml',
-        fliptext:'The foundation of AI and ML is data, and our software development experts are skilled at utilizing it. We create advanced solutions to analyze various types of data, enabling you to discover growth trends and insights.',
+        fliptext:'Data is the foundation of AI and ML. Our experts create advanced solutions to analyze diverse data types, helping you uncover growth trends and actionable insights for your business.',
     },
     {
         id:7,
@@ -98,7 +98,7 @@ const Offerdata = [
         `,
         title:'DATA ANALYTICS',
         link:'/services-dataanalytics',
-        fliptext:'We offer tailored Data Analytics services for the IT industry, utilizing advanced analytics to extract valuable insights, optimize operations, and drive informed decision-making, empowering businesses to efficiently achieve their strategic objectives.',
+        fliptext:'We offer tailored Data Analytics services using advanced techniques to extract insights, optimize operations, and drive informed decision-making for achieving strategic objectives.',
     },
     {
         id:9,
@@ -116,7 +116,25 @@ const Offerdata = [
         `,
         title:'GIS SERVICES',
         link:'/services-gis',
-        fliptext:'Discover our GIS (Geographic Information System) services for accurate spatial data analysis and visualization. We provide customized solutions to maximize geographic insights for informed decision-making and effective resource management, enhancing your business strategy.',
+        fliptext:'We offer customized solutions to maximize geographic insights for informed decision-making and effective resource management, enhancing your business strategy. ',
+    },
+    {
+        id:9,
+        svg:`<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.1971 46.8338C14.1019 46.8338 14.0066 46.8147 13.9156 46.7766C13.6489 46.6623 13.4753 46.4019 13.4753 46.1119V43.8725H6.28464C5.8867 43.8725 5.56287 43.5486 5.56287 43.1507V28.5326C5.56287 28.1346 5.88672 27.8108 6.28464 27.8108H9.80682C10.2048 27.8108 10.5286 28.1346 10.5286 28.5326V38.9317H13.4772V36.6922C13.4772 36.4022 13.6507 36.1419 13.9174 36.0276C14.1841 35.9132 14.4911 35.9725 14.7006 36.1736L19.5753 40.8854C19.715 41.0208 19.7955 41.2092 19.7955 41.4039C19.7955 41.6008 19.715 41.7871 19.5753 41.9225L14.7006 46.6343C14.563 46.7655 14.3831 46.8375 14.1989 46.8375L14.1971 46.8338ZM7.00643 42.431H14.1971C14.595 42.431 14.9189 42.7549 14.9189 43.1528V44.4143L18.0368 41.4023L14.9189 38.3902V39.6518C14.9189 40.0497 14.595 40.3735 14.1971 40.3735H9.80706C9.40912 40.3735 9.08528 40.0497 9.08528 39.6518V29.2526H7.00671L7.00643 42.431Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M50.3775 25.5799H46.8553C46.4574 25.5799 46.1335 25.256 46.1335 24.8581V14.459H43.185V16.6985C43.185 16.9885 43.0114 17.2488 42.7468 17.361C42.4801 17.4732 42.1732 17.4182 41.9637 17.215L37.0889 12.5032C36.9471 12.3677 36.8688 12.1793 36.8688 11.9846C36.8688 11.7878 36.9492 11.6015 37.0889 11.466L41.9637 6.75427C42.1711 6.55318 42.4801 6.49603 42.7468 6.60821C43.0135 6.7204 43.185 6.98287 43.185 7.27076V9.51022H50.3757C50.7736 9.51022 51.0974 9.83408 51.0974 10.232V24.8518C51.0974 25.2497 50.7736 25.5735 50.3757 25.5735L50.3775 25.5799ZM47.5771 24.1384H49.6557V10.9622H42.465C42.0671 10.9622 41.7432 10.6383 41.7432 10.2404V8.97887L38.6253 11.9909L41.7432 15.003V13.7415C41.7432 13.3435 42.0671 13.0197 42.465 13.0197H46.855C47.253 13.0197 47.5768 13.3435 47.5768 13.7415V24.1406L47.5771 24.1384Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.6063 22.9068H8.67645C5.49506 22.9068 2.9082 20.3181 2.9082 17.1386C2.9082 13.959 5.4969 11.3703 8.67645 11.3703C9.26065 11.3703 9.82794 11.455 10.374 11.6243C11.0705 9.19012 13.312 7.45022 15.9196 7.45022C16.6181 7.45022 17.3102 7.57722 17.9579 7.82276C18.9761 5.5367 21.2854 4 23.8319 4C27.3731 4 30.2558 6.88293 30.2558 10.4239C30.2558 10.752 30.2304 11.078 30.1817 11.3997C33.0921 11.6897 35.3739 14.1535 35.3739 17.1403C35.3739 20.3196 32.7873 22.9086 29.6057 22.9086L29.6063 22.9068ZM8.67645 12.8123C6.29096 12.8123 4.34991 14.7532 4.34991 17.1388C4.34991 19.5243 6.29091 21.4653 8.67645 21.4653H29.6063C31.9918 21.4653 33.9329 19.5243 33.9329 17.1388C33.9329 14.7532 31.9919 12.8123 29.6063 12.8123C29.5132 12.8123 29.4222 12.8165 29.3312 12.8207C29.092 12.8355 28.8655 12.7339 28.7194 12.5477C28.5734 12.3614 28.5268 12.1159 28.5967 11.8894C28.7427 11.4153 28.8168 10.922 28.8168 10.4225C28.8168 7.67508 26.5816 5.43985 23.8341 5.43985C21.6433 5.43985 19.679 6.9067 19.0567 9.00435C18.9954 9.2139 18.8408 9.38324 18.6376 9.46791C18.4344 9.55046 18.2058 9.53776 18.0153 9.43192C17.3782 9.07844 16.6543 8.89217 15.9198 8.89217C13.7311 8.89217 11.8854 10.5284 11.625 12.6959C11.5975 12.9287 11.4578 13.1319 11.2525 13.2441C11.0472 13.3563 10.7995 13.3605 10.5899 13.2568C9.9909 12.9604 9.34742 12.8101 8.67647 12.8101L8.67645 12.8123Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.778 36.5382H30.7746C30.3767 36.5382 30.0529 36.2143 30.0529 35.8164C30.0529 35.4185 30.3767 35.0946 30.7746 35.0946H45.778C46.176 35.0946 46.4998 35.4185 46.4998 35.8164C46.4998 36.2143 46.176 36.5382 45.778 36.5382Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.778 40.8266H30.7746C30.3767 40.8266 30.0529 40.5027 30.0529 40.1048C30.0529 39.7069 30.3767 39.3831 30.7746 39.3831H45.778C46.176 39.3831 46.4998 39.7069 46.4998 40.1048C46.4998 40.5028 46.176 40.8266 45.778 40.8266Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.778 45.1129H30.7746C30.3767 45.1129 30.0529 44.789 30.0529 44.3911C30.0529 43.9932 30.3767 43.6693 30.7746 43.6693H45.778C46.176 43.6693 46.4998 43.9932 46.4998 44.3911C46.4998 44.789 46.176 45.1129 45.778 45.1129Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M53.4722 49.9393H23.0807C22.6827 49.9393 22.3589 49.6154 22.3589 49.2175V31.2533C22.3589 28.9609 24.2237 27.0961 26.5161 27.0961H50.0323C52.3247 27.0961 54.1895 28.9609 54.1895 31.2533V49.2175C54.1895 49.6154 53.8657 49.9393 53.4678 49.9393H53.4722ZM23.8024 48.4978H52.7504V31.2532C52.7504 29.7546 51.5312 28.5375 50.0347 28.5375H26.5185C25.022 28.5375 23.8028 29.7546 23.8028 31.2532L23.8024 48.4978Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M52.1853 55.7623H24.3677C21.6879 55.7623 19.5077 53.6223 19.5077 50.9934V49.2175C19.5077 48.8196 19.8315 48.4957 20.2295 48.4957H56.3232C56.7211 48.4957 57.0449 48.8196 57.0449 49.2175V50.9934C57.0449 53.6223 54.8651 55.7623 52.1853 55.7623ZM20.949 49.9372V50.9913C20.949 52.8264 22.4814 54.3187 24.3653 54.3187H52.183C54.0668 54.3187 55.5993 52.8264 55.5993 50.9913V49.9372H20.947H20.949Z" fill="#01B0F1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38.8159 53.8993C37.8401 53.8993 37.0464 53.1056 37.0464 52.1298C37.0464 51.154 37.8401 50.3602 38.8159 50.3602C39.7917 50.3602 40.5855 51.154 40.5855 52.1298C40.5855 53.1056 39.7917 53.8993 38.8159 53.8993ZM38.8159 51.8038C38.636 51.8038 38.4878 51.9498 38.4878 52.1319C38.4878 52.3118 38.6339 52.46 38.8159 52.46C38.9958 52.46 39.144 52.3118 39.144 52.1319C39.144 51.952 38.998 51.8038 38.8159 51.8038Z" fill="#01B0F1"/>
+</svg>
+        `,
+        title:'UI/UX Services',
+        link:'/services-uiux',
+        fliptext:'We offer customized solutions to maximize geographic insights for informed decision-making and effective resource management, enhancing your business strategy. ',
     },
 ]
 
