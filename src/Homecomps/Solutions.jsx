@@ -29,7 +29,7 @@ function Solutions() {
 
                 <div className="flex justify-center">
                     <Link to="/industries" className="inline-flex items-center justify-center py-4 px-24  border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30">
-                        See All <img src={arrow} alt="" className="ml-2 w-5 h-5" />
+                        View More <img src={arrow} alt="" className="ml-2 w-5 h-5" />
                     </Link>
                 </div>
             </div>

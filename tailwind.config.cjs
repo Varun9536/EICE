@@ -28,6 +28,7 @@ export default {
         'indusbanner' : "url('./assets/Compressed/indusbanner.png')",
         'talkbanner' : "url('./assets/Compressed/talkbanner.png')",
         'mobdevhome' : "url('./assets/Compressed/mobdevhome.png')",
+        'cstdbanner' : "url('./assets/Compressed/cstdbanner.png')",
 
 
       },
