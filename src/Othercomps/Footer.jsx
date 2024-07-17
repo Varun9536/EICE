@@ -75,7 +75,7 @@ function Footer()
       <div className="flex flex-col text-start">
         <h1 className="px-3 py-2 text-lg font-bold">Services and Technologies</h1>
         <div className="flex flex-row flex-wrap">
-          <Link to="/services-digitaltransformation" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</Link>
+          {/* <Link to="/services-digitaltransformation" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</Link>
           <Link to="/services-aiml" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AIML</Link>
           <Link to="/services-iot" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">IOT</Link>
           <Link to="/services-devops" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DevOps</Link>
@@ -117,7 +117,20 @@ function Footer()
           <Link to="/services-jira" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jira</Link>
           <Link to="/services-ansible" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ansible</Link>
           <Link to="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AWS</Link>
-          <Link to="/services-azure" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Azure</Link>
+          <Link to="/services-azure" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Azure</Link> */}
+        
+        <Link to="/services-digitaltransformation" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</Link>
+        <Link to="/services-aiml" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AI/ML</Link>
+        <Link to="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Blockchain</Link>
+        <Link to="/services-iot" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">IOT</Link>
+        <Link to="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">UI/UX Consulting</Link>
+        <Link to="/services-android" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3" >Desktop and Mobile App Development</Link>
+        <Link to="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Web Development</Link>
+        <Link to="/services-devops" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DevOps</Link>
+        <Link to="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Cloud Services</Link>
+        <Link to="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Software Testing</Link>
+        
+
         </div>
       </div>
 
