@@ -69,18 +69,18 @@ const technologies = {
     { name: "Vue", icon: "vue-icon", link: "services-vue" },
     { name: "React", icon: "react-icon", link: "services-react" },
     { name: "Angular", icon: "angular-icon", link: "services-angular" },
-    { name: "React Native", icon: "react-icon", link: "services-reactnative" },
-    { name: "Ionic", icon: "ionic-icon", link: "services-ionic" },
+    // { name: "React Native", icon: "react-icon", link: "services-reactnative" },
+    // { name: "Ionic", icon: "ionic-icon", link: "services-ionic" },
     { name: "JQuery", icon: "jquery-icon", link: "services-jquery" },
     { name: "TypeScript", icon: "typescript-icon", link: "services-typescript" },
-    { name: "PHP", icon: "php-icon", link: "services-php" },
+    // { name: "PHP", icon: "php-icon", link: "services-php" },
   ],
   database: [
     { name: "MySQL", icon: "mysql-icon", link: "services-mysql" },
     { name: "PostgreSQL", icon: "postgresql-icon", link: "services-postgresql" },
     { name: "MongoDB", icon: "mongodb-icon", link: "services-mongodb" },
-    { name: "Django", icon: "django-icon", link: "services-django" },
-    { name: "Apache", icon: "apache-icon", link: "services-apache" },
+    // { name: "Django", icon: "django-icon", link: "services-django" },
+    // { name: "Apache", icon: "apache-icon", link: "services-apache" },
     { name: "Oracle", icon: "oracle-icon", link: "services-oracle" },
     { name: "DynamoDB", icon: "dynamo-icon", link: "services-dynamo" },
   ],
@@ -90,9 +90,10 @@ const technologies = {
     { name: "ASP.NET", icon: "aspdotnet-icon", link: "services-aspdotnet" },
     { name: "Express", icon: "express-icon", link: "services-express" },
     { name: "Laravel", icon: "laravel-icon", link: "services-laravel" },
-    { name: "Docker", icon: "docker-icon", link: "services-docker" },
+    // { name: "Docker", icon: "docker-icon", link: "services-docker" },
     { name: "Firebase", icon: "firebase-icon", link: "services-firebase" },
     { name: "NodeJs", icon: "node-icon", link: "services-nodejs" },
+    { name: "Django", icon: "django-icon", link: "services-django" },
 
   ],
   devops: [
@@ -114,9 +115,9 @@ const Technology = ({ name, icon, link }) => {
   return (
     <div className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
       <div className="group  cursor-pointer overflow-hidden flex flex-col gap-2 items-center p-3">
-        <Link to={link} className=" mb-2">
+        {/* <Link to={link} className=" mb-2"> */}
           <IconComponent size={60} className="text-blackk group-hover:text-bloo transition duration-300"/>
-        </Link>
+        {/* </Link> */}
         <span className="group-hover:underline group-hover:text-bloo transition duration-300 text-blackk font-semibold text-sm text-center">{name}</span>
       </div>
     </div>
