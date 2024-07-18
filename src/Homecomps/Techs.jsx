@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FaApple, FaAndroid, FaReact } from 'react-icons/fa';
 import { IoMdReturnLeft } from 'react-icons/io';
-import { SiFlutter, SiIonic, SiSwift, SiKotlin, SiApple, SiJavascript, SiPhp, SiVuedotjs, SiAngular, SiJquery, SiTypescript, SiMysql, SiPostgresql, SiApache, SiOracle, SiDjango, SiMongodb, SiAmazondynamodb, SiNodedotjs, SiRubyonrails, SiLaravel, SiExpress, SiFlask, SiFirebase, SiDocker, SiGit, SiKubernetes, SiJira, SiAnsible, SiAmazonaws, SiMicrosoftazure} from 'react-icons/si';
+import { SiJenkins , SiRedis , SiMicrosoftsqlserver, SiFlutter, SiIonic, SiSwift, SiKotlin, SiApple, SiJavascript, SiPhp, SiVuedotjs, SiAngular, SiJquery, SiTypescript, SiMysql, SiPostgresql, SiApache, SiOracle, SiDjango, SiMongodb, SiAmazondynamodb, SiNodedotjs, SiRubyonrails, SiLaravel, SiExpress, SiFlask, SiFirebase, SiDocker, SiGit, SiKubernetes, SiJira, SiAnsible, SiAmazonaws, SiMicrosoftazure} from 'react-icons/si';
 import { DiDotnet } from "react-icons/di";
 import { useHref } from 'react-router-dom';
 import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
+import { RiNextjsFill } from "react-icons/ri";
 
 
 const categories = [
@@ -51,8 +52,15 @@ const iconComponents = {
     "ansible-icon": SiAnsible,
     "aws-icon": SiAmazonaws,
     "azure-icon": SiMicrosoftazure, 
+    "next-icon" : RiNextjsFill ,
+    "sqlserver-icon" : SiMicrosoftsqlserver ,
+    "redis-icon" : SiRedis ,
+    "jenkin-icon" : SiJenkins 
   };
 
+
+
+  
 const technologies = {
   mobile: [
     { name: "iOS", icon: "apple-icon", link:"services-ios" },
@@ -69,18 +77,20 @@ const technologies = {
     { name: "Vue", icon: "vue-icon", link: "services-vue" },
     { name: "React", icon: "react-icon", link: "services-react" },
     { name: "Angular", icon: "angular-icon", link: "services-angular" },
+    {name : "Next Js" , icon : "next-icon" , link : ""} ,
+    { name: "ASP.NET", icon: "aspdotnet-icon", link: "services-aspdotnet" },
     // { name: "React Native", icon: "react-icon", link: "services-reactnative" },
     // { name: "Ionic", icon: "ionic-icon", link: "services-ionic" },
-    { name: "JQuery", icon: "jquery-icon", link: "services-jquery" },
-    { name: "TypeScript", icon: "typescript-icon", link: "services-typescript" },
+    // { name: "JQuery", icon: "jquery-icon", link: "services-jquery" },
+    // { name: "TypeScript", icon: "typescript-icon", link: "services-typescript" },
     // { name: "PHP", icon: "php-icon", link: "services-php" },
   ],
   database: [
     { name: "MySQL", icon: "mysql-icon", link: "services-mysql" },
     { name: "PostgreSQL", icon: "postgresql-icon", link: "services-postgresql" },
     { name: "MongoDB", icon: "mongodb-icon", link: "services-mongodb" },
-    // { name: "Django", icon: "django-icon", link: "services-django" },
-    // { name: "Apache", icon: "apache-icon", link: "services-apache" },
+    { name: "MicroSoft SQL Server", icon: "sqlserver-icon", link: "services-django" },
+    { name: "Redis", icon: "redis-icon", link: "services-apache" },
     { name: "Oracle", icon: "oracle-icon", link: "services-oracle" },
     { name: "DynamoDB", icon: "dynamo-icon", link: "services-dynamo" },
   ],
@@ -101,9 +111,10 @@ const technologies = {
     { name: "Docker", icon: "docker-icon", link: "services-docker" },
     { name: "Kubernetes", icon: "kubernetes-icon", link: "services-kubernetes" },
     { name: "Jira", icon: "jira-icon", link: "services-jira" },
-    { name: "AWS", icon: "aws-icon", link: "services-aws" },
-    { name: "Azure", icon: "azure-icon", link: "services-azure" },
+    // { name: "AWS", icon: "aws-icon", link: "services-aws" },
+    { name: "Jenkins", icon: "jenkin-icon", link: "services-azure" },
     { name: "Ansible", icon: "ansible-icon", link: "services-ansible" },
+
   ]
 };
 
@@ -129,7 +140,7 @@ function Techs() {
 
   return (
     <div className=''>
-<div className="bg-bgplate bg-cover py-12"></div>
+<div className="bg-bgplate bg-cover py-16"></div>
     <div className='bg-zinc-50'>
     <div className="container  mx-auto px-4 font-manrope">
       <header className="text-center mb-10">
@@ -187,7 +198,7 @@ function Techs() {
       </main>
     </div>
     </div>
-    <div className="bg-bgplate bg-cover py-12 rotate-180"></div>
+    <div className="bg-bgplate bg-cover py-16 rotate-180"></div>
 
     </div>
   );
