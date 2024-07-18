@@ -130,7 +130,7 @@ function Servmain() {
               </div>
               <div >
                   <div className="grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-4 pt-8">
-                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                    <Link to="/services-aiml" className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className="rounded-full py-2 px-4">
                             <LuBrainCircuit size={60} className="text-bloo"/>
                         </div>
@@ -138,8 +138,8 @@ function Servmain() {
                             <h1 className="font-semibold text-start px-4 pb-2 text-xl">AI & ML</h1>
                             <p className="text-left px-4">Unlock the potential of your data with our AI and Machine Learning solutions. EICE helps you implement intelligent systems that learn and improve over time.</p>
                         </div>
-                    </div>
-                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                    </Link>
+                    <Link to="/services-iot" className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full py-2 px-4">
                             <GiCircuitry size={60} className="text-bloo"/>
                         </div>
@@ -147,8 +147,8 @@ function Servmain() {
                             <h1 className="font-semibold pb-2 text-start px-4 text-xl">Internet of Things</h1>
                             <p className="text-left px-4">Connect your devices and gather valuable data with EICE's IoT solutions. We help you create smart, interconnected systems that drive efficiency and innovation.</p>
                         </div>
-                    </div>
-                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                    </Link>
+                    <Link to="/services-blockchain" className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full py-2 px-4">
                           <SiBlockchaindotcom size={60} className="text-bloo"/>
                         </div>
@@ -156,7 +156,7 @@ function Servmain() {
                             <h1 className="font-semibold pb-2 text-start px-4 text-xl">Blockchain Development</h1>
                             <p className="text-left px-4">Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.</p>    
                         </div>
-                    </div>
+                    </Link>
                    
                   </div>
               </div>
@@ -172,7 +172,7 @@ function Servmain() {
             </div>
             <div className="">
                 <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">                  
-                  <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
+                  <Link to="/services-saas" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
                       <div className="flex  rounded-full ">
                         <GrCloudSoftware size={60} className=" rounded-full text-bloo"/>
                       </div>
@@ -180,8 +180,8 @@ function Servmain() {
                           <h1 className="font-semibold pb-2 text-xl">SAAS Development</h1>
                           <p>Transform your software into a scalable service with EICE's SAAS development. We build cloud-based applications that offer flexibility and accessibility to your customers.</p>    
                       </div>
-                  </div>
-                  <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
+                  </Link>
+                  <Link to="/services-webdevelopment" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
                       <div className="flex  rounded-full ">
                         <FaLaptopCode size={60} className=" text-bloo"/>
                       </div>
@@ -189,8 +189,8 @@ function Servmain() {
                           <h1 className="font-semibold pb-2 text-xl">Web App Development</h1>
                           <p>Create powerful web applications with EICE. We develop responsive, feature-rich web apps that work seamlessly across all devices and platforms.</p>    
                       </div>
-                  </div>
-                  <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
+                  </Link>
+                  <Link to="/services-chatbot" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
                       <div className="flex  rounded-full ">
                         <IoIosChatboxes size={60} className="text-bloo"/>
                       </div>
@@ -198,7 +198,7 @@ function Servmain() {
                           <h1 className="font-semibold pb-2 text-xl">Chat Bot Development</h1>
                           <p>Enhance customer service with EICE's chatbot solutions. We create intelligent, conversational AI bots that can handle queries, automate tasks, and improve user engagement.</p>    
                       </div>
-                  </div>
+                  </Link>
                 </div>
             </div>
           </div>
@@ -209,7 +209,8 @@ function Servmain() {
             </div>
         </div>
         <div id='consultancy' className="px-4 pb-12 max-w-7xl mx-auto grid lg:grid-cols-2 grid-cols-1 gap-10">
-            <div className="relative">
+            <Link to="/services-techconsultancy" className="relative cursor-pointer group ">
+                <div className=''>
                 <img src={consultancy} alt="" className="inset-0 object-cover w-full h-full rounded-xl"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-30% via-stone-800/95 via-30% to-transparent rounded-lg flex flex-col justify-end p-4"></div>
                 <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-4xl lg:text-6xl text-left p-4 lg:p-8">
@@ -225,8 +226,9 @@ function Servmain() {
                     </div>
                 </div>
                 </div>
-            </div>
-            <div className="relative">
+                </div>
+            </Link>
+            <Link to="/services-uiuxconsulting" className="relative">
                 <img src={uiuxdesign} alt="" className="inset-0 object-cover w-full h-full rounded-xl"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-30% via-stone-800/95 via-30% to-transparent rounded-lg flex flex-col justify-end p-4"></div>
                 <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-4xl lg:text-6xl text-left p-4 lg:p-8">
@@ -242,7 +244,7 @@ function Servmain() {
                     </div>
                 </div>
                 </div>
-            </div>
+            </Link>
 </div>
 <div>
   {/* Technical Services */}
