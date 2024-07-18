@@ -23,7 +23,7 @@ const IndustryCard = ({ to, color, Icon, title, description }) => (
       </div>
       <div>
         <h3 className="font-semibold text-xl sm:text-2xl py-2">{title}</h3>
-        <p className="font-medium text-blackk/60 text-sm sm:text-base">{description}</p>
+        <p className="font-medium text-blackk/60 sm:text-xl text-lg">{description}</p>
       </div>
     </div>
   </Link>
@@ -43,17 +43,17 @@ function Indusmain() {
 
   return (
     <div>
-        <div className="font-manrope max-w-7xl mx-auto px-4  py-32 sm:py-32 2xl:py-8">
+        <div className="font-manrope max-w-7xl mx-auto px-4  pt-32 sm:pt-32 2xl:pt-8">
             <section className="text-center">
-                <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+                <h1 className="text-blackk font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1">
                 Driving <span className="text-bloo">Digital Transformation</span> Across Industries
                 </h1>
-                <p className="text-blackk/70 font-medium text-base sm:text-lg max-w-3xl mx-auto">
+                <p className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-center">
                 EICE empowers businesses to thrive in the digital age by leveraging cutting-edge technologies and innovative strategies, revolutionizing operations and enhancing competitiveness.
                 </p>
             </section>
 
-            <div className="w-full scale-[.7] max-w-screen-2xl mx-auto">
+            <div className="w-full -my-6 scale-[.7] max-w-screen-2xl mx-auto">
                 <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-full"></div>
             </div>
 
@@ -75,7 +75,7 @@ function Indusmain() {
                 ))}
             </div>
 
-            <div className="pt-20 grid lg:grid-cols-2 grid-cols-1 gap-20">
+            <div className="pt-24 pb-4 grid lg:grid-cols-2 grid-cols-1 gap-20">
                 <h1 className="text-bloo font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 flex items-center justify-center">
                     Why Choose EICE
                 </h1>

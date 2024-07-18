@@ -44,15 +44,15 @@ function Scopes()
                         <h1 className="w-full text-center text-blackk font-semibold text-3xl pb-8">Constrained Budget Engagement</h1>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Long term milestones can be defined irrespective of the chosen development model (ie; Agile, Spiral, etc.)</h2>
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Long term milestones can be defined irrespective of the chosen development model (ie; Agile, Spiral, etc.)</h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
                         </div>
 
                     </div>
@@ -76,18 +76,18 @@ function Scopes()
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows projects to evolve freely, adapting to changes without rigid constraints.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Flexible Scope allows projects to evolve freely, adapting to changes without rigid constraints.
 
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Dynamic Needs adapt to evolving business, market dynamics, and stakeholder feedback effectively.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Dynamic Needs adapt to evolving business, market dynamics, and stakeholder feedback effectively.
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Continuous feedback fosters iterative improvements and aligns with evolving project objectives effectively.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Continuous feedback fosters iterative improvements and aligns with evolving project objectives effectively.
                             </h2>
                         </div>
                     </div>
@@ -99,18 +99,18 @@ function Scopes()
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows projects to evolve freely, adapting to changes without rigid constraints.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Flexible Scope allows projects to evolve freely, adapting to changes without rigid constraints.
 
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Dynamic Needs adapt to evolving business, market dynamics, and stakeholder feedback effectively.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Dynamic Needs adapt to evolving business, market dynamics, and stakeholder feedback effectively.
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Continuous feedback fosters iterative improvements and aligns with evolving project objectives effectively.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Continuous feedback fosters iterative improvements and aligns with evolving project objectives effectively.
                             </h2>
                         </div>
                     </div>
@@ -146,17 +146,17 @@ function Scopes()
                         <h1 className="w-full text-center text-blackk font-semibold text-3xl pb-8">Unclear Requirement Engagement</h1>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Initial project requirements are not well-defined, allowing flexibility for discovery and refinement as the project progresses.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Initial project requirements are not well-defined, allowing flexibility for discovery and refinement as the project progresses.
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Particularly suited for exploratory or innovative projects where the outcomes are not fully known at the outset.
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Particularly suited for exploratory or innovative projects where the outcomes are not fully known at the outset.
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Enables continuous discovery and definition of requirements throughout the project lifecycle, adapting to evolving insights and stakeholder needs</h2>
+                            <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Enables continuous discovery and definition of requirements throughout the project lifecycle, adapting to evolving insights and stakeholder needs</h2>
                         </div>
                     </div>
                 </div>

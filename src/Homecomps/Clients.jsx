@@ -69,7 +69,7 @@ function Clients() {
     };
 
     return (
-        <div className="bg-bloo/5 py-3 w-screen overflow-hidden">
+        <div className="py-3 w-screen overflow-hidden">
             <Slider {...settings}>
                 {clients.map((client, index) => (
                     <ClientLogo

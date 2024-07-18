@@ -2,7 +2,7 @@ import React from "react";
 
 function Clientele() {
     return (
-        <div className="relative font-manrope text-blackk bg-zinc-50/50 py-16 sm:py-12 md:py-16 lg:py-16 xl:pt-4 xl:pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="relative font-manrope text-blackk bg-zinc-50/50 py-16 sm:py-12 md:py-16 lg:py-16 xl:pt-12 xl:pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
             <div className="absolute scale-[1.2] inset-0 w-screen h-full -z-10">
                 <div className="bg-map bg-no-repeat bg-blend-overlay  bg-cover h-full w-full pl-80 "></div>
                 <div className="bg-bg-no-repeat bg-cover h-full "></div>

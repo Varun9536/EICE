@@ -67,13 +67,13 @@ function Servmain() {
                         <div className="grid lg:grid-cols-3 px-4 grid-cols-1 gap-6 pt-12">
                             <Link to="/services-digitaltransformation" className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
                                 <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
-                                    <div className="flex w-full h-full items-center justify-start px-2 pb-2">
+                                    <div className="w-full h-full items-center justify-start px-2 pb-2">
                                         <LuCloudCog size={50} className="text-bloo"/>
                                     </div>
                                     <div>
                                         <div className="flex flex-col p-2 text-start justify-end">
-                                            <h1 className="text-blackk z-20 px-2 font-bold text-4xl pb-4">Digital Transformation</h1>
-                                            <p className="z-20 text-blackk/90 text-left text-lg px-2  font-medium">
+                                            <h1 className="text-blackk z-20  font-bold text-4xl pb-4">Digital Transformation</h1>
+                                            <p className="z-20 font-medium text-blackk/60 sm:text-xl text-lg">
                                                 Revolutionize your business with EICE's digital transformation services. We help you leverage cutting-edge technologies to streamline operations, enhance customer experiences, and drive growth.
                                             </p>
                                         </div>
@@ -87,8 +87,8 @@ function Servmain() {
                                     </div>
                                     <div>
                                         <div className="flex flex-col p-2 text-start justify-end ">
-                                            <h1 className="text-blackk z-20 px-2 font-bold text-4xl pb-4">DevOps</h1>
-                                            <p className="z-20 text-blackk/90 text-lg px-2 text-left font-medium">
+                                            <h1 className="text-blackk z-20  font-bold text-4xl pb-4 flex items-end">DevOps</h1>
+                                            <p className="z-20 font-medium text-blackk/60 sm:text-xl text-lg">
                                                 Accelerate your software delivery with EICE's DevOps solutions. We integrate development and operations to improve collaboration, increase efficiency, and deliver high-quality software faster.
                                             </p>
                                         </div>
@@ -105,8 +105,8 @@ function Servmain() {
                                     </div>
                                     <div>
                                         <div className="flex flex-col p-2 text-start">
-                                            <h1 className="text-blackk z-20 px-2 font-bold text-4xl pb-4">Generative AI</h1>
-                                            <p className="z-20 text-blackk/90 text-lg px-2 text-left font-medium">
+                                            <h1 className="text-blackk z-20  font-bold text-4xl pb-4">Generative AI</h1>
+                                            <p className="z-20 font-medium text-blackk/60 sm:text-xl text-lg">
                                                 Harness the power of AI with EICE's generative AI solutions. We develop custom AI models that can create content, generate ideas, and solve complex problems, giving your business a significant competitive advantage.
                                             </p>
                                         </div>
@@ -136,7 +136,7 @@ function Servmain() {
                         </div>
                         <div className="pt-6 h-full text-center">
                             <h1 className="font-semibold text-start px-4 pb-2 text-xl">AI & ML</h1>
-                            <p className="text-left px-4">Unlock the potential of your data with our AI and Machine Learning solutions. EICE helps you implement intelligent systems that learn and improve over time.</p>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-left px-4">Unlock the potential of your data with our AI and Machine Learning solutions. EICE helps you implement intelligent systems that learn and improve over time.</p>
                         </div>
                     </Link>
                     <Link to="/services-iot" className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
@@ -145,7 +145,7 @@ function Servmain() {
                         </div>
                         <div className="pt-6 h-full text-center">
                             <h1 className="font-semibold pb-2 text-start px-4 text-xl">Internet of Things</h1>
-                            <p className="text-left px-4">Connect your devices and gather valuable data with EICE's IoT solutions. We help you create smart, interconnected systems that drive efficiency and innovation.</p>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-left px-4">Connect your devices and gather valuable data with EICE's IoT solutions. We help you create smart, interconnected systems that drive efficiency and innovation.</p>
                         </div>
                     </Link>
                     <Link to="/services-blockchain" className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
@@ -154,7 +154,7 @@ function Servmain() {
                         </div>
                         <div className="pt-6 h-full text-center">
                             <h1 className="font-semibold pb-2 text-start px-4 text-xl">Blockchain Development</h1>
-                            <p className="text-left px-4">Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.</p>    
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-left px-4">Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.</p>    
                         </div>
                     </Link>
                    
@@ -178,7 +178,7 @@ function Servmain() {
                       </div>
                       <div className="pt-6 h-full text-justify">
                           <h1 className="font-semibold pb-2 text-xl">SAAS Development</h1>
-                          <p>Transform your software into a scalable service with EICE's SAAS development. We build cloud-based applications that offer flexibility and accessibility to your customers.</p>    
+                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left '>Transform your software into a scalable service with EICE's SAAS development. We build cloud-based applications that offer flexibility and accessibility to your customers.</p>    
                       </div>
                   </Link>
                   <Link to="/services-webdevelopment" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
@@ -187,7 +187,7 @@ function Servmain() {
                       </div>
                       <div className="pt-6 h-full text-justify ">
                           <h1 className="font-semibold pb-2 text-xl">Web App Development</h1>
-                          <p>Create powerful web applications with EICE. We develop responsive, feature-rich web apps that work seamlessly across all devices and platforms.</p>    
+                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left '>Create powerful web applications with EICE. We develop responsive, feature-rich web apps that work seamlessly across all devices and platforms.</p>    
                       </div>
                   </Link>
                   <Link to="/services-chatbot" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
@@ -196,7 +196,7 @@ function Servmain() {
                       </div>
                       <div className="pt-6 h-full text-justify">
                           <h1 className="font-semibold pb-2 text-xl">Chat Bot Development</h1>
-                          <p>Enhance customer service with EICE's chatbot solutions. We create intelligent, conversational AI bots that can handle queries, automate tasks, and improve user engagement.</p>    
+                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left '>Enhance customer service with EICE's chatbot solutions. We create intelligent, conversational AI bots that can handle queries, automate tasks, and improve user engagement.</p>    
                       </div>
                   </Link>
                 </div>

@@ -249,8 +249,6 @@ function Digitrans()
             <Cstdmain />
             <Reviews />
             <TalkToUs />
-            <Clients />
-            <Clientele />
             <Footer/>
             <Copyright />
        </div>

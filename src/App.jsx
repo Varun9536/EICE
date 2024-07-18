@@ -68,6 +68,8 @@ import { BiPencil } from "react-icons/bi";
 import { MdPermMedia } from "react-icons/md";
 import { BsTruck } from "react-icons/bs";
 
+import Resourcesmain from './Othercomps/Resourcesmain';
+
 import Careerform from "./Othercomps/Careerform";
 import Contactform from "./Othercomps/Contactform";
 
@@ -908,7 +910,7 @@ const Home = () => {
       <Clients />
 
       {/* <Separator /> */}
-      <div className="flex flex-col gap-0.5 items-center justify-center xl:pt-20 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
+      <div className="flex flex-col gap-0.5 items-center justify-center xl:pt-16 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
         <p className="text-bloo font-bold text-xl sm:text-xl lg:text-2xl  py-2">
           Core Services
         </p>
@@ -979,10 +981,7 @@ const Contact = () => {
 const Resources = () => {
   return (
     <>
-      <h1>Resources</h1>
-      <h2>
-        <Link to="/casestudies">casestudies</Link>
-      </h2>
+      <Resourcesmain />
       <Footer />
       <Copyright />
     </>
