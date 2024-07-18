@@ -7,7 +7,7 @@ const Offerdata = [
         `,
         title:'CLOUD SERVICES',
         link:'/services-cloud',
-        fliptext:'Explore our advanced cloud services for efficient, scalable operations. We provide secure, reliable infrastructure and expert management to support your business growth and success in the digital age.',
+        fliptext:'Explore our advanced cloud services for scalable and efficient operations. We offer secure, reliable infrastructure and expert management tailored to your needs, supporting your business growth and success in the digital age. Discover the future of cloud solutions with us.',
     },
     {
         id:2,
@@ -21,7 +21,7 @@ const Offerdata = [
         `,
         title:'TECHNOLOGY CONSULTING',
         link:'/services-techconsultancy',
-        fliptext:'We offer comprehensive technology consulting services, providing strategic guidance and tailored solutions to boost efficiency, drive innovation, and achieve digital transformation for businesses of all sizes.',
+        fliptext:'We offer comprehensive technology consulting services with strategic guidance and tailored solutions. Our expertise boosts efficiency, drives innovation, and achieves digital transformation for businesses of all sizes. Partner with us to elevate your technology strategy and achieve success.',
     },
     {   
         id:3,
@@ -31,7 +31,7 @@ const Offerdata = [
         `,
         title:'DIGITAL TRANSFORMATION',
         link:'/services-digitaltransformation',
-        fliptext:'Transform your business with our digital transformation services. We offer tailored strategies and cutting-edge solutions to modernize operations, enhance customer experiences, and drive sustainable growth in the digital age.',
+        fliptext:'Transform your business with our digital transformation services. We offer tailored strategies and cutting-edge solutions to modernize operations, enhance customer experiences, and drive sustainable growth. Partner with us to achieve your business goals effectively in the digital age.',
     },
     {
         id:4,
@@ -41,7 +41,7 @@ const Offerdata = [
         `,
         title:'DEVOPS',
         link:'/services-devops',
-        fliptext:'We provide DevOps services for digital transformation and growth, with expertise in CI/CD pipelines, AWS, Azure, and GCP to help deploy, manage, and expand applications effectively.',
+        fliptext:'We provide DevOps services for digital transformation and growth. Our expertise in CI/CD pipelines, AWS, Azure, and GCP helps you deploy, manage, and expand applications effectively. Drive innovation and efficiency for your business’s success with our solutions.',
     },
     {
         id:5,
@@ -55,7 +55,7 @@ const Offerdata = [
         `,
         title:`ENTERPRISE APP DEVELOPMENT`,
         link:'/services-enterpriseappdev',
-        fliptext:'Elevate your business with our mobile app development services. We specialize in native, hybrid, and decentralized apps to boost brand value and align with the mobile-first trend.',
+        fliptext:'Elevate your business with our mobile app development services. We specialize in native, hybrid, and decentralized apps to boost brand value and align with the mobile-first trend. Let us help you create innovative solutions for a competitive edge.',
     },
     {
         id:6,
@@ -70,7 +70,7 @@ const Offerdata = [
         `,
         title:'AI/ML',
         link:'/services-aiml',
-        fliptext:'Data is the foundation of AI and ML. Our experts create advanced solutions to analyze diverse data types, helping you uncover growth trends and actionable insights for your business.',
+        fliptext:' Data is the foundation of AI and ML. Our experts design advanced solutions to analyze diverse data types, uncover growth trends, and provide actionable insights. Leverage our expertise to drive informed decisions and strategic growth for your business.',
     },
     {
         id:7,
@@ -88,7 +88,7 @@ const Offerdata = [
         `,
         title:'IOT',
         link:'/services-iot',
-        fliptext:'We specialize in creating scalable and secure IoT solutions that enhance efficiency, connectivity, and data insights, empowering your business to thrive in the digital age.',
+        fliptext:'We specialize in creating scalable and secure IoT solutions to enhance efficiency, improve connectivity, and provide actionable data insights. Our expertise helps your business thrive in the digital age, driving innovation and growth for long-term success.',
     },
     {
         id:8,
@@ -98,7 +98,7 @@ const Offerdata = [
         `,
         title:'DATA ANALYTICS',
         link:'/services-dataanalytics',
-        fliptext:'We offer tailored Data Analytics services using advanced techniques to extract insights, optimize operations, and drive informed decision-making for achieving strategic objectives.',
+        fliptext:'We offer tailored Data Analytics services using advanced techniques to extract valuable insights, optimize operations, and drive informed decision-making. Our solutions are designed to help you achieve strategic objectives and gain a competitive edge in the marketplace.',
     },
     {
         id:9,
@@ -116,7 +116,7 @@ const Offerdata = [
         `,
         title:'GIS SERVICES',
         link:'/services-gis',
-        fliptext:'We offer customized solutions to maximize geographic insights for informed decision-making and effective resource management, enhancing your business strategy. ',
+        fliptext:'We offer customized GIS solutions to maximize geographic insights for informed decision-making and effective resource management. Our services are designed to enhance your business strategy, optimize operations, and achieve your goals with precision in a competitive landscape.',
     },
     {
         id:9,
@@ -125,7 +125,7 @@ const Offerdata = [
         `,
         title:'UI/UX Services',
         link:'/services-uiux',
-        fliptext:'We offer customized solutions to maximize geographic insights for informed decision-making and effective resource management, enhancing your business strategy. ',
+        fliptext:'We offer top-notch UI/UX design services to create intuitive, user-friendly interfaces that enhance user experience and drive engagement. Our designs focus on both aesthetic appeal and functionality, helping your business stand out and achieve your digital goals effectively.',
     },
 ]
 
