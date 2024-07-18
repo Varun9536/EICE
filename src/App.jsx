@@ -77,6 +77,12 @@ import Azure from './Servcomps/Azure';
 import Ansible from './Servcomps/Ansible';
 
 
+// new component
+import Blockchain from './Servcomps/Blockchain.jsx';
+
+
+
+
 import Indusmain from './Allindus/Indusmain';
 import Healthcare from './Allindus/Healthcare';
 import Financial from './Allindus/Financial';
@@ -189,6 +195,12 @@ const App = () => {
         <Route path="services-azure" element={<Azure />} />
         <Route path="services-aws" element={<Aws />} />
         <Route path="casestudies" element={<Cstudiescomp />} />
+
+
+         <Route path="services-blockchain" element={<Blockchain />} />
+
+
+        
         <Route path="resources/casestudies/AutoOne" element={<AutoOne />} />
         <Route path="resources/casestudies/AutoTwo" element={<AutoTwo />} />
         <Route path="resources/casestudies/AutoThree" element={<AutoThree />} />
