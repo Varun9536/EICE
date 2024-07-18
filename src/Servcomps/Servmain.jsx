@@ -181,7 +181,7 @@ function Servmain() {
             <div className="">
                 <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">
                   <div className=" group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="rounded-full w-full flex items-center justify-center">
+                      <div className="rounded-full w-full flex ">
                           <FaAndroid size={60} className=" rounded-full text-bloo"/>
                       </div>
                       <div className="pt-6 h-full text-justify">
@@ -190,7 +190,7 @@ function Servmain() {
                       </div>
                   </div>
                   <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="rounded-full flex justify-center">
+                      <div className="rounded-full flex ">
                           <FaAppStoreIos size={60} className="text-bloo"/>
                       </div>
                       <div className="pt-6 h-full text-justify">
@@ -199,7 +199,7 @@ function Servmain() {
                       </div>
                   </div>
                   <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="flex justify-center rounded-full ">
+                      <div className="flex  rounded-full ">
                         <GrCloudSoftware size={60} className=" rounded-full text-bloo"/>
                       </div>
                       <div className="pt-6 h-full text-justify">
@@ -208,7 +208,7 @@ function Servmain() {
                       </div>
                   </div>
                   <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="flex  rounded-full justify-center">
+                      <div className="flex  rounded-full ">
                         <FaLaptopCode size={60} className=" text-bloo"/>
                       </div>
                       <div className="pt-6 h-full text-justify ">
@@ -217,7 +217,7 @@ function Servmain() {
                       </div>
                   </div>
                   <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="flex justify-center rounded-full ">
+                      <div className="flex  rounded-full ">
                         <IoIosChatboxes size={60} className="text-bloo"/>
                       </div>
                       <div className="pt-6 h-full text-justify">
@@ -241,11 +241,11 @@ function Servmain() {
                 <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-4xl lg:text-6xl text-left p-4 lg:p-8">
                 <div className='h-3/4'></div>
                 <div className=''>
-                    <FaPeopleArrows size={60} className="text-white lg:hidden pr-2 "/>
-                    <FaPeopleArrows size={100} className="text-white hidden lg:block pr-2"/>
+                    <FaPeopleArrows size={50} className="text-white lg:hidden pr-2 "/>
+                    <FaPeopleArrows size={60} className="text-white hidden lg:block pr-2"/>
                     <div>
                         <h1 className='py-2 text-3xl font-bold'>App Consulting</h1>
-                        <p className="text-wrap text-base font-medium lg:text-lg">
+                        <p className="text-wrap h-32 text-base font-medium lg:text-lg">
                         EICE provides expert guidance on app strategy, development, and optimization. Our consultants help you make informed decisions about technology stack, user experience, and market positioning to ensure your app's success.
                         </p>
                     </div>
@@ -258,11 +258,11 @@ function Servmain() {
                 <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-4xl lg:text-6xl text-left p-4 lg:p-8">
                 <div className='h-3/4'></div>
                 <div className=''>
-                    <FaPencilRuler size={60} className="text-white lg:hidden pr-2 "/>
-                    <FaPencilRuler size={100} className="text-white hidden lg:block pr-2"/>
+                    <FaPencilRuler size={50} className="text-white lg:hidden pr-2 "/>
+                    <FaPencilRuler size={60} className="text-white hidden lg:block pr-2"/>
                     <div>
                         <h1 className='py-2 text-3xl font-bold'>UI/UX Consulting</h1>
-                        <p className="text-wrap text-base font-medium lg:text-lg">
+                        <p className="text-wrap h-32 text-base font-medium lg:text-lg">
                         EICE offers specialized UI/UX consulting services to enhance your digital products. Our experts provide insights on user interface design and user experience. We help you create ensure your product stands out in the market and delivers exceptional user satisfaction.
                         </p>
                     </div>
