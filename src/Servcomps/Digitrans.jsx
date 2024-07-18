@@ -63,11 +63,11 @@ const industries = [
     const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
   
     return (
-      <div className="font-manrope px-4 sm:px-6 lg:px-8">
+      <div className="font-manrope px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
           Case Studies
         </h2>
-        <h1 className="text-blackk max-w-7xl mx-auto text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
+        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1 pb-8">
           Explore how we digitally transformed other businesses
         </h1>
         <main className="container mx-auto max-w-7xl">
