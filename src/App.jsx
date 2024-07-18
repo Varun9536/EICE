@@ -79,6 +79,9 @@ import Ansible from './Servcomps/Ansible';
 
 // new component
 import Blockchain from './Servcomps/Blockchain.jsx';
+import Webdeveopment from './Servcomps/Webdevelopment.jsx';
+import Softwaretesting from './Servcomps/Softwaretesting.jsx';
+import UiUx from './Servcomps/UiUx.jsx';
 
 
 
@@ -198,6 +201,9 @@ const App = () => {
 
 
          <Route path="services-blockchain" element={<Blockchain />} />
+        <Route path="services-webdevelopment" element={<Webdeveopment />} />
+        <Route path="services-softwaretesting" element={<Softwaretesting />} />
+        <Route path="services-uiuxconsulting" element={<UiUx />} />
 
 
         
