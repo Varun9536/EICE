@@ -12,7 +12,7 @@ function Talktous()
                 <div className="max-w-7xl w-full mx-auto grid lg:grid-cols-2 lg:gap-12 gap-4 grid-cols-1 justify-center items-center text-left">
                     <h1 className="col-span-2 max-w-3xl text-blackk lg:text-left text-left font-bold px-4 text-xl sm:text-2xl lg:text-3xl xl:text-4xl w-full ">
                         Our strength lies in delivering innovative, <span className="text-bloo">Industry-Specific Solutions</span>. 
-                        Partner with EICE to transform your business and achieve <span className="text-bloo">Exceptional Results</span>.
+                        Partner with EICE to transform your business and achieve <span className="">Exceptional Results</span>.
                     </h1>
                     <div className="px-4 flex lg:pt-0 pt-4">  
                         <Link to="/contact" className="h-full">

@@ -119,12 +119,12 @@ function Digitrans()
        <div>
             <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
                 <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
-                    <div className="absolute inset-0 left-[10%]">
+                    <div className="absolute -z-20 inset-0 right-[75%]">
                             <img src={servicebannerpattern} alt="" />
                     </div>
                     <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
                         <div className="w-full">
-                            <h1 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">Digital Transformation</h1>
+                            <h1 className="text-blackk font-bold sm:text-5xl text-4xl sm:leading-tight leading-snug">Digital Transformation</h1>
                             <h2 className="text-blackk font-light sm:text-3xl text-2xl pb-4 pt-2">
                                 {"Revolutionize Your Business: Harness the Power of Digital for Sustainable Growth"}
                             </h2>
@@ -138,11 +138,11 @@ function Digitrans()
                 </div>    
             </div>
 
-            <div className="py-16 md:py-20 lg:py-28">
+            <div className="py-16 md:py-20 lg:py-16 ">
                 <div className="relative font-manrope mx-auto px-4 lg:px-4 max-w-7xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
-                            <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                            <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-tight mb-6">
                                 Embrace the Digital Future: 
                                 <span className="text-bloo"> Transformation </span>
                                 for Competitive Advantage
@@ -150,24 +150,24 @@ function Digitrans()
                         </div>
                         <div>
                             <p className="font-medium text-base sm:text-lg text-justify">
-                                In today's rapidly evolving digital landscape, businesses must adapt to stay relevant. At EICE, we offer comprehensive digital transformation services to propel your organization into the future.
+                            In today's digital landscape, businesses must adapt to stay relevant. EICE offers comprehensive digital transformation services to propel your organization forward.
                             </p>
                             <p className="font-medium text-base sm:text-lg text-justify mt-4">
-                                Our strategic approach ensures alignment with your business objectives. Our experts combine industry insights with cutting-edge technologies to implement solutions that drive meaningful change.
+                            Our strategic approach ensures alignment with your objectives, combining industry insights and cutting-edge technologies to drive meaningful change.
                             </p>
                             <p className="font-medium text-base sm:text-lg text-justify mt-4">
-                                We develop strategies that not only meet your goals but also enhance operational efficiency, capabilities, and customer experiences. Partner with EICE to navigate the digital revolution and achieve long-term success in the digital age.
+                            We develop strategies that enhance operational efficiency, capabilities, and customer experiences. Partner with EICE to navigate the digital revolution and achieve long-term success.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>  
-            <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20">
-                <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Core Competencies</h1>
-                <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Our Digital Transformation Expertise</h2>
-                <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-16">
+            <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-4">
+                <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Core Competencies</h1>
+                <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Our Digital Transformation Expertise</h2>
+                <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
                     <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full bg-bloo/10">
+                        <div className="h-1/2 rounded-full bg-bloo/5">
                             <img src={dtdigital} alt="" />
                         </div>
                         <div className="pt-6 h-full text-center">
@@ -176,7 +176,7 @@ function Digitrans()
                         </div>
                     </div>
                     <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full bg-bloo/10">
+                        <div className="h-1/2 rounded-full bg-bloo/5">
                             <img src={dtconsulting} alt="" className="scale-[0.85]"/>
                         </div>
                         <div className="pt-6 h-full text-center">
@@ -185,7 +185,7 @@ function Digitrans()
                         </div>
                     </div>
                     <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full bg-bloo/10">
+                        <div className="h-1/2 rounded-full bg-bloo/5">
                             <img src={dtdesign} alt="" className="scale-[0.8]"/>
                         </div>
                         <div className="pt-6 h-full text-center">
@@ -195,7 +195,7 @@ function Digitrans()
                     </div>
                 </div>
             </div>
-            <div className="bg-zinc-50 pb-32 text-justify my-24">
+            <div className="bg-zinc-50 pb-12 text-justify my-12">
                 <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
                     <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Why Choose EICE</h1>
                     <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Key Advantages of Partnering with EICE for Your Digital Transformation Journey</h2>

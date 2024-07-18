@@ -44,8 +44,8 @@ function Servmain() {
             
           <div className=" relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen pb-8">
           <div className='2xl:pt-16 pt-36'></div>
-            <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-1 text-center">Our Services</h1>
-            <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">Explore what we offer</h2>
+            <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Our Services</h1>
+            <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Explore what we offer</h2>
             <h2 className="text-blackk/60 font-semibold sm:text-3xl py-4 text-2xl sm:leading-tight leading-snug text-center">At EICE, we offer a comprehensive suite of tech services designed to propel your business into the digital future. From cutting-edge app development to strategic consultancy, we're here to transform your ideas into reality.</h2>
           </div>
           <Offers />
@@ -55,8 +55,8 @@ function Servmain() {
             <div className="bg-zinc-50">
                 <div className="py-20 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
                     <div>
-                        <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-2 text-center">Our Flagship Services</h1>
-                        <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">Discover EICE's core offerings that drive innovation and efficiency across industries. Our flagship services are designed to give your business a competitive edge in the digital landscape.</h2>
+                        <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Our Flagship Services</h1>
+                        <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Discover EICE's core offerings that drive innovation and efficiency across industries. Our flagship services are designed to give your business a competitive edge in the digital landscape.</h2>
                     </div>
                     <div>
                         <div className="grid lg:grid-cols-3 px-4 grid-cols-1 gap-6 pt-12">
@@ -119,8 +119,8 @@ function Servmain() {
             <div id='emergingTechnologies' className='py-4'></div>
             <div className=" relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
               <div >
-                <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-2 text-center">Emerging Technologies</h1>
-                <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">Stay ahead of the curve with EICE's expertise in cutting-edge technologies. We help businesses leverage the latest innovations to create new opportunities and drive unprecedented growth.</h2>
+                <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Emerging Technologies</h1>
+                <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1">Stay ahead of the curve with EICE's expertise in cutting-edge technologies. We help businesses leverage the latest innovations to create new opportunities and drive unprecedented growth.</h2>
                 <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
               </div>
               <div >
@@ -169,8 +169,8 @@ function Servmain() {
         <div className="bg-zinc-50" id='appDevelopment'>
         <div className="py-16 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
             <div>
-              <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-1 text-center">App Development Services</h1>
-              <h2 className="text-blackk font-bold sm:text-4xl text-3xl sm:leading-tight leading-snug text-center">From mobile apps to complex enterprise solutions, EICE delivers cutting-edge software tailored to your unique business needs. Our expert developers use the latest technologies to create powerful, user-friendly applications.</h2>
+              <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">App Development Services</h1>
+              <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-6xl py-1">From mobile apps to complex enterprise solutions, EICE delivers cutting-edge software tailored to your unique business needs. Our expert developers use the latest technologies to create powerful, user-friendly applications.</h2>
               <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
             </div>
             <div className="">
