@@ -3,11 +3,11 @@ import React from "react";
 function Company()
 {
     return (
-        <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen sm:pt-28 pt-36 pb-16">
+        <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen 2xl:pt-12 sm:pt-28 pt-36">
             {/* <div className="w-full h-full bg-bloo/5 -rotate-45 absolute left-[75%] blur-[400px]"></div> */}
             
-            <div className="text-center pb-24">
-                <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4">Our Foundation</h1>
+            <div className="text-center pb-12">
+                <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-1">Our Foundation</h1>
                 <h2 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-relaxed leading-snug">Expertise, Integrity & Collaboration</h2>
             </div>
             <div className="flex sm:flex-row flex-col px-1 sm:gap-24 gap-12 items-center justify-center text-center text-blackk">

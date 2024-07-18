@@ -13,7 +13,7 @@ import { FaArrowRight } from "react-icons/fa";
 function Scopes()
 {
     return(
-        <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen sm:pt-24 sm:pb-36 py-4">
+        <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen sm:pt-6 sm:pb-36 py-4">
             <div className="text-center text-blackk font-bold sm:text-4xl text-3xl">
                 <div className="flex flex-col items-center justify-center text-center sm:pb-6 pb-2">
                     <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4">Engage with Us</h1>
@@ -29,9 +29,9 @@ function Scopes()
             <div className="flex flex-col gap-24 items-center justify-center sm:pt-20 pt-16">
                 <div className="lg:grid lg:grid-cols-2 flex flex-col items-center justify-center w-full h-full">
                     <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
-                        <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                            <div className="z-20 pb-8 justify-center flex w-full"><img src={ConstrainedBudget} alt="" className="scale-[1.2]"/></div>
-                            <h1 className="text-white z-20 font-bold text-4xl pb-4">Constrained Budget</h1>
+                        <div className="flex flex-col p-16  absolute inset-0 justify-center">
+                            <div className="z-20 pb-8 justify-start flex w-full px-4"><img src={ConstrainedBudget} alt="" className="scale-[1.2]"/></div>
+                            <h1 className="text-white z-20 font-bold text-4xl pb-4 px-2">Constrained Budget</h1>
                             <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
                                 Well defined project guidelines & complete scope. Allows us to give you a fixed cost and timeline.
                             </p>
@@ -59,11 +59,12 @@ function Scopes()
                 </div>
                 <div className="lg:hidden flex flex-col items-center justify-center w-full h-full">
                     <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
-                        <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                            <div className="z-20 pb-8 justify-center flex w-full"><img src={EvolvingScope} alt="" className="scale-[1.2]"/></div>
-                            <h1 className="text-white z-20 font-bold text-4xl pb-4">Evolving Scope</h1>
+                        <div className="flex flex-col p-16  justify-center absolute inset-0 ">
+                            <div className="z-20 pb-8  flex w-full"><img src={EvolvingScope} alt="" className="scale-[1.2]"/></div>
+                            <h1 className="text-white z-20 font-bold text-4xl pb-4 px-2">Evolving Scope</h1>
                             <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
+                            Adaptable approach, accommodating changing project needs and dynamics throughout the development lifecycle.
+
                             </p>
                         </div>
                         <img src={budget2} alt="" className="w-full h-full object-cover"/>
@@ -75,15 +76,17 @@ function Scopes()
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows project requirements to evolve, accommodating changes and adjustments as needed, without rigid constraints.
+                            </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Long term milestones can be defined irrespective of the chosen development model (ie; Agile, Spiral, etc.)</h2>
+                            <h2 className="text-lg font-light text-blackk">Dynamic and Evolving Needs are well-suited for projects facing uncertainties or requiring adjustments due to evolving business needs, market dynamics, or stakeholder feedback.
+                            </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="text-lg font-light text-blackk">Continuous Feedback and Iteration support ongoing feedback loops throughout the project lifecycle, facilitating iterative improvements and alignment with evolving objectives.</h2>
                         </div>
                     </div>
                 </div>
@@ -94,23 +97,26 @@ function Scopes()
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows project requirements to evolve, accommodating changes and adjustments as needed, without rigid constraints.
+                            </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Long term milestones can be defined irrespective of the chosen development model (ie; Agile, Spiral, etc.)</h2>
+                            <h2 className="text-lg font-light text-blackk">Dynamic and Evolving Needs are well-suited for projects facing uncertainties or requiring adjustments due to evolving business needs, market dynamics, or stakeholder feedback.
+                            </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="text-lg font-light text-blackk">Continuous Feedback and Iteration support ongoing feedback loops throughout the project lifecycle, facilitating iterative improvements and alignment with evolving objectives.</h2>
                         </div>
                     </div>
                     <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
-                        <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                            <div className="z-20 pb-8 justify-center flex w-full"><img src={EvolvingScope} alt="" className="scale-[1.2]"/></div>
-                            <h1 className="text-white z-20 font-bold text-4xl pb-4">Evolving Scope</h1>
+                        <div className="flex flex-col p-16  justify-center absolute inset-0 ">
+                            <div className="z-20 pb-8 px-4 flex w-full"><img src={EvolvingScope} alt="" className="scale-[1.2]"/></div>
+                            <h1 className="text-white z-20 font-bold text-4xl pb-4 px-2">Evolving Scope</h1>
                             <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit laudantium rerum eligendi? Suscipit repudiandae et voluptates cupiditate.
+                            Adaptable approach, accommodating changing project needs and dynamics throughout the development lifecycle.
+
                             </p>
                         </div>
                         <img src={budget2} alt="" className="w-full h-full object-cover"/>
@@ -120,11 +126,12 @@ function Scopes()
                 </div>
                 <div className="lg:grid lg:grid-cols-2 flex flex-col items-center justify-center w-full h-full">
                     <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
-                        <div className="flex flex-col p-16 items-center justify-center absolute inset-0 text-center">
-                            <div className="z-20 pb-8 justify-center flex w-full"><img src={UnclearRequirements} alt="" className="scale-[1.2]"/></div>
-                            <h1 className="text-white z-20 font-bold text-4xl pb-4">Unclear Requirements</h1>
+                        <div className="flex flex-col p-16 justify-center absolute inset-0">
+                            <div className="z-20 pb-8 px-4  flex w-full"><img src={UnclearRequirements} alt="" className="scale-[1.2]"/></div>
+                            <h1 className="text-white z-20 px-2 font-bold text-4xl pb-4">Unclear Requirements</h1>
                             <p className="z-20 text-white/90 text-lg px-2 text-left font-medium">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis incidunt consequatur porro deserunt consectetur doloremque.
+                            Ambiguous project requires a lack of specificity, posing challenges in defining clear development objectives.
+
                             </p>
                         </div>
                         <img src={budget3} alt="" className="w-full h-full object-cover"/>
@@ -135,15 +142,17 @@ function Scopes()
                         <h1 className="w-full text-center text-blackk font-semibold text-3xl pb-8">Unclear Requirement Engagement</h1>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="text-lg font-light text-blackk">Initial project requirements are not well-defined, allowing flexibility for discovery and refinement as the project progresses.
+                            </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Long term milestones can be defined irrespective of the chosen development model (ie; Agile, Spiral, etc.)</h2>
+                            <h2 className="text-lg font-light text-blackk">Particularly suited for exploratory or innovative projects where the outcomes are not fully known at the outset.
+                            </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
+                            <h2 className="text-lg font-light text-blackk">Enables continuous discovery and definition of requirements throughout the project lifecycle, adapting to evolving insights and stakeholder needs</h2>
                         </div>
                     </div>
                 </div>

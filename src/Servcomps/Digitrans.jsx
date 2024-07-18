@@ -125,7 +125,7 @@ function Digitrans()
                     <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
                         <div className="w-full">
                             <h1 className="text-blackk font-bold sm:text-5xl text-4xl sm:leading-tight leading-snug">Digital Transformation</h1>
-                            <h2 className="text-blackk font-light sm:text-3xl text-2xl pb-4 pt-2">
+                            <h2 className="text-blackk font-light sm:textxl text-2xl pb-4 pt-2">
                                 {"Revolutionize Your Business: Harness the Power of Digital for Sustainable Growth"}
                             </h2>
                         </div>
