@@ -1,5 +1,5 @@
 import React from "react";
-import laptop from "../assets/Compressed/Laptop.png";
+import laptop2 from "../assets/Compressed/Laptop2.png";
 import character from '../assets/Compressed/character.png';
 import arrow from '../assets/arrow.svg';
 import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
@@ -31,7 +31,7 @@ function Casestudies() {
                         </div>
                     </div>
                     <div className="flex justify-end items-end order-1 lg:order-2">
-                        <img src={laptop} alt="Laptop" className="max-w-full h-auto" />
+                        <img src={laptop2} alt="Laptop" className="max-w-full h-auto" />
                     </div>
                 </div>
                 
