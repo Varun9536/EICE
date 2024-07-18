@@ -40,14 +40,14 @@ function Solutions() {
 function IndustryCard({ name, description, bgClass, link }) {
     return (
         <div className={`relative ${bgClass} bg-cover rounded-lg cursor-pointer transition duration-200 hover:shadow-lg hover:shadow-blackk h-[20rem] sm:h-[25rem] lg:h-[30rem]`}>
-            <a href={`/${link}`} className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-20% via-stone-800/95 via-20% to-transparent rounded-lg flex flex-col justify-end p-4">
+            <Link to={`/${link}`} className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-20% via-stone-800/95 via-20% to-transparent rounded-lg flex flex-col justify-end p-4">
                 <h3 className="text-stone-100 font-extrabold text-2xl sm:text-3xl mb-2">
                     {name}
                 </h3>
                 <p className="text-white font-semibold text-sm sm:text-base">
                     {description}
                 </p>
-            </a>
+            </Link>
         </div>
     )
 }
