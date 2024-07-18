@@ -76,17 +76,19 @@ function Scopes()
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows project requirements to evolve, accommodating changes and adjustments as needed, without rigid constraints.
+                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows projects to evolve freely, adapting to changes without rigid constraints.
+
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Dynamic and Evolving Needs are well-suited for projects facing uncertainties or requiring adjustments due to evolving business needs, market dynamics, or stakeholder feedback.
+                            <h2 className="text-lg font-light text-blackk">Dynamic Needs adapt to evolving business, market dynamics, and stakeholder feedback effectively.
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Continuous Feedback and Iteration support ongoing feedback loops throughout the project lifecycle, facilitating iterative improvements and alignment with evolving objectives.</h2>
+                            <h2 className="text-lg font-light text-blackk">Continuous feedback fosters iterative improvements and aligns with evolving project objectives effectively.
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -97,17 +99,19 @@ function Scopes()
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows project requirements to evolve, accommodating changes and adjustments as needed, without rigid constraints.
+                            <h2 className="text-lg font-light text-blackk">Flexible Scope allows projects to evolve freely, adapting to changes without rigid constraints.
+
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Dynamic and Evolving Needs are well-suited for projects facing uncertainties or requiring adjustments due to evolving business needs, market dynamics, or stakeholder feedback.
+                            <h2 className="text-lg font-light text-blackk">Dynamic Needs adapt to evolving business, market dynamics, and stakeholder feedback effectively.
                             </h2>
                         </div>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
-                            <h2 className="text-lg font-light text-blackk">Continuous Feedback and Iteration support ongoing feedback loops throughout the project lifecycle, facilitating iterative improvements and alignment with evolving objectives.</h2>
+                            <h2 className="text-lg font-light text-blackk">Continuous feedback fosters iterative improvements and aligns with evolving project objectives effectively.
+                            </h2>
                         </div>
                     </div>
                     <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
