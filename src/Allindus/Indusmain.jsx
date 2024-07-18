@@ -14,7 +14,7 @@ import { BsTruck } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
 const IndustryCard = ({ to, color, Icon, title, description }) => (
-  <Link to={to} className={`cursor-pointer hover:border-bloo/50 hover:shadow-lg hover:shadow-bloo/30 w-full rounded-md p-4 group hover:bg-bloo/5 transition duration-500`}>
+  <Link to={to} className={`group cursor-pointer p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200`}>
     <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 group-hover:scale-[.98] transition duration-300">
       <div className="flex items-center justify-center">
         <div className={`p-4 rounded-full bg-${color}-400/20`}>
@@ -31,20 +31,20 @@ const IndustryCard = ({ to, color, Icon, title, description }) => (
 
 function Indusmain() {
   const industries = [
-    { color: "blue", Icon: FaOilCan, title: "Oil and Gas", to:"/", description: "Revolutionizing operations with IoT and data analytics for improved efficiency and sustainability." },
-    { color: "purple", Icon: BiPencil, title: "Education", to:"/", description: "Enhancing learning experiences through e-learning platforms and AI-driven personalized education." },
-    { color: "emerald", Icon: GoLaw, title: "Legal", to:"/", description: "Streamlining processes with digital case management and AI-powered legal research tools." },
-    { color: "amber", Icon: FaSyringe, title: "Healthcare", to:"/", description: "Improving patient care with telemedicine, electronic health records, and AI diagnostics." },
-    { color: "pink", Icon: MdPermMedia, title: "Digital Media", to:"/", description: "Innovating content delivery and user engagement through AI-driven personalization and VR/AR technologies." },
-    { color: "rose", Icon: IoIosCash, title: "Financial Services", to:"/", description: "Transforming banking with blockchain, AI-powered risk assessment, and digital payment solutions." },
-    { color: "amber", Icon: BsTruck, title: "Logistics", to:"/", description: "Optimizing supply chains with IoT tracking, predictive analytics, and autonomous vehicles." },
-    { color: "rose", Icon: FaBusinessTime, title: "Enterprise", to:"/", description: "Boosting productivity and innovation with cloud computing, AI, and digital workflow solutions." },
+    { color: "blue", Icon: FaOilCan, title: "Oil and Gas", to:"/", description: "Pioneering the Future of Oil and Gas with State-of-the-Art Solutions." },
+    { color: "purple", Icon: BiPencil, title: "Education", to:"/", description: "Empowering Education Through Innovative Technology Solutions." },
+    { color: "emerald", Icon: GoLaw, title: "Legal", to:"/", description: "Innovative Legal Software Solutions for a Modern Legal Practice." },
+    { color: "amber", Icon: FaSyringe, title: "Healthcare", to:"/", description: "Elevate Your Digital Health Solutions with Our Expert Software Development Services." },
+    { color: "pink", Icon: MdPermMedia, title: "Digital Media", to:"/", description: "Transforming the Media Landscape with Innovative Technology Solutions." },
+    { color: "rose", Icon: IoIosCash, title: "Financial Services", to:"/", description: "Revolutionizing Financial Services Through Advanced Technology Solutions." },
+    { color: "amber", Icon: BsTruck, title: "Logistics", to:"/", description: "Driving Logistics Excellence with Intelligent Software Solutions." },
+    { color: "rose", Icon: FaBusinessTime, title: "Enterprise", to:"/", description: "Driving Enterprise Excellence with Intelligent Software Solutions." },
   ];
 
   return (
     <div>
-        <div className="font-manrope max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-            <section className="text-center mb-4 sm:mb-6">
+        <div className="font-manrope max-w-7xl mx-auto px-4  py-32 sm:py-32 2xl:py-8">
+            <section className="text-center">
                 <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
                 Driving <span className="text-bloo">Digital Transformation</span> Across Industries
                 </h1>
@@ -53,16 +53,16 @@ function Indusmain() {
                 </p>
             </section>
 
-            <div className="w-full scale-[.7] max-w-screen-2xl mx-auto mb-4 sm:mb-6">
-                <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-lg"></div>
+            <div className="w-full scale-[.7] max-w-screen-2xl mx-auto">
+                <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-full"></div>
             </div>
 
-            <section className="text-center py-20">
-                <h2 className="text-bloo font-bold text-2xl sm:text-3xl mb-2">Industry Solutions</h2>
-                <h3 className="text-blackk font-bold text-xl sm:text-2xl lg:text-3xl">Transforming Sectors Through Digital Innovation</h3>
+            <section className="text-center py-8">
+                <h2 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Industry Solutions</h2>
+                <h3 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1">Transforming Sectors Through Digital Innovation</h3>
             </section>
 
-            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
+            <div className="grid sm:grid-cols-2 gap-6 ">
                 {industries.map((industry, index) => (
                 <IndustryCard
                     key={index}
@@ -75,12 +75,12 @@ function Indusmain() {
                 ))}
             </div>
 
-            <div className="pt-32 grid lg:grid-cols-2 grid-cols-1 gap-20">
+            <div className="pt-20 grid lg:grid-cols-2 grid-cols-1 gap-20">
                 <h1 className="text-bloo font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 flex items-center justify-center">
                     Why Choose EICE
                 </h1>
                 <h1 className="text-blackk font-bold text-xl sm:t ext-2xl lg:text-3xl mb-4">
-                    <span className="text-bloo">Partner with EICE</span> to accelerate your digital transformation journey. 
+                    <span className="">Partner with EICE</span> to accelerate your digital transformation journey. 
                     Our expertise in emerging technologies and industry-specific solutions will help you 
                     <span className="text-bloo"> innovate, optimize, and lead</span> in the digital era.
                 </h1>
@@ -89,8 +89,6 @@ function Indusmain() {
         </div>
         <Reviews />
         <Talktous />
-        <Clients />
-        <Clientele />
     </div>
   );
 }
