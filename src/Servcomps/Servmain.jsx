@@ -129,7 +129,7 @@ function Servmain() {
                 <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
               </div>
               <div >
-                  <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-4 pt-8">
+                  <div className="grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-4 pt-8">
                     <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className="rounded-full py-2 px-4">
                             <LuBrainCircuit size={60} className="text-bloo"/>
@@ -157,15 +157,7 @@ function Servmain() {
                             <p className="text-left px-4">Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.</p>    
                         </div>
                     </div>
-                    <div className="wgroup cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200  ">
-                        <div className=" rounded-full py-2 px-4">
-                            <LuBrainCircuit size={60} className="text-bloo"/>
-                        </div>
-                        <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-start px-4 text-xl">Edge Computing</h1>
-                            <p className="text-left px-4">Improve response times and save bandwidth with EICE's edge computing solutions. We bring computation and data storage closer to your devices for faster, more efficient processing.</p>
-                        </div>
-                    </div>
+                   
                   </div>
               </div>
             </div>
@@ -179,25 +171,7 @@ function Servmain() {
               <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>        
             </div>
             <div className="">
-                <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">
-                  <div className=" group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="rounded-full w-full flex ">
-                          <FaAndroid size={60} className=" rounded-full text-bloo"/>
-                      </div>
-                      <div className="pt-6 h-full text-justify">
-                          <h1 className="font-semibold pb-2 text-xl">Android App Development</h1>
-                          <p>Create powerful Android apps with EICE. We develop intuitive, high-performance apps that engage users and drive your business forward.</p>
-                      </div>
-                  </div>
-                  <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="rounded-full flex ">
-                          <FaAppStoreIos size={60} className="text-bloo"/>
-                      </div>
-                      <div className="pt-6 h-full text-justify">
-                          <h1 className="font-semibold pb-2 text-xl">iOS App Development</h1>
-                          <p>Reach Apple users with stunning iOS apps. EICE creates sleek, efficient iOS applications that leverage the full potential of Apple devices.</p>
-                      </div>
-                  </div>
+                <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">                  
                   <div className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
                       <div className="flex  rounded-full ">
                         <GrCloudSoftware size={60} className=" rounded-full text-bloo"/>
