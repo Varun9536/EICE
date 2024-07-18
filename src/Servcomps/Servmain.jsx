@@ -48,8 +48,8 @@ function Servmain() {
           <div className='2xl:pt-12 pt-36'></div>
             <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Our Services</h1>
             <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Explore what we offer</h2>
-            <div className="w-full scale-[.65] max-w-screen-2xl mx-auto ">
-                <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] -my-10 bg-cover bg-center bg-no-repeat rounded-lg"></div>
+            <div className="w-full rounded-xl scale-[.65] max-w-screen-2xl mx-auto ">
+                <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] -my-10 bg-cover bg-center bg-no-repeat rounded-full"></div>
             </div>
             <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-center">At EICE, we offer a comprehensive suite of tech services designed to propel your business into the digital future. From cutting-edge app development to strategic consultancy, we're here to transform your ideas into reality.</h2>
           </div>
