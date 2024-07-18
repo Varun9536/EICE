@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ContactForm() {
   const [formValues, setFormValues] = useState({
@@ -120,9 +121,13 @@ function AddressCard({ country, company, address, phone, email }) {
         <p className="text-sm mb-2">{address}</p>
         <p className="text-sm mb-2">{phone}</p>
       </div>
-      <a href={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
+{/*       <a href={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
         {email}
-      </a>
+      </a> */}
+<Link to={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
+        {email}
+      </Link>
+      
     </div>
   );
 }
