@@ -18,19 +18,27 @@ import dgh from '../assets/Compressed/dgh.png';
 import nrf from '../assets/Compressed/nrf.png';
 import slb from '../assets/Compressed/slb.png';
 
+const scaleClasses = {
+    1: 'scale-100',
+    1.1: 'scale-110',
+    1.2: 'scale-120',
+    1.3: 'scale-130',
+    1.4: 'scale-140',
+    1.5: 'scale-150',
+};
+
 const clients = [
-    { src: IIC, link: "https://iicdelhi.in" },
-    { src: tata, link: "https://tata.com" },
-    { src: indianoil, link: "https://iocl.com" },
-    { src: pandg, link: "https://in.pg.com" },
-    { src: halli, link: "https://halliburton.com" },
-    { src: NIC, link: "https://nic.in" },
-    { src: geologix, link: "https://geologix.com" },
-    { src: salesvu, link: "https://salesvu.com" },
-    { src: slb, link: "https://slb.com" },
-    { src: nrf, link: "https://nortonrosefulbright.com" },
-    { src: dgh, link: "https://dghindia.gov.in" },
-    { src: wapcos, link: "https://wapcos.co.in" }
+    { src: IIC, link: "https://iicdelhi.in", scale: 1 },
+    { src: tata, link: "https://tata.com", scale: 1.2 },
+    { src: indianoil, link: "https://iocl.com", scale: 1.1 },
+    { src: pandg, link: "https://in.pg.com", scale: 1 },
+    { src: halli, link: "https://halliburton.com", scale: 1.1 },
+    { src: geologix, link: "https://geologix.com", scale: 1.1 },
+    { src: salesvu, link: "https://salesvu.com", scale: 1 },
+    { src: slb, link: "https://slb.com", scale: 1.2 },
+    { src: nrf, link: "https://nortonrosefulbright.com", scale: 1.5 },
+    { src: dgh, link: "https://dghindia.gov.in", scale: 1.1 },
+    { src: wapcos, link: "https://wapcos.co.in", scale: 1 }
 ];
 
 function Clients() {
@@ -67,7 +75,8 @@ function Clients() {
                     <ClientLogo
                         key={index} 
                         link={client.link}
-                        src={client.src} 
+                        src={client.src}
+                        scale={client.scale}
                     />
                 ))}
             </Slider>
@@ -75,14 +84,16 @@ function Clients() {
     )
 }
 
-function ClientLogo({ src, link }) {
+function ClientLogo({ src, link, scale }) {
+    const scaleClass = scaleClasses[scale] || 'scale-100';
+
     return (
         <div className="px-2">
             <Link to={link} target="_blank" rel="noopener noreferrer" className="block">
                 <img 
                     src={src}
                     alt="Client Logo"
-                    className="h-16 w-auto mx-auto object-contain transition-all duration-300 filter grayscale hover:grayscale-0"
+                    className={`h-16 w-auto mx-auto object-contain transition-all duration-300 filter grayscale hover:grayscale-0 ${scaleClass}`}
                 />
             </Link>
         </div>

@@ -8,7 +8,7 @@ import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
 function Casestudies() {
     return (
         <div className="bg-cstdbanner bg-no-repeat bg-cover">
-            <div className="relative font-manrope py-16 sm:py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+            <div className="relative font-manrope py-12 sm:py-16 lg:py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto ">
                 <div className=" grid grid-cols-2 lg:grid-cols-3 gap-8 items-center">
                     <div className="col-span-2 text-center px-4 lg:text-left order-2 lg:order-1">

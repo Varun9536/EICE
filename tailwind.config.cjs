@@ -29,6 +29,8 @@ export default {
         'talkbanner' : "url('./assets/Compressed/talkbanner.png')",
         'mobdevhome' : "url('./assets/Compressed/mobdevhome.png')",
         'cstdbanner' : "url('./assets/Compressed/cstdbanner.png')",
+        'journeymap1' : "url('./assets/Compressed/journeymap1.png')",
+        'journeymap2' : "url('./assets/Compressed/journeymap2.png')",
 
 
       },

@@ -44,16 +44,19 @@ function Reviews() {
     }, []);
 
     return (
-        <div className="bg-zinc-50 relative text-blackk py-24 px-4 sm:px-6 lg:px-8">
+        <div className="bg-white relative text-blackk py-24 px-4 sm:px-6 lg:px-8">
             
             <div className="max-w-7xl mx-auto px-4">
-                <h1 className="text-center text-bloo font-bold text-3xl md:text-4xl mb-12">
-                    Testimonials
+                <h1 className="text-left text-bloo font-bold text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] py-1">
+                    We Made Them Happy
                 </h1>
+                <h2 className="text-blackk/60 font-semibold text-start text-xl sm:text-xl lg:text-2xl  py-2 pb-12 ">
+                    Trusted by Over <span className="font-bold text-blackk">60+ Companies</span> in the <span className="font-bold text-blackk">Past Decade</span>. Join Our Success Story!
+                </h2>
                 <div className="relative">
-                    <div className="flex flex-col md:flex-row gap-8 px-16">
+                    <div className="flex flex-col md:flex-row gap-8 sm:h-full h-[670px]">
                         {[currentIndex, currentIndex + 1].map((index) => (
-                            <div key={index} className="flex-1 bg-white p-6 rounded-lg shadow-md">
+                            <div key={index} className="flex-1 items-center justify-center pt-10 lg:h-64 bg-white p-6 rounded-lg shadow-md">
                                 <p className="font-semibold italic text-lg mb-6">
                                     "{testimonials[index].quote}"
                                 </p>
@@ -65,26 +68,15 @@ function Reviews() {
                         ))}
                     </div>
 
-                    <button 
-                        onClick={prevSlide} 
-                        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/50 rounded-full p-2 shadow-md hover:bg-white/75 transition duration-300"
-                    >
-                        <BsChevronLeft size={24} />
-                    </button>
-                    <button 
-                        onClick={nextSlide} 
-                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/50 rounded-full p-2 shadow-md hover:bg-white/75 transition duration-300"
-                    >
-                        <BsChevronRight size={24} />
-                    </button>
+                  
                 </div>
 
-                <div className="flex justify-center pt-8 space-x-2">
+                <div className="flex justify-center cursor-pointer pt-8 space-x-2">
                     {Array.from({ length: Math.ceil(testimonials.length / 2) }).map((_, index) => (
                         <div  
                                 size={40}
                                 key={index}
-                                className={ `${currentIndex === (index*2) ? 'px-3 py-1 rounded-xl bg-blue-900' : 'px-3 py-1 rounded-xl bg-blue-900/30'}`}
+                                className={ `${currentIndex === (index*2) ? 'px-3 py-1 rounded-xl bg-blue-900' : 'px-3 py-1 rounded-xl bg-bloo/30'}`}
                                 onClick={() => setCurrentIndex(index * 2)} 
                             />
                     ))}

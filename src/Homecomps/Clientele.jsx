@@ -2,9 +2,13 @@ import React from "react";
 
 function Clientele() {
     return (
-        <div className="bg-zinc-50 font-manrope text-blackk py-16 sm:py-12 md:py-16 lg:py-20 xl:py-32 px-4 sm:px-6 lg:px-8">
-        {/* <div className="bg-map bg-cover bg-blend-overlay bg-white/25 shadow-sm shadow-blackk/20 font-manrope text-blackk py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 2xl:py-44 px-4 sm:px-6 lg:px-8"> */}
-            <div className="max-w-7xl mx-auto">
+        <div className="relative font-manrope text-blackk bg-zinc-50/50 py-16 sm:py-12 md:py-16 lg:py-16 xl:pt-4 xl:pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <div className="absolute scale-[1.2] inset-0 w-screen h-full -z-10">
+                <div className="bg-map bg-no-repeat bg-blend-overlay  bg-cover h-full w-full pl-80 "></div>
+                <div className="bg-bg-no-repeat bg-cover h-full "></div>
+            </div>
+            
+            <div className="relative max-w-4xl mx-auto">
                 <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
                     Journey so far
                 </h2>

@@ -128,7 +128,7 @@ function Techs() {
 
   return (
     <div className=''>
-<div className="bg-bgplate bg-cover py-16"></div>
+<div className="bg-bgplate bg-cover py-12"></div>
     <div className='bg-zinc-50'>
     <div className="container  mx-auto px-4 font-manrope">
       <header className="text-center mb-10">
@@ -186,7 +186,7 @@ function Techs() {
       </main>
     </div>
     </div>
-    <div className="bg-bgplate bg-cover py-16 rotate-180"></div>
+    <div className="bg-bgplate bg-cover py-12 rotate-180"></div>
 
     </div>
   );

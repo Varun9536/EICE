@@ -790,8 +790,7 @@ const Home = () => {
       <Solutions />
       {/* <Separatorrr /> */}
       <Casestudies />
-      <Reviews />
-      <Talktous /> 
+      <Reviews /> 
       <Clientele />
       <Footer />
       <Copyright />
