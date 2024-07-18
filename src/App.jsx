@@ -1,62 +1,65 @@
 /* eslint-disable react/display-name */
-import React, { useState, useEffect } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 // import Withsplashscreen from './Splashcomponents/Withsplashscreen';
-import logo from './assets/logo.svg';
+import logo from "./assets/logo.svg";
 
+import {
+  Routes,
+  Route,
+  Outlet,
+  NavLink,
+  Link,
+  BrowserRouter,
+  HashRouter,
+} from "react-router-dom";
 
-import {Routes, Route, Outlet, NavLink, Link, BrowserRouter , HashRouter } from 'react-router-dom';
+import Big from "./Homecomps/Big";
+import Offers from "./Homecomps/Offers";
+import Solutions from "./Homecomps/Solutions";
+import Clientele from "./Homecomps/Clientele";
+import Clients from "./Homecomps/Clients";
+import Footer from "./Othercomps/Footer";
+import Reviews from "./Homecomps/Reviews";
+import Casestudies from "./Homecomps/Casestudies";
+import Techs from "./Homecomps/Techs";
+import Process from "./Homecomps/Process";
 
-import Big from './Homecomps/Big';
-import Offers from './Homecomps/Offers';
-import Solutions from './Homecomps/Solutions';
-import Clientele from './Homecomps/Clientele';
-import Clients from './Homecomps/Clients';
-import Footer from './Othercomps/Footer';
-import Reviews from './Homecomps/Reviews';
-import Casestudies from './Homecomps/Casestudies';
-import Techs from './Homecomps/Techs';
-import Process from './Homecomps/Process';
+import Copyright from "./Othercomps/Copyright";
 
-import Copyright from './Othercomps/Copyright';
+import Company from "./Aboutcomponents/Company";
+import Workflow from "./Aboutcomponents/Workflow";
+import Scopes from "./Aboutcomponents/Scopes";
 
-import Company from './Aboutcomponents/Company';
-import Workflow from './Aboutcomponents/Workflow';
-import Scopes from './Aboutcomponents/Scopes';
+import Cstdmain from "./Cstudies/Cstdmain";
+import AutoOne from "./Cstudies/AutoOne";
+import AutoTwo from "./Cstudies/AutoTwo";
+import AutoThree from "./Cstudies/AutoThree";
+import AutoFour from "./Cstudies/AutoFour";
 
-import Cstdmain from './Cstudies/Cstdmain';
-import AutoOne from './Cstudies/AutoOne';
-import AutoTwo from './Cstudies/AutoTwo';
-import AutoThree from './Cstudies/AutoThree';
-import AutoFour from './Cstudies/AutoFour';
-
-import Servmain from './Servcomps/Servmain'; 
-import Aiml from './Servcomps/Aiml';
-import Cloud from './Servcomps/Cloud';
-import Dataanalytics from './Servcomps/Dataanalytics';
-import Gis from './Servcomps/Gis';
-import Devops from './Servcomps/Devops';
-import Digitrans from './Servcomps/Digitrans';
-import Entpappdev from './Servcomps/Entpappdev';
-import Iot from './Servcomps/Iot';
-import Techconsult from './Servcomps/Techconsult';
-
+import Servmain from "./Servcomps/Servmain";
+import Aiml from "./Servcomps/Aiml";
+import Cloud from "./Servcomps/Cloud";
+import Dataanalytics from "./Servcomps/Dataanalytics";
+import Gis from "./Servcomps/Gis";
+import Devops from "./Servcomps/Devops";
+import Digitrans from "./Servcomps/Digitrans";
+import Entpappdev from "./Servcomps/Entpappdev";
+import Iot from "./Servcomps/Iot";
+import Techconsult from "./Servcomps/Techconsult";
 
 // new component
-import Blockchain from './Servcomps/Blockchain.jsx';
-import Webdeveopment from './Servcomps/Webdevelopment.jsx';
-import Softwaretesting from './Servcomps/Softwaretesting.jsx';
-import UiUx from './Servcomps/UiUx.jsx';
+import Blockchain from "./Servcomps/Blockchain.jsx";
+import Webdeveopment from "./Servcomps/Webdevelopment.jsx";
+import Softwaretesting from "./Servcomps/Softwaretesting.jsx";
+import UiUx from "./Servcomps/UiUx.jsx";
 
-
-
-
-import Indusmain from './Allindus/Indusmain';
-import Healthcare from './Allindus/Healthcare';
-import Financial from './Allindus/Financial';
-import Educational from './Allindus/Educational';
-import Digitalmedia from './Allindus/Digitalmedia';
+import Indusmain from "./Allindus/Indusmain";
+import Healthcare from "./Allindus/Healthcare";
+import Financial from "./Allindus/Financial";
+import Educational from "./Allindus/Educational";
+import Digitalmedia from "./Allindus/Digitalmedia";
 import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
 import { IoIosCash } from "react-icons/io";
@@ -65,17 +68,17 @@ import { BiPencil } from "react-icons/bi";
 import { MdPermMedia } from "react-icons/md";
 import { BsTruck } from "react-icons/bs";
 
-import Careerform from './Othercomps/Careerform';
-import Contactform from './Othercomps/Contactform';
+import Careerform from "./Othercomps/Careerform";
+import Contactform from "./Othercomps/Contactform";
 
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
-import { Menu as BaseMenu } from '@mui/base/Menu';
-import { MenuButton as BaseMenuButton } from '@mui/base/MenuButton';
-import { MenuItem as BaseMenuItem } from '@mui/base/MenuItem';
-import { Dropdown } from '@mui/base/Dropdown';
-import { useTheme } from '@mui/system';
-import menu from "./assets/menu.svg"
+import PropTypes from "prop-types";
+import clsx from "clsx";
+import { Menu as BaseMenu } from "@mui/base/Menu";
+import { MenuButton as BaseMenuButton } from "@mui/base/MenuButton";
+import { MenuItem as BaseMenuItem } from "@mui/base/MenuItem";
+import { Dropdown } from "@mui/base/Dropdown";
+import { useTheme } from "@mui/system";
+import menu from "./assets/menu.svg";
 
 import {
   FiArrowRight,
@@ -83,7 +86,12 @@ import {
   FiChevronDown,
   FiPieChart,
 } from "react-icons/fi";
-import { FaAndroid, FaAppStoreIos, FaLaptopCode, FaPeopleArrows } from "react-icons/fa";
+import {
+  FaAndroid,
+  FaAppStoreIos,
+  FaLaptopCode,
+  FaPeopleArrows,
+} from "react-icons/fa";
 import { GiCircuitry } from "react-icons/gi";
 import { MdDesignServices } from "react-icons/md";
 import { FaComputer, FaFileCircleCheck } from "react-icons/fa6";
@@ -94,24 +102,24 @@ import { IoIosBuild } from "react-icons/io";
 import { LuBrainCircuit, LuCircuitBoard } from "react-icons/lu";
 import { SiBlockchaindotcom } from "react-icons/si";
 
-// import Separator from './Othercomps/Separator'; 
+// import Separator from './Othercomps/Separator';
 // import Separatorr from './Othercomps/Separatorr';
 // import Separatorrr from './Othercomps/Separatorrr';
 
-import ScrollToTop from './ScrollToTop.jsx';
-import Talktous from './Othercomps/Talktous.jsx';
+import ScrollToTop from "./ScrollToTop.jsx";
+import Talktous from "./Othercomps/Talktous.jsx";
 const App = () => {
   return (
     <HashRouter>
-    <NavLayout/>
-    <ScrollToTop />
+      <NavLayout />
+      <ScrollToTop />
       <Routes>
-      {/* <Route element={<NavLayout />}> */}
+        {/* <Route element={<NavLayout />}> */}
         {/* <Route index element={<Home />} /> */}
         <Route path="/" element={<Home />} />
         {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services  />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Contact" element={<Contact />} />
@@ -131,28 +139,30 @@ const App = () => {
         <Route path="services-techconsultancy" element={<Techconsult />} />
         <Route path="casestudies" element={<Cstudiescomp />} />
 
-
-         <Route path="services-blockchain" element={<Blockchain />} />
+        <Route path="services-blockchain" element={<Blockchain />} />
         <Route path="services-webdevelopment" element={<Webdeveopment />} />
         <Route path="services-softwaretesting" element={<Softwaretesting />} />
         <Route path="services-uiuxconsulting" element={<UiUx />} />
 
-
-        
         <Route path="resources/casestudies/AutoOne" element={<AutoOne />} />
         <Route path="resources/casestudies/AutoTwo" element={<AutoTwo />} />
         <Route path="resources/casestudies/AutoThree" element={<AutoThree />} />
         <Route path="resources/casestudies/AutoFour" element={<AutoFour />} />
-        <Route path="*" element={<div className='font-manrope font-base text-3xl'><p>{`There's nothing here: 404`}</p></div>} />
-      {/* </Route> */}
-    </Routes>
-     </HashRouter>
+        <Route
+          path="*"
+          element={
+            <div className="font-manrope font-base text-3xl">
+              <p>{`There's nothing here: 404`}</p>
+            </div>
+          }
+        />
+        {/* </Route> */}
+      </Routes>
+    </HashRouter>
   );
 };
 
-
 const NavLayout = () => {
-
   const createHandleMenuClick = (menuItem) => {
     return () => {
       console.log(`Clicked on ${menuItem}`);
@@ -161,75 +171,126 @@ const NavLayout = () => {
 
   return (
     <>
-      <div className='relative overflow-visible'>
+      <div className="relative overflow-visible">
         {/* laptop navbar */}
         <nav
-        className='overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
-             2xl:block xl:block hidden'>
-  <div className='grid grid-cols-3 max-w-7xl mx-auto items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]'>
-    <div className='cursor-pointer px-4'>
-      <Link to="/">
-        <img src={logo} alt="" className='h-8 w-auto'/>
-      </Link>
-    </div>
-    <div className='flex flex-row items-center justify-center overflow-visible'>
-      <NavLink to="/" className="px-6 py-1">
-        <div className='group hover:text-bloo transition duration-300 ease-in-out'>
-          <div>HOME</div>
-          <div className='bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>
-        </div>
-      </NavLink>
-      <div className='relative px-2'>
-        <Tabs className='absolute' />
-      </div>
-    </div>
-    <div className='justify-self-end px-4'>
-      <NavLink to="/contact" className="px-4 py-1">
-        <div className='transition duration-300 ease-in-out'>
-          <Link to="/contact">
-            <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 py-2 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold  px-3 rounded"> 
-              Contact Us
-            </button>
-          </Link>
-        </div>
-      </NavLink>
-    </div>
-  </div>
-</nav>
-      <div className='bg-black'></div>
-
-      {/* phone navbar */}
-      <nav className='2xl:hidden xl:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden'>
-        <div className='curosr-pointer pl-3'>
-          <Link to="/">
-            {/* <h1 className="text-3xl w-[120px] text-start font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
-            <img src={logo} alt="" className='scale-[1.15]' />
-          </Link>
-        </div>  
-        <div className='w-full'>
-          <div className='flex flex-row items-center justify-end'>
-            <Dropdown>
-              <MenuButton className='scale-[0.6] -mr-1'>
-                <div ><span><img src={menu} alt="" className='' /></span></div>
-              </MenuButton>
-              <Menu className='font-semibold z-50'>
-                <MenuItem onClick={createHandleMenuClick('Home')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/">Home</Link></MenuItem>
-                <MenuItem onClick={createHandleMenuClick('About Us')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to='/about'>About Us</Link></MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/services">Services</Link></MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Services')}><Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/INDUSTRIES">Industries</Link> </MenuItem>
-                <MenuItem onClick={createHandleMenuClick('Contact Us')}> <Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/resources">Resources</Link> </MenuItem>
-                {/* <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/careers">Careers</a> </MenuItem> */}
-                <MenuItem onClick={createHandleMenuClick('Resources')}> <Link className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' to="/contact">Contact Us</Link></MenuItem>
-              </Menu>
-            </Dropdown>
+          className="overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
+             2xl:block xl:block hidden"
+        >
+          <div className="grid grid-cols-3 max-w-7xl mx-auto items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]">
+            <div className="cursor-pointer px-4">
+              <Link to="/">
+                <img src={logo} alt="" className="h-8 w-auto" />
+              </Link>
+            </div>
+            <div className="flex flex-row items-center justify-center overflow-visible">
+              <NavLink to="/" className="px-6 py-1">
+                <div className="group hover:text-bloo transition duration-300 ease-in-out">
+                  <div>HOME</div>
+                  <div className="bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300"></div>
+                </div>
+              </NavLink>
+              <div className="relative px-2">
+                <Tabs className="absolute" />
+              </div>
+            </div>
+            <div className="justify-self-end px-4">
+              <NavLink to="/contact" className="px-4 py-1">
+                <div className="transition duration-300 ease-in-out">
+                  <Link to="/contact">
+                    <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 py-2 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold  px-3 rounded">
+                      Contact Us
+                    </button>
+                  </Link>
+                </div>
+              </NavLink>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+        <div className="bg-black"></div>
 
-      <main className=' 
-                       2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100'>
-        <Outlet />
-      </main>
+        {/* phone navbar */}
+        <nav className="2xl:hidden xl:hidden flex p-4 fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden">
+          <div className="curosr-pointer pl-3">
+            <Link to="/">
+              {/* <h1 className="text-3xl w-[120px] text-start font-extrabold text-blue-950">E<span className="text-bloo">IC</span>E</h1> */}
+              <img src={logo} alt="" className="scale-[1.15]" />
+            </Link>
+          </div>
+          <div className="w-full">
+            <div className="flex flex-row items-center justify-end">
+              <Dropdown>
+                <MenuButton className="scale-[0.6] -mr-1">
+                  <div>
+                    <span>
+                      <img src={menu} alt="" className="" />
+                    </span>
+                  </div>
+                </MenuButton>
+                <Menu className="font-semibold z-50">
+                  <MenuItem onClick={createHandleMenuClick("Home")}>
+                    <Link
+                      className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
+                      to="/"
+                    >
+                      Home
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={createHandleMenuClick("About Us")}>
+                    <Link
+                      className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
+                      to="/about"
+                    >
+                      About Us
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={createHandleMenuClick("Services")}>
+                    <Link
+                      className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
+                      to="/services"
+                    >
+                      Services
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={createHandleMenuClick("Services")}>
+                    <Link
+                      className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
+                      to="/INDUSTRIES"
+                    >
+                      Industries
+                    </Link>{" "}
+                  </MenuItem>
+                  <MenuItem onClick={createHandleMenuClick("Contact Us")}>
+                    {" "}
+                    <Link
+                      className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
+                      to="/resources"
+                    >
+                      Resources
+                    </Link>{" "}
+                  </MenuItem>
+                  {/* <MenuItem onClick={createHandleMenuClick('Contact Us')}> <a className='w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]' href="/careers">Careers</a> </MenuItem> */}
+                  <MenuItem onClick={createHandleMenuClick("Resources")}>
+                    {" "}
+                    <Link
+                      className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
+                      to="/contact"
+                    >
+                      Contact Us
+                    </Link>
+                  </MenuItem>
+                </Menu>
+              </Dropdown>
+            </div>
+          </div>
+        </nav>
+
+        <main
+          className=" 
+                       2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100"
+        >
+          <Outlet />
+        </main>
       </div>
     </>
   );
@@ -257,7 +318,7 @@ const Tabs = () => {
       {TABS.map((t) => {
         return (
           <Tab
-            className=''
+            className=""
             key={t.id}
             selected={selected}
             handleSetSelected={handleSetSelected}
@@ -268,7 +329,7 @@ const Tabs = () => {
         );
       })}
 
-      <AnimatePresence className=''>
+      <AnimatePresence className="">
         {selected && <Content dir={dir} selected={selected} />}
       </AnimatePresence>
     </div>
@@ -282,23 +343,21 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
       onMouseEnter={() => handleSetSelected(tab)}
       onClick={() => handleSetSelected(tab)}
       className={`h-full flex items-center gap-1 rounded-full px-3 py-1.5 text-md transition-colors ${
-        selected === tab
-          ? ""
-          : ""
+        selected === tab ? "" : ""
       }`}
     >
-      <div className='group overflow-visible hover:text-bloo  transition duration-300 ease-in-out'>
-        <div className='flex flex-row items-center justify-center'>
-          <Link className='flex items-center justify-center' to={`${children}`}>
-            <span className='pr-2'>{children}</span>
-            <FiChevronDown 
-                className={`transition-transform ${
-                  selected === tab ? "rotate-180" : ""
-                }`}
-              />
+      <div className="group overflow-visible hover:text-bloo  transition duration-300 ease-in-out">
+        <div className="flex flex-row items-center justify-center">
+          <Link className="flex items-center justify-center" to={`${children}`}>
+            <span className="pr-2">{children}</span>
+            <FiChevronDown
+              className={`transition-transform ${
+                selected === tab ? "rotate-180" : ""
+              }`}
+            />
           </Link>
         </div>
-        <div className='bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300'></div>  
+        <div className="bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300"></div>
       </div>
     </button>
   );
@@ -391,57 +450,75 @@ const Nub = ({ selected }) => {
 
 const Aboutus = () => {
   return (
-    <div className='grid grid-cols-3 p-1 gap-4'>
+    <div className="grid grid-cols-3 p-1 gap-4">
       <div>
-          <div className='h-full justify-center items-center'>
-          <div className='bg-bloo w-full h-full rounded-md'>
-            <div className='text-white grid grid-cols-2 p-1'>
-              <div className='p-2'>
+        <div className="h-full justify-center items-center">
+          <div className="bg-bloo w-full h-full rounded-md">
+            <div className="text-white grid grid-cols-2 p-1">
+              <div className="p-2">
                 <h1>Since</h1>
-                <h2 className='font-extrabold text-3xl'>2010</h2>
-              </div>  
-              <div className='p-2'>
+                <h2 className="font-extrabold text-3xl">2010</h2>
+              </div>
+              <div className="p-2">
                 <h1>Projects</h1>
-                <h2 className='font-extrabold text-3xl'>150+</h2>
+                <h2 className="font-extrabold text-3xl">150+</h2>
               </div>
-              <div className='p-2'>
+              <div className="p-2">
                 <h1>Clients</h1>
-                <h2 className='font-extrabold text-3xl'>60+</h2>  
+                <h2 className="font-extrabold text-3xl">60+</h2>
               </div>
-              <div className='p-2'>
+              <div className="p-2">
                 <h1>Countries</h1>
-                <h2 className='font-extrabold text-3xl'>10+</h2>
+                <h2 className="font-extrabold text-3xl">10+</h2>
               </div>
             </div>
-            <div className='p-1 text-white text-sm px-4'>
-              <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact
-                Learn more about us and contact u
+            <div className="p-1 text-white text-sm px-4">
+              <h1>
+                Our experience in more than 150 projects accross 10+ countries
+                has helped us bring immediate impact Learn more about us and
+                contact u
               </h1>
             </div>
-            <div className='p-3'>
-              <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
+            <div className="p-3">
+              <Link
+                to="/contact"
+                className="py-1 px-2 cursor-pointer rounded-full bg-white text-sm"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
-          
         </div>
-        
       </div>
-      <div className='col-span-2'>
+      <div className="col-span-2">
         <div>
-          <div className=' flex flex-col items-center justify-center'>
-            <div className='flex flex-col text-justify gap-6 text-wrap'>
-              <div className='w-full'>
+          <div className=" flex flex-col items-center justify-center">
+            <div className="flex flex-col text-justify gap-6 text-wrap">
+              <div className="w-full">
                 <h1>Who We Are</h1>
-                <p className='text-wrap text-justify font-medium text-blackk/80 text-[15px]'>
-                We are a global IT services and consulting firm with over 200 professional technologists, specializing in innovative strategies that bridge technology and business solutions.</p>  
+                <p className="text-wrap text-justify font-medium text-blackk/80 text-[15px]">
+                  We are a global IT services and consulting firm with over 200
+                  professional technologists, specializing in innovative
+                  strategies that bridge technology and business solutions.
+                </p>
               </div>
-              <div className='w-full'>
+              <div className="w-full">
                 <h1>What We Do</h1>
-                <p className='text-wrap text-justify font-medium text-blackk/80 text-[15px]'>We partner with global leaders and startups to turn ideas into reality through custom software and integrated models, delivering cutting-edge IT solutions.</p>  
+                <p className="text-wrap text-justify font-medium text-blackk/80 text-[15px]">
+                  We partner with global leaders and startups to turn ideas into
+                  reality through custom software and integrated models,
+                  delivering cutting-edge IT solutions.
+                </p>
               </div>
-              <div className='w-full'>
+              <div className="w-full">
                 Mission and Vision
-              <p className='text-wrap text-justify font-medium text-blackk/80 text-[15px]'> Our mission is to ensure client satisfaction through innovative technology solutions that drive growth. Our vision is to be a global leader in IT services and software development.</p>  
+                <p className="text-wrap text-justify font-medium text-blackk/80 text-[15px]">
+                  {" "}
+                  Our mission is to ensure client satisfaction through
+                  innovative technology solutions that drive growth. Our vision
+                  is to be a global leader in IT services and software
+                  development.
+                </p>
               </div>
             </div>
             <div>
@@ -456,80 +533,124 @@ const Aboutus = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
 const OurServices = () => {
   return (
-<div className="p-1">
-  <div className='grid grid-cols-3 gap-4'>
-    <div>
-    <div className='h-full justify-center items-center'>
-        <div className='bg-bloo w-full h-full rounded-md'>
-          <div className='text-white grid grid-cols-2 p-1'>
-            <div className='p-2'>
-              <h1>Since</h1>
-              <h2 className='font-extrabold text-3xl'>2010</h2>
+    <div className="p-1">
+      <div className="grid grid-cols-3 gap-4">
+        <div>
+          <div className="h-full justify-center items-center">
+            <div className="bg-bloo w-full h-full rounded-md">
+              <div className="text-white grid grid-cols-2 p-1">
+                <div className="p-2">
+                  <h1>Since</h1>
+                  <h2 className="font-extrabold text-3xl">2010</h2>
+                </div>
+                <div className="p-2">
+                  <h1>Projects</h1>
+                  <h2 className="font-extrabold text-3xl">150+</h2>
+                </div>
+                <div className="p-2">
+                  <h1>Clients</h1>
+                  <h2 className="font-extrabold text-3xl">60+</h2>
+                </div>
+                <div className="p-2">
+                  <h1>Countries</h1>
+                  <h2 className="font-extrabold text-3xl">10+</h2>
+                </div>
+              </div>
+              <div className="p-1 text-white text-sm px-4">
+                <h1>
+                  Our experience in more than 150 projects accross 10+ countries
+                  has helped us bring immediate impact Explore what we offer in
+                  the IT sector and how we transform our clients' businesses
+                  helping them grow to newer heights
+                </h1>
+              </div>
+              <div className="p-3">
+                <Link
+                  to="/contact"
+                  className="py-1 px-2 cursor-pointer rounded-full bg-white text-sm"
+                >
+                  Contact Us
+                </Link>
+              </div>
             </div>
-            <div className='p-2'>
-              <h1>Projects</h1>
-              <h2 className='font-extrabold text-3xl'>150+</h2>
-            </div>
-            <div className='p-2'>
-              <h1>Clients</h1>
-              <h2 className='font-extrabold text-3xl'>60+</h2>
-            </div>
-            <div className='p-2'>
-              <h1>Countries</h1>
-              <h2 className='font-extrabold text-3xl'>10+</h2>
-            </div>
-          </div>
-          <div className='p-1 text-white text-sm px-4'>
-            <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact
-              Explore what we offer in the IT sector and how we transform our clients' businesses helping them grow to newer heights
-            </h1>
-          </div>
-          <div className='p-3'>
-            <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
           </div>
         </div>
-        
+        <div className="col-span-2">
+          <div className="grid grid-cols-2 gap-8 items-start justify-start">
+            <Link
+              to="/services?scrollTo=appDevelopment"
+              className="group cursor-pointer  py-1 text-neutral-400 transition-colors"
+            >
+              <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
+              <div className="text-md text-left font-bold text-blackk">
+                App Development
+              </div>
+
+              <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+              <h1 className="text-sm pt-1">
+                Leveraging 15+ years of expertise, EICE has delivered over 150
+                innovative app projects across 10+ countries, enhancing digital
+                experiences for 60+ clients.
+              </h1>
+            </Link>
+            <Link
+              to="/services?scrollTo=emergingTechnologies"
+              className="group cursor-pointer py-1 text-neutral-400 transition-colors "
+            >
+              <div className="">
+                <LuCircuitBoard size={40} className="mb-2 text-bloo" />
+              </div>
+              <div className="text-md text-left font-bold text-blackk">
+                Emerginng Technologies
+              </div>
+
+              <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+              <h1 className="text-sm pt-1">
+                EICE pioneers in integrating emerging technologies, backed by a
+                wealth of experience and a global reach of over 10 countries,
+                transforming industries and driving growth.
+              </h1>
+            </Link>
+            <Link
+              to="/services?scrollTo=consultancy"
+              className="group cursor-pointer  pt-2 text-neutral-400 transition-colors "
+            >
+              <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
+              <div className="text-md text-left font-bold text-blackk">
+                Consultancy Services
+              </div>
+
+              <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+              <h1 className="text-sm pt-1">
+                Our consultancy services at EICE draw on 15+ years of industry
+                insight, assisting 60+ clients in successfully navigating
+                complex projects across 10+ countries.
+              </h1>
+            </Link>
+            <Link
+              to="/services?scrollTo=flagshipServices"
+              className="group cursor-pointer  py-1 text-neutral-400 transition-colors "
+            >
+              <IoIosBuild size={40} className=" mb-2 text-bloo" />
+              <div className="text-md text-left font-bold text-blackk">
+                Flagship Services
+              </div>
+
+              <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+              <h1 className="text-sm pt-1">
+                EICE provides robust technical services with a proven track
+                record of 150+ projects, ensuring operational excellence for
+                clients in over 10 countries.
+              </h1>
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className='col-span-2'>
-    <div className="grid grid-cols-2 gap-8 items-start justify-start">
-      <Link to='/services?scrollTo=appDevelopment' className="group cursor-pointer  py-1 text-neutral-400 transition-colors">
-          <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
-          <div className="text-md text-left font-bold text-blackk">App Development</div>
-          
-          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
-          <h1 className='text-sm pt-1'>Leveraging 15+ years of expertise, EICE has delivered over 150 innovative app projects across 10+ countries, enhancing digital experiences for 60+ clients.</h1>
-      </Link>
-      <Link to='/services?scrollTo=emergingTechnologies' className="group cursor-pointer py-1 text-neutral-400 transition-colors ">
-          <div className=''><LuCircuitBoard size={40} className="mb-2 text-bloo" /></div>
-          <div className="text-md text-left font-bold text-blackk">Emerginng Technologies</div>
-
-          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
-          <h1 className='text-sm pt-1'>EICE pioneers in integrating emerging technologies, backed by a wealth of experience and a global reach of over 10 countries, transforming industries and driving growth.</h1>
-      </Link>
-      <Link to='/services?scrollTo=consultancy' className="group cursor-pointer  pt-2 text-neutral-400 transition-colors ">
-          <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
-          <div className="text-md text-left font-bold text-blackk">Consultancy Services</div>
-
-          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
-          <h1 className='text-sm pt-1'>Our consultancy services at EICE draw on 15+ years of industry insight, assisting 60+ clients in successfully navigating complex projects across 10+ countries.</h1>
-      </Link>
-      <Link to='/services?scrollTo=flagshipServices' className="group cursor-pointer  py-1 text-neutral-400 transition-colors ">
-          <IoIosBuild size={40} className=" mb-2 text-bloo" />
-          <div className="text-md text-left font-bold text-blackk">Flagship Services</div>
-
-          <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
-          <h1 className='text-sm pt-1'>EICE provides robust technical services with a proven track record of 150+ projects, ensuring operational excellence for clients in over 10 countries.</h1>
-      </Link>
-    </div>
-    </div>
-    </div>
     </div>
   );
 };
@@ -537,162 +658,225 @@ const OurServices = () => {
 const OurResources = () => {
   return (
     <div className="p-1 grid-cols-2 grid gap-4">
-      <Link to='/casestudies' className='group cursor-pointer grid grid-rows-3 order-last  rounded-md'>
-        <div className='row-span-2 w-full h-full bg-laptopcstudy bg-contain bg-no-repeat saturate-0 group-hover:saturate-100 transition duration-500'></div>
-        <div className=''>
-          <h1 className='text-center'>Case Studies</h1>
-          <h1 className='w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white'></h1>
-          <h1 className='text-sm pt-2 text-blackk/50'>Take a look at our track record and explore our detailed case studies and learn how we transform other people's businesses.</h1>
+      <Link
+        to="/casestudies"
+        className="group cursor-pointer grid grid-rows-3 order-last  rounded-md"
+      >
+        <div className="row-span-2 w-full h-full bg-laptopcstudy bg-contain bg-no-repeat saturate-0 group-hover:saturate-100 transition duration-500"></div>
+        <div className="">
+          <h1 className="text-center">Case Studies</h1>
+          <h1 className="w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white"></h1>
+          <h1 className="text-sm pt-2 text-blackk/50">
+            Take a look at our track record and explore our detailed case
+            studies and learn how we transform other people's businesses.
+          </h1>
         </div>
       </Link>
       <div>
-        <div className='h-full justify-center items-center'>
-            <div className='bg-bloo w-full h-full rounded-md'>
-              <div className='text-white grid grid-cols-2 p-1'>
-                <div className='p-2'>
-                  <h1>Since</h1>
-                  <h2 className='font-extrabold text-3xl'>2010</h2>
-                </div>
-                <div className='p-2'>
-                  <h1>Projects</h1>
-                  <h2 className='font-extrabold text-3xl'>150+</h2>
-                </div>
-                <div className='p-2'>
-                  <h1>Clients</h1>
-                  <h2 className='font-extrabold text-3xl'>60+</h2>
-                </div>
-                <div className='p-2'>
-                  <h1>Countries</h1>
-                  <h2 className='font-extrabold text-3xl'>10+</h2>
-                </div>
+        <div className="h-full justify-center items-center">
+          <div className="bg-bloo w-full h-full rounded-md">
+            <div className="text-white grid grid-cols-2 p-1">
+              <div className="p-2">
+                <h1>Since</h1>
+                <h2 className="font-extrabold text-3xl">2010</h2>
               </div>
-              <div className='p-1 text-white text-sm px-4'>
-                <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact
-                  Explore what we offer in the IT sector and how we transform our clients' businesses helping them grow to newer heights
-                </h1>
+              <div className="p-2">
+                <h1>Projects</h1>
+                <h2 className="font-extrabold text-3xl">150+</h2>
               </div>
-              <div className='p-3'>
-                <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
+              <div className="p-2">
+                <h1>Clients</h1>
+                <h2 className="font-extrabold text-3xl">60+</h2>
+              </div>
+              <div className="p-2">
+                <h1>Countries</h1>
+                <h2 className="font-extrabold text-3xl">10+</h2>
               </div>
             </div>
-            
+            <div className="p-1 text-white text-sm px-4">
+              <h1>
+                Our experience in more than 150 projects accross 10+ countries
+                has helped us bring immediate impact Explore what we offer in
+                the IT sector and how we transform our clients' businesses
+                helping them grow to newer heights
+              </h1>
+            </div>
+            <div className="p-3">
+              <Link
+                to="/contact"
+                className="py-1 px-2 cursor-pointer rounded-full bg-white text-sm"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
+      </div>
     </div>
   );
 };
 
-const OurIndustries=()=>{
-  return(
-    <div className='grid grid-cols-3'>
-      <div className=''>
-        <div className='bg-bloo w-full h-full rounded-md'>
-          <div className='text-white grid grid-cols-2 p-1'>
-            <div className='p-2'>
+const OurIndustries = () => {
+  return (
+    <div className="grid grid-cols-3">
+      <div className="">
+        <div className="bg-bloo w-full h-full rounded-md">
+          <div className="text-white grid grid-cols-2 p-1">
+            <div className="p-2">
               <h1>Since</h1>
-              <h2 className='font-extrabold text-3xl'>2010</h2>
+              <h2 className="font-extrabold text-3xl">2010</h2>
             </div>
-            <div className='p-2'>
+            <div className="p-2">
               <h1>Projects</h1>
-              <h2 className='font-extrabold text-3xl'>150+</h2>
+              <h2 className="font-extrabold text-3xl">150+</h2>
             </div>
-            <div className='p-2'>
+            <div className="p-2">
               <h1>Clients</h1>
-              <h2 className='font-extrabold text-3xl'>60+</h2>
+              <h2 className="font-extrabold text-3xl">60+</h2>
             </div>
-            <div className='p-2'>
+            <div className="p-2">
               <h1>Countries</h1>
-              <h2 className='font-extrabold text-3xl'>10+</h2>
+              <h2 className="font-extrabold text-3xl">10+</h2>
             </div>
           </div>
-          <div className='p-1 text-white text-sm px-4'>
-            <h1>Our experience in more than 150 projects accross 10+ countries has helped us bring immediate impact</h1>
+          <div className="p-1 text-white text-sm px-4">
+            <h1>
+              Our experience in more than 150 projects accross 10+ countries has
+              helped us bring immediate impact
+            </h1>
           </div>
-          <div className='p-3'>
-            <Link to='/contact' className='py-1 px-2 cursor-pointer rounded-full bg-white text-sm'>Contact Us</Link>
+          <div className="p-3">
+            <Link
+              to="/contact"
+              className="py-1 px-2 cursor-pointer rounded-full bg-white text-sm"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
-        
       </div>
-      <div className='col-span-2'>
-        <div className='grid grid-cols-2 gap-8 p-6'>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <FaOilCan size={30} className='group-hover:text-bloo transition duration-300' />
+      <div className="col-span-2">
+        <div className="grid grid-cols-2 gap-8 p-6">
+          <div className="group flex flex-col gap-1">
+            <Link to="/industries" className="flex flex-row gap-4 items-center">
+              <div className="icon-wrapper">
+                <FaOilCan
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
               </div>
-              <span className='group-hover:text-bloo transition duration-300'>Oil and Gas</span>
+              <span className="group-hover:text-bloo transition duration-300">
+                Oil and Gas
+              </span>
             </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries-healthcare' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <FaSyringe size={30} className='group-hover:text-bloo transition duration-300' />
+          <div className="group flex flex-col gap-1">
+            <Link
+              to="/industries-healthcare"
+              className="flex flex-row gap-4 items-center"
+            >
+              <div className="icon-wrapper">
+                <FaSyringe
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
               </div>
-              <span className='group-hover:text-bloo transition duration-300'>Healthcare</span>
+              <span className="group-hover:text-bloo transition duration-300">
+                Healthcare
+              </span>
             </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <GoLaw size={30} className='group-hover:text-bloo transition duration-300' />
+          <div className="group flex flex-col gap-1">
+            <Link to="/industries" className="flex flex-row gap-4 items-center">
+              <div className="icon-wrapper">
+                <GoLaw
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
               </div>
-              <span className='group-hover:text-bloo transition duration-300'>Legal</span>
+              <span className="group-hover:text-bloo transition duration-300">
+                Legal
+              </span>
             </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <BiPencil size={30} className='group-hover:text-bloo transition duration-300' />
+          <div className="group flex flex-col gap-1">
+            <Link to="/industries" className="flex flex-row gap-4 items-center">
+              <div className="icon-wrapper">
+                <BiPencil
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
               </div>
-              <span className='group-hover:text-bloo transition duration-300'>Education</span>
+              <span className="group-hover:text-bloo transition duration-300">
+                Education
+              </span>
             </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <IoIosCash size={30} className='group-hover:text-bloo transition duration-300' />
+          <div className="group flex flex-col gap-1">
+            <Link to="/industries" className="flex flex-row gap-4 items-center">
+              <div className="icon-wrapper">
+                <IoIosCash
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
               </div>
-              <span className='group-hover:text-bloo transition duration-300'>Financial</span>
+              <span className="group-hover:text-bloo transition duration-300">
+                Financial
+              </span>
             </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <MdPermMedia size={30} className='group-hover:text-bloo transition duration-300' />
+          <div className="group flex flex-col gap-1">
+            <Link to="/industries" className="flex flex-row gap-4 items-center">
+              <div className="icon-wrapper">
+                <MdPermMedia
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
               </div>
-              <span className='group-hover:text-bloo transition duration-300'>Digital Media</span>
+              <span className="group-hover:text-bloo transition duration-300">
+                Digital Media
+              </span>
             </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
-            </div>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <BsTruck size={30} className='group-hover:text-bloo transition duration-300' />
-              </div>
-              <span className='group-hover:text-bloo transition duration-300'>Logistics</span>
-            </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
-          <div className='group flex flex-col gap-1'>
-            <Link to='/industries' className='flex flex-row gap-4 items-center'>
-              <div className='icon-wrapper'>
-                <FaBusinessTime size={30} className='group-hover:text-bloo transition duration-300' />
+          <div className="group flex flex-col gap-1">
+            <Link to="/industries" className="flex flex-row gap-4 items-center">
+              <div className="icon-wrapper">
+                <BsTruck
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
               </div>
-              <span className='group-hover:text-bloo transition duration-300'>Enterprise</span>
+              <span className="group-hover:text-bloo transition duration-300">
+                Logistics
+              </span>
             </Link>
-            <div className='h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500'></div>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+          </div>
+          <div className="group flex flex-col gap-1">
+            <Link to="/industries" className="flex flex-row gap-4 items-center">
+              <div className="icon-wrapper">
+                <FaBusinessTime
+                  size={30}
+                  className="group-hover:text-bloo transition duration-300"
+                />
+              </div>
+              <span className="group-hover:text-bloo transition duration-300">
+                Enterprise
+              </span>
+            </Link>
+            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const TABS = [
   {
@@ -726,13 +910,14 @@ const Home = () => {
       {/* <Separator /> */}
       <div className="flex flex-col gap-0.5 items-center justify-center xl:pt-20 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">
         <p className="text-bloo font-bold text-xl sm:text-xl lg:text-2xl  py-2">
-            Core Services
+          Core Services
         </p>
         <h2 className="text-blackk font-bold text-center text-2xl sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">
-            Unlocking Innovation: <br className="sm:hidden"/>Explore Our Suite of Solutions for Your Digital Evolution
+          Unlocking Innovation: <br className="sm:hidden" />
+          Explore Our Suite of Solutions for Your Digital Evolution
         </h2>
       </div>
-      <div className='mx-auto px-2'>
+      <div className="mx-auto px-2">
         <Offers />
       </div>
       {/* <Separatorr /> */}
@@ -740,7 +925,7 @@ const Home = () => {
       <Solutions />
       {/* <Separatorrr /> */}
       <Casestudies />
-      <Reviews /> 
+      <Reviews />
       <Clientele />
       <Footer />
       <Copyright />
@@ -792,25 +977,27 @@ const Contact = () => {
 };
 
 const Resources = () => {
-  return(
+  return (
     <>
       <h1>Resources</h1>
-      <h2><Link to="/casestudies">casestudies</Link></h2>
+      <h2>
+        <Link to="/casestudies">casestudies</Link>
+      </h2>
       <Footer />
       <Copyright />
     </>
-  )
-}
+  );
+};
 
 const Cstudiescomp = () => {
-  return(
+  return (
     <>
       <Cstdmain />
       <Footer />
       <Copyright />
     </>
-  )
-}
+  );
+};
 
 const Allindus = () => {
   return (
@@ -819,13 +1006,13 @@ const Allindus = () => {
       <Footer />
       <Copyright />
     </>
-  )
-}
+  );
+};
 
-const resolveSlotProps = (fn, args) => (typeof fn === 'function' ? fn(args) : fn);
+const resolveSlotProps = (fn, args) =>
+  typeof fn === "function" ? fn(args) : fn;
 
 const Menu = React.forwardRef((props, ref) => {
-
   return (
     <BaseMenu
       ref={ref}
@@ -835,26 +1022,23 @@ const Menu = React.forwardRef((props, ref) => {
         root: (ownerState) => {
           const resolvedSlotProps = resolveSlotProps(
             props.slotProps?.root,
-            ownerState,
+            ownerState
           );
           return {
             ...resolvedSlotProps,
-            className: clsx(
-              
-              resolvedSlotProps?.className,
-            ),
+            className: clsx(resolvedSlotProps?.className),
           };
         },
         listbox: (ownerState) => {
           const resolvedSlotProps = resolveSlotProps(
             props.slotProps?.listbox,
-            ownerState,
+            ownerState
           );
           return {
             ...resolvedSlotProps,
             className: clsx(
-              'w-screen h-screen text-2xl box-border font-sans p-1.5 my-3 mx-0 rounded-xl overflow-auto outline-0 bg-white  border border-solid border-slate-200 text-slate-900 min-w-listbox shadow-md',
-              resolvedSlotProps?.className,
+              "w-screen h-screen text-2xl box-border font-sans p-1.5 my-3 mx-0 rounded-xl overflow-auto outline-0 bg-white  border border-solid border-slate-200 text-slate-900 min-w-listbox shadow-md",
+              resolvedSlotProps?.className
             ),
           };
         },
@@ -880,8 +1064,8 @@ const MenuButton = React.forwardRef((props, ref) => {
     <BaseMenuButton
       ref={ref}
       className={clsx(
-        'cursor-pointer text-sm font-sans box-border rounded-lg font-semibold px-4 py-2 bg-bloo text-white',
-        className,
+        "cursor-pointer text-sm font-sans box-border rounded-lg font-semibold px-4 py-2 bg-bloo text-white",
+        className
       )}
       {...other}
     />
@@ -902,8 +1086,8 @@ const MenuItem = React.forwardRef((props, ref) => {
     <BaseMenuItem
       ref={ref}
       className={clsx(
-        'list-none pt-2 pb-2 mt-2 grid rounded-lg cursor-default select-none last-of-type:border-b-0 disabled:text-slate-400  disabled:hover:text-slate-400',
-        className,
+        "list-none pt-2 pb-2 mt-2 grid rounded-lg cursor-default select-none last-of-type:border-b-0 disabled:text-slate-400  disabled:hover:text-slate-400",
+        className
       )}
       {...other}
     />
@@ -912,6 +1096,6 @@ const MenuItem = React.forwardRef((props, ref) => {
 
 MenuItem.propTypes = {
   className: PropTypes.string,
-}
+};
 
 export default App;

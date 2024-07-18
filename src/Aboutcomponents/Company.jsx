@@ -13,13 +13,13 @@ function Company()
             <div className="flex sm:flex-row flex-col px-1 sm:gap-24 gap-12 items-center justify-center text-center text-blackk">
                 <div className="">
                     <h1 className="text-4xl pb-4 font-semibold">Who We Are</h1>
-                    <p className="text-justify text-xl text-neutral-500/90">
+                    <p className="text-lg font-light text-blackk text-justify">
                         EICE is a global software services organization dedicated to delivering high-quality solutions to Fortune 1000 companies. We leverage specialized domain knowledge, cutting-edge technologies, and flexible engagement models to meet our clients' IT needs. With over 10 years of experience, we operate from our headquarters in Houston, Texas, and our office in Noida, India, servicing customers in Financial Services and Enterprise Services.
                     </p>
                 </div>
                 <div>
                     <h1 className="text-4xl pb-4 font-semibold">Our Strength</h1>
-                    <p className="text-justify text-balance text-xl text-neutral-500/90">
+                    <p className="text-lg font-light text-justify text-blackk">
                         Our strength lies in our deep domain knowledge of the oil and gas industry and our ability to provide innovative solutions to complex technology challenges. We collaborate with leading global operators and service companies across the energy value chain. By combining engineering analysis, applied science, and numerical algorithm expertise, we deliver reliable and responsive solutions that meet our clients' technical and business objectives.
                     </p>
                 </div>
