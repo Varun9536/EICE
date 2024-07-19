@@ -76,10 +76,10 @@ function Cstdmain() {
 
   return (
     <div className="font-manrope px-4 sm:px-6 lg:px-8">
-      <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
+      <h2 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">
         Case Studies
       </h2>
-      <h1 className="text-blackk max-w-7xl mx-auto text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
+      <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
         Explore how we digitally transformed other businesses
       </h1>
       <main className="container mx-auto max-w-7xl">
