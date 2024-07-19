@@ -166,7 +166,7 @@ function Digitrans()
                 <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Core Competencies</h1>
                 <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Our Digital Transformation Expertise</h2>
                 <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
-                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className="rounded-full flex items-start w-full">
                             <img src={dtdigital} alt="" />
                         </div>
@@ -175,7 +175,7 @@ function Digitrans()
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We identify and implement cutting-edge digital solutions to drive innovation and create new value streams for your business.</p>
                         </div>
                     </div>
-                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
                             <img src={dtconsulting} alt="" className="scale-[0.85]"/>
                         </div>
@@ -184,7 +184,7 @@ function Digitrans()
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We leverage advanced analytics and AI to extract actionable insights, enabling data-driven decision-making across your organization.</p>
                         </div>
                     </div>
-                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
                             <img src={dtdesign} alt="" className="scale-[0.8]"/>
                         </div>
@@ -195,57 +195,39 @@ function Digitrans()
                     </div>
                 </div>
             </div>
-            <div className="bg-zinc-50 pb-12 text-justify my-12">
-                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
-                    <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Why Choose EICE</h1>
-                    <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Key Advantages of Partnering with EICE for Your Digital Transformation Journey</h2>
-                </div>    
-                <div className="">
-                    <div className="relative px-4 font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
-                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
-                            <FiCheckCircle size={30} className="text-emerald-500"/>
-                            <p className="text-wrap text-2xl">
-                                <span className="text-2xl font-semibold">Holistic Approach: </span>We offer end-to-end digital transformation solutions, from strategy to implementation and beyond.
-                            </p>
-                        </div>
-                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
-                            <FiCheckCircle size={30} className="text-emerald-500"/>
-                            <p className="text-wrap text-2xl">
-                                <span className="text-2xl font-semibold">Agile Methodologies: </span>
-                                Our agile approach ensures flexibility, rapid iterations, and continuous improvement throughout the transformation process.
-                            </p>
-                        </div>
-                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
-                            <FiCheckCircle size={30} className="text-emerald-500"/>
-                            <p className="text-wrap text-2xl">
-                                <span className="text-2xl font-semibold">Collaborative Partnership: </span>
-                                We work closely with your team, fostering knowledge transfer and ensuring alignment with your organization's goals.
-                            </p>
-                        </div>
-                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
-                            <FiCheckCircle size={30} className="text-emerald-500"/>
-                            <p className="text-wrap text-2xl">
-                                <span className="text-2xl font-semibold">Industry Expertise: </span>
-                                Our team of experts brings deep knowledge across various industries, ensuring tailored solutions for your specific sector.
-                            </p>
-                        </div>
-                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
-                            <FiCheckCircle size={30} className="text-emerald-500"/>
-                            <p className="text-wrap text-2xl">
-                                <span className="text-2xl font-semibold">Innovative Technologies: </span>
-                                We leverage cutting-edge technologies like AI, IoT, and blockchain to drive innovation and create competitive advantages.
-                            </p>
-                        </div>
-                        <div className="py-6 flex flex-row gap-10 items-center justify-center">
-                            <FiCheckCircle size={30} className="text-emerald-500"/>
-                            <p className="text-wrap text-2xl">
-                                <span className="text-2xl font-semibold">Proven Track Record: </span>
-                                Our successful implementations across various industries demonstrate our ability to deliver tangible results and ROI.
-                            </p>
-                        </div>
+            
+            <div className="bg-zinc-50 pb-32 text-justify my-12">
+        <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
+            <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Why Choose EICE</h1>
+            <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Key Advantages of Partnering with EICE for Your AI/ML and Generative AI Journey</h2>
+        </div>    
+        <div className="">
+            <div className="relative px-4 font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
+            <div className="grid grid-cols-1 gap-10">
+                {[
+                { title: "Holistic Approach", content: "We offer end-to-end digital transformation solutions, from strategy to implementation and beyond." },
+                { title: "Agile Methodologies", content: "Our agile approach ensures flexibility, rapid iterations, and continuous improvement throughout the transformation process." },
+                { title: "Collaborative Partnership", content: "We work closely with your team, fostering knowledge transfer and ensuring alignment with your organization's goals." },
+                { title: "Industry Expertise", content: "Our team of experts brings deep knowledge across various industries, ensuring tailored solutions for your specific sector." },
+                { title: "Innovative Technologies", content: "We leverage cutting-edge technologies like AI, IoT, and blockchain to drive innovation and create competitive advantages." },
+                { title: "Proven Track Record", content: "Our successful implementations across various industries demonstrate our ability to deliver tangible results and ROI." }
+                ].map((item, index) => (
+                <div key={index} className="flex items-start space-x-8 ">
+                    <div className="flex-shrink-0">
+                        <FiCheckCircle className="w-6 h-6 text-emerald-500" />
+                    </div>
+                    <div>
+                    <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+                        <span className="text-blackk font-bold text-lg pt-1 pb-3 sm:text-xl">{item.title}: </span>
+                        {item.content}
+                    </p>
                     </div>
                 </div>
+                ))}
             </div>
+            </div>
+        </div>
+    </div>
             <Cstdmain />
             <Reviews />
             <TalkToUs />
