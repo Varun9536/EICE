@@ -4,7 +4,7 @@ import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
 function Talktous()
 {
     return(
-        <div className="bg-talkbanner py-12">
+        <div className="bg-talkbanner bg-no-repeat bg-cover py-12">
             <div className="flex items-center justify-center pb-10 sm:pb-12 lg:pb-16">
                 <div className="max-w-7xl w-full mx-auto grid lg:grid-cols-2 lg:gap-12 gap-4 grid-cols-1 justify-center items-center text-left">
                     <h1 className="col-span-2 max-w-3xl text-blackk lg:text-left text-left font-bold px-4 text-xl sm:text-2xl lg:text-3xl xl:text-4xl w-full ">

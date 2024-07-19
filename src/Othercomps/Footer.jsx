@@ -41,7 +41,7 @@ function Footer() {
           <Link to="/" className="inline-block mb-4">
             <img src={logo} alt="EICE Logo" className="h-12 w-auto" />
           </Link>
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify pb-6">
             EICE Technology is an outstanding software development company with
             deep domain knowledge, well-designed processes, and technical
             expertise. We have a highly skilled team of software engineers with
