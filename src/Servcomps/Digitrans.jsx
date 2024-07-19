@@ -124,7 +124,7 @@ function Digitrans()
                     </div>
                     <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
                         <div className="w-full">
-                            <h1 className="text-blackk font-bold sm:text-5xl text-4xl sm:leading-tight leading-snug">Digital Transformation</h1>
+                            <h1 className="text-blackk  font-bold text-left text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Digital Transformation</h1>
                             <h2 className="text-blackk font-light sm:textxl text-2xl pb-4 pt-2">
                                 {"Revolutionize Your Business: Harness the Power of Digital for Sustainable Growth"}
                             </h2>
@@ -197,7 +197,7 @@ function Digitrans()
             </div>
             <div className="bg-zinc-50 pb-12 text-justify my-12">
                 <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
-                    <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Why Choose EICE</h1>
+                    <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Why Choose EICE</h1>
                     <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Key Advantages of Partnering with EICE for Your Digital Transformation Journey</h2>
                 </div>    
                 <div className="">

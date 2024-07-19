@@ -20,25 +20,27 @@ import slb from '../assets/Compressed/slb.png';
 
 const scaleClasses = {
     1: 'scale-100',
-    1.1: 'scale-110',
-    1.2: 'scale-120',
-    1.3: 'scale-130',
-    1.4: 'scale-140',
-    1.5: 'scale-150',
+    1.1: 'scale-[1.1]',
+    1.2: 'scale-[1.2]',
+    1.3: 'scale-[1.3]',
+    1.4: 'scale-[1.4]',
+    1.5: 'scale-[1.5]',
+    1.6: 'scale-[1.6]',
+    1.7: 'scale-[1.7]',
 };
 
 const clients = [
-    { src: IIC, link: "https://iicdelhi.in", scale: 1 },
-    { src: tata, link: "https://tata.com", scale: 1.2 },
-    { src: indianoil, link: "https://iocl.com", scale: 1.1 },
-    { src: pandg, link: "https://in.pg.com", scale: 1 },
+    { src: IIC, link: "https://iicdelhi.in", scale: 1.2 },
+    { src: tata, link: "https://tata.com", scale: 1.1 },
+    { src: indianoil, link: "https://iocl.com", scale: 1.5 },
+    { src: pandg, link: "https://in.pg.com", scale: 1.5},
     { src: halli, link: "https://halliburton.com", scale: 1.1 },
-    { src: geologix, link: "https://geologix.com", scale: 1.1 },
-    { src: salesvu, link: "https://salesvu.com", scale: 1 },
+    { src: geologix, link: "https://geologix.com", scale: 1.2 },
+    { src: salesvu, link: "https://salesvu.com", scale: 1.1 },
     { src: slb, link: "https://slb.com", scale: 1.2 },
-    { src: nrf, link: "https://nortonrosefulbright.com", scale: 1.5 },
-    { src: dgh, link: "https://dghindia.gov.in", scale: 1.1 },
-    { src: wapcos, link: "https://wapcos.co.in", scale: 1 }
+    { src: nrf, link: "https://nortonrosefulbright.com", scale: 1.7 },
+    { src: dgh, link: "https://dghindia.gov.in", scale: 1.5 },
+    { src: wapcos, link: "https://wapcos.co.in", scale: 1.6 }
 ];
 
 function Clients() {

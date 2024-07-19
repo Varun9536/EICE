@@ -134,8 +134,8 @@ function Servmain() {
                         <div className="rounded-full py-2 px-4">
                             <LuBrainCircuit size={60} className="text-bloo"/>
                         </div>
-                        <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold text-start px-4 pb-2 text-xl">AI & ML</h1>
+                        <div className="pt-6 h-full text-left">
+                            <h1 className="text-blackk z-20 px-4 font-bold text-4xl pb-4">AI & ML</h1>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-left px-4">Unlock the potential of your data with our AI and Machine Learning solutions. EICE helps you implement intelligent systems that learn and improve over time.</p>
                         </div>
                     </Link>
@@ -143,8 +143,8 @@ function Servmain() {
                         <div className=" rounded-full py-2 px-4">
                             <GiCircuitry size={60} className="text-bloo"/>
                         </div>
-                        <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-start px-4 text-xl">Internet of Things</h1>
+                        <div className="pt-6 h-full ">
+                            <h1 className="text-blackk z-20 px-4 text-left font-bold text-4xl pb-4">Internet of Things</h1>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-left px-4">Connect your devices and gather valuable data with EICE's IoT solutions. We help you create smart, interconnected systems that drive efficiency and innovation.</p>
                         </div>
                     </Link>
@@ -152,8 +152,8 @@ function Servmain() {
                         <div className=" rounded-full py-2 px-4">
                           <SiBlockchaindotcom size={60} className="text-bloo"/>
                         </div>
-                        <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-start px-4 text-xl">Blockchain Development</h1>
+                        <div className="pt-6 h-full text-left">
+                            <h1 className="text-blackk z-20 px-4 font-bold text-4xl pb-4">Blockchain Development</h1>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-left px-4">Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.</p>    
                         </div>
                     </Link>
@@ -173,30 +173,30 @@ function Servmain() {
             <div className="">
                 <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">                  
                   <Link to="/services-saas" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="flex  rounded-full ">
+                      <div className="flex px-4 rounded-full ">
                         <GrCloudSoftware size={60} className=" rounded-full text-bloo"/>
                       </div>
-                      <div className="pt-6 h-full text-justify">
-                          <h1 className="font-semibold pb-2 text-xl">SAAS Development</h1>
-                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left '>Transform your software into a scalable service with EICE's SAAS development. We build cloud-based applications that offer flexibility and accessibility to your customers.</p>    
+                      <div className="pt-6 h-full text-left">
+                          <h1 className="text-blackk z-20 px-4 font-bold text-4xl pb-4">SAAS Development</h1>
+                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left px-4'>Transform your software into a scalable service with EICE's SAAS development. We build cloud-based applications that offer flexibility and accessibility to your customers.</p>    
                       </div>
                   </Link>
                   <Link to="/services-webdevelopment" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="flex  rounded-full ">
+                      <div className="flex px-4 rounded-full ">
                         <FaLaptopCode size={60} className=" text-bloo"/>
                       </div>
-                      <div className="pt-6 h-full text-justify ">
-                          <h1 className="font-semibold pb-2 text-xl">Web App Development</h1>
-                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left '>Create powerful web applications with EICE. We develop responsive, feature-rich web apps that work seamlessly across all devices and platforms.</p>    
+                      <div className="pt-6 h-full text-left ">
+                          <h1 className="text-blackk z-20 px-4 font-bold text-4xl pb-4">Web App Development</h1>
+                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left px-4'>Create powerful web applications with EICE. We develop responsive, feature-rich web apps that work seamlessly across all devices and platforms.</p>    
                       </div>
                   </Link>
                   <Link to="/services-chatbot" className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
-                      <div className="flex  rounded-full ">
+                      <div className="flex px-4 rounded-full ">
                         <IoIosChatboxes size={60} className="text-bloo"/>
                       </div>
-                      <div className="pt-6 h-full text-justify">
-                          <h1 className="font-semibold pb-2 text-xl">Chat Bot Development</h1>
-                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left '>Enhance customer service with EICE's chatbot solutions. We create intelligent, conversational AI bots that can handle queries, automate tasks, and improve user engagement.</p>    
+                      <div className="pt-6 h-full text-left">
+                          <h1 className="text-blackk z-20 px-4 font-bold text-4xl pb-4">Chat Bot Development</h1>
+                          <p className='font-medium text-blackk/60 sm:text-xl text-lg text-left px-4'>Enhance customer service with EICE's chatbot solutions. We create intelligent, conversational AI bots that can handle queries, automate tasks, and improve user engagement.</p>    
                       </div>
                   </Link>
                 </div>
