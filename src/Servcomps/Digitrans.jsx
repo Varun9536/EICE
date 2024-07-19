@@ -79,7 +79,7 @@ const industries = [
                     onClick={() => setActiveIndustry(industry.id)}
                     className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
                       activeIndustry === industry.id
-                        ? "bg-bloo text-white"
+                        ? "bg-blue-900 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                   >
@@ -124,9 +124,9 @@ function Digitrans()
                     </div>
                     <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
                         <div className="w-full">
-                            <h1 className="text-blackk  font-bold text-left text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Digital Transformation</h1>
-                            <h2 className="text-blackk font-light sm:textxl text-2xl pb-4 pt-2">
-                                {"Revolutionize Your Business: Harness the Power of Digital for Sustainable Growth"}
+                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl ">Digital Transformation</h1>
+                            <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+                                {"Revolutionize Your Business: Harness the Power of Digital Transformation for Sustainable Growth"}
                             </h2>
                         </div>
                         <div className="lg:flex hidden items-center justify-end ">
@@ -142,20 +142,20 @@ function Digitrans()
                 <div className="relative font-manrope mx-auto px-4 lg:px-4 max-w-7xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
-                            <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-tight mb-6">
+                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
                                 Embrace the Digital Future: 
                                 <span className="text-bloo"> Transformation </span>
                                 for Competitive Advantage
                             </h1>
                         </div>
                         <div>
-                            <p className="font-medium text-base sm:text-lg text-justify">
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             In today's digital landscape, businesses must adapt to stay relevant. EICE offers comprehensive digital transformation services to propel your organization forward.
                             </p>
-                            <p className="font-medium text-base sm:text-lg text-justify mt-4">
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify py-4">
                             Our strategic approach ensures alignment with your objectives, combining industry insights and cutting-edge technologies to drive meaningful change.
                             </p>
-                            <p className="font-medium text-base sm:text-lg text-justify mt-4">
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             We develop strategies that enhance operational efficiency, capabilities, and customer experiences. Partner with EICE to navigate the digital revolution and achieve long-term success.
                             </p>
                         </div>
@@ -166,31 +166,31 @@ function Digitrans()
                 <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Core Competencies</h1>
                 <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Our Digital Transformation Expertise</h2>
                 <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
-                    <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full bg-bloo/5">
+                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className="rounded-full flex items-start w-full">
                             <img src={dtdigital} alt="" />
                         </div>
-                        <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-xl">DIGITAL INNOVATION</h1>
-                            <p>We identify and implement cutting-edge digital solutions to drive innovation and create new value streams for your business.</p>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">DIGITAL INNOVATION</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We identify and implement cutting-edge digital solutions to drive innovation and create new value streams for your business.</p>
                         </div>
                     </div>
-                    <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full bg-bloo/5">
+                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
                             <img src={dtconsulting} alt="" className="scale-[0.85]"/>
                         </div>
-                        <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-xl">DATA-DRIVEN INSIGHTS</h1>
-                            <p>We leverage advanced analytics and AI to extract actionable insights, enabling data-driven decision-making across your organization.</p>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DATA-DRIVEN INSIGHTS</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We leverage advanced analytics and AI to extract actionable insights, enabling data-driven decision-making across your organization.</p>
                         </div>
                     </div>
-                    <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                        <div className="h-1/2 rounded-full bg-bloo/5">
+                    <div className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
                             <img src={dtdesign} alt="" className="scale-[0.8]"/>
                         </div>
-                        <div className="pt-6 h-full text-center">
-                            <h1 className="font-semibold pb-2 text-xl">DIGITAL EXPERIENCE DESIGN</h1>
-                            <p>We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DIGITAL EXPERIENCE DESIGN</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
                         </div>
                     </div>
                 </div>

@@ -33,14 +33,14 @@ const IndustryCard = ({ to, color, Icon, title, description }) => (
 
 function Indusmain() {
   const industries = [
-    { color: "blue", Icon: indus_oilandgas, title: "Oil and Gas", to:"/", description: "Pioneering the Future of Oil and Gas with State-of-the-Art Solutions." },
-    { color: "purple", Icon: indus_education, title: "Education", to:"/", description: "Empowering Education Through Innovative Technology Solutions." },
-    { color: "emerald", Icon: indus_law, title: "Legal", to:"/", description: "Innovative Legal Software Solutions for a Modern Legal Practice." },
-    { color: "amber", Icon: indus_healthcare, title: "Healthcare", to:"/", description: "Elevate Your Digital Health Solutions with Our Expert Software Development Services." },
-    { color: "pink", Icon: indus_digimedia, title: "Digital Media", to:"/", description: "Transforming the Media Landscape with Innovative Technology Solutions." },
-    { color: "rose", Icon: indus_financial, title: "Financial Services", to:"/", description: "Revolutionizing Financial Services Through Advanced Technology Solutions." },
-    { color: "amber", Icon: indus_logistics, title: "Logistics", to:"/", description: "Driving Logistics Excellence with Intelligent Software Solutions." },
-    { color: "rose", Icon: indus_enterprise, title: "Enterprise", to:"/", description: "Driving Enterprise Excellence with Intelligent Software Solutions." },
+    { color: "blue", Icon: indus_oilandgas, title: "Oil and Gas", to:"/industries-oilandgas", description: "Pioneering the Future of Oil and Gas with State-of-the-Art Solutions." },
+    { color: "purple", Icon: indus_education, title: "Education", to:"/industries-education", description: "Empowering Education Through Innovative Technology Solutions." },
+    { color: "emerald", Icon: indus_law, title: "Legal", to:"/industries-legal", description: "Innovative Legal Software Solutions for a Modern Legal Practice." },
+    { color: "amber", Icon: indus_healthcare, title: "Healthcare", to:"/industries-healthcare", description: "Elevate Your Digital Health Solutions with Our Expert Software Development Services." },
+    { color: "pink", Icon: indus_digimedia, title: "Digital Media", to:"/industries-digimedia", description: "Transforming the Media Landscape with Innovative Technology Solutions." },
+    { color: "rose", Icon: indus_financial, title: "Financial Services", to:"/industries-financial", description: "Revolutionizing Financial Services Through Advanced Technology Solutions." },
+    { color: "amber", Icon: indus_logistics, title: "Logistics", to:"/industries-logistics", description: "Driving Logistics Excellence with Intelligent Software Solutions." },
+    { color: "rose", Icon: indus_enterprise, title: "Enterprise", to:"/industries-enterprise", description: "Driving Enterprise Excellence with Intelligent Software Solutions." },
   ];
 
   return (
