@@ -17,7 +17,7 @@ function Scopes()
             <div className="text-center text-blackk font-bold sm:text-4xl text-3xl">
                 <div className="flex flex-col items-center justify-center text-center sm:pb-6 pb-2">
                     <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4">Engage with Us</h1>
-                    <h2 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">Choosing an appropriate engagement method for your project</h2>
+                    <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Choosing an appropriate engagement method for your project</h2>
                 </div>
                 <div className="font-medium text-blackk/60 sm:text-xl text-lg lg:px-32 sm:pt-4 pt-2 text-justify">
                     <p>
@@ -41,7 +41,7 @@ function Scopes()
                     </div>
                     <div className="flex flex-col px-8 py-4">
                         <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl pb-2">When to Choose</h1>
-                        <h1 className="w-full text-center text-blackk font-semibold text-3xl pb-8">Constrained Budget Engagement</h1>
+                        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">Constrained Budget Engagement</h1>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
                             <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Clear, Constrcited scope with requirements that are unlikely to change throughout the project</h2>
@@ -58,7 +58,7 @@ function Scopes()
                     </div>
                 </div>
                 <div className="lg:hidden flex flex-col items-center justify-center w-full h-full">
-                    <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
+                    <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
                         <div className="flex flex-col p-16  justify-center absolute inset-0 ">
                             <div className="z-20 pb-8  flex w-full"><img src={EvolvingScope} alt="" className="scale-[1.2]"/></div>
                             <h1 className="text-white z-20 font-bold text-4xl pb-4 px-2">Evolving Scope</h1>
@@ -72,7 +72,7 @@ function Scopes()
                     </div>
                     <div className="flex flex-col px-8 py-4">
                         <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl pb-2">When to Choose</h1>
-                        <h1 className="w-full text-center text-blackk font-semibold text-3xl pb-8">Evolving Scope Engagement</h1>
+                        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">Evolving Scope Engagement</h1>
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
@@ -95,7 +95,7 @@ function Scopes()
                 <div className="lg:grid lg:grid-cols-2 hidden items-center justify-center w-full h-full">
                     <div className="flex flex-col px-8 py-4">
                         <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl pb-2">When to Choose</h1>
-                        <h1 className="w-full text-center text-blackk font-semibold text-3xl pb-8">Evolving Scope Engagement</h1>
+                        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">Evolving Scope Engagement</h1>
 
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
@@ -114,7 +114,7 @@ function Scopes()
                             </h2>
                         </div>
                     </div>
-                    <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
+                    <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
                         <div className="flex flex-col p-16  justify-center absolute inset-0 ">
                             <div className="z-20 pb-8 px-4 flex w-full"><img src={EvolvingScope} alt="" className="scale-[1.2]"/></div>
                             <h1 className="text-white z-20 font-bold text-4xl pb-4 px-2">Evolving Scope</h1>
@@ -143,7 +143,7 @@ function Scopes()
                     </div>
                     <div className="flex flex-col px-8 py-4">
                         <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl">When to Choose</h1>
-                        <h1 className="w-full text-center text-blackk font-semibold text-3xl pb-8">Unclear Requirement Engagement</h1>
+                        <h1 className="text-blackk 2xl:text-nowrap text-wrap font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">Unclear Requirement Engagement</h1>
                         <div className="flex flex-row gap-2 py-2"> 
                             <FaArrowRight size={30} className="text-blackk/70"/>
                             <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">Initial project requirements are not well-defined, allowing flexibility for discovery and refinement as the project progresses.
