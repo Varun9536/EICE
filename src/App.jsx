@@ -498,7 +498,7 @@ const Aboutus = () => {
             <div className="flex flex-col text-justify gap-6 text-wrap">
               <div className="w-full">
                 <h1>Who We Are</h1>
-                <p className="text-wrap text-justify font-medium text-blackk/80 text-[15px]">
+                <p className="text-wrap text-justify font-semibold text-blackk/60 text-sm ">
                   We are a global IT services and consulting firm with over 200
                   professional technologists, specializing in innovative
                   strategies that bridge technology and business solutions.
@@ -506,7 +506,7 @@ const Aboutus = () => {
               </div>
               <div className="w-full">
                 <h1>What We Do</h1>
-                <p className="text-wrap text-justify font-medium text-blackk/80 text-[15px]">
+                <p className="text-wrap text-justify font-semibold text-blackk/60 text-sm">
                   We partner with global leaders and startups to turn ideas into
                   reality through custom software and integrated models,
                   delivering cutting-edge IT solutions.
@@ -514,7 +514,7 @@ const Aboutus = () => {
               </div>
               <div className="w-full">
                 Mission and Vision
-                <p className="text-wrap text-justify font-medium text-blackk/80 text-[15px]">
+                <p className="text-wrap text-justify font-semibold text-blackk/60 text-sm">
                   {" "}
                   Our mission is to ensure client satisfaction through
                   innovative technology solutions that drive growth. Our vision
@@ -586,7 +586,7 @@ const OurServices = () => {
           <div className="grid grid-cols-2 gap-8 items-start justify-start">
             <Link
               to="/services?scrollTo=appDevelopment"
-              className="group cursor-pointer  py-1 text-neutral-400 transition-colors"
+              className="group cursor-pointer  py-1 text-blackk/60 transition-colors"
             >
               <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
               <div className="text-md text-left font-bold text-blackk">
@@ -602,7 +602,7 @@ const OurServices = () => {
             </Link>
             <Link
               to="/services?scrollTo=emergingTechnologies"
-              className="group cursor-pointer py-1 text-neutral-400 transition-colors "
+              className="group cursor-pointer py-1 text-blackk/60 transition-colors "
             >
               <div className="">
                 <LuCircuitBoard size={40} className="mb-2 text-bloo" />
@@ -620,7 +620,7 @@ const OurServices = () => {
             </Link>
             <Link
               to="/services?scrollTo=consultancy"
-              className="group cursor-pointer  pt-2 text-neutral-400 transition-colors "
+              className="group cursor-pointer  pt-2 text-blackk/60 transition-colors "
             >
               <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
               <div className="text-md text-left font-bold text-blackk">
@@ -636,7 +636,7 @@ const OurServices = () => {
             </Link>
             <Link
               to="/services?scrollTo=flagshipServices"
-              className="group cursor-pointer  py-1 text-neutral-400 transition-colors "
+              className="group cursor-pointer  py-1 text-blackk/60 transition-colors "
             >
               <IoIosBuild size={40} className=" mb-2 text-bloo" />
               <div className="text-md text-left font-bold text-blackk">
