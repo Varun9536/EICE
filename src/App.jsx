@@ -54,6 +54,8 @@ import Blockchain from "./Servcomps/Blockchain.jsx";
 import Webdeveopment from "./Servcomps/Webdevelopment.jsx";
 import Softwaretesting from "./Servcomps/Softwaretesting.jsx";
 import UiUx from "./Servcomps/UiUx.jsx";
+import Android from './Servcomps/Android';
+
 
 import Indusmain from "./Allindus/Indusmain";
 import Healthcare from "./Allindus/Healthcare";
@@ -141,6 +143,8 @@ const App = () => {
         <Route path="services-techconsultancy" element={<Techconsult />} />
         <Route path="casestudies" element={<Cstudiescomp />} />
 
+        
+        <Route path="services-android" element={<Android />} />
         <Route path="services-blockchain" element={<Blockchain />} />
         <Route path="services-webdevelopment" element={<Webdeveopment />} />
         <Route path="services-softwaretesting" element={<Softwaretesting />} />
