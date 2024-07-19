@@ -173,7 +173,7 @@ function Aiml()
                             <img src={dtdigital} alt="" />
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">DIGITAL INNOVATION</h1>
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">AI INNOVATION</h1>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We identify and implement cutting-edge digital solutions to drive innovation and create new value streams for your business.</p>
                         </div>
                     </div>
@@ -182,7 +182,7 @@ function Aiml()
                             <img src={dtconsulting} alt="" className="scale-[0.85]"/>
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DATA-DRIVEN INSIGHTS</h1>
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">MACHINE LEARNING INSIGHTS</h1>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We leverage advanced analytics and AI to extract actionable insights, enabling data-driven decision-making across your organization.</p>
                         </div>
                     </div>
@@ -191,7 +191,7 @@ function Aiml()
                             <img src={dtdesign} alt="" className="scale-[0.8]"/>
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DIGITAL EXPERIENCE DESIGN</h1>
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">GENERATIVE AI SOLUTIONS</h1>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
                         </div>
                     </div>

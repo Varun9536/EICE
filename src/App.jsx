@@ -112,6 +112,9 @@ import { SiBlockchaindotcom } from "react-icons/si";
 
 import ScrollToTop from "./ScrollToTop.jsx";
 import Talktous from "./Othercomps/Talktous.jsx";
+import Saas from "./Servcomps/Saas.jsx";
+import Chatbot from './Servcomps/Chatbot.jsx';
+
 const App = () => {
   return (
     <HashRouter>
@@ -141,15 +144,14 @@ const App = () => {
         <Route path="services-devops" element={<Devops />} />
         <Route path="services-iot" element={<Iot />} />
         <Route path="services-techconsultancy" element={<Techconsult />} />
-        <Route path="casestudies" element={<Cstudiescomp />} />
-
-        
+        <Route path="services-saas" element={<Saas />} />
         <Route path="services-android" element={<Android />} />
         <Route path="services-blockchain" element={<Blockchain />} />
         <Route path="services-webdevelopment" element={<Webdeveopment />} />
         <Route path="services-softwaretesting" element={<Softwaretesting />} />
         <Route path="services-uiuxconsulting" element={<UiUx />} />
-
+        <Route path="services-chatbot" element={<Chatbot />} />
+        <Route path="casestudies" element={<Cstudiescomp />} />
         <Route path="resources/casestudies/AutoOne" element={<AutoOne />} />
         <Route path="resources/casestudies/AutoTwo" element={<AutoTwo />} />
         <Route path="resources/casestudies/AutoThree" element={<AutoThree />} />

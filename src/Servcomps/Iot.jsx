@@ -5,7 +5,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
 
-import { FaArrowRight } from "react-icons/fa";
+import { FiCheckCircle } from "react-icons/fi";
 
 import dtdigital from "../assets/Compressed/dtdigital.svg";
 import dtdesign from "../assets/Compressed/dtdesign.svg";
@@ -17,6 +17,7 @@ import TalkToUs from '../Othercomps/Talktous';
 import Reviews from '../Homecomps/Reviews';
 import Clients from '../Homecomps/Clients';
 import Clientele from '../Homecomps/Clientele';
+import Process from '../Homecomps/Process.jsx';
 
 
 const industries = [
@@ -63,11 +64,11 @@ const industries = [
     const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
   
     return (
-      <div className="font-manrope px-4 sm:px-6 lg:px-8">
+      <div className="font-manrope px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
           Case Studies
         </h2>
-        <h1 className="text-blackk max-w-7xl mx-auto text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
+        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1 pb-8">
           Explore how we digitally transformed other businesses
         </h1>
         <main className="container mx-auto max-w-7xl">
@@ -79,7 +80,7 @@ const industries = [
                     onClick={() => setActiveIndustry(industry.id)}
                     className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
                       activeIndustry === industry.id
-                        ? "bg-bloo text-white"
+                        ? "bg-blue-900 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                   >
@@ -116,107 +117,116 @@ const industries = [
 function Iot()
 {
     return (
-        <div>
-    <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
-        <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
-            <div className="absolute inset-0 left-[10%]">
-                <img src={servicebannerpattern} alt="" />
+       <div>
+            <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
+                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
+                    <div className="absolute -z-20 inset-0 right-[75%]">
+                            <img src={servicebannerpattern} alt="" />
+                    </div>
+                    <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
+                        <div className="w-full">
+                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl ">Internet of Things</h1>
+                            <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+                                {"Empowering Businesses with IoT: Transformative Connectivity and Innovation"}
+                            </h2>
+                        </div>
+                        <div className="lg:flex hidden items-center justify-end ">
+                            <div className="lg:w-7/12 w-1/2">
+                                <img src={dtransbanner} alt="" className="rounded-full"/>
+                            </div>
+                        </div>
+                    </div>       
+                </div>    
             </div>
-            <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
-                <div className="w-full">
-                    <h1 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">IOT</h1>
-                    <h2 className="text-blackk font-light sm:text-3xl text-2xl pb-4 pt-2">
-                        {"Reduce costs and imporve operational efficiency with our IOT solutions"}
-                    </h2>
-                </div>
-                <div className="lg:flex hidden items-center justify-end ">
-                    <div className="lg:w-7/12 w-1/2">
-                        <img src={dtransbanner} alt="" className="rounded-full"/>
-                    </div>
-                </div>
-            </div>       
-        </div>    
-    </div>
-    
-    <div className="max-w-7xl mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-        <div>
-        <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                Embrace the IoT Future: 
-                <span className="text-bloo"> Innovation </span>
-                for Competitive Advantage
-            </h1>
-        </div>
-        <div>
-            <p className="font-medium text-base sm:text-lg text-justify">
-                In today's rapidly evolving IoT landscape, businesses must adapt to stay relevant. At EICE, we offer comprehensive IoT solutions to propel your organization into the future.
-            </p>
-            <p className="font-medium text-base sm:text-lg text-justify mt-4">
-                Our strategic approach ensures alignment with your business objectives. Our experts combine industry insights with cutting-edge IoT technologies to implement solutions that drive meaningful change.
-            </p>
-        </div>
-    </div>
 
-    <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20 pb-44">
-        <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Workflow</h1>
-        <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Our step-by-step process to help you on your IOT journey</h2>
-        <p className="text-blackk/60 pt-2 max-w-5xl text-justify font-semibold mx-auto px-4">
-            Our comprehensive IoT workflow begins with discovery and requirement gathering, followed by meticulous design and architecture planning. We then move to prototyping and validation to ensure functionality and scalability. Our expert team handles end-to-end development and seamless integration with existing systems. We manage deployment and implementation, ensuring optimal performance. Finally, we provide ongoing maintenance and support, guaranteeing the reliability and efficiency of your IoT solutions throughout their lifecycle.
-        </p>
-        <div>
-        <div className="lg:flex lg:flex-row flex flex-col sm:pt-16 pt-16 items-center justify-center px-4">
-                    <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-bloo rounded-lg">
-                        <div className="flex flex-col text-center w-full h-full items-center justify-center">
-                            <h1 className="font-bold pb-4 px-2 text-bloo">Discovery & Requirement Gathering</h1>
+            <div className="py-16 md:py-20 lg:py-16 ">
+                <div className="relative font-manrope mx-auto px-4 lg:px-4 max-w-7xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                        <div>
+                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
+                            Empowering Businesses with <span className="text-bloo">IoT</span>: Transformative Connectivity and Innovation
+
+                            </h1>
                         </div>
-                    </div>
-                    <div className="lg:p-4 p-1 lg:scale-100 scale-75">
-                        <FaArrowRight size={30} className="text-blackk/50 lg:rotate-0 rotate-90"/>
-                    </div>
-                    <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-amber-500 rounded-lg">
-                        <div className="flex flex-col text-center w-full h-full items-center justify-center">
-                            <h1 className="font-bold pb-4 px-2 text-amber-500">Design & Architecture Planning</h1>
+                        <div>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
+                            In today's technologically advanced world, businesses across various sectors are integrating their equipment and sensors with the Internet. This shift towards the Internet of Things (IoT) aims to enhance customer experiences, optimize energy usage, boost productivity, and create new revenue streams.
+                            </p>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify py-4">
                             
-                        </div>
-                    </div>
-                    <div className="lg:p-4 p-1 lg:scale-100 scale-75">
-                        <FaArrowRight size={30} className="text-blackk/50 lg:rotate-0 rotate-90"/>
-                    </div>
-                    <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-emerald-400 rounded-lg">
-                        <div className="flex flex-col text-center w-full h-full items-center justify-center">
-                            <h1 className="font-bold pb-4 px-2 text-emerald-500">Prototyping & Validation</h1>
-                            
-                        </div>
-                    </div>
-                    <div className="lg:p-4 p-1 lg:scale-100 scale-75">
-                        <FaArrowRight size={30} className="text-blackk/50 lg:rotate-0 rotate-90"/>
-                    </div>
-                    <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-purple-400 rounded-lg">
-                        <div className="flex flex-col text-center w-full h-full items-center justify-center">
-                            <h1 className="font-bold pb-4 px-2 text-purple-400">Development & Deployment</h1>
-                            
-                        </div>
-                    </div>
-                    <div className="lg:p-4 p-1 lg:scale-100 scale-75">
-                        <FaArrowRight size={30} className="text-blackk/50 lg:rotate-0 rotate-90"/>
-                    </div>
-                    <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-rose-400 rounded-lg">
-                        <div className="flex flex-col text-center w-full h-full items-center justify-center">
-                            <h1 className="font-bold pb-4 px-2 text-rose-400">Maintenance & Support</h1>
-                            
+The connectivity provided by IoT is revolutionizing industries by enabling smarter operations and data-driven decision-making.
+
+                            </p>
                         </div>
                     </div>
                 </div>
-        </div>
-    </div>
-   
-    <Cstdmain />
-    <Reviews />
-    <TalkToUs />
-    <Clients />
-    <Clientele />
-    <Footer/>
-    <Copyright />
-</div>
+            </div>  
+            <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-4 pt-24 pb-20  ">
+                <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Our IOT Services</h1>
+                <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Our Digital Transformation Expertise</h2>
+                <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className="rounded-full flex items-start w-full">
+                            <img src={dtdigital} alt="" />
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">DISCOVERY AND REQUIREMENT GATHERING</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We identify and implement cutting-edge digital solutions to drive innovation and create new value streams for your business.</p>
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtconsulting} alt="" className="scale-[0.85]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DESIGN AND ARCHITECTURE PLANNING</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We leverage advanced analytics and AI to extract actionable insights, enabling data-driven decision-making across your organization.</p>
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">PROTOTYPING AND VALIDATION</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DEVELOPMENT AND INTEGRATION</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DEPLOYMENT AND IMPLEMENTATION</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">MAINTENANCE AND SUPPORT</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Cstdmain />
+            <Reviews />
+            <TalkToUs />
+            <Footer/>
+            <Copyright />
+       </div>
     )
 }
 

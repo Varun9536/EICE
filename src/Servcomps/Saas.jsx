@@ -13,10 +13,10 @@ import dtconsulting from "../assets/Compressed/dtconsulting.svg";
 
 import Footer from '../Othercomps/Footer.jsx';
 import Copyright from '../Othercomps/Copyright.jsx';
-import TalkToUs from '../Othercomps/Talktous';
-import Reviews from '../Homecomps/Reviews';
-import Clients from '../Homecomps/Clients';
-import Clientele from '../Homecomps/Clientele';
+import TalkToUs from '../Othercomps/Talktous.jsx';
+import Reviews from '../Homecomps/Reviews.jsx';
+import Clients from '../Homecomps/Clients.jsx';
+import Clientele from '../Homecomps/Clientele.jsx';
 import Process from '../Homecomps/Process.jsx';
 
 
@@ -114,7 +114,7 @@ const industries = [
     );
   }
 
-function Entpappdev()
+function Saas()
 {
     return (
        <div>
@@ -125,9 +125,9 @@ function Entpappdev()
                     </div>
                     <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
                         <div className="w-full">
-                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl ">Enterprise App Development</h1>
+                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl ">SaaS Development</h1>
                             <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
-                                {"Comprehensive App Development Services: Unlocking Your Digital Potential"}
+                                {"Leading SaaS Development Services: Transforming Ideas into Scalable Software Solutions"}
                             </h2>
                         </div>
                         <div className="lg:flex hidden items-center justify-end ">
@@ -144,21 +144,21 @@ function Entpappdev()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Comprehensive App Development Services: <span className="text-bloo">Unlocking Your Digital Potential</span>
+                            Leading <span className="text-bloo">SaaS Development Services</span>: Transforming Ideas into Scalable Software Solutions
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
-                            EICE Technology specialize in delivering comprehensive mobile and desktop app development services designed to transform your ideas into innovative and user-centric applications. Our team of experts provides end-to-end solutions, including strategic design, robust development, and ongoing maintenance and support.
-                            <br /> 
-We cater to a broad range of platforms, including iOS, Android, Windows, and macOS, ensuring that your app achieves optimal performance and meets your specific business objectives. Partner with us to develop exceptional apps that drive success and stand out in today’s competitive market.
+                            In the ever-evolving digital landscape, Software as a Service (SaaS) has emerged as a dominant model for delivering applications over the internet. By offering scalable, accessible, and cost-effective software solutions, SaaS enables businesses to innovate and grow without the complexities of traditional software management.  
+                            <br />
+                            At EICE Technology we provide comprehensive SaaS development services designed to help you create powerful, user-friendly applications that meet your unique business needs and drive success.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>  
             <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-4 lg:pt-24 pt-12 pb-20  ">
-                <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Our App Development Services</h1>
+                <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Our SaaS Development Services</h1>
                 <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Our Digital Transformation Expertise</h2>
                 <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
@@ -166,8 +166,9 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                             <img src={dtdigital} alt="" />
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">CUSTOM APP DEVELOPMENT</h1>
-                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">Specializing in custom mobile and desktop app development, we deliver innovative, scalable solutions from concept to creation, meeting your unique business needs and objectives.
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">CUSTOM SaaS APPLICATION DEVELOPMENT </h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+                            We specialize in custom SaaS application development, handling all stages from concept to deployment. Our solutions are scalable, high-performance, and tailored to your specific business needs.      
                             </p>
                         </div>
                     </div>
@@ -176,8 +177,9 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                             <img src={dtconsulting} alt="" className="scale-[0.85]"/>
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">UIUX DESIGN</h1>
-                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We focus on creating intuitive, visually engaging UI/UX designs that attract users, drive satisfaction, and ensure positive interactions with your application through audience understanding.
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">SaaS PRODUCT STRATEGY AND CONSULTING</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+                            Our SaaS product strategy services help define your market position, target audience, and business model with market research, competitive analysis, and growth strategies for SaaS success.
                             </p>
                         </div>
                     </div>
@@ -186,17 +188,9 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                             <img src={dtdesign} alt="" className="scale-[0.8]"/>
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">CROSS-PLATFORM DEVELOPMENT</h1>
-                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">Providing cross-platform development to ensure your app functions seamlessly on iOS, Android, Windows, and macOS, utilizing the latest technologies for a consistent and efficient user experience.</p>    
-                        </div>
-                    </div>
-                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
-                        <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
-                        </div>
-                        <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">APP MAINTENANCE AND SUPPORT</h1>
-                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We offer comprehensive app maintenance and support services to keep your application up-to-date, secure, and performing well, including regular updates, bug fixes, and technical support.
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">SaaS PLATFORM DESIGN AND ARCHITECTURE</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+                            We design scalable, secure SaaS platform architectures, defining technology stacks, database schemas, and infrastructures for multi-tenancy, high availability, and performance, ensuring growth and adaptability.
                             </p>    
                         </div>
                     </div>
@@ -205,8 +199,10 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                             <img src={dtdesign} alt="" className="scale-[0.8]"/>
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">APP INTEGRATION AND TESTING</h1>
-                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">Handling app integration with existing systems, we perform rigorous testing for functionality, performance, and security, ensuring components work harmoniously and resolving issues for a smooth launch.</p>    
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">SaaS DEVELOPMENT LIFECYCLE MANAGEMENT</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+                            We manage the entire SaaS development lifecycle, from planning and development to testing, deployment, and maintenance, using Agile methods for iterative development and timely feature delivery.
+                            </p>    
                         </div>
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
@@ -214,8 +210,21 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                             <img src={dtdesign} alt="" className="scale-[0.8]"/>
                         </div>
                         <div className="pt-2 h-full text-left">
-                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">STRATEGY, DEPLOYMENT AND ANALYTICS</h1>
-                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">Our team develops deployment strategies and provides performance analytics to set objectives, track metrics, and drive future app success.</p>    
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">SaaS INTEGRATION SERVICES</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+                            We offer SaaS integration services to connect your application with APIs, payment gateways, and CRM systems, enhancing functionality, streamlining processes, and creating a cohesive technology ecosystem.
+                            </p>    
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">SaaS MIGRATION SERVICES</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+                            We offer SaaS migration services for transitioning from on-premises solutions to the cloud or between platforms, including data migration, re-architecture, and testing for minimal downtime and data integrity.
+                            </p>    
                         </div>
                     </div>
                 </div>
@@ -229,4 +238,4 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
     )
 }
 
-export default Entpappdev;
+export default Saas;
