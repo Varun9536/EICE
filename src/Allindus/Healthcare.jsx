@@ -79,7 +79,7 @@ function Cstdmain() {
       <h2 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">
         Case Studies
       </h2>
-      <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+      <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
         Explore how we digitally transformed other businesses
       </h1>
       <main className="container mx-auto max-w-7xl">
