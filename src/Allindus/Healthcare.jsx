@@ -139,13 +139,13 @@ function Healthcare() {
 
   return (
     <div className="">
-      <div className="sm:max-w-7xl w-screen mx-auto pb-16">
+      <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
           <img src={healthrect1} alt="" />
           <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" />
         </div>
-        <div className="max-w-3xl mx-auto text-center px-8 pt-4 pb-8 flex flex-col gap-2">
+        <div className="max-w-3xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Transforming <span className="text-bloo">Healthcare</span> with Innovative Technology 
           </h1>
