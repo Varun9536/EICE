@@ -4,21 +4,23 @@ import Talktous from "../Othercomps/Talktous";
 import Clients from '../Homecomps/Clients';
 import Clientele from '../Homecomps/Clientele';
 
-import { GoLaw } from "react-icons/go";
-import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
-import { IoIosCash } from "react-icons/io";
-import { SiEducative } from "react-icons/si";
-import { BiPencil } from "react-icons/bi";
-import { MdPermMedia } from "react-icons/md";
-import { BsTruck } from "react-icons/bs";
+import indus_oilandgas from '../assets/Compressed/indus-oilandgas.png';
+import indus_education from '../assets/Compressed/indus-education.png';
+import indus_law from '../assets/Compressed/indus-law.png';
+import indus_healthcare from '../assets/Compressed/indus-healthcare.png';
+import indus_digimedia from '../assets/Compressed/indus-digimedia.png';
+import indus_financial from '../assets/Compressed/indus-financial.png';
+import indus_logistics from '../assets/Compressed/indus-logistics.png';
+import indus_enterprise from '../assets/Compressed/indus-enterprise.png';
+
 import { Link } from 'react-router-dom';
 
 const IndustryCard = ({ to, color, Icon, title, description }) => (
   <Link to={to} className={`group cursor-pointer p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200`}>
     <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 group-hover:scale-[.98] transition duration-300">
       <div className="flex items-center justify-center">
-        <div className={`p-4 rounded-full bg-${color}-400/20`}>
-          <Icon size={40} className="text-blackk"/>
+        <div className={`p-1 rounded-full bg-${color}-400/20`}>
+          <img src={Icon} className="text-blackk"/>
         </div>
       </div>
       <div>
@@ -31,14 +33,14 @@ const IndustryCard = ({ to, color, Icon, title, description }) => (
 
 function Indusmain() {
   const industries = [
-    { color: "blue", Icon: FaOilCan, title: "Oil and Gas", to:"/", description: "Pioneering the Future of Oil and Gas with State-of-the-Art Solutions." },
-    { color: "purple", Icon: BiPencil, title: "Education", to:"/", description: "Empowering Education Through Innovative Technology Solutions." },
-    { color: "emerald", Icon: GoLaw, title: "Legal", to:"/", description: "Innovative Legal Software Solutions for a Modern Legal Practice." },
-    { color: "amber", Icon: FaSyringe, title: "Healthcare", to:"/", description: "Elevate Your Digital Health Solutions with Our Expert Software Development Services." },
-    { color: "pink", Icon: MdPermMedia, title: "Digital Media", to:"/", description: "Transforming the Media Landscape with Innovative Technology Solutions." },
-    { color: "rose", Icon: IoIosCash, title: "Financial Services", to:"/", description: "Revolutionizing Financial Services Through Advanced Technology Solutions." },
-    { color: "amber", Icon: BsTruck, title: "Logistics", to:"/", description: "Driving Logistics Excellence with Intelligent Software Solutions." },
-    { color: "rose", Icon: FaBusinessTime, title: "Enterprise", to:"/", description: "Driving Enterprise Excellence with Intelligent Software Solutions." },
+    { color: "blue", Icon: indus_oilandgas, title: "Oil and Gas", to:"/", description: "Pioneering the Future of Oil and Gas with State-of-the-Art Solutions." },
+    { color: "purple", Icon: indus_education, title: "Education", to:"/", description: "Empowering Education Through Innovative Technology Solutions." },
+    { color: "emerald", Icon: indus_law, title: "Legal", to:"/", description: "Innovative Legal Software Solutions for a Modern Legal Practice." },
+    { color: "amber", Icon: indus_healthcare, title: "Healthcare", to:"/", description: "Elevate Your Digital Health Solutions with Our Expert Software Development Services." },
+    { color: "pink", Icon: indus_digimedia, title: "Digital Media", to:"/", description: "Transforming the Media Landscape with Innovative Technology Solutions." },
+    { color: "rose", Icon: indus_financial, title: "Financial Services", to:"/", description: "Revolutionizing Financial Services Through Advanced Technology Solutions." },
+    { color: "amber", Icon: indus_logistics, title: "Logistics", to:"/", description: "Driving Logistics Excellence with Intelligent Software Solutions." },
+    { color: "rose", Icon: indus_enterprise, title: "Enterprise", to:"/", description: "Driving Enterprise Excellence with Intelligent Software Solutions." },
   ];
 
   return (
