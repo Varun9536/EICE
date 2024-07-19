@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import laptop from "../assets/Compressed/Laptop.png";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { MdArchitecture, MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
@@ -18,6 +18,10 @@ import Reviews from '../Homecomps/Reviews';
 import Clients from '../Homecomps/Clients';
 import Clientele from '../Homecomps/Clientele';
 import Process from '../Homecomps/Process.jsx';
+import { BiCloud, BiCode } from "react-icons/bi";
+import { TiArrowSync } from "react-icons/ti";
+import { BsPerson } from "react-icons/bs";
+import { GrVirtualMachine } from "react-icons/gr";
 
 
 const industries = [
@@ -163,7 +167,7 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                 <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className="rounded-full flex items-start w-full">
-                            <img src={dtdigital} alt="" />
+                        <BiCode size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">CUSTOM APP DEVELOPMENT</h1>
@@ -173,7 +177,8 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtconsulting} alt="" className="scale-[0.85]"/>
+                        <MdArchitecture size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">UIUX DESIGN</h1>
@@ -183,7 +188,8 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <TiArrowSync size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">CROSS-PLATFORM DEVELOPMENT</h1>
@@ -192,7 +198,7 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <BsPerson size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">APP MAINTENANCE AND SUPPORT</h1>
@@ -202,7 +208,8 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <GrVirtualMachine size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">APP INTEGRATION AND TESTING</h1>
@@ -211,7 +218,8 @@ We cater to a broad range of platforms, including iOS, Android, Windows, and mac
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <BiCloud size={48} className="text-bloo" />
+                           
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">STRATEGY, DEPLOYMENT AND ANALYTICS</h1>

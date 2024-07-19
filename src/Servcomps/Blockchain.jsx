@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import laptop from "../assets/Compressed/Laptop.png";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { MdChevronLeft, MdChevronRight, MdConveyorBelt, MdSecurity } from "react-icons/md";
 
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
@@ -18,6 +18,10 @@ import Reviews from '../Homecomps/Reviews';
 import Clients from '../Homecomps/Clients';
 import Clientele from '../Homecomps/Clientele';
 import Process from '../Homecomps/Process.jsx';
+import { SiHiveBlockchain } from "react-icons/si";
+import { GiContract, GiSecurityGate } from "react-icons/gi";
+import { RiNftFill } from "react-icons/ri";
+import { BsCash } from "react-icons/bs";
 
 
 const industries = [
@@ -162,7 +166,7 @@ function Blockchain()
                 <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className="rounded-full flex items-start w-full">
-                            <img src={dtdigital} alt="" />
+                        <SiHiveBlockchain size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">CUSTOM BLOCKCHAIN DEVELOPMENT</h1>
@@ -173,7 +177,8 @@ function Blockchain()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtconsulting} alt="" className="scale-[0.85]"/>
+                        <GiContract size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">SMART CONTRACT DEVELOPMENT</h1>
@@ -184,7 +189,8 @@ function Blockchain()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <RiNftFill size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">NFT DEVELOPMENT</h1>
@@ -195,7 +201,8 @@ function Blockchain()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <MdSecurity size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">BLOCKCHAIN SECURITY AUDITS</h1>
@@ -206,7 +213,8 @@ function Blockchain()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <BsCash size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DECENTRALIZED FINANCE (DeFi) SOLUTIONS</h1>
@@ -217,7 +225,8 @@ function Blockchain()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <MdConveyorBelt size={48} className="text-bloo" />
+                            
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">BLOCKCHAIN BASED SUPPLY CHAIN SOLUTIONS</h1>

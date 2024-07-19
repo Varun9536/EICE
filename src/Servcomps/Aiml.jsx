@@ -18,6 +18,9 @@ import Reviews from '../Homecomps/Reviews';
 import Clients from '../Homecomps/Clients';
 import Clientele from '../Homecomps/Clientele';
 import Process from '../Homecomps/Process.jsx';
+import { FaLightbulb } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
+import { GrVirtualMachine } from "react-icons/gr";
 
 
 const industries = [
@@ -144,7 +147,7 @@ function Aiml()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                                Embrace the Ai Future: 
+                                Embrace the AI Future: 
                                 <span className="text-bloo"> Innovation </span>
                                 for Competitive Advantage
                             </h1>
@@ -170,7 +173,7 @@ function Aiml()
                 <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className="rounded-full flex items-start w-full">
-                            <img src={dtdigital} alt="" />
+                          <FaLightbulb size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">AI INNOVATION</h1>
@@ -179,7 +182,7 @@ function Aiml()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtconsulting} alt="" className="scale-[0.85]"/>
+                          <LuBrainCircuit size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">MACHINE LEARNING INSIGHTS</h1>
@@ -188,7 +191,7 @@ function Aiml()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                          <GrVirtualMachine size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">GENERATIVE AI SOLUTIONS</h1>
