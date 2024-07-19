@@ -91,7 +91,7 @@ function Cstdmain() {
                   onClick={() => setActiveIndustry(industry.id)}
                   className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
                     activeIndustry === industry.id
-                      ? "bg-bloo text-white"
+                      ? "bg-blue-900 text-white"
                       : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                   }`}
                 >
@@ -140,16 +140,16 @@ function Healthcare() {
   return (
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-16">
-        <div className="sm:max-w-7xl xl:pt-8 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
+        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
           <img src={healthrect1} alt="" />
           <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" />
         </div>
         <div className="max-w-3xl mx-auto text-center px-8 pt-4 pb-8 flex flex-col gap-2">
-          <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+          <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Transforming <span className="text-bloo">Healthcare</span> with Innovative Technology 
           </h1>
-          <p className="text-blackk/70 font-medium text-base text-justify sm:text-lg max-w-3xl mx-auto">
+          <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
             EICE empowers businesses to thrive in the digital age by leveraging cutting-edge technologies and innovative strategies, revolutionizing operations and enhancing competitiveness.
             At EICE, we understand the critical role technology plays in modern healthcare. Our comprehensive solutions are designed to enhance patient care, streamline operations, and support healthcare
             providers in delivering the highest standards of service. From hospitals and clinics to pharmaceutical companies and research institutions, we cater to diverse needs accross the healthcare sector.
@@ -157,9 +157,10 @@ function Healthcare() {
         </div>
         
         <div className="sm:max-w-3xl w-screen mx-auto text-center xl:pt-16 pt-8 xl:pb-6 pb-4">
-          <h1 className="text-blackk font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">
+          <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">
             Key Services
           </h1>
+          <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">Explore What We Offer</h1>
         </div>
         <div className="sm:max-w-7xl w-screen mx-auto px-4 pb-12">
             <div className="grid lg:grid-cols-3 grid-cols-3 lg:gap-12 gap-6 items-center justify-center">
@@ -170,7 +171,7 @@ function Healthcare() {
                     onClick={() => setActiveService(service.id)}
                     className={` block w-full text-left px-4 py-4 border border-gray-600/60 rounded-lg ${
                         activeService === service.id
-                        ? "bg-bloo text-white"
+                        ? "bg-blue-900 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                     >
@@ -190,7 +191,7 @@ function Healthcare() {
                         <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-black/90 rounded-xl to-black/30  -z-10"></div>
                         <div className="flex flex-col items-center justify-center h-full z-20 px-8 text-white">
                             <h2 className="text-2xl font-bold mb-2">{service.name}</h2>
-                            <p>{service.description}</p>
+                            <p className="font-medium text-white sm:text-xl text-lg">{service.description}</p>
                         </div>
                     </div>
                     )
@@ -198,37 +199,37 @@ function Healthcare() {
                 </div>
             </div>
         </div>
-        <div>
-          <h1 className="text-center pb-6 pt-16 text-blackk font-bold text-2xl sm:text-3xl lg:text-4xl mb-4">
+        <div className="pt-20 pb-6">
+          <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Our Healthcare and IT Software Solutions 
           </h1>
         </div>
         <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pb-16">
-            <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                <div className="h-1/2 rounded-full bg-bloo/10">
+            <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+                <div className=" rounded-full flex items-start justify-start w-full px-4">
                     <FaDatabase size={60} className="text-bloo"/>  
                 </div>
-                <div className="pt-6 h-full text-center">
-                    <h1 className="font-semibold pb-2 text-xl">ELECTRONIC HEALTH RECORDS</h1>
-                    <p>We implement comprehensive EHR systems that provide easy access to patient records, improve workflow efficiency, and enhance the quality of care.</p>
+                <div className="pt-6 h-full text-left">
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">ELECTRONIC HEALTH RECORDS</h1>
+                    <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We implement comprehensive EHR systems that provide easy access to patient records, improve workflow efficiency, and enhance the quality of care.</p>
                 </div>
             </div>
-            <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                <div className="h-1/2 rounded-full bg-bloo/10">
+            <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+                <div className=" rounded-full  flex items-start justify-start w-full px-4">
                     <FaCloud size={60} className="text-bloo"/>
                 </div>
-                <div className="pt-6 h-full text-center">
-                    <h1 className="font-semibold pb-2 text-xl">TELEMEDICINE SOLUTIONS</h1>
-                    <p>We develop secure and user-friendly telemedicine platforms that enable remote consultations, virtual care, and improved patient access to healthcare services.</p>
+                <div className="pt-6 h-full text-left">
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">TELEMEDICINE SOLUTIONS</h1>
+                    <p  className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We develop secure and user-friendly telemedicine platforms that enable remote consultations, virtual care, and improved patient access to healthcare services.</p>
                 </div>
             </div>
-            <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                <div className="h-1/2 rounded-full bg-bloo/10">
+            <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+                <div className=" rounded-full  flex items-start justify-start w-full px-4">
                     <FaMagnifyingGlass size={60} className="text-bloo"/> 
                 </div>
-                <div className="pt-6 h-full text-center">
-                    <h1 className="font-semibold pb-2 text-xl">HEALTHCARE ANALYTICS</h1>
-                    <p>We leverage advanced analytics and AI to extract actionable insights from medical data, enabling data-driven decision-making and improving patient outcomes.</p>    
+                <div className="pt-6 h-full text-left">
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">HEALTHCARE ANALYTICS</h1>
+                    <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We leverage advanced analytics and AI to extract actionable insights from medical data, enabling data-driven decision-making and improving patient outcomes.</p>    
                 </div>
             </div>
         </div>
@@ -236,8 +237,6 @@ function Healthcare() {
       <Cstdmain />
       <Reviews />
       <TalkToUs />
-      <Clients />
-      <Clientele />
       <Footer />
       <Copyright />
     </div>
