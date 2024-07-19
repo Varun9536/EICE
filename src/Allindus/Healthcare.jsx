@@ -150,10 +150,10 @@ function Healthcare() {
             Transforming <span className="text-bloo">Healthcare</span> with Innovative Technology 
           </h1>
           <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
-            EICE empowers businesses to thrive in the digital age by leveraging cutting-edge technologies and innovative strategies, revolutionizing operations and enhancing competitiveness.
-            At EICE, we understand the critical role technology plays in modern healthcare. Our comprehensive solutions are designed to enhance patient care, streamline operations, and support healthcare
-            providers in delivering the highest standards of service. From hospitals and clinics to pharmaceutical companies and research institutions, we cater to diverse needs accross the healthcare sector.
-          </p>
+          At EICE Technology, we empower businesses to excel in the digital age through cutting-edge technologies and innovative strategies. We recognize the essential role of technology in modern healthcare and offer comprehensive software development services to enhance patient care, streamline operations, and support providers. 
+Our solutions cater to diverse needs across hospitals, clinics, pharmaceutical companies, and research institutions. Committed to adhering to HIPAA, NCPDP, FDA, and GDPR regulations, we deliver advanced digital solutions that meet the latest trends in the healthcare industry.
+
+</p>
         </div>
         
         <div className="sm:max-w-3xl w-screen mx-auto text-center xl:pt-16 pt-8 xl:pb-6 pb-4">

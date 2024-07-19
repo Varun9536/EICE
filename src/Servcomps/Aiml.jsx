@@ -17,8 +17,8 @@ import TalkToUs from '../Othercomps/Talktous';
 import Reviews from '../Homecomps/Reviews';
 import Clients from '../Homecomps/Clients';
 import Clientele from '../Homecomps/Clientele';
-
 import Process from '../Homecomps/Process.jsx';
+
 
 const industries = [
     { name: "OIL AND GAS INDUSTRY", id: "oil" },
@@ -64,11 +64,11 @@ const industries = [
     const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
   
     return (
-      <div className="font-manrope px-4 sm:px-6 lg:px-8">
+      <div className="font-manrope px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4 py-1">
           Case Studies
         </h2>
-        <h1 className="text-blackk max-w-7xl mx-auto text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 py-1">
+        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1 pb-8">
           Explore how we digitally transformed other businesses
         </h1>
         <main className="container mx-auto max-w-7xl">
@@ -80,7 +80,7 @@ const industries = [
                     onClick={() => setActiveIndustry(industry.id)}
                     className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
                       activeIndustry === industry.id
-                        ? "bg-bloo text-white"
+                        ? "bg-blue-900 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                   >
@@ -117,87 +117,88 @@ const industries = [
 function Aiml()
 {
     return (
-        <div>
-    <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
-        <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
-            <div className="absolute inset-0 left-[10%]">
-                <img src={servicebannerpattern} alt="" />
+       <div>
+            <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
+                <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
+                    <div className="absolute -z-20 inset-0 right-[75%]">
+                            <img src={servicebannerpattern} alt="" />
+                    </div>
+                    <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
+                        <div className="w-full">
+                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl ">Generative AI and Machine Learning</h1>
+                            <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+                                {"Revolutionize Your Business: Harness the Power of AI for Sustainable Growth"}
+                            </h2>
+                        </div>
+                        <div className="lg:flex hidden items-center justify-end ">
+                            <div className="lg:w-7/12 w-1/2">
+                                <img src={dtransbanner} alt="" className="rounded-full"/>
+                            </div>
+                        </div>
+                    </div>       
+                </div>    
             </div>
-            <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
-                <div className="w-full">
-                    <h1 className="text-blackk font-bold sm:text-6xl text-4xl sm:leading-tight leading-snug">Generative AI and Machine Learning</h1>
-                    <h2 className="text-blackk font-light sm:text-3xl text-2xl pb-4 pt-2">
-                        {"Revolutionize Your Business: Harness the Power of AI for Sustainable Growth"}
-                    </h2>
-                </div>
-                <div className="lg:flex hidden items-center justify-end ">
-                    <div className="lg:w-7/12 w-1/2">
-                        <img src={dtransbanner} alt="" className="rounded-full"/>
+
+            <div className="py-16 md:py-20 lg:py-16 ">
+                <div className="relative font-manrope mx-auto px-4 lg:px-4 max-w-7xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                        <div>
+                            <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
+                                Embrace the Ai Future: 
+                                <span className="text-bloo"> Innovation </span>
+                                for Competitive Advantage
+                            </h1>
+                        </div>
+                        <div>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
+                            In today's rapidly evolving AI landscape, businesses must adapt to stay relevant. At EICE, we offer comprehensive AI/ML and generative AI services to propel your organization into the future.
+                            </p>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify py-4">
+                            Our strategic approach ensures alignment with your business objectives. Our experts combine industry insights with cutting-edge AI technologies to implement solutions that drive meaningful change.
+                            </p>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
+                            We develop AI strategies that not only meet your goals but also enhance operational efficiency, capabilities, and customer experiences. Partner with EICE to navigate the AI revolution and achieve long-term success in the age of artificial intelligence.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>       
-        </div>    
-    </div>
-
-    <div className="py-16 md:py-20 lg:py-28">
-        <div className="relative font-manrope mx-auto px-4 lg:px-4 max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-                <div>
-                    <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                        Embrace the AI Future: 
-                        <span className="text-bloo"> Innovation </span>
-                        for Competitive Advantage
-                    </h1>
-                </div>
-                <div>
-                    <p className="font-medium text-base sm:text-lg text-justify">
-                        In today's rapidly evolving AI landscape, businesses must adapt to stay relevant. At EICE, we offer comprehensive AI/ML and generative AI services to propel your organization into the future.
-                    </p>
-                    <p className="font-medium text-base sm:text-lg text-justify mt-4">
-                        Our strategic approach ensures alignment with your business objectives. Our experts combine industry insights with cutting-edge AI technologies to implement solutions that drive meaningful change.
-                    </p>
-                    <p className="font-medium text-base sm:text-lg text-justify mt-4">
-                        We develop AI strategies that not only meet your goals but also enhance operational efficiency, capabilities, and customer experiences. Partner with EICE to navigate the AI revolution and achieve long-term success in the age of artificial intelligence.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div> 
-    <Process /> 
-    <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-20">
-        <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Core Competencies</h1>
-        <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Our AI/ML and Generative AI Expertise</h2>
-        <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-16">
-            <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                <div className="h-1/2 rounded-full bg-bloo/10">
-                    <img src={dtdigital} alt="" />
-                </div>
-                <div className="pt-6 h-full text-center">
-                    <h1 className="font-semibold pb-2 text-xl">AI INNOVATION</h1>
-                    <p>We identify and implement cutting-edge AI solutions to drive innovation and create new value streams for your business.</p>
+            </div>  
+            <Process />
+            <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-4 pt-24 pb-8">
+                <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Core Competencies</h1>
+                <h2 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">Our Digital Transformation Expertise</h2>
+                <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className="rounded-full flex items-start w-full">
+                            <img src={dtdigital} alt="" />
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">DIGITAL INNOVATION</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We identify and implement cutting-edge digital solutions to drive innovation and create new value streams for your business.</p>
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtconsulting} alt="" className="scale-[0.85]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DATA-DRIVEN INSIGHTS</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We leverage advanced analytics and AI to extract actionable insights, enabling data-driven decision-making across your organization.</p>
+                        </div>
+                    </div>
+                    <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
+                        <div className=" rounded-full  flex items-start w-full">
+                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        </div>
+                        <div className="pt-2 h-full text-left">
+                            <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">DIGITAL EXPERIENCE DESIGN</h1>
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg ">We create seamless, intuitive digital experiences that delight users across all devices and platforms, enhancing customer engagement and loyalty.</p>    
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                <div className="h-1/2 rounded-full bg-bloo/10">
-                    <img src={dtconsulting} alt="" className="scale-[0.85]"/>
-                </div>
-                <div className="pt-6 h-full text-center">
-                    <h1 className="font-semibold pb-2 text-xl">MACHINE LEARNING INSIGHTS</h1>
-                    <p>We leverage advanced machine learning models to extract actionable insights, enabling AI-driven decision-making across your organization.</p>
-                </div>
-            </div>
-            <div className="w-full h-full border-2 border-bloo rounded-lg p-8 py-16 flex flex-col items-center justify-center">
-                <div className="h-1/2 rounded-full bg-bloo/10">
-                    <img src={dtdesign} alt="" className="scale-[0.8]"/>
-                </div>
-                <div className="pt-6 h-full text-center">
-                    <h1 className="font-semibold pb-2 text-xl">GENERATIVE AI SOLUTIONS</h1>
-                    <p>We create powerful generative AI models that can produce content, designs, and solutions, enhancing creativity and productivity across your business.</p>    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="bg-zinc-50 pb-32 text-justify my-24">
+            
+            <div className="bg-zinc-50 pb-32 text-justify my-12">
         <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-20">
             <h1 className="text-bloo font-bold sm:text-3xl text-2xl pb-4 text-center">Why Choose EICE</h1>
             <h2 className="text-blackk font-bold sm:text-4xl text-2xl sm:leading-tight leading-snug text-center">Key Advantages of Partnering with EICE for Your AI/ML and Generative AI Journey</h2>
@@ -218,8 +219,8 @@ function Aiml()
                         <FiCheckCircle className="w-6 h-6 text-emerald-500" />
                     </div>
                     <div>
-                    <p className="text-xl lg:text-2xl">
-                        <span className="font-semibold">{item.title}: </span>
+                    <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+                        <span className="text-blackk font-bold text-lg pt-1 pb-3 sm:text-xl">{item.title}: </span>
                         {item.content}
                     </p>
                     </div>
@@ -229,14 +230,12 @@ function Aiml()
             </div>
         </div>
     </div>
-    <Cstdmain />
-    <Reviews />
-    <TalkToUs />
-    <Clients />
-    <Clientele />
-    <Footer/>
-    <Copyright />
-</div>
+            <Cstdmain />
+            <Reviews />
+            <TalkToUs />
+            <Footer/>
+            <Copyright />
+       </div>
     )
 }
 
