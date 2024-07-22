@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import laptop from "../assets/Compressed/Laptop.png";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { MdArchitecture, MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
@@ -18,6 +18,10 @@ import Reviews from '../Homecomps/Reviews.jsx';
 import Clients from '../Homecomps/Clients.jsx';
 import Clientele from '../Homecomps/Clientele.jsx';
 import Process from '../Homecomps/Process.jsx';
+import { BsApp } from "react-icons/bs";
+import { RiAppsLine } from "react-icons/ri";
+import { GiArtificialIntelligence, GiTalk } from "react-icons/gi";
+import { GrIntegration, GrVmMaintenance } from "react-icons/gr";
 
 
 const industries = [
@@ -163,7 +167,7 @@ function Chatbot()
                 <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className="rounded-full flex items-start w-full">
-                            <img src={dtdigital} alt="" />
+                          <RiAppsLine size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">CUSTOM CHATBOT APPLICATION DEVELOPMENT </h1>
@@ -174,7 +178,7 @@ function Chatbot()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtconsulting} alt="" className="scale-[0.85]"/>
+                          <GiArtificialIntelligence size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">AI POWERED CHATBOT SOLUTIONS</h1>
@@ -185,7 +189,8 @@ function Chatbot()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <GrIntegration size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">CHATBOT INTEGRATION SERVICES</h1>
@@ -196,7 +201,8 @@ function Chatbot()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <MdArchitecture size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">CHATBOT DESIGN AND DEVELOPMENT</h1>
@@ -207,7 +213,8 @@ function Chatbot()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <GrVmMaintenance size={48} className="text-bloo" />
+
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">CHATBOT MAINTENANCE AND SUPPORT</h1>
@@ -218,7 +225,7 @@ function Chatbot()
                     </div>
                     <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
                         <div className=" rounded-full  flex items-start w-full">
-                            <img src={dtdesign} alt="" className="scale-[0.8]"/>
+                        <GiTalk size={48} className="text-bloo" />
                         </div>
                         <div className="pt-2 h-full text-left">
                             <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">CONVERSATIONAL AI DEVELOPMENT</h1>
