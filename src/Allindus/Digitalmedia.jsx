@@ -13,10 +13,20 @@ import laptop from "../assets/Compressed/Laptop.png";
 import healthrect1 from '../assets/Compressed/healthrect1.png';
 import healthrect2 from '../assets/Compressed/healthrect2.png';
 import healthrect3 from '../assets/Compressed/healthrect3.png';
+import random1 from '../assets/Compressed/random1.jpg';
+import random2 from '../assets/Compressed/random2.jpg';
+import random3 from '../assets/Compressed/random3.jpg';
+import random4 from '../assets/Compressed/random4.jpg';
+import random5 from '../assets/Compressed/random5.jpg';
+import random6 from '../assets/Compressed/random6.jpg';
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
 
 import digital_img from "../assets/industry-images/Digital Media.png"
+import { CgMediaLive } from "react-icons/cg";
+import { TiMediaPlay, TiMediaPlayOutline } from "react-icons/ti";
+import { FcPodiumWithAudience } from "react-icons/fc";
+import { BsPeople } from "react-icons/bs";
 
 
 const KeyService = ({ title, description, image }) => (
@@ -130,12 +140,12 @@ function Cstdmain() {
 }
 
 const services = [
-  { id: "cms", name: "Content Management Systems (CMS)", image: healthrect1, description: "Developing robust systems for content creation, distribution, and management, empowering media companies to effectively manage their digital assets.." },
-  { id: "aeo", name: "Audience Engagement Platforms", image: healthrect2, description: "Creating platforms to optimize audience interactions, personalize content delivery, and enhance user engagement across digital channels, ensuring responsive and impactful audience relationships." },
-  { id: "analytics", name: "Data Analytics and Insights", image: healthrect3, description: "Providing advanced analytics tools for evaluating content performance, audience behavior, and market trends, supporting data-driven decisions for media executives and marketers." },
-  { id: "adverts", name: "Advertising and Monetization Solutions", image: healthrect1, description: "Designing tools for ad placement, targeting, and revenue optimization, maximizing advertising effectiveness and monetization opportunities for media organizations.." },
-  { id: "streaming", name: "Video Streaming and Distribution", image: healthrect2, description: "Developing secure and scalable video streaming platforms that deliver high-quality content seamlessly, enhancing viewer experience and satisfaction." },
-  { id: "drm", name: "Digital Rights Management (DRM)", image: healthrect2, description: " Implementing solutions to protect intellectual property rights, manage content licensing, and enforce copyright compliance, ensuring legal and ethical content distribution." }
+  { id: "cms", name: "Content Management Systems (CMS)", image: random6, description: "Developing robust systems for content creation, distribution, and management, empowering media companies to effectively manage their digital assets.." },
+  { id: "aeo", name: "Audience Engagement Platforms", image: random4, description: "Creating platforms to optimize audience interactions, personalize content delivery, and enhance user engagement across digital channels, ensuring responsive and impactful audience relationships." },
+  { id: "analytics", name: "Data Analytics and Insights", image: random3, description: "Providing advanced analytics tools for evaluating content performance, audience behavior, and market trends, supporting data-driven decisions for media executives and marketers." },
+  { id: "adverts", name: "Advertising and Monetization Solutions", image: random5, description: "Designing tools for ad placement, targeting, and revenue optimization, maximizing advertising effectiveness and monetization opportunities for media organizations.." },
+  { id: "streaming", name: "Video Streaming and Distribution", image: random1, description: "Developing secure and scalable video streaming platforms that deliver high-quality content seamlessly, enhancing viewer experience and satisfaction." },
+  { id: "drm", name: "Digital Rights Management (DRM)", image: random2, description: " Implementing solutions to protect intellectual property rights, manage content licensing, and enforce copyright compliance, ensuring legal and ethical content distribution." }
 ];
 
 function Digitalmedia() {
@@ -211,7 +221,7 @@ function Digitalmedia() {
         <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pb-16">
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full flex items-start justify-start w-full px-4">
-                    <FaDatabase size={60} className="text-bloo"/>  
+                    <FaDatabase size={48} className="text-bloo"/>  
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Content Management Systems (CMS)</h1>
@@ -220,7 +230,7 @@ function Digitalmedia() {
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaCloud size={60} className="text-bloo"/>
+                    <FaCloud size={48} className="text-bloo"/>
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Digital Marketing Automation</h1>
@@ -229,7 +239,7 @@ function Digitalmedia() {
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaMagnifyingGlass size={60} className="text-bloo"/> 
+                    <FaMagnifyingGlass size={48} className="text-bloo"/> 
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Data Analytics and Insights</h1>
@@ -238,7 +248,7 @@ function Digitalmedia() {
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaMagnifyingGlass size={60} className="text-bloo"/> 
+                    <TiMediaPlayOutline size={48} className="text-bloo"/> 
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Interactive Media Solutions</h1>
@@ -247,7 +257,7 @@ function Digitalmedia() {
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaMagnifyingGlass size={60} className="text-bloo"/> 
+                    <BsPeople size={48} className="text-bloo"/> 
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Audience Engagement Platforms</h1>
