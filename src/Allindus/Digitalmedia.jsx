@@ -15,6 +15,10 @@ import healthrect2 from '../assets/Compressed/healthrect2.png';
 import healthrect3 from '../assets/Compressed/healthrect3.png';
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
+
+import digital_img from "../assets/industry-images/Digital Media.png"
+
+
 const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -142,9 +146,9 @@ function Digitalmedia() {
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
-          <img src={healthrect1} alt="" />
-          <img src={healthrect2} alt="" />
-          <img src={healthrect3} alt="" />
+          <img src={digital_img} alt="" />
+          {/* <img src={healthrect2} alt="" />
+          <img src={healthrect3} alt="" /> */}
         </div>
         <div className="max-w-3xl mx-auto text-center px-8  flex flex-col gap-2">
           <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
