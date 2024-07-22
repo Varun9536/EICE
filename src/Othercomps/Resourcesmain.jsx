@@ -16,12 +16,12 @@ function Resourcesmain()
 {
     return(
         <div>
-            <div className="bg-gradient-to-br from-blue-900 via-emerald-800 to-cyan-900 w-screen 2xl:h-[45vh] h-[60vh] bg-cover bg-no-repeat -my-12">
+            <div className="bg-gradient-to-br  from-cyan-100 to-bloo/10 w-screen 2xl:h-[35vh] h-[60vh] bg-cover bg-no-repeat -my-12">
                 <div className=" max-w-7xl mx-auto w-full h-full">
-                    <div className="2xl:pb-8 2xl:pt-0 pt-24 flex flex-col items-center justify-center w-full h-full ">
-                        <h1 className="text-white font-bold text-center text-3xl lg:text-5xl py-2">EICE Resources</h1>
-                        <h2 className="text-white font-semibold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-4">Case Studies, Blogs and more</h2>
-                        <h2 className="text-white font-medium text-center sm:text-lg mx-auto lg:text-xl max-w-6xl py-2">Explore a wealth of knowledge and insights designed to help you navigate the
+                    <div className="2xl:pt-0 pt-24 flex flex-col items-center justify-center w-full h-full ">
+                        <h1 className="text-blackk font-bold text-center text-3xl lg:text-5xl py-2">EICE Resources</h1>
+                        <h2 className="text-bloo font-semibold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-4">Case Studies, Blogs and more</h2>
+                        <h2 className="text-blackk/60 font-medium text-center sm:text-lg mx-auto lg:text-xl max-w-6xl py-2">Explore a wealth of knowledge and insights designed to help you navigate the
 complexities of digital transformation and stay ahead in your industry. Our resources are
 curated by experts to provide valuable information, practical strategies, and innovative
 solutions that drive business success.</h2>

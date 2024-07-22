@@ -51,10 +51,10 @@ function Cstdmain() {
   const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
 
   return (
-    <div className="font-manrope px-4 sm:px-6 lg:px-8 xl:-mt-4">
-      <header className="bg-gradient-to-r from-transparent to-bloo/10 w-screen text-white 2xl:py-8 pt-32 pb-8 text-center">
-        <h1 className="text-blackk text-4xl md:text-6xl font-bold mb-4">CASE STUDIES</h1>
-        <p className="text-blackk text-xl md:text-2xl max-w-3xl py-2 mx-auto px-4">
+    <div className="font-manrope  xl:-mt-4">
+      <header className="bg-gradient-to-r from-cyan-100 to-bloo/10 w-screen text-white 2xl:py-8 pt-32 pb-8 text-center">
+        <h1 className="text-blackk text-4xl  md:text-6xl font-bold mb-4">CASE STUDIES</h1>
+        <p className="text-blackk text-xl  md:text-2xl max-w-3xl py-2 mx-auto px-4">
           Explore <span className="text-bloo font-bold">Real-World Examples</span> of how EICE has transformed businesses across industries through innovative software solutions and unparalleled expertise.
         </p>
       </header>
