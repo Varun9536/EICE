@@ -127,38 +127,38 @@ const App = () => {
         {/* <Route index element={<Home />} /> */}
         <Route path="/" element={<Home />} />
         {/* <Route path="/home" element={<Home />} /> */}
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Resources" element={<Resources />} />
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/INDUSTRIES" element={<Allindus />} />
-        <Route path="/industries-financial" element={<Financial />} />
-        <Route path="/industries-education" element={<Educational />} />
-        <Route path="/industries-digitalmedia" element={<Digitalmedia />} />
-        <Route path="/industries-healthcare" element={<Healthcare />} />
-        <Route path="/industries-logistics" element={<Logistics />} />
-        <Route path="/industries-enterprise" element={<Enterprise />} />
-        <Route path="/industries-legal" element={<Legal />} />
-        <Route path="/industries-oilandgas" element={<Oilandgas />} />
-        <Route path="services-digitaltransformation" element={<Digitrans />} />
-        <Route path="services-aiml" element={<Aiml />} />
-        <Route path="services-cloud" element={<Cloud />} />
-        <Route path="services-dataanalytics" element={<Dataanalytics />} />
-        <Route path="services-enterpriseappdev" element={<Entpappdev />} />
-        <Route path="services-gis" element={<Gis />} />
-        <Route path="services-devops" element={<Devops />} />
-        <Route path="services-iot" element={<Iot />} />
-        <Route path="services-techconsultancy" element={<Techconsult />} />
-        <Route path="services-saas" element={<Saas />} />
-        <Route path="services-android" element={<Android />} />
-        <Route path="services-blockchain" element={<Blockchain />} />
-        <Route path="services-webdevelopment" element={<Webdeveopment />} />
-        <Route path="services-softwaretesting" element={<Softwaretesting />} />
-        <Route path="services-uiuxconsulting" element={<UiUx />} />
-        <Route path="services-chatbot" element={<Chatbot />} />
-        <Route path="casestudies" element={<Cstudiescomp />} />
-        <Route path="casestudy-relimonitor" element={<Relimonitor />} />
+        <Route path="/Industries" element={<Allindus />} />
+        <Route path="/Industries-financial" element={<Financial />} />
+        <Route path="/Industries-education" element={<Educational />} />
+        <Route path="/Industries-digitalmedia" element={<Digitalmedia />} />
+        <Route path="/Industries-healthcare" element={<Healthcare />} />
+        <Route path="/Industries-logistics" element={<Logistics />} />
+        <Route path="/Industries-enterprise" element={<Enterprise />} />
+        <Route path="/Industries-legal" element={<Legal />} />
+        <Route path="/Industries-oilandgas" element={<Oilandgas />} />
+        <Route path="Services-digitaltransformation" element={<Digitrans />} />
+        <Route path="Services-aiml" element={<Aiml />} />
+        <Route path="Services-cloud" element={<Cloud />} />
+        <Route path="Services-dataanalytics" element={<Dataanalytics />} />
+        <Route path="Services-enterpriseappdev" element={<Entpappdev />} />
+        <Route path="Services-gis" element={<Gis />} />
+        <Route path="Services-devops" element={<Devops />} />
+        <Route path="Services-iot" element={<Iot />} />
+        <Route path="Services-techconsultancy" element={<Techconsult />} />
+        <Route path="Services-saas" element={<Saas />} />
+        <Route path="Services-android" element={<Android />} />
+        <Route path="Services-blockchain" element={<Blockchain />} />
+        <Route path="Services-webdevelopment" element={<Webdeveopment />} />
+        <Route path="Services-softwaretesting" element={<Softwaretesting />} />
+        <Route path="Services-uiuxconsulting" element={<UiUx />} />
+        <Route path="Services-chatbot" element={<Chatbot />} />
+        <Route path="Casestudies" element={<Cstudiescomp />} />
+        <Route path="Casestudy-Relimonitor" element={<Relimonitor />} />
         <Route
           path="*"
           element={
@@ -206,9 +206,9 @@ const NavLayout = () => {
               </div>
             </div>
             <div className="justify-self-end px-4">
-              <NavLink to="/contact" className="px-4 py-1">
+              <NavLink to="/Contact" className="px-4 py-1">
                 <div className="transition duration-300 ease-in-out">
-                  <Link to="/contact">
+                  <Link to="/Contact">
                     <button className="flex flex-row items-center justify-center bg-blend-overlay transition duration-200 py-2 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold  px-3 rounded">
                       Contact Us
                     </button>
@@ -533,7 +533,7 @@ const Aboutus = () => {
               </div>
             </div>
             <div>
-              <Link to="/about">
+              <Link to="/About">
                 <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
                   <span>Learn more</span>
                   <FiArrowRight />
@@ -594,7 +594,7 @@ const OurServices = () => {
         <div className="col-span-2">
           <div className="grid grid-cols-2 gap-8 items-start justify-start">
             <Link
-              to="/services?scrollTo=appDevelopment"
+              to="/Services?scrollTo=appDevelopment"
               className="group cursor-pointer  py-1 text-blackk/60 transition-colors"
             >
               <MdOutlineAppRegistration size={40} className="mb-2 text-bloo" />
@@ -610,7 +610,7 @@ const OurServices = () => {
               </h1>
             </Link>
             <Link
-              to="/services?scrollTo=emergingTechnologies"
+              to="/Services?scrollTo=emergingTechnologies"
               className="group cursor-pointer py-1 text-blackk/60 transition-colors "
             >
               <div className="">
@@ -628,7 +628,7 @@ const OurServices = () => {
               </h1>
             </Link>
             <Link
-              to="/services?scrollTo=consultancy"
+              to="/Services?scrollTo=consultancy"
               className="group cursor-pointer  pt-2 text-blackk/60 transition-colors "
             >
               <FaPeopleArrows size={40} className=" mb-2 text-bloo" />
@@ -644,7 +644,7 @@ const OurServices = () => {
               </h1>
             </Link>
             <Link
-              to="/services?scrollTo=flagshipServices"
+              to="/Services?scrollTo=flagshipServices"
               className="group cursor-pointer  py-1 text-blackk/60 transition-colors "
             >
               <IoIosBuild size={40} className=" mb-2 text-bloo" />
@@ -670,7 +670,7 @@ const OurResources = () => {
   return (
     <div className="p-1 grid-cols-2 grid gap-4">
       <Link
-        to="/casestudies"
+        to="/Casestudies"
         className="group cursor-pointer grid grid-rows-3 order-last  rounded-md"
       >
         <div className="row-span-2 w-full h-full bg-laptopcstudy bg-contain bg-no-repeat saturate-0 group-hover:saturate-100 transition duration-500"></div>
@@ -714,7 +714,7 @@ const OurResources = () => {
             </div>
             <div className="p-3">
               <Link
-                to="/contact"
+                to="/Contact"
                 className="py-1 px-2 cursor-pointer rounded-full bg-white text-sm"
               >
                 Contact Us
@@ -769,7 +769,7 @@ const OurIndustries = () => {
       <div className="col-span-2">
         <div className="grid grid-cols-2 gap-8 p-6">
           <div className="group flex flex-col gap-1">
-            <Link to="/industries-oilandgas" className="flex flex-row gap-4 items-center">
+            <Link to="/Industries-Oilandgas" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <FaOilCan
                   size={30}
@@ -784,7 +784,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries-healthcare"
+              to="/Industries-Healthcare"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -800,7 +800,7 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries-legal" className="flex flex-row gap-4 items-center">
+            <Link to="/Industries-Legal" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <GoLaw
                   size={30}
@@ -814,7 +814,7 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries-education" className="flex flex-row gap-4 items-center">
+            <Link to="/Industries-Education" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <BiPencil
                   size={30}
@@ -828,7 +828,7 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries-financial" className="flex flex-row gap-4 items-center">
+            <Link to="/Industries-Financial" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <IoIosCash
                   size={30}
@@ -842,7 +842,7 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries-digitalmedia" className="flex flex-row gap-4 items-center">
+            <Link to="/Industries-Digitalmedia" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <MdPermMedia
                   size={30}
@@ -856,7 +856,7 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries-logistics" className="flex flex-row gap-4 items-center">
+            <Link to="/Industries-Logistics" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <BsTruck
                   size={30}
@@ -870,7 +870,7 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries-enterprise" className="flex flex-row gap-4 items-center">
+            <Link to="/Industries-Enterprise" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <FaBusinessTime
                   size={30}
