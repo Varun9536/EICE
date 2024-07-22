@@ -67,7 +67,7 @@ function Cstdmain() {
                   onClick={() => setActiveIndustry(industry.id)}
                   className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
                     activeIndustry === industry.id
-                      ? "bg-bloo text-white"
+                      ? "bg-blue-900 text-white"
                       : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                   }`}
                 >
