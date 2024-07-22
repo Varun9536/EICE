@@ -10,18 +10,18 @@ import { GiVirtualMarker } from "react-icons/gi";
 function Relimonitor()
 {
     return(
-        <div>
-            <div className="max-w-7xl mx-auto px-4 2xl:pt-12 pt-32">
+        <div className="text-justify">
+            <div className="max-w-7xl text-justify mx-auto px-4 2xl:pt-12 pt-32">
                 <div className="w-full">
                     <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">RE.LI Monitor</h1>
                     <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">A Real Time Sensor Monitoring Tool</h2>
                     <p className="font-medium max-w-4xl mx-auto text-justify text-blackk/60 sm:text-xl text-lg pt-4 px-4">Development of RE.LI Monitor: A real-time sensor monitoring tool integrating SCADA data for intelligent alarm management and performance analysis across diverse well types.</p>
-                    <div className="w-full max-w-7xl px-4 mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4"><img src={temp} alt="" className="w-full h-full object-fit"/><img src={temp2} alt="" className="w-full h-full object-fit"/></div>
+                    <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4"><img src={temp} alt="" className="w-full h-full object-fit"/><img src={temp2} alt="" className="w-full h-full object-fit"/></div>
                 </div>
                 <div className="w-full pb-6">
                     <h2 className="text-blackk max-w-3xl pb-2 font-bold text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">Key Challenges</h2>
-                    <div className="max-w-3xl mx-auto flex flex-col py-4 gap-4">
-                        <div className="flex gap-4">
+                    <div className="max-w-3xl  mx-auto flex flex-col py-4 gap-4">
+                        <div className="flex gap-4 ">
                             <h1 className="text-bloo flex items-center justify-center h-full font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">01</h1>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg py-2">Real-time data integration: Interfacing with multiple data acquisition systems (SCADA, DCS, Historian) in real-time.</p>
                         </div>
@@ -106,7 +106,7 @@ function Relimonitor()
                             </div>
                         </div>
                 </div>
-                <div className="w-full pb-20">
+                <div className="w-full pb-20 px-4">
                     <h2 className="text-blackk max-w-3xl pb-2 font-bold text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">Project Outcomes</h2>
                     <div className="max-w-3xl mx-auto flex flex-col py-4 gap-4">
                         <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
