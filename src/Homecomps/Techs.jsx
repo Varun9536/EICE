@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaApple, FaAndroid, FaReact } from 'react-icons/fa';
 import { IoMdReturnLeft } from 'react-icons/io';
-import { SiJenkins , SiRedis , SiMicrosoftsqlserver, SiFlutter, SiIonic, SiSwift, SiKotlin, SiApple, SiJavascript, SiPhp, SiVuedotjs, SiAngular, SiJquery, SiTypescript, SiMysql, SiPostgresql, SiApache, SiOracle, SiDjango, SiMongodb, SiAmazondynamodb, SiNodedotjs, SiRubyonrails, SiLaravel, SiExpress, SiFlask, SiFirebase, SiDocker, SiGit, SiKubernetes, SiJira, SiAnsible, SiAmazonaws, SiMicrosoftazure} from 'react-icons/si';
+import { SiTerraform, SiJenkins , SiRedis , SiMicrosoftsqlserver, SiFlutter, SiIonic, SiSwift, SiKotlin, SiApple, SiJavascript, SiPhp, SiVuedotjs, SiAngular, SiJquery, SiTypescript, SiMysql, SiPostgresql, SiApache, SiOracle, SiDjango, SiMongodb, SiAmazondynamodb, SiNodedotjs, SiRubyonrails, SiLaravel, SiExpress, SiFlask, SiFirebase, SiDocker, SiGit, SiKubernetes, SiJira, SiAnsible, SiAmazonaws, SiMicrosoftazure, SiSvelte} from 'react-icons/si';
 import { DiDotnet } from "react-icons/di";
 import { useHref } from 'react-router-dom';
 import {Routes, Route, Outlet, NavLink, Link } from 'react-router-dom';
@@ -55,7 +55,9 @@ const iconComponents = {
     "next-icon" : RiNextjsFill ,
     "sqlserver-icon" : SiMicrosoftsqlserver ,
     "redis-icon" : SiRedis ,
-    "jenkin-icon" : SiJenkins 
+    "jenkin-icon" : SiJenkins, 
+    "terraform-icon" : SiTerraform,
+    "svelte-icon" : SiSvelte,
   };
 
 
@@ -81,8 +83,8 @@ const technologies = {
     { name: "ASP.NET", icon: "aspdotnet-icon", link: "services-aspdotnet" },
     // { name: "React Native", icon: "react-icon", link: "services-reactnative" },
     // { name: "Ionic", icon: "ionic-icon", link: "services-ionic" },
-    // { name: "JQuery", icon: "jquery-icon", link: "services-jquery" },
-    // { name: "TypeScript", icon: "typescript-icon", link: "services-typescript" },
+    { name: "JQuery", icon: "jquery-icon", link: "services-jquery" },
+    { name: "Svelte", icon: "svelte-icon", link: "services-typescript" },
     // { name: "PHP", icon: "php-icon", link: "services-php" },
   ],
   database: [
@@ -114,6 +116,7 @@ const technologies = {
     // { name: "AWS", icon: "aws-icon", link: "services-aws" },
     { name: "Jenkins", icon: "jenkin-icon", link: "services-azure" },
     { name: "Ansible", icon: "ansible-icon", link: "services-ansible" },
+    { name: "Terraform", icon: "terraform-icon", link: "services-ansible" },
 
   ]
 };
