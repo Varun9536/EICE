@@ -13,10 +13,17 @@ import { FaCloud, FaDatabase } from "react-icons/fa";
 import financial_img from "../assets/industry-images/Financial Services.png"
 
 import laptop from "../assets/Compressed/Laptop.png";
-import healthrect1 from '../assets/Compressed/healthrect1.png';
-import healthrect2 from '../assets/Compressed/healthrect2.png';
-import healthrect3 from '../assets/Compressed/healthrect3.png';
+import random1 from '../assets/Compressed/random1.jpg';
+import random2 from '../assets/Compressed/random2.jpg';
+import random3 from '../assets/Compressed/random3.jpg';
+import random4 from '../assets/Compressed/random4.jpg';
+import random5 from '../assets/Compressed/random5.jpg';
+import random6 from '../assets/Compressed/random6.jpg';
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FcCollaboration } from "react-icons/fc";
+import { GiSecurityGate, GiTalk } from "react-icons/gi";
+import { PiMathOperations } from "react-icons/pi";
+import { MdManageAccounts, MdSecurity } from "react-icons/md";
 
 const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
@@ -128,22 +135,22 @@ function Cstdmain() {
 }
 
 const services = [
-  { id: "ehr", name: "Financial Management Systems", image: healthrect1, description: "Developing robust systems for financial planning, budgeting, and detailed reporting, empowering institutions to manage their finances effectively." },
+  { id: "ehr", name: "Financial Management Systems", image: random6, description: "Developing robust systems for financial planning, budgeting, and detailed reporting, empowering institutions to manage their finances effectively." },
 
 
-  { id: "telemedicine", name: "Client Relationship Management (CRM) Solutions", image: healthrect2, description: "Creating CRM platforms to optimize client interactions, streamline sales processes, and enhance service delivery, ensuring personalized and responsive client engagement" },
-
-
-
-  { id: "analytics", name: "Business Intelligence and Analytics", image: healthrect3, description: "Providing advanced analytics tools for evaluating financial performance, generating reports, and supporting data-driven decisions for financial professionals and executives." },
+  { id: "telemedicine", name: "Client Relationship Management (CRM) Solutions", image: random4, description: "Creating CRM platforms to optimize client interactions, streamline sales processes, and enhance service delivery, ensuring personalized and responsive client engagement" },
 
 
 
-  { id: "integration", name: "Compliance and Regulatory Reporting", image: healthrect1, description: "Building solutions to ensure compliance with regulatory requirements, simplifying complex compliance processes and enhancing transparency in reporting." },
+  { id: "analytics", name: "Business Intelligence and Analytics", image: random5, description: "Providing advanced analytics tools for evaluating financial performance, generating reports, and supporting data-driven decisions for financial professionals and executives." },
 
 
 
-  { id: "mobility", name: "Digital Banking Solutions", image: healthrect2, description: "Develop secure and user-friendly digital banking platforms that enhance customer experience, offering seamless transactions and personalized financial services" }
+  { id: "integration", name: "Compliance and Regulatory Reporting", image: random3, description: "Building solutions to ensure compliance with regulatory requirements, simplifying complex compliance processes and enhancing transparency in reporting." },
+
+
+
+  { id: "mobility", name: "Digital Banking Solutions", image: random2, description: "Develop secure and user-friendly digital banking platforms that enhance customer experience, offering seamless transactions and personalized financial services" }
 ];
 
 function Legal() {
@@ -153,12 +160,12 @@ function Legal() {
   return (
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
-        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
-          <img src={financial_img} alt="" />
+        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
+          <img src={financial_img} alt="" className="w-full object-cover px-2" />
           {/* <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" /> */}
         </div>
-        <div className="max-w-3xl mx-auto text-center px-8 flex flex-col gap-2">
+        <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Revolutionizing <span className="text-bloo">Financial Services </span> Through Advanced Technology Solutions
           </h1>
@@ -218,27 +225,9 @@ function Legal() {
         </div>
         <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pb-16">
 
-
-
-
-          <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
-            <div className=" rounded-full flex items-start justify-start w-full px-4">
-              <FaDatabase size={60} className="text-bloo" />
-            </div>
-            <div className="pt-6 h-full text-left">
-              <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Personalized Client Experiences</h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We tailor financial services with personalized advice, tailored investment strategies, and customized client experiences using advanced technology.</p>
-            </div>
-          </div>
-
-
-
-
-
-
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaCloud size={60} className="text-bloo" />
+              <GiTalk size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Enhanced Team Collaboration</h1>
@@ -246,15 +235,9 @@ function Legal() {
             </div>
           </div>
 
-
-
-
-
-
-
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <MdManageAccounts size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Efficient Operations Management</h1>
@@ -262,19 +245,15 @@ function Legal() {
             </div>
           </div>
 
-
-
-
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <MdSecurity size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Secure and Scalable Infrastructure</h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">Security and scalability are critical in finance. We ensure robust measures like data encryption, strict access controls, and compliance with regulations for protecting financial data and enabling growth. </p>
             </div>
           </div>
-
 
         </div>
       </div>

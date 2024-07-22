@@ -12,11 +12,20 @@ import { FaCloud, FaDatabase } from "react-icons/fa";
 import Enterprise_img from "../assets/industry-images/Enterprise.png"
 
 
+import random1 from '../assets/Compressed/random1.jpg';
+import random2 from '../assets/Compressed/random2.jpg';
+import random3 from '../assets/Compressed/random3.jpg';
+import random4 from '../assets/Compressed/random4.jpg';
+import random5 from '../assets/Compressed/random5.jpg';
+import random6 from '../assets/Compressed/random6.jpg';
+
 import laptop from "../assets/Compressed/Laptop.png";
-import healthrect1 from '../assets/Compressed/healthrect1.png';
-import healthrect2 from '../assets/Compressed/healthrect2.png';
-import healthrect3 from '../assets/Compressed/healthrect3.png';
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { TiTime } from "react-icons/ti";
+import { GoWorkflow } from "react-icons/go";
+import { SiInternetcomputer } from "react-icons/si";
+import { GiCircuitry } from "react-icons/gi";
+import { PiDrone } from "react-icons/pi";
 
 const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
@@ -128,22 +137,22 @@ function Cstdmain() {
 }
 
 const services = [
-  { id: "ehr", name: "Enterprise Resource Planning (ERP) Systems", image: healthrect1, description: "Developing robust ERP systems for end-to-end visibility, inventory management, and business planning, empowering enterprises to optimize their operations effectively." },
+  { id: "ehr", name: "Enterprise Resource Planning (ERP) Systems", image: random1, description: "Developing robust ERP systems for end-to-end visibility, inventory management, and business planning, empowering enterprises to optimize their operations effectively." },
 
 
-  { id: "telemedicine", name: "Customer Relationship Management (CRM) Solutions", image: healthrect2, description: "Creating solutions for managing customer relationships, optimizing sales processes, and ensuring efficient service delivery to enhance customer satisfaction.." },
-
-
-
-  { id: "analytics", name: "Human Resources Management Systems (HRMS)", image: healthrect3, description: "Implementing HRMS platforms for efficient HR operations, including employee tracking, payroll management, and real-time monitoring of HR activities." },
+  { id: "telemedicine", name: "Customer Relationship Management (CRM) Solutions", image: random2, description: "Creating solutions for managing customer relationships, optimizing sales processes, and ensuring efficient service delivery to enhance customer satisfaction.." },
 
 
 
-  { id: "integration", name: "Predictive Analytics and Optimization", image: healthrect1, description: "Providing advanced analytics tools for predictive modeling, demand forecasting, and process optimization, enabling data-driven decision-making to streamline enterprise processes." },
+  { id: "analytics", name: "Human Resources Management Systems (HRMS)", image: random3, description: "Implementing HRMS platforms for efficient HR operations, including employee tracking, payroll management, and real-time monitoring of HR activities." },
 
 
 
-  { id: "mobility", name: "Real-Time Tracking and Reporting", image: healthrect2, description: "Developing platforms for real-time tracking of business activities, coupled with comprehensive reporting capabilities for operational insights and performance evaluation.." }
+  { id: "integration", name: "Predictive Analytics and Optimization", image: random4, description: "Providing advanced analytics tools for predictive modeling, demand forecasting, and process optimization, enabling data-driven decision-making to streamline enterprise processes." },
+
+
+
+  { id: "mobility", name: "Real-Time Tracking and Reporting", image: random5, description: "Developing platforms for real-time tracking of business activities, coupled with comprehensive reporting capabilities for operational insights and performance evaluation.." }
 ];
 
 function Legal() {
@@ -153,14 +162,14 @@ function Legal() {
   return (
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
-        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
-          <img src={Enterprise_img} alt="" />
+        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
+          <img src={Enterprise_img} alt="" className="object-cover w-full px-2" />
           {/* <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" /> */}
         </div>
-        <div className="max-w-3xl mx-auto text-center px-8 flex flex-col gap-2">
-          <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
-            Transforming <span className="text-bloo">Enterprise </span> with Innovative Technology
+        <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
+          <h1 className="text-blackk font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+            Transforming <span className="text-bloo">Enterprise</span> with Innovative Technology
           </h1>
           <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
             At EICE Technology, we excel in transforming enterprise operations through state-of-the-art technology solutions. Our mission is to provide innovative software that significantly boosts operational efficiency, streamlines business processes, and supports professionals in delivering exceptional services.
@@ -223,7 +232,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full flex items-start justify-start w-full px-4">
-              <FaDatabase size={60} className="text-bloo" />
+              <FaDatabase size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Advanced ERP Systems</h1>
@@ -235,7 +244,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaCloud size={60} className="text-bloo" />
+              <TiTime size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Real-Time Business Process Management</h1>
@@ -251,7 +260,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <FaMagnifyingGlass size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Business Visibility and Analytics</h1>
@@ -264,7 +273,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <GoWorkflow size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Automated Workflow Solutions</h1>
@@ -279,7 +288,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <PiDrone size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">IoT-Enabled Enterprise Solutions</h1>

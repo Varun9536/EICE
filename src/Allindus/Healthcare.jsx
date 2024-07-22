@@ -207,7 +207,7 @@ Our solutions cater to diverse needs across hospitals, clinics, pharmaceutical c
         <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pb-16">
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full flex items-start justify-start w-full px-4">
-                    <FaDatabase size={60} className="text-bloo"/>  
+                    <FaDatabase size={48} className="text-bloo"/>  
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">ELECTRONIC HEALTH RECORDS</h1>
@@ -216,7 +216,7 @@ Our solutions cater to diverse needs across hospitals, clinics, pharmaceutical c
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaCloud size={60} className="text-bloo"/>
+                    <FaCloud size={48} className="text-bloo"/>
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">TELEMEDICINE SOLUTIONS</h1>
@@ -225,7 +225,7 @@ Our solutions cater to diverse needs across hospitals, clinics, pharmaceutical c
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaMagnifyingGlass size={60} className="text-bloo"/> 
+                    <FaMagnifyingGlass size={48} className="text-bloo"/> 
                 </div>
                 <div className="pt-6 h-full text-left">
                     <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">HEALTHCARE ANALYTICS</h1>

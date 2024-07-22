@@ -15,7 +15,22 @@ import laptop from "../assets/Compressed/Laptop.png";
 import healthrect1 from '../assets/Compressed/healthrect1.png';
 import healthrect2 from '../assets/Compressed/healthrect2.png';
 import healthrect3 from '../assets/Compressed/healthrect3.png';
+
+import random1 from '../assets/Compressed/random1.jpg';
+import random2 from '../assets/Compressed/random2.jpg';
+import random3 from '../assets/Compressed/random3.jpg';
+import random4 from '../assets/Compressed/random4.jpg';
+import random5 from '../assets/Compressed/random5.jpg';
+import random6 from '../assets/Compressed/random6.jpg';
+
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { BiAnalyse, BiSupport } from "react-icons/bi";
+import { GrAnalytics, GrIntegration, GrTest } from "react-icons/gr";
+import { MdArchitecture, MdCheckBox } from "react-icons/md";
+import { SiTestinglibrary } from "react-icons/si";
+import { GiCheckMark } from "react-icons/gi";
+import { FcDeployment } from "react-icons/fc";
+import { AiOutlineDeploymentUnit } from "react-icons/ai";
 
 const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
@@ -127,26 +142,26 @@ function Cstdmain() {
 }
 
 const services = [
-  { id: "ehr", name: "Case Management Systems", image: healthrect1, description: "Designing and implementing systems to streamline case workflows, manage documents, and track deadlines efficiently." },
+  { id: "ehr", name: "Case Management Systems", image: random4, description: "Designing and implementing systems to streamline case workflows, manage documents, and track deadlines efficiently." },
 
 
-  { id: "telemedicine", name: "Legal Document Automation", image: healthrect2, description: "Automating document creation and management to reduce errors, save time, and improve legal document processes" },
-
-
-
-  { id: "analytics", name: "E-Discovery Solutions ", image: healthrect3, description: "Developing e-discovery tools for efficient data collection, analysis, and review, ensuring legal compliance and effectiveness. " },
+  { id: "telemedicine", name: "Legal Document Automation", image: random2, description: "Automating document creation and management to reduce errors, save time, and improve legal document processes" },
 
 
 
-  { id: "integration", name: "Compliance Management Software ", image: healthrect1, description: "Providing solutions for managing regulatory requirements, tracking compliance tasks, and meeting legal obligations across jurisdictions." },
+  { id: "analytics", name: "E-Discovery Solutions ", image: random3, description: "Developing e-discovery tools for efficient data collection, analysis, and review, ensuring legal compliance and effectiveness. " },
 
 
 
-  { id: "mobility", name: "Legal Research and Analytics ", image: healthrect2, description: "Offering tools for advanced legal research, data analysis, and case law exploration to support informed legal decisions. " },
+  { id: "integration", name: "Compliance Management Software ", image: random5, description: "Providing solutions for managing regulatory requirements, tracking compliance tasks, and meeting legal obligations across jurisdictions." },
 
 
 
-  { id: "mobility", name: "Legal Billing and Accounting Solutions  ", image: healthrect2, description: "Creating software for accurate time tracking, invoicing, expense management, and financial reporting for legal practices. " }
+  { id: "mobility", name: "Legal Research and Analytics ", image: random1, description: "Offering tools for advanced legal research, data analysis, and case law exploration to support informed legal decisions. " },
+
+
+
+  { id: "mobilityy", name: "Legal Billing and Accounting Solutions  ", image: random6, description: "Creating software for accurate time tracking, invoicing, expense management, and financial reporting for legal practices. " }
 ];
 
 function Legal() {
@@ -156,12 +171,12 @@ function Legal() {
   return (
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
-        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
-          <img src={legal_img} alt="" />
+        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
+          <img src={legal_img} alt="" className="object-cover w-full px-2" />
           {/* <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" /> */}
         </div>
-        <div className="max-w-3xl mx-auto text-center px-8 flex flex-col gap-2">
+        <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Innovative <span className="text-bloo">Legal Software Solutions </span> for a Modern Legal Practice
           </h1>
@@ -226,7 +241,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full flex items-start justify-start w-full px-4">
-              <FaDatabase size={60} className="text-bloo" />
+              <GrAnalytics size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Comprehensive Requirements Analysis</h1>
@@ -238,7 +253,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaCloud size={60} className="text-bloo" />
+              <MdArchitecture size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Innovative Design and Prototyping</h1>
@@ -254,7 +269,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <GrIntegration size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Advanced Software Development and Integration</h1>
@@ -267,7 +282,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <MdCheckBox size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Rigorous Testing and Quality Assurance</h1>
@@ -282,7 +297,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <AiOutlineDeploymentUnit size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Seamless Deployment and Implementation</h1>
@@ -295,7 +310,7 @@ function Legal() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <BiSupport size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Ongoing Maintenance and Support</h1>
