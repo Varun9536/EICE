@@ -145,11 +145,11 @@ function Healthcare() {
           <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" />
         </div>
-        <div className="max-w-3xl mx-auto text-center px-8 flex flex-col gap-2">
+        <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Transforming <span className="text-bloo">Healthcare</span> with Innovative Technology 
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
+          <p className="font-medium text-blackk/60 sm:text-xl max-w-7xl text-lg text-justify">
           At EICE Technology, we empower businesses to excel in the digital age through cutting-edge technologies and innovative strategies. We recognize the essential role of technology in modern healthcare and offer comprehensive software development services to enhance patient care, streamline operations, and support providers. 
 Our solutions cater to diverse needs across hospitals, clinics, pharmaceutical companies, and research institutions. Committed to adhering to HIPAA, NCPDP, FDA, and GDPR regulations, we deliver advanced digital solutions that meet the latest trends in the healthcare industry.
 

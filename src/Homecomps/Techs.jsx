@@ -129,7 +129,7 @@ const Technology = ({ name, icon, link }) => {
         {/* <Link to={link} className=" mb-2"> */}
           <IconComponent size={60} className="text-blackk group-hover:text-bloo transition duration-300"/>
         {/* </Link> */}
-        <span className="group-hover:underline group-hover:text-bloo transition duration-300 text-blackk font-semibold text-sm text-center">{name}</span>
+        <span className=" group-hover:text-bloo transition duration-300 text-blackk font-semibold text-sm text-center">{name}</span>
       </div>
     </div>
   );
@@ -145,15 +145,15 @@ function Techs() {
     <div className="container  mx-auto px-4 font-manrope">
       <header className="text-center mb-10">
         <h1 className="text-bloo font-bold text-xl sm:text-xl lg:text-2xl  py-2">Technologies we work with</h1>
-        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-4xl py-1">
           Explore our extensive range of cutting-edge tools and platforms
         </h1>
       </header>
 
-      <nav className="mb-12">
-        <ul className="flex flex-wrap items-center justify-center gap-4">
+      <nav className="mb-12 max-w-4xl px-2 mx-auto">
+        <ul className="flex flex-wrap  items-center justify-center gap-x-[4.7rem] gap-y-8">
           {categories.map((category) => (
-            <li key={category.id} className=''>
+            <li key={category.id} className='text-nowrap justify-center'>
               <button
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-4 py-2 rounded-full transition ${

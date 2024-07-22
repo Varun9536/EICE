@@ -10,7 +10,7 @@ function Big() {
     const slides = [
         {
             content: (
-                <div className="container mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-28">
+                <div className="container mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div className="flex flex-col space-y-4 ">
                             <h1 className="text-blackk text-3xl sm:text-4xl lg:text-5xl font-semibold lg:leading-[3.7rem]">
@@ -45,7 +45,7 @@ function Big() {
         },
         {
           content: (
-              <div className="container mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-28">
+              <div className="container mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                       <div className="flex flex-col space-y-4">
                           <h1 className="text-blackk text-3xl sm:text-4xl lg:text-5xl font-semibold lg:leading-[3.7rem]">
@@ -78,7 +78,7 @@ function Big() {
       },
       {
         content: (
-            <div className="container mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-28">
+            <div className="container mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col space-y-4">
                         <h1 className="text-blackk text-3xl sm:text-4xl lg:text-5xl font-semibold lg:leading-[3.7rem]">
@@ -128,18 +128,18 @@ function Big() {
     }, );
 
     return (
-        <div className="relative overflow-hidden font-manrope text-blackk pb-4">
+<div className="relative overflow-hidden font-manrope text-blackk pb-4">
             <div className="absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
-            <div className="relative z-10 py-16 sm:py-24 2xl:py-10">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <TransitionGroup className="h-[450px]">
-                        <CSSTransition key={currentIndex} timeout={500} classNames=""
-                        exit={false}
-                        >
-                            {slides[currentIndex].content}
+            <div className="relative z-10 py-8 sm:py-16 md:py-24 2xl:py-10">
+                <div className="container mx-auto px-4 sm:px-2 xl:px-8">
+                    <TransitionGroup className="min-h-[500px] sm:min-h-[450px]">
+                        <CSSTransition key={currentIndex} timeout={500} classNames="" exit={false}>
+                            <div className="px-2 xl:px-12">
+                                {slides[currentIndex].content}
+                            </div>
                         </CSSTransition>
                     </TransitionGroup>
-                    <div className="flex justify-center mt-8">
+                    <div className="flex justify-center mt-12">
                         <div className="flex space-x-4">
                             {slides.map((_, index) => (
                                 <button
@@ -152,14 +152,14 @@ function Big() {
                             ))}
                         </div>
                     </div>
-                    <div className="absolute xl:block hidden top-1/2 left-4 transform -translate-y-1/2">
+                    <div className="absolute xl:block hidden top-1/2 left-2 sm:left-4 transform -translate-y-1/2">
                         <button onClick={prevSlide} className="text-blackk/50 hover:text-blackk">
-                            <BsChevronLeft size={30} />
+                            <BsChevronLeft size={24} sm:size={30} />
                         </button>
                     </div>
-                    <div className="absolute top-1/2 right-4 xl:block hidden transform -translate-y-1/2">
+                    <div className="absolute xl:block hidden top-1/2 right-2 sm:right-4 transform -translate-y-1/2">
                         <button onClick={nextSlide} className="text-blackk/50 hover:text-blackk">
-                            <BsChevronRight size={30} />
+                            <BsChevronRight size={24} sm:size={30} />
                         </button>
                     </div>
                 </div>

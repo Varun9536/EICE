@@ -48,7 +48,7 @@ function Clients() {
         dots: false,
         arrows: false,
         infinite: true,
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         speed: 6000,

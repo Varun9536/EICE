@@ -31,6 +31,8 @@ export default {
         'cstdbanner' : "url('./assets/Compressed/cstdbanner.png')",
         'journeymap1' : "url('./assets/Compressed/journeymap1.png')",
         'journeymap2' : "url('./assets/Compressed/journeymap2.png')",
+        'rescasebanner' : "url('./assets/Compressed/rescasebanner.png')",
+        'resourceshero' : "url('./assets/Compressed/resourceshero.png')",
 
 
       },
