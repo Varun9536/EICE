@@ -49,7 +49,6 @@ import Entpappdev from "./Servcomps/Entpappdev";
 import Iot from "./Servcomps/Iot";
 import Techconsult from "./Servcomps/Techconsult";
 
-// new component
 import Blockchain from "./Servcomps/Blockchain.jsx";
 import Webdeveopment from "./Servcomps/Webdevelopment.jsx";
 import Softwaretesting from "./Servcomps/Softwaretesting.jsx";
@@ -62,6 +61,12 @@ import Healthcare from "./Allindus/Healthcare";
 import Financial from "./Allindus/Financial";
 import Educational from "./Allindus/Educational";
 import Digitalmedia from "./Allindus/Digitalmedia";
+import Logistics from "./Allindus/Logistics.jsx";
+import Enterprise from "./Allindus/Enterprise.jsx";
+import Legal from "./Allindus/Legal.jsx";
+import Oilandgas from "./Allindus/Oilandgas.jsx";
+
+
 import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
 import { IoIosCash } from "react-icons/io";
@@ -135,6 +140,10 @@ const App = () => {
         <Route path="/industries-education" element={<Educational />} />
         <Route path="/industries-digitalmedia" element={<Digitalmedia />} />
         <Route path="/industries-healthcare" element={<Healthcare />} />
+        <Route path="/industries-logistics" element={<Logistics />} />
+        <Route path="/industries-enterprise" element={<Enterprise />} />
+        <Route path="/industries-legal" element={<Legal />} />
+        <Route path="/industries-oilandgas" element={<Oilandgas />} />
         <Route path="services-digitaltransformation" element={<Digitrans />} />
         <Route path="services-aiml" element={<Aiml />} />
         <Route path="services-cloud" element={<Cloud />} />
@@ -766,7 +775,7 @@ const OurIndustries = () => {
       <div className="col-span-2">
         <div className="grid grid-cols-2 gap-8 p-6">
           <div className="group flex flex-col gap-1">
-            <Link to="/industries" className="flex flex-row gap-4 items-center">
+            <Link to="/industries-oilandgas" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <FaOilCan
                   size={30}
@@ -777,7 +786,7 @@ const OurIndustries = () => {
                 Oil and Gas
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
             <Link
@@ -794,10 +803,10 @@ const OurIndustries = () => {
                 Healthcare
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries" className="flex flex-row gap-4 items-center">
+            <Link to="/industries-legal" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <GoLaw
                   size={30}
@@ -808,10 +817,10 @@ const OurIndustries = () => {
                 Legal
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries" className="flex flex-row gap-4 items-center">
+            <Link to="/industries-education" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <BiPencil
                   size={30}
@@ -822,10 +831,10 @@ const OurIndustries = () => {
                 Education
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries" className="flex flex-row gap-4 items-center">
+            <Link to="/industries-financial" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <IoIosCash
                   size={30}
@@ -836,10 +845,10 @@ const OurIndustries = () => {
                 Financial
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries" className="flex flex-row gap-4 items-center">
+            <Link to="/industries-digitalmedia" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <MdPermMedia
                   size={30}
@@ -850,10 +859,10 @@ const OurIndustries = () => {
                 Digital Media
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries" className="flex flex-row gap-4 items-center">
+            <Link to="/industries-logistics" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <BsTruck
                   size={30}
@@ -864,10 +873,10 @@ const OurIndustries = () => {
                 Logistics
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/industries" className="flex flex-row gap-4 items-center">
+            <Link to="/industries-enterprise" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
                 <FaBusinessTime
                   size={30}
@@ -878,7 +887,7 @@ const OurIndustries = () => {
                 Enterprise
               </span>
             </Link>
-            <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
+            <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
         </div>
       </div>
