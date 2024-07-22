@@ -148,13 +148,13 @@ function Blockchain()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Cutting-Edge <span className="text-bloo">Web App Development Services</span>: Transforming Ideas into High-Impact Digital Solutions
+                            Cutting-Edge <span className="text-bloo">Web App Development Services</span> : Transforming Ideas into High-Impact Digital Solutions
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             Blockchain technology has evolved beyond its initial application in cryptocurrency to become a transformative force across various industries. Its decentralized, transparent, and secure nature offers innovative solutions for businesses seeking to enhance their operations and build trust with users. 
-<br /> At EICE Technology we offer cutting-edge blockchain development services designed to unlock the full potential of this groundbreaking technology. Our expert team is committed to delivering innovative, high-quality blockchain solutions that meet your specific business needs.
+<div className="py-2" /> At EICE Technology we offer cutting-edge blockchain development services designed to unlock the full potential of this groundbreaking technology. Our expert team is committed to delivering innovative, high-quality blockchain solutions that meet your specific business needs.
                             </p>
                         </div>
                     </div>

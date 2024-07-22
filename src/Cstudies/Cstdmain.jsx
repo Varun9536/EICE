@@ -1,14 +1,19 @@
 import React, { useState, useRef } from "react";
 import laptop from "../assets/Compressed/Laptop.png";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const industries = [
+  { name: "GIS INDUSTRY", id: "gis" },
   { name: "OIL AND GAS INDUSTRY", id: "oil" },
   { name: "AUTOMOBILE INDUSTRY", id: "auto" },
   { name: "HEALTHCARE INDUSTRY", id: "health" }
 ];
 
 const projects = {
+  gis: [
+    { title: "RE.LI Monitor", description: "Developed a Real Time Sensor monitoring tool using SCADA.", link:"/Casestudy-ReliMonitor" },
+  ],
   oil: [
     { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },
     { title: "Pipeline Leak Detection System", description: "Reduced environmental risks with real-time leak detection, cutting response time by 60%." },
@@ -30,12 +35,12 @@ const projects = {
   ]
 };
 
-const CaseStudy = ({ title, description, image }) => (
-  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
+const CaseStudy = ({link, title, description, image }) => (
+  <Link to={link} className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img 
         src={image}
-        alt={title} 
+        alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />
       <div className="p-3 md:p-4">
@@ -43,7 +48,7 @@ const CaseStudy = ({ title, description, image }) => (
         <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 
@@ -91,6 +96,7 @@ function Cstdmain() {
                   title={project.title}
                   description={project.description}
                   image={laptop}
+                  link={project.link}
                 />
               ))}
             </div>

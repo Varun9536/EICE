@@ -33,10 +33,7 @@ import Workflow from "./Aboutcomponents/Workflow";
 import Scopes from "./Aboutcomponents/Scopes";
 
 import Cstdmain from "./Cstudies/Cstdmain";
-import AutoOne from "./Cstudies/AutoOne";
-import AutoTwo from "./Cstudies/AutoTwo";
-import AutoThree from "./Cstudies/AutoThree";
-import AutoFour from "./Cstudies/AutoFour";
+import Relimonitor from "./Cstudies/Relimonitor.jsx";
 
 import Servmain from "./Servcomps/Servmain";
 import Aiml from "./Servcomps/Aiml";
@@ -161,10 +158,7 @@ const App = () => {
         <Route path="services-uiuxconsulting" element={<UiUx />} />
         <Route path="services-chatbot" element={<Chatbot />} />
         <Route path="casestudies" element={<Cstudiescomp />} />
-        <Route path="resources/casestudies/AutoOne" element={<AutoOne />} />
-        <Route path="resources/casestudies/AutoTwo" element={<AutoTwo />} />
-        <Route path="resources/casestudies/AutoThree" element={<AutoThree />} />
-        <Route path="resources/casestudies/AutoFour" element={<AutoFour />} />
+        <Route path="casestudy-relimonitor" element={<Relimonitor />} />
         <Route
           path="*"
           element={

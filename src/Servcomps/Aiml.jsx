@@ -147,7 +147,7 @@ function Aiml()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                                Embrace the AI Future: 
+                                Embrace the AI Future :
                                 <span className="text-bloo"> Innovation </span>
                                 for Competitive Advantage
                             </h1>

@@ -150,13 +150,13 @@ function Webdevelopment()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Cutting-Edge <span className="text-bloo">Web App Development Services</span>: Transforming Ideas into High-Impact Digital Solutions
+                            Cutting-Edge <span className="text-bloo">Web App Development Services</span> : Transforming Ideas into High-Impact Digital Solutions
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             In an era where digital presence is crucial for business success, web applications have become a key component of a company's strategy. A well-designed web app can drive user engagement, streamline operations, and boost growth. 
-<br />At EICE Technology we offer comprehensive web app development services that combine innovation, technology, and user-centric design to deliver exceptional digital solutions. Our team of experts is dedicated to creating web applications that not only meet but exceed client expectations.
+<div className="py-2" />At EICE Technology we offer comprehensive web app development services that combine innovation, technology, and user-centric design to deliver exceptional digital solutions. Our team of experts is dedicated to creating web applications that not only meet but exceed client expectations.
 
                             </p>
                         </div>

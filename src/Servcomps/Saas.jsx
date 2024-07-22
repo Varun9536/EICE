@@ -150,13 +150,13 @@ function Saas()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Leading <span className="text-bloo">SaaS Development Services</span>: Transforming Ideas into Scalable Software Solutions
+                            Leading <span className="text-bloo">SaaS Development Services</span> : Transforming Ideas into Scalable Software Solutions
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             In the ever-evolving digital landscape, Software as a Service (SaaS) has emerged as a dominant model for delivering applications over the internet. By offering scalable, accessible, and cost-effective software solutions, SaaS enables businesses to innovate and grow without the complexities of traditional software management.  
-                            <br />
+                            <div className="py-2" />
                             At EICE Technology we provide comprehensive SaaS development services designed to help you create powerful, user-friendly applications that meet your unique business needs and drive success.
                             </p>
                         </div>

@@ -152,7 +152,7 @@ function Digitrans()
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             In today's digital landscape, businesses must adapt to stay relevant. EICE offers comprehensive digital transformation services to propel your organization forward.
                             </p>
-                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify py-4">
+                            <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify py-2">
                             Our strategic approach ensures alignment with your objectives, combining industry insights and cutting-edge technologies to drive meaningful change.
                             </p>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">

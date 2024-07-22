@@ -179,7 +179,7 @@ function TechnologyConsulting() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                Comprehensive <span className="text-bloo">Technology Consulting</span>:
+                Comprehensive <span className="text-bloo">Technology Consulting</span> :
                 Driving Digital Transformation and Innovation
               </h1>
             </div>
@@ -189,7 +189,7 @@ function TechnologyConsulting() {
                 business success. Technology consulting plays a vital role in helping organizations navigate 
                 complex tech ecosystems, make informed decisions, and implement solutions that drive growth 
                 and efficiency.
-                <br />
+                <div className="py-2"/>
                 At EICE Technology, we offer comprehensive technology consulting services designed to 
                 align your IT strategy with your business objectives, optimize your technology investments, 
                 and accelerate your digital transformation journey.

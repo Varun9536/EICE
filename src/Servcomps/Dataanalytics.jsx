@@ -138,7 +138,7 @@ function DataAnalytics() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                Comprehensive <span className="text-bloo">Data Analytics</span>:
+                Comprehensive <span className="text-bloo">Data Analytics</span> :
                 Transforming Data into Actionable Insights
               </h1>
             </div>
@@ -147,7 +147,7 @@ function DataAnalytics() {
                 In today's data-driven world, the ability to extract meaningful insights from vast amounts of 
                 information is crucial for business success. Data analytics plays a pivotal role in helping 
                 organizations make informed decisions, optimize operations, and gain a competitive edge.
-                <br />
+                <div className="py-2" />
                 At EICE Technology, we offer comprehensive data analytics services designed to help you 
                 harness the full potential of your data, uncover valuable insights, and drive data-informed 
                 decision-making across your organization.

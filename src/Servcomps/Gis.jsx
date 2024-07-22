@@ -189,7 +189,7 @@ function GIS() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div>
                 <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                  Comprehensive <span className="text-bloo">GIS</span>:
+                  Comprehensive <span className="text-bloo">GIS Services</span> :
                   Leveraging Spatial Intelligence for Business Success
                 </h1>
               </div>
@@ -199,7 +199,7 @@ function GIS() {
                   to gain spatial insights, make informed decisions, and optimize operations. GIS services play 
                   a vital role in analyzing geographic data, creating interactive maps, and providing location-based 
                   intelligence across various industries.
-                  <br />
+                  <div className="py-2" />
                   At EICE Technology, we offer a comprehensive suite of GIS services designed to harness the 
                   power of spatial data and transform it into actionable insights for your business.
                 </p>

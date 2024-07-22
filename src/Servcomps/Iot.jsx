@@ -148,7 +148,7 @@ function Iot()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Empowering Businesses with <span className="text-bloo">IoT</span>: Transformative Connectivity and Innovation
+                            Empowering Businesses with <span className="text-bloo">IoT</span> : Transformative Connectivity and Innovation
 
                             </h1>
                         </div>

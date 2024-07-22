@@ -193,7 +193,7 @@ function Uiux() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                Comprehensive <span className="text-bloo">UI/UX</span>:
+                Comprehensive <span className="text-bloo">UI/UX</span> :
                 Enhancing User Experience and Engagement
               </h1>
             </div>
@@ -205,7 +205,7 @@ function Uiux() {
                 plays a pivotal role in understanding user needs, optimizing
                 interfaces, and creating intuitive designs that enhance
                 usability.
-                <br />
+                <div className="py-2" />
                 At EICE Technology, we offer a comprehensive suite of UI/UX
                 consulting services designed to ensure the effectiveness,
                 appeal, and user-friendliness of your digital products.

@@ -178,7 +178,7 @@ function DevOps() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                Comprehensive <span className="text-bloo">DevOps</span>:
+                Comprehensive <span className="text-bloo">DevOps</span> :
                 Bridging the Gap Between Development and Operations
               </h1>
             </div>
@@ -188,7 +188,7 @@ function DevOps() {
                 to deliver high-quality software rapidly and efficiently. DevOps services play a crucial 
                 role in automating processes, improving collaboration, and ensuring continuous delivery 
                 and integration across the software development lifecycle.
-                <br />
+                <div className="py-2"/>
                 At EICE Technology, we offer a comprehensive suite of DevOps services designed to 
                 streamline your development and operations processes, accelerate time-to-market, 
                 and enhance overall software quality.

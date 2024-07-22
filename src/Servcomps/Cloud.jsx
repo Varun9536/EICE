@@ -149,13 +149,13 @@ function Chatbot()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Comprehensive <span className="text-bloo">Cloud Services</span>: Ensuring Quality and Reliability
+                            Comprehensive <span className="text-bloo">Cloud Services</span> : Ensuring Quality and Reliability
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             In today’s technology-driven market, leveraging cloud services is crucial for enhancing agility, ensuring operational efficiency, and driving business growth. Cloud computing plays a pivotal role in providing scalable resources, improving collaboration, and reducing IT costs. 
-                            <br />
+                            <div className="py-2" />
                             At EICE Technology, we offer a comprehensive suite of cloud services designed to ensure the reliability, security, and scalability of your cloud infrastructure.
                             </p>
                         </div>

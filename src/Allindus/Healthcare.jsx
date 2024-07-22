@@ -14,6 +14,9 @@ import healthrect1 from '../assets/Compressed/healthrect1.png';
 import healthrect2 from '../assets/Compressed/healthrect2.png';
 import healthrect3 from '../assets/Compressed/healthrect3.png';
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { BiAnalyse, BiCode, BiSupport } from "react-icons/bi";
+import { IoAnalytics } from "react-icons/io5";
+import { MdArchitecture, MdLocalPharmacy } from "react-icons/md";
 
 const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
@@ -206,30 +209,48 @@ Our solutions cater to diverse needs across hospitals, clinics, pharmaceutical c
         </div>
         <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pb-16">
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+                <div className=" rounded-full  flex items-start justify-start w-full px-4">
+                    <BiCode size={48} className="text-bloo"/>
+                </div>
+                <div className="pt-6 h-full text-left">
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">SOFTWARE DEVELOPMENT</h1>
+                    <p  className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We build robust, scalable healthcare software solutions with a focus on functionality, security, and seamless integration with existing systems for efficient and effective operations.</p>
+                </div>
+            </div>
+            <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full flex items-start justify-start w-full px-4">
-                    <FaDatabase size={48} className="text-bloo"/>  
+                    <IoAnalytics size={48} className="text-bloo"/>  
                 </div>
                 <div className="pt-6 h-full text-left">
-                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">ELECTRONIC HEALTH RECORDS</h1>
-                    <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We implement comprehensive EHR systems that provide easy access to patient records, improve workflow efficiency, and enhance the quality of care.</p>
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">COMPREHENSIVE REQUIREMENTS ANALYSIS</h1>
+                    <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We conduct detailed requirements analysis to understand your healthcare needs, ensuring tailored solutions that address specific challenges and regulatory requirements for effective digital health solutions.                    </p>
                 </div>
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaCloud size={48} className="text-bloo"/>
+                    <MdArchitecture size={48} className="text-bloo"/>
                 </div>
                 <div className="pt-6 h-full text-left">
-                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">TELEMEDICINE SOLUTIONS</h1>
-                    <p  className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We develop secure and user-friendly telemedicine platforms that enable remote consultations, virtual care, and improved patient access to healthcare services.</p>
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">INNOVATIVE DESIGN AND PROTOTYPING</h1>
+                    <p  className="font-medium text-blackk/60 sm:text-xl text-lg px-4">Create advanced pharmacy management software for inventory control, automated workflows, and improved pharmaceutical services.                    </p>
                 </div>
             </div>
             <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
                 <div className=" rounded-full  flex items-start justify-start w-full px-4">
-                    <FaMagnifyingGlass size={48} className="text-bloo"/> 
+                    <MdLocalPharmacy size={48} className="text-bloo"/>
                 </div>
                 <div className="pt-6 h-full text-left">
-                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">HEALTHCARE ANALYTICS</h1>
-                    <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We leverage advanced analytics and AI to extract actionable insights from medical data, enabling data-driven decision-making and improving patient outcomes.</p>    
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">PHARMACY MANAGEMENT SOFTWARE</h1>
+                    <p  className="font-medium text-blackk/60 sm:text-xl text-lg px-4">Create advanced pharmacy management software for inventory control, automated workflows, and improved pharmaceutical services.                    </p>
+                </div>
+            </div>
+            <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+                <div className=" rounded-full  flex items-start justify-start w-full px-4">
+                    <BiSupport size={48} className="text-bloo"/> 
+                </div>
+                <div className="pt-6 h-full text-left">
+                    <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">MAINTENANCE AND SUPPORT</h1>
+                    <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">We offer continuous maintenance and support services, including updates, bug fixes, and performance improvements to keep your software up-to-date and responsive to evolving healthcare needs.</p>    
                 </div>
             </div>
         </div>

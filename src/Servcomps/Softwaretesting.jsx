@@ -144,13 +144,13 @@ function Chatbot()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Comprehensive <span className="text-bloo">Software Testing</span> Services: Ensuring Quality and Reliability
+                            Comprehensive <span className="text-bloo">Software Testing</span> Services : Ensuring Quality and Reliability
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             In today’s technology-driven market, delivering high-quality software is crucial for maintaining customer satisfaction, competitive edge, and operational efficiency. Software testing plays a pivotal role in identifying and fixing defects, ensuring performance, and guaranteeing that applications meet user expectations. 
-                            <br />
+                            <div className="py-2" />
                             At EICE Technology, we offer a comprehensive suite of software testing services designed to ensure the reliability, functionality, and security of your software solutions.
                             </p>
                         </div>

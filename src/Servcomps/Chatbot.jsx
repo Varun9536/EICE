@@ -148,13 +148,13 @@ function Chatbot()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Leading <span className="text-bloo">SaaS Development Services</span>: Transforming Ideas into Scalable Software Solutions
+                            Leading <span className="text-bloo">ChatBot Development Services</span> : Transforming Ideas into Bots using AI
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             In today’s fast-paced digital world, businesses are increasingly turning to chatbots to enhance customer interactions, streamline operations, and drive growth. Chatbots offer a scalable solution for managing customer inquiries, automating repetitive tasks, and providing 24/7 support. 
-                            <br />
+                            <div className="py-2"/>
                             At EICE Technology we provide a range of advanced chatbot development services designed to help you leverage this innovative technology to achieve your business goals.
                             </p>
                         </div>
