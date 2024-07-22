@@ -7,15 +7,25 @@ import Clients from '../Homecomps/Clients';
 import Clientele from '../Homecomps/Clientele';
 
 
-import { FaCloud, FaDatabase } from "react-icons/fa";
+import { FaCloud, FaDatabase, FaPencilRuler } from "react-icons/fa";
 
 import Education_img from "../assets/industry-images/Education.png"
 
 import laptop from "../assets/Compressed/Laptop.png";
-import healthrect1 from '../assets/Compressed/healthrect1.png';
-import healthrect2 from '../assets/Compressed/healthrect2.png';
-import healthrect3 from '../assets/Compressed/healthrect3.png';
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import random1 from '../assets/Compressed/random1.jpg';
+import random2 from '../assets/Compressed/random2.jpg';
+import random3 from '../assets/Compressed/random3.jpg';
+import random4 from '../assets/Compressed/random4.jpg';
+import random5 from '../assets/Compressed/random5.jpg';
+import random6 from '../assets/Compressed/random6.jpg';
+import { FaMagnifyingGlass, FaScaleBalanced } from "react-icons/fa6";
+import { SiStudyverse, SiThunderstore } from "react-icons/si";
+import { TbPencilPause } from "react-icons/tb";
+import { PiStudent } from "react-icons/pi";
+import { RiAdminLine } from "react-icons/ri";
+import { GiScales } from "react-icons/gi";
+import { MdTextIncrease } from "react-icons/md";
+import { GrVirtualMachine } from "react-icons/gr";
 
 const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
@@ -127,19 +137,19 @@ function Cstdmain() {
 }
 
 const services = [
-  { id: "ehr", name: " Learning Management Systems (LMS)", image: healthrect1, description: "Developing LMS solutions for managing courses, engaging students, and tracking academic performance efficiently." },
+  { id: "ehr", name: " Learning Management Systems (LMS)", image: random1, description: "Developing LMS solutions for managing courses, engaging students, and tracking academic performance efficiently." },
 
 
-  { id: "Student Information Systems (SIS) ", name: "Student Information Systems (SIS) ", image: healthrect2, description: "Creating SIS platforms for efficient student data management, academic record keeping, and communication between students, parents, and administrators." },
+  { id: "Student Information Systems (SIS) ", name: "Student Information Systems (SIS) ", image: random2, description: "Creating SIS platforms for efficient student data management, academic record keeping, and communication between students, parents, and administrators." },
 
 
-  { id: " Virtual Classroom Solutions ", name: "Warehouse Management Systems (WMS)", image: healthrect3, description: "Designing virtual classroom environments for interactive online learning, including real-time discussions and multimedia content delivery. " },
+  { id: " Virtual Classroom Solutions ", name: "Virtual Classroom Solutions (VMS)", image: random5, description: "Designing virtual classroom environments for interactive online learning, including real-time discussions and multimedia content delivery. " },
 
 
-  { id: "Academic Analytics and Reporting Tools ", name: "Predictive Analytics and Optimization", image: healthrect1, description: "Providing analytics tools for evaluating academic performance, generating reports, and supporting data-driven decisions for educators and administrators." },
+  { id: "Academic Analytics and Reporting Tools ", name: "Predictive Analytics and Optimization", image: random4, description: "Providing analytics tools for evaluating academic performance, generating reports, and supporting data-driven decisions for educators and administrators." },
 
 
-  { id: "Online Assessment and Examination Systems ", name: "Real-Time Tracking and Reporting", image: healthrect2, description: "Building secure online platforms for assessments and exams, ensuring reliable and fair testing methods for students" }
+  { id: "Online Assessment and Examination Systems ", name: "Real-Time Tracking and Reporting", image: random3, description: "Building secure online platforms for assessments and exams, ensuring reliable and fair testing methods for students" }
 ];
 
 function Logistics() {
@@ -149,12 +159,12 @@ function Logistics() {
   return (
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
-        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
-          <img src={Education_img} alt="" />
+        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4  w-screen mx-auto grid ">
+          <img src={Education_img} alt="" className="w-full object-cover px-2" />
           {/* <img src={Education_img} alt="" />
           <img src={healthrect3} alt="" /> */}
         </div>
-        <div className="max-w-3xl mx-auto text-center px-8 flex flex-col gap-2">
+        <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Empowering <span className="text-bloo">Education Through</span> Innovative Technology Solutions
           </h1>
@@ -218,7 +228,7 @@ function Logistics() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full flex items-start justify-start w-full px-4">
-              <FaDatabase size={60} className="text-bloo" />
+              <FaPencilRuler size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Personalized Learning Experiences </h1>
@@ -230,7 +240,7 @@ function Logistics() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaCloud size={60} className="text-bloo" />
+              <PiStudent size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Enhanced Classroom Collaboration </h1>
@@ -242,7 +252,7 @@ function Logistics() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <RiAdminLine size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Efficient Administrative Management </h1>
@@ -253,7 +263,7 @@ function Logistics() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <FaMagnifyingGlass size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Comprehensive Learning Analytics </h1>
@@ -265,7 +275,7 @@ function Logistics() {
 
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
             <div className=" rounded-full  flex items-start justify-start w-full px-4">
-              <FaMagnifyingGlass size={60} className="text-bloo" />
+              <GrVirtualMachine size={48} className="text-bloo" />
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl px-4">Secure and Scalable Infrastructure </h1>
