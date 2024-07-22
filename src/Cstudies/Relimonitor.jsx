@@ -15,6 +15,7 @@ function Relimonitor()
                 <div className="w-full">
                     <h1 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">RE.LI Monitor</h1>
                     <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">A Real Time Sensor Monitoring Tool</h2>
+                    <p className="font-medium max-w-4xl mx-auto text-justify text-blackk/60 sm:text-xl text-lg pt-4 px-4">Development of RE.LI Monitor: A real-time sensor monitoring tool integrating SCADA data for intelligent alarm management and performance analysis across diverse well types.</p>
                     <div className="w-full max-w-7xl px-4 mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4"><img src={temp} alt="" className="w-full h-full object-fit"/><img src={temp2} alt="" className="w-full h-full object-fit"/></div>
                 </div>
                 <div className="w-full pb-6">
@@ -56,7 +57,7 @@ function Relimonitor()
                     <div className="pt-20 pb-6">
                         <h1 className="text-bloo flex items-center justify-center h-full font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">Unlocking Success</h1>
                     </div>
-                        <div className="grid lg:grid-cols-3 px-4 grid-cols-1 gap-6 pb-20">
+                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pb-20">
                             <div  className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
                                 <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
                                     <div className="w-full h-full items-center justify-start px-2 pb-2">
