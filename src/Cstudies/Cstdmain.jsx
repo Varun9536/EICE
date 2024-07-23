@@ -4,8 +4,8 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const industries = [
-  { name: "GIS INDUSTRY", id: "gis" },
-  { name: "OIL AND GAS INDUSTRY", id: "oil" },
+  { name: "OIL AND GAS INDUSTRY", id: "gis" },
+  // { name: "OIL AND GAS INDUSTRY", id: "oil" },
   { name: "AUTOMOBILE INDUSTRY", id: "auto" },
   { name: "HEALTHCARE INDUSTRY", id: "health" }
 ];
@@ -13,16 +13,19 @@ const industries = [
 const projects = {
   gis: [
     { title: "RE.LI Monitor", description: "Developed a Real Time Sensor monitoring tool using SCADA.", link:"/Casestudy-ReliMonitor" },
+    { title: "PetroSIM", description: "Comprehensive quality assurance and simulation tool for refinery operations.", link:"/Casestudy-PetroSIM" },
+    { title: "ESPCT Quote", description: "Web Based Sales and Quotation Tool", link:"/Casestudy-EspctQuote" },
+    { title: "City Gas Distribution", description: "Gas Distribution Analysis App for Adani Gas", link:"/Casestudy-CityGasAdani" },
   ],
-  oil: [
-    { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },
-    { title: "Pipeline Leak Detection System", description: "Reduced environmental risks with real-time leak detection, cutting response time by 60%." },
-    { title: "Refinery Process Automation", description: "Implemented IoT sensors and machine learning to optimize refining processes, saving $5M annually." },
-    { title: "Seismic Data Analysis Tool", description: "Developed a cloud-based platform for faster seismic data processing, reducing analysis time by 40%." },
-    { title: "Predictive Maintenance Solution", description: "Created an AI model to predict equipment failures, reducing downtime by 30% and maintenance costs by $2M." },
-    { title: "Smart Well Management", description: "Designed a real-time well monitoring system, increasing production by 15% across 500 wells." },
-    { title: "Energy Trading Platform", description: "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%." }
-  ],
+  // oil: [
+  //   { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },
+  //   { title: "Pipeline Leak Detection System", description: "Reduced environmental risks with real-time leak detection, cutting response time by 60%." },
+  //   { title: "Refinery Process Automation", description: "Implemented IoT sensors and machine learning to optimize refining processes, saving $5M annually." },
+  //   { title: "Seismic Data Analysis Tool", description: "Developed a cloud-based platform for faster seismic data processing, reducing analysis time by 40%." },
+  //   { title: "Predictive Maintenance Solution", description: "Created an AI model to predict equipment failures, reducing downtime by 30% and maintenance costs by $2M." },
+  //   { title: "Smart Well Management", description: "Designed a real-time well monitoring system, increasing production by 15% across 500 wells." },
+  //   { title: "Energy Trading Platform", description: "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%." }
+  // ],
   auto: [
     { title: "Electric Vehicle Battery Management", description: "Developed an advanced BMS increasing EV range by 12% and battery lifespan by 2 years." },
     { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },

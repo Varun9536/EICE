@@ -34,6 +34,9 @@ import Scopes from "./Aboutcomponents/Scopes";
 
 import Cstdmain from "./Cstudies/Cstdmain";
 import Relimonitor from "./Cstudies/Relimonitor.jsx";
+import EspctQuote from "./Cstudies/EspctQuote.jsx";
+import PetroSIM from "./Cstudies/PertroSIM.jsx";
+import CityGasAdani from './Cstudies/CityGasAdani.jsx';
 
 import Servmain from "./Servcomps/Servmain";
 import Aiml from "./Servcomps/Aiml";
@@ -159,6 +162,10 @@ const App = () => {
         <Route path="Services-chatbot" element={<Chatbot />} />
         <Route path="Casestudies" element={<Cstudiescomp />} />
         <Route path="Casestudy-Relimonitor" element={<Relimonitor />} />
+        <Route path="Casestudy-PetroSIM" element={<PetroSIM />} />
+        <Route path="Casestudy-EspctQuote" element={<EspctQuote />} />
+        <Route path="Casestudy-CityGasAdani" element={<CityGasAdani />} />
+
         <Route
           path="*"
           element={
