@@ -16,6 +16,7 @@ const projects = {
     { title: "PetroSIM", description: "Comprehensive quality assurance and simulation tool for refinery operations.", link:"/Casestudy-PetroSIM" },
     { title: "ESPCT Quote", description: "Web Based Sales and Quotation Tool", link:"/Casestudy-EspctQuote" },
     { title: "City Gas Distribution", description: "Gas Distribution Analysis App for Adani Gas", link:"/Casestudy-CityGasAdani" },
+    { title: "SimuLIFT", description: "Development of Quote & Sizing Tools for Artificial Lift Methods", link:"/Casestudy-SimuLIFT" },
   ],
   // oil: [
   //   { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },

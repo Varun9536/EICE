@@ -119,6 +119,7 @@ import ScrollToTop from "./ScrollToTop.jsx";
 import Talktous from "./Othercomps/Talktous.jsx";
 import Saas from "./Servcomps/Saas.jsx";
 import Chatbot from './Servcomps/Chatbot.jsx';
+import SimuLift from "./Cstudies/SimuLift.jsx";
 
 const App = () => {
   return (
@@ -165,6 +166,7 @@ const App = () => {
         <Route path="Casestudy-PetroSIM" element={<PetroSIM />} />
         <Route path="Casestudy-EspctQuote" element={<EspctQuote />} />
         <Route path="Casestudy-CityGasAdani" element={<CityGasAdani />} />
+        <Route path="Casestudy-SimuLIFT" element={<SimuLift />} />
 
         <Route
           path="*"
