@@ -16,7 +16,7 @@ function Resourcesmain()
 {
     return(
         <div>
-            <div className="bg-gradient-to-br  from-cyan-100 to-bloo/10 w-screen 2xl:h-[35vh] h-[60vh] bg-cover bg-no-repeat -my-12">
+            <div className="bg-gradient-to-br  from-cyan-100 to-bloo/10 w-screen 2xl:h-[35vh] h-[60vh] bg-cover bg-no-repeat my-12">
                 <div className=" max-w-7xl mx-auto w-full h-full">
                     <div className="2xl:pt-0 pt-24 flex flex-col items-center justify-center w-full h-full ">
                         <h1 className="text-blackk font-bold text-center text-3xl lg:text-5xl py-2">EICE Resources</h1>
