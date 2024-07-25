@@ -37,6 +37,11 @@ import Relimonitor from "./Cstudies/Relimonitor.jsx";
 import EspctQuote from "./Cstudies/EspctQuote.jsx";
 import PetroSIM from "./Cstudies/PertroSIM.jsx";
 import CityGasAdani from './Cstudies/CityGasAdani.jsx';
+import Boretsdesignsimtool from './Cstudies/Boretsdesignsimtool.jsx';
+import DataManagement from './Cstudies/DataManagement.jsx';
+import NoraltaMath from './Cstudies/NoraltaMath.jsx';
+import Peep from './Cstudies/Peep.jsx';
+import ScadaNoralta from './Cstudies/ScadaNoralta.jsx';
 
 import Servmain from "./Servcomps/Servmain";
 import Aiml from "./Servcomps/Aiml";
@@ -167,6 +172,11 @@ const App = () => {
         <Route path="Casestudy-EspctQuote" element={<EspctQuote />} />
         <Route path="Casestudy-CityGasAdani" element={<CityGasAdani />} />
         <Route path="Casestudy-SimuLIFT" element={<SimuLift />} />
+        <Route path="Casestudy-NoraltaSCADA" element={<ScadaNoralta />} />
+        <Route path="Casestudy-EPGIS" element={<DataManagement />} />
+        <Route path="Casestudy-NoraltaFEMMS" element={<NoraltaMath />} />
+        <Route path="Casestudy-SchlumbergerBAA" element={<Peep />} />
+        <Route path="Casestudy-DesignSimBORETS" element={<Boretsdesignsimtool />} />
 
         <Route
           path="*"
