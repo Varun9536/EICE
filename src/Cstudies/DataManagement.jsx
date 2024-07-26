@@ -96,28 +96,30 @@ function DataManagement() {
           <h1 className="text-bloo flex items-center justify-center h-full font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">
             About Our Clients
           </h1>
-          <div className="py-4">
-            <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-              ENI
-            </h2>
-            <p className="font-medium text-blackk/60 sm:text-xl text-lg pt-4">
-              Eni S.p.A., acronym for and formerly legally known as Ente
-              nazionale idrocarburi, is an Italian multinational energy company
-              headquartered in Rome. It is considered one of the supermajor
-              oil companies in the world, with a market capitalization of €50
-              billion, as of 31 December 2023.
-            </p>
-          </div>
-          <div className="py-4">
-            <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-              SAIC
-            </h2>
-            <p className="font-medium text-blackk/60 sm:text-xl text-lg pt-4">
-              Science Applications International Corporation, Inc. is an
-              American technology company headquartered in Reston, Virginia that
-              provides government services and information technology support.
-              They are a leading company in the cloud industry in USA.
-            </p>
+          <div className="grid grid-cols-2 gap-16">
+            <div className="py-4">
+              <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+                ENI
+              </h2>
+              <p className="font-medium text-blackk/60 sm:text-xl text-lg pt-4">
+                Eni S.p.A., acronym for and formerly legally known as Ente
+                nazionale idrocarburi, is an Italian multinational energy company
+                headquartered in Rome. It is considered one of the supermajor
+                oil companies in the world, with a market capitalization of €50
+                billion, as of 31 December 2023.
+              </p>
+            </div>
+            <div className="py-4">
+              <h2 className="text-blackk  font-bold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+                SAIC
+              </h2>
+              <p className="font-medium text-blackk/60 sm:text-xl text-lg pt-4">
+                Science Applications International Corporation, Inc. is an
+                American technology company headquartered in Reston, Virginia that
+                provides government services and information technology support.
+                They are a leading company in the cloud industry in USA.
+              </p>
+            </div>
           </div>
         </div>
       </div>
