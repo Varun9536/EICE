@@ -36,12 +36,12 @@ import Cstdmain from "./Cstudies/Cstdmain";
 import Relimonitor from "./Cstudies/Relimonitor.jsx";
 import EspctQuote from "./Cstudies/EspctQuote.jsx";
 import PetroSIM from "./Cstudies/PertroSIM.jsx";
-import CityGasAdani from './Cstudies/CityGasAdani.jsx';
-import Boretsdesignsimtool from './Cstudies/Boretsdesignsimtool.jsx';
-import DataManagement from './Cstudies/DataManagement.jsx';
-import NoraltaMath from './Cstudies/NoraltaMath.jsx';
-import Peep from './Cstudies/Peep.jsx';
-import ScadaNoralta from './Cstudies/ScadaNoralta.jsx';
+import CityGasAdani from "./Cstudies/CityGasAdani.jsx";
+import Boretsdesignsimtool from "./Cstudies/Boretsdesignsimtool.jsx";
+import DataManagement from "./Cstudies/DataManagement.jsx";
+import NoraltaMath from "./Cstudies/NoraltaMath.jsx";
+import Peep from "./Cstudies/Peep.jsx";
+import ScadaNoralta from "./Cstudies/ScadaNoralta.jsx";
 
 import Servmain from "./Servcomps/Servmain";
 import Aiml from "./Servcomps/Aiml";
@@ -58,8 +58,7 @@ import Blockchain from "./Servcomps/Blockchain.jsx";
 import Webdeveopment from "./Servcomps/Webdevelopment.jsx";
 import Softwaretesting from "./Servcomps/Softwaretesting.jsx";
 import UiUx from "./Servcomps/UiUx.jsx";
-import Android from './Servcomps/Android';
-
+import Android from "./Servcomps/Android";
 
 import Indusmain from "./Allindus/Indusmain";
 import Healthcare from "./Allindus/Healthcare";
@@ -71,7 +70,6 @@ import Enterprise from "./Allindus/Enterprise.jsx";
 import Legal from "./Allindus/Legal.jsx";
 import Oilandgas from "./Allindus/Oilandgas.jsx";
 
-
 import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
 import { IoIosCash } from "react-icons/io";
@@ -80,7 +78,7 @@ import { BiPencil } from "react-icons/bi";
 import { MdPermMedia } from "react-icons/md";
 import { BsTruck } from "react-icons/bs";
 
-import Resourcesmain from './Othercomps/Resourcesmain';
+import Resourcesmain from "./Othercomps/Resourcesmain";
 
 import Careerform from "./Othercomps/Careerform";
 import Contactform from "./Othercomps/Contactform";
@@ -123,7 +121,7 @@ import { SiBlockchaindotcom } from "react-icons/si";
 import ScrollToTop from "./ScrollToTop.jsx";
 import Talktous from "./Othercomps/Talktous.jsx";
 import Saas from "./Servcomps/Saas.jsx";
-import Chatbot from './Servcomps/Chatbot.jsx';
+import Chatbot from "./Servcomps/Chatbot.jsx";
 import SimuLift from "./Cstudies/SimuLift.jsx";
 import OurTeam from "./Othercomps/OurTeam.jsx";
 
@@ -179,7 +177,10 @@ const App = () => {
         <Route path="Casestudy-EPGIS" element={<DataManagement />} />
         <Route path="Casestudy-NoraltaFEMMS" element={<NoraltaMath />} />
         <Route path="Casestudy-SchlumbergerBAA" element={<Peep />} />
-        <Route path="Casestudy-DesignSimBORETS" element={<Boretsdesignsimtool />} />
+        <Route
+          path="Casestudy-DesignSimBORETS"
+          element={<Boretsdesignsimtool />}
+        />
 
         <Route
           path="*"
@@ -369,7 +370,6 @@ const Tabs = () => {
     </div>
   );
 };
-
 
 const Tab = ({ children, tab, handleSetSelected, selected, link }) => {
   return (
@@ -629,8 +629,9 @@ const OurServices = () => {
               <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
               <h1 className="text-sm pt-1">
                 Leveraging 15+ years of expertise, EICE has delivered over 150
-                projects across 10+ countries, enhancing digital
-                experiences for 60+ clients. With clients in 10+ countries, EICE is a leading IT company.
+                projects across 10+ countries, enhancing digital experiences for
+                60+ clients. With clients in 10+ countries, EICE is a leading IT
+                company.
               </h1>
             </Link>
             <Link
@@ -793,7 +794,10 @@ const OurIndustries = () => {
       <div className="col-span-2">
         <div className="grid grid-cols-2 gap-y-10 gap-x-1 p-6">
           <div className="group flex flex-col gap-1">
-            <Link to="/Industries-Oilandgas" className="flex flex-row gap-4 items-center">
+            <Link
+              to="/Industries-Oilandgas"
+              className="flex flex-row gap-4 items-center"
+            >
               <div className="icon-wrapper">
                 <FaOilCan
                   size={30}
@@ -824,7 +828,10 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/Industries-Legal" className="flex flex-row gap-4 items-center">
+            <Link
+              to="/Industries-Legal"
+              className="flex flex-row gap-4 items-center"
+            >
               <div className="icon-wrapper">
                 <GoLaw
                   size={30}
@@ -838,7 +845,10 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/Industries-Education" className="flex flex-row gap-4 items-center">
+            <Link
+              to="/Industries-Education"
+              className="flex flex-row gap-4 items-center"
+            >
               <div className="icon-wrapper">
                 <BiPencil
                   size={30}
@@ -852,7 +862,10 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/Industries-Financial" className="flex flex-row gap-4 items-center">
+            <Link
+              to="/Industries-Financial"
+              className="flex flex-row gap-4 items-center"
+            >
               <div className="icon-wrapper">
                 <IoIosCash
                   size={30}
@@ -866,7 +879,10 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/Industries-Digitalmedia" className="flex flex-row gap-4 items-center">
+            <Link
+              to="/Industries-Digitalmedia"
+              className="flex flex-row gap-4 items-center"
+            >
               <div className="icon-wrapper">
                 <MdPermMedia
                   size={30}
@@ -880,7 +896,10 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/Industries-Logistics" className="flex flex-row gap-4 items-center">
+            <Link
+              to="/Industries-Logistics"
+              className="flex flex-row gap-4 items-center"
+            >
               <div className="icon-wrapper">
                 <BsTruck
                   size={30}
@@ -894,7 +913,10 @@ const OurIndustries = () => {
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
           <div className="group flex flex-col gap-1">
-            <Link to="/Industries-Enterprise" className="flex flex-row gap-4 items-center">
+            <Link
+              to="/Industries-Enterprise"
+              className="flex flex-row gap-4 items-center"
+            >
               <div className="icon-wrapper">
                 <FaBusinessTime
                   size={30}
