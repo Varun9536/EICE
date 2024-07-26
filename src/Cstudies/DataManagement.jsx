@@ -103,10 +103,10 @@ function DataManagement() {
               </h2>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg pt-4">
                 Eni S.p.A., acronym for and formerly legally known as Ente
-                nazionale idrocarburi, is an Italian multinational energy company
-                headquartered in Rome. It is considered one of the supermajor
-                oil companies in the world, with a market capitalization of €50
-                billion, as of 31 December 2023.
+                nazionale idrocarburi, is an Italian multinational energy
+                company headquartered in Rome. It is considered one of the
+                supermajor oil companies in the world, with a market
+                capitalization of €50 billion, as of 31 December 2023.
               </p>
             </div>
             <div className="py-4">
@@ -115,9 +115,10 @@ function DataManagement() {
               </h2>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg pt-4">
                 Science Applications International Corporation, Inc. is an
-                American technology company headquartered in Reston, Virginia that
-                provides government services and information technology support.
-                They are a leading company in the cloud industry in USA.
+                American technology company headquartered in Reston, Virginia
+                that provides government services and information technology
+                support. They are a leading company in the cloud industry in
+                USA.
               </p>
             </div>
           </div>
