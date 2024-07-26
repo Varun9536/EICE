@@ -282,7 +282,7 @@ const NavLayout = () => {
                       className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
                       to="/services"
                     >
-                      Services
+                      Service Profile
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={createHandleMenuClick("Services")}>
@@ -290,7 +290,7 @@ const NavLayout = () => {
                       className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]"
                       to="/INDUSTRIES"
                     >
-                      Industries
+                      Sector Portfolio
                     </Link>{" "}
                   </MenuItem>
                   <MenuItem onClick={createHandleMenuClick("Contact Us")}>
