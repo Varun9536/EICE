@@ -20,14 +20,14 @@ function ContactForm() {
     e.preventDefault();
     try {
       const response = await fetch("http://192.168.9.91:4000/v1/formdata", {
-        method: 'POST',
+        method: "POST",
         body: JSON.stringify(formValues),
         headers: {
-          "Content-Type": "application/json"
-        }
+          "Content-Type": "application/json",
+        },
       });
       const data = await response.json();
-      if (data.result === 'successful') {
+      if (data.result === "successful") {
         alert(`Message Sent Successfully`);
         setFormValues({ name: "", email: "", contact: "", message: "" });
       }
@@ -45,7 +45,7 @@ function ContactForm() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
-              name="name" 
+              name="name"
               value={formValues.name}
               onChange={handleInputChange}
               placeholder="Name"
@@ -89,7 +89,9 @@ function ContactForm() {
         </div>
 
         <div className="bg-white rounded-lg shadow-lg shadow-blackk/20 p-8">
-          <h2 className="text-2xl font-semibold text-bloo mb-6 text-center">Addresses</h2>
+          <h2 className="text-2xl font-semibold text-bloo mb-6 text-center">
+            Addresses
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-8">
             <AddressCard
               country="United States"
@@ -121,13 +123,15 @@ function AddressCard({ country, company, address, phone, email }) {
         <p className="text-sm mb-2">{address}</p>
         <p className="text-sm mb-2">{phone}</p>
       </div>
-{/*       <a href={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
+      {/*       <a href={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
         {email}
       </a> */}
-<Link to={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
+      <Link
+        to={`mailto:${email}`}
+        className="text-sm text-blue-700 hover:underline"
+      >
         {email}
       </Link>
-      
     </div>
   );
 }
