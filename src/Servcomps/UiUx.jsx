@@ -302,7 +302,7 @@ function Uiux() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-            <FaHandshake size={48} className="text-bloo" />
+              <FaHandshake size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">

@@ -4,48 +4,92 @@ import laptop from "../assets/Compressed/Laptop.png";
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
 
-import { FaChartBar, FaDatabase, FaBrain, FaSearchDollar, FaCloudUploadAlt, FaUsersCog } from "react-icons/fa";
+import {
+  FaChartBar,
+  FaDatabase,
+  FaBrain,
+  FaSearchDollar,
+  FaCloudUploadAlt,
+  FaUsersCog,
+} from "react-icons/fa";
 
 import Footer from "../Othercomps/Footer.jsx";
 import Copyright from "../Othercomps/Copyright.jsx";
 import TalkToUs from "../Othercomps/Talktous.jsx";
 import Reviews from "../Homecomps/Reviews.jsx";
 
-
 const industries = [
   { name: "OIL AND GAS INDUSTRY", id: "oil" },
   { name: "AUTOMOBILE INDUSTRY", id: "auto" },
-  { name: "HEALTHCARE INDUSTRY", id: "health" }
+  { name: "HEALTHCARE INDUSTRY", id: "health" },
 ];
 
 const projects = {
   oil: [
-    { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },
-    { title: "Energy Trading Platform", description: "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%." }
+    {
+      title: "Offshore Platform Optimization",
+      description:
+        "Improved production efficiency by 25% through advanced AI-driven monitoring systems.",
+    },
+    {
+      title: "Energy Trading Platform",
+      description:
+        "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%.",
+    },
   ],
   auto: [
-    { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },
-    { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },
-    { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },
-    { title: "Connected Car Platform", description: "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles." },
-    { title: "Manufacturing Process Optimization", description: "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control." }
+    {
+      title: "Autonomous Driving AI",
+      description:
+        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
+    },
+    {
+      title: "Autonomous Driving AI",
+      description:
+        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
+    },
+    {
+      title: "Autonomous Driving AI",
+      description:
+        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
+    },
+    {
+      title: "Connected Car Platform",
+      description:
+        "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles.",
+    },
+    {
+      title: "Manufacturing Process Optimization",
+      description:
+        "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control.",
+    },
   ],
   health: [
-    { title: "AI-Powered Diagnostic Tool", description: "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods." },
-    { title: "Telemedicine Platform", description: "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations." }
-  ]
+    {
+      title: "AI-Powered Diagnostic Tool",
+      description:
+        "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods.",
+    },
+    {
+      title: "Telemedicine Platform",
+      description:
+        "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations.",
+    },
+  ],
 };
 
 const CaseStudy = ({ title, description, image }) => (
   <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-      <img 
+      <img
         src={image}
-        alt={title} 
+        alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />
       <div className="p-3 md:p-4">
-        <h3 className="font-bold text-sm sm:text-base md:text-lg mb-1 sm:mb-2">{title}</h3>
+        <h3 className="font-bold text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
+          {title}
+        </h3>
         <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
       </div>
     </div>
@@ -86,9 +130,13 @@ function Cstdmain() {
         {industries.map((industry) => (
           <section
             key={industry.id}
-            className={`mb-12 px-2 ${activeIndustry === industry.id ? "block" : "hidden"}`}
+            className={`mb-12 px-2 ${
+              activeIndustry === industry.id ? "block" : "hidden"
+            }`}
           >
-            <h2 className="text-xl px-2 sm:text-2xl font-bold mb-4 sm:mb-6">{industry.name}</h2>
+            <h2 className="text-xl px-2 sm:text-2xl font-bold mb-4 sm:mb-6">
+              {industry.name}
+            </h2>
             <div className="flex flex-wrap -mx-2">
               {projects[industry.id].map((project, index) => (
                 <CaseStudy
@@ -105,7 +153,6 @@ function Cstdmain() {
     </div>
   );
 }
-
 
 function DataAnalytics() {
   return (
@@ -138,18 +185,21 @@ function DataAnalytics() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h1 className="text-blackk font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                Comprehensive <span className="text-bloo">Data Analytics</span> :
-                Transforming Data into Actionable Insights
+                Comprehensive <span className="text-bloo">Data Analytics</span>{" "}
+                : Transforming Data into Actionable Insights
               </h1>
             </div>
             <div>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
-                In today's data-driven world, the ability to extract meaningful insights from vast amounts of 
-                information is crucial for business success. Data analytics plays a pivotal role in helping 
-                organizations make informed decisions, optimize operations, and gain a competitive edge.
+                In today's data-driven world, the ability to extract meaningful
+                insights from vast amounts of information is crucial for
+                business success. Data analytics plays a pivotal role in helping
+                organizations make informed decisions, optimize operations, and
+                gain a competitive edge.
                 <div className="py-2" />
-                At EICE Technology, we offer comprehensive data analytics services designed to help you 
-                harness the full potential of your data, uncover valuable insights, and drive data-informed 
+                At EICE Technology, we offer comprehensive data analytics
+                services designed to help you harness the full potential of your
+                data, uncover valuable insights, and drive data-informed
                 decision-making across your organization.
               </p>
             </div>
@@ -173,8 +223,9 @@ function DataAnalytics() {
                 BUSINESS INTELLIGENCE AND VISUALIZATION
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We develop custom dashboards and reports that provide real-time insights into your business 
-                performance, enabling data-driven decision-making at all levels of your organization.
+                We develop custom dashboards and reports that provide real-time
+                insights into your business performance, enabling data-driven
+                decision-making at all levels of your organization.
               </p>
             </div>
           </div>
@@ -187,8 +238,9 @@ function DataAnalytics() {
                 BIG DATA ANALYTICS
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We help you leverage big data technologies to process and analyze large volumes of 
-                structured and unstructured data, uncovering patterns and insights that drive business value.
+                We help you leverage big data technologies to process and
+                analyze large volumes of structured and unstructured data,
+                uncovering patterns and insights that drive business value.
               </p>
             </div>
           </div>
@@ -201,8 +253,9 @@ function DataAnalytics() {
                 PREDICTIVE AND PRESCRIPTIVE ANALYTICS
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We develop advanced analytics models that forecast future trends and recommend optimal 
-                actions, helping you anticipate market changes and make proactive decisions.
+                We develop advanced analytics models that forecast future trends
+                and recommend optimal actions, helping you anticipate market
+                changes and make proactive decisions.
               </p>
             </div>
           </div>
@@ -215,8 +268,9 @@ function DataAnalytics() {
                 CUSTOMER ANALYTICS
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We analyze customer data to provide insights into behavior, preferences, and trends, 
-                enabling you to enhance customer experiences, improve retention, and increase lifetime value.
+                We analyze customer data to provide insights into behavior,
+                preferences, and trends, enabling you to enhance customer
+                experiences, improve retention, and increase lifetime value.
               </p>
             </div>
           </div>
@@ -229,8 +283,9 @@ function DataAnalytics() {
                 DATA WAREHOUSING AND INTEGRATION
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We design and implement robust data warehousing solutions, integrating data from multiple 
-                sources to create a single source of truth for your analytics and reporting needs.
+                We design and implement robust data warehousing solutions,
+                integrating data from multiple sources to create a single source
+                of truth for your analytics and reporting needs.
               </p>
             </div>
           </div>
@@ -243,8 +298,9 @@ function DataAnalytics() {
                 DATA GOVERNANCE AND MANAGEMENT
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We help you establish robust data governance frameworks and management practices to 
-                ensure data quality, security, and compliance across your organization.
+                We help you establish robust data governance frameworks and
+                management practices to ensure data quality, security, and
+                compliance across your organization.
               </p>
             </div>
           </div>

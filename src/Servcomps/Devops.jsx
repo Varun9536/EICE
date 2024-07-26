@@ -1,7 +1,13 @@
 import React, { useState, useRef } from "react";
-import { FaCloud, FaCode, FaCogs, FaRocket, FaChartLine, FaShieldAlt } from "react-icons/fa";
+import {
+  FaCloud,
+  FaCode,
+  FaCogs,
+  FaRocket,
+  FaChartLine,
+  FaShieldAlt,
+} from "react-icons/fa";
 import laptop from "../assets/Compressed/Laptop.png";
-
 
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
@@ -161,7 +167,9 @@ function DevOps() {
                 DevOps Services
               </h1>
               <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
-                {"Streamlining Development and Operations for Accelerated Business Growth"}
+                {
+                  "Streamlining Development and Operations for Accelerated Business Growth"
+                }
               </h2>
             </div>
             <div className="lg:flex hidden items-center justify-end ">
@@ -184,14 +192,17 @@ function DevOps() {
             </div>
             <div>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
-                In today's fast-paced digital landscape, DevOps practices are essential for businesses 
-                to deliver high-quality software rapidly and efficiently. DevOps services play a crucial 
-                role in automating processes, improving collaboration, and ensuring continuous delivery 
-                and integration across the software development lifecycle.
-                <div className="py-2"/>
-                At EICE Technology, we offer a comprehensive suite of DevOps services designed to 
-                streamline your development and operations processes, accelerate time-to-market, 
-                and enhance overall software quality.
+                In today's fast-paced digital landscape, DevOps practices are
+                essential for businesses to deliver high-quality software
+                rapidly and efficiently. DevOps services play a crucial role in
+                automating processes, improving collaboration, and ensuring
+                continuous delivery and integration across the software
+                development lifecycle.
+                <div className="py-2" />
+                At EICE Technology, we offer a comprehensive suite of DevOps
+                services designed to streamline your development and operations
+                processes, accelerate time-to-market, and enhance overall
+                software quality.
               </p>
             </div>
           </div>
@@ -214,9 +225,10 @@ function DevOps() {
                 CLOUD INFRASTRUCTURE MANAGEMENT
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We provide expert cloud infrastructure management services, helping you optimize 
-                your cloud resources, implement Infrastructure as Code (IaC), and ensure scalability 
-                and reliability of your applications.
+                We provide expert cloud infrastructure management services,
+                helping you optimize your cloud resources, implement
+                Infrastructure as Code (IaC), and ensure scalability and
+                reliability of your applications.
               </p>
             </div>
           </div>
@@ -229,8 +241,9 @@ function DevOps() {
                 CONTINUOUS INTEGRATION AND DELIVERY (CI/CD)
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We design and implement robust CI/CD pipelines to automate your software delivery 
-                process, enabling faster releases, improved code quality, and reduced time-to-market.
+                We design and implement robust CI/CD pipelines to automate your
+                software delivery process, enabling faster releases, improved
+                code quality, and reduced time-to-market.
               </p>
             </div>
           </div>
@@ -243,8 +256,9 @@ function DevOps() {
                 CONFIGURATION MANAGEMENT
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We implement efficient configuration management practices using tools like Ansible, 
-                Puppet, or Chef to ensure consistency across your infrastructure and applications.
+                We implement efficient configuration management practices using
+                tools like Ansible, Puppet, or Chef to ensure consistency across
+                your infrastructure and applications.
               </p>
             </div>
           </div>
@@ -257,8 +271,9 @@ function DevOps() {
                 CONTAINERIZATION AND ORCHESTRATION
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We leverage containerization technologies like Docker and orchestration platforms 
-                like Kubernetes to enhance application portability, scalability, and resource efficiency.
+                We leverage containerization technologies like Docker and
+                orchestration platforms like Kubernetes to enhance application
+                portability, scalability, and resource efficiency.
               </p>
             </div>
           </div>
@@ -271,9 +286,9 @@ function DevOps() {
                 MONITORING AND PERFORMANCE OPTIMIZATION
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We implement comprehensive monitoring solutions and performance optimization 
-                strategies to ensure your applications run efficiently and issues are detected 
-                and resolved proactively.
+                We implement comprehensive monitoring solutions and performance
+                optimization strategies to ensure your applications run
+                efficiently and issues are detected and resolved proactively.
               </p>
             </div>
           </div>
@@ -286,8 +301,9 @@ function DevOps() {
                 DEVSECOPS IMPLEMENTATION
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
-                We integrate security practices into your DevOps processes, implementing DevSecOps 
-                to ensure that security is a core consideration throughout the development lifecycle.
+                We integrate security practices into your DevOps processes,
+                implementing DevSecOps to ensure that security is a core
+                consideration throughout the development lifecycle.
               </p>
             </div>
           </div>
