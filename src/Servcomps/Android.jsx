@@ -143,14 +143,14 @@ function Android()
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                         <div>
                             <h1 className="text-blackk  font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[3.75rem]">
-                            Comprehensive <span className="text-bloo">App Development</span> Services: Unlocking Your Digital Potential
+                            Comprehensive <span className="text-bloo">App Development</span> Services : Unlocking Your Digital Potential
                             </h1>
                         </div>
                         <div>
                             <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify">
                             EICE Technology specialize in delivering comprehensive mobile and desktop app development services designed to transform your ideas into innovative and user-centric applications. Our team of experts provides end-to-end solutions, including strategic design, robust development, and ongoing maintenance and support. 
 </p>
-                            <p className="">We cater to a broad range of platforms, including iOS, Android, Windows, and macOS, ensuring that your app achieves optimal performance and meets your specific business objectives. Partner with us to develop exceptional apps that drive success and stand out in today’s competitive market.
+                            <p className="py-2 font-medium text-blackk/60 sm:text-xl text-lg text-justify">We cater to a broad range of platforms, including iOS, Android, Windows, and macOS, ensuring that your app achieves optimal performance and meets your specific business objectives. Partner with us to develop exceptional apps that drive success and stand out in today’s competitive market.
                             </p>
                         </div>
                     </div>
@@ -188,7 +188,8 @@ function Android()
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>   
+            <div className="lg:pt-20 pt-12"></div> 
           <Cstdmain />
             <Reviews />
             <TalkToUs />
