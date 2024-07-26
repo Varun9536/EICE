@@ -19,7 +19,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("", {
+      const response = await fetch("http://192.168.9.91:4000/v1/formdata", {
         method: 'POST',
         body: JSON.stringify(formValues),
         headers: {
@@ -45,7 +45,7 @@ function ContactForm() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
-              name="name"
+              name="name" 
               value={formValues.name}
               onChange={handleInputChange}
               placeholder="Name"
