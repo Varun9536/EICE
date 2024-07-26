@@ -96,14 +96,14 @@ function ContactForm() {
               company="EICE"
               address="440 Cobia Drive, #901 Katy, Texas 77494"
               phone=""
-              email="info@eiceinternational.com"
+              email="info@eicetechnology.com"
             />
             <AddressCard
               country="India"
               company="EICE"
               address="B-8 Second Floor Sec-60, Noida 201301"
               phone=""
-              email="info@eiceinternational.com"
+              email="info@eicetechnology.com"
             />
           </div>
         </div>
