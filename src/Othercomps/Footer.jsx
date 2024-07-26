@@ -154,61 +154,61 @@ function Footer() {
 
             <Link
               to="/services-digitaltransformation"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Digital Transformation
             </Link>
             <Link
               to="/services-aiml"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               AI/ML
             </Link>
             <Link
               to="/services-blockchain"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Blockchain
             </Link>
             <Link
               to="/services-iot"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               IOT
             </Link>
             <Link
               to="/services-uiuxconsulting"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               UI/UX Consulting
             </Link>
             <Link
               to="/services-android"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Desktop and Mobile App Development
             </Link>
             <Link
               to="/services-webdevelopment"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Web Development
             </Link>
             <Link
               to="/services-devops"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               DevOps
             </Link>
             <Link
               to="/services-cloud"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Cloud Services
             </Link>
             <Link
               to="/services-softwaretesting"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Software Testing
             </Link>
@@ -220,25 +220,25 @@ function Footer() {
           <div className="flex flex-row flex-wrap">
             <Link
               to="/about"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               About Us
             </Link>
             <Link
               to="/resources"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Resources
             </Link>
             <Link
               to="/contact"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Contact Us
             </Link>
             <Link
               to="/industries"
-              className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
             >
               Industries
             </Link>

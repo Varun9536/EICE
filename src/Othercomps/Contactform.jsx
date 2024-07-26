@@ -118,17 +118,17 @@ function AddressCard({ country, company, address, phone, email }) {
   return (
     <div className="border-2 border-bloo/40 rounded-lg p-4 h-full flex flex-col justify-between">
       <div>
-        <h3 className="text-xl font-semibold text-blackk mb-2">{country}</h3>
-        <p className="text-sm mb-2">{company}</p>
-        <p className="text-sm mb-2">{address}</p>
-        <p className="text-sm mb-2">{phone}</p>
+        <h3 className="font-bold text-blackk sm:text-xl text-lg">{country}</h3>
+        <p className="font-medium text-blackk/60 sm:text-xl text-lg">{company}</p>
+        <p className="font-medium text-blackk/60 sm:text-xl text-lg">{address}</p>
+        <p className="font-medium text-blackk/60 sm:text-xl text-lg">{phone}</p>
       </div>
       {/*       <a href={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
         {email}
       </a> */}
       <Link
         to={`mailto:${email}`}
-        className="text-sm text-blue-700 hover:underline"
+        className="text-sm pt-2 text-blue-700 hover:underline"
       >
         {email}
       </Link>
