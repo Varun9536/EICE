@@ -5,7 +5,7 @@ function ContactForm() {
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
-    number: "",
+    contact: "",
     message: "",
   });
 
@@ -19,7 +19,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://eice-website.onrender.com/v1/form/userdata", {
+      const response = await fetch("", {
         method: 'POST',
         body: JSON.stringify(formValues),
         headers: {
@@ -29,7 +29,7 @@ function ContactForm() {
       const data = await response.json();
       if (data.result === 'successful') {
         alert(`Message Sent Successfully`);
-        setFormValues({ name: "", email: "", number: "", message: "" });
+        setFormValues({ name: "", email: "", contact: "", message: "" });
       }
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -63,8 +63,8 @@ function ContactForm() {
             />
             <input
               type="tel"
-              name="number"
-              value={formValues.number}
+              name="contact"
+              value={formValues.contact}
               onChange={handleInputChange}
               placeholder="Phone Number"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
