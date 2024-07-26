@@ -210,13 +210,13 @@ const NavLayout = () => {
           className="overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center justify-center 
              2xl:block xl:block hidden"
         >
-          <div className="grid grid-cols-3 max-w-7xl mx-auto items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]">
+          <div className="grid grid-cols-7 max-w-7xl mx-auto items-center justify-center text-lg 2xl:scale-100 xl:scale-90 scale-[.65]">
             <div className="cursor-pointer px-4">
               <Link to="/">
                 <img src={logo} alt="" className="h-8 w-auto" />
               </Link>
             </div>
-            <div className="flex flex-row items-center justify-center overflow-visible">
+            <div className="col-span-5 flex flex-row items-center justify-center overflow-visible">
               <NavLink to="/" className="px-6 py-1">
                 <div className="group hover:text-bloo transition duration-300 ease-in-out">
                   <div>HOME</div>
@@ -356,6 +356,7 @@ const Tabs = () => {
             selected={selected}
             handleSetSelected={handleSetSelected}
             tab={t.id}
+            link={t.link}
           >
             {t.title}
           </Tab>
@@ -369,7 +370,8 @@ const Tabs = () => {
   );
 };
 
-const Tab = ({ children, tab, handleSetSelected, selected }) => {
+
+const Tab = ({ children, tab, handleSetSelected, selected, link }) => {
   return (
     <button
       id={`shift-tab-${tab}`}
@@ -381,7 +383,7 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
     >
       <div className="group overflow-visible hover:text-bloo  transition duration-300 ease-in-out">
         <div className="flex flex-row items-center justify-center">
-          <Link className="flex items-center justify-center" to={`${children}`}>
+          <Link className="flex items-center justify-center" to={link}>
             <span className="pr-2">{children}</span>
             <FiChevronDown
               className={`transition-transform ${
@@ -915,18 +917,22 @@ const TABS = [
   {
     title: "ABOUT",
     Component: Aboutus,
+    link: "/About",
   },
   {
-    title: "SERVICES",
+    title: "SERVICE PROFILE",
     Component: OurServices,
+    link: "/Services",
   },
   {
-    title: "INDUSTRIES",
+    title: "SECTOR PORTFOLIO",
     Component: OurIndustries,
+    link: "/Industries",
   },
   {
     title: "RESOURCES",
     Component: OurResources,
+    link: "/Resources",
   },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
