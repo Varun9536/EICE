@@ -93,16 +93,16 @@ function ContactForm() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-8">
             <AddressCard
               country="United States"
-              company="EICE International"
+              company="EICE"
               address="440 Cobia Drive, #901 Katy, Texas 77494"
-              phone="+1 (832) 982-1500"
+              phone=""
               email="info@eiceinternational.com"
             />
             <AddressCard
               country="India"
-              company="EICE Consultants & Engineers Private Ltd."
+              company="EICE"
               address="B-8 Second Floor Sec-60, Noida 201301"
-              phone="+91 (120) 4355910"
+              phone=""
               email="info@eiceinternational.com"
             />
           </div>
