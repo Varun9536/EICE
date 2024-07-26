@@ -7,21 +7,67 @@ const industries = [
   { name: "OIL AND GAS INDUSTRY", id: "gis" },
   // { name: "OIL AND GAS INDUSTRY", id: "oil" },
   { name: "AUTOMOBILE INDUSTRY", id: "auto" },
-  { name: "HEALTHCARE INDUSTRY", id: "health" }
+  { name: "HEALTHCARE INDUSTRY", id: "health" },
 ];
 
 const projects = {
   gis: [
-    { title: "RE.LI Monitor", description: "Developed a Real Time Sensor monitoring tool using SCADA.", link:"/Casestudy-ReliMonitor" },
-    { title: "PetroSIM", description: "Comprehensive quality assurance and simulation tool for refinery operations.", link:"/Casestudy-PetroSIM" },
-    { title: "ESPCT Quote", description: "Web Based Sales and Quotation Tool", link:"/Casestudy-EspctQuote" },
-    { title: "City Gas Distribution", description: "Gas Distribution Analysis App for Adani Gas", link:"/Casestudy-CityGasAdani" },
-    { title: "SimuLIFT", description: "Development of Quote & Sizing Tools for Artificial Lift Methods", link:"/Casestudy-SimuLIFT" },
-    { title: "E&P Data Management on GIS", description: "An Integrated Exploration & Production Data Management System", link:"/Casestudy-EPGIS" },
-    { title: "Engineering Integration with SCADA", description: "Development of PLC Information Management System", link:"/Casestudy-NoraltaSCADA" },
-    { title: "Engineering Integration with Mathematics", description: "Development of Fugitive Emission Monitoring, Estimation & Management System (FEMMS)", link:"/Casestudy-NoraltaFEMMS" },
-    { title: "Business Analytics Automation", description: "Development of Tool for Monitoring of Petroleum Financial Models", link:"/Casestudy-SchlumbergerBAA" },
-    { title: "Oil & Gas Product Development", description: "Development of Design & Simulation Tool for Production Monitoring in Oil and Gas Industry for BORETS", link:"/Casestudy-DesignSimBORETS" },
+    {
+      title: "RE.LI Monitor",
+      description: "Developed a Real Time Sensor monitoring tool using SCADA.",
+      link: "/Casestudy-ReliMonitor",
+    },
+    {
+      title: "PetroSIM",
+      description:
+        "Comprehensive quality assurance and simulation tool for refinery operations.",
+      link: "/Casestudy-PetroSIM",
+    },
+    {
+      title: "ESPCT Quote",
+      description: "Web Based Sales and Quotation Tool",
+      link: "/Casestudy-EspctQuote",
+    },
+    {
+      title: "City Gas Distribution",
+      description: "Gas Distribution Analysis App for Adani Gas",
+      link: "/Casestudy-CityGasAdani",
+    },
+    {
+      title: "SimuLIFT",
+      description:
+        "Development of Quote & Sizing Tools for Artificial Lift Methods",
+      link: "/Casestudy-SimuLIFT",
+    },
+    {
+      title: "E&P Data Management on GIS",
+      description:
+        "An Integrated Exploration & Production Data Management System",
+      link: "/Casestudy-EPGIS",
+    },
+    {
+      title: "Engineering Integration with SCADA",
+      description: "Development of PLC Information Management System",
+      link: "/Casestudy-NoraltaSCADA",
+    },
+    {
+      title: "FEMMS",
+      description:
+        "Development of Fugitive Emission Monitoring, Estimation & Management System (FEMMS)",
+      link: "/Casestudy-NoraltaFEMMS",
+    },
+    {
+      title: "Business Analytics Automation",
+      description:
+        "Development of Tool for Monitoring of Petroleum Financial Models",
+      link: "/Casestudy-SchlumbergerBAA",
+    },
+    {
+      title: "Oil & Gas Product Development",
+      description:
+        "Development of Design & Simulation Tool for Production Monitoring in Oil and Gas Industry for BORETS",
+      link: "/Casestudy-DesignSimBORETS",
+    },
   ],
   // oil: [
   //   { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },
@@ -33,33 +79,58 @@ const projects = {
   //   { title: "Energy Trading Platform", description: "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%." }
   // ],
   auto: [
-    { title: "Electric Vehicle Battery Management", description: "Developed an advanced BMS increasing EV range by 12% and battery lifespan by 2 years." },
-    { title: "Autonomous Driving AI", description: "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions." },
-    { title: "Connected Car Platform", description: "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles." },
-    { title: "Manufacturing Process Optimization", description: "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control." }
+    {
+      title: "Electric Vehicle Battery Management",
+      description:
+        "Developed an advanced BMS increasing EV range by 12% and battery lifespan by 2 years.",
+    },
+    {
+      title: "Autonomous Driving AI",
+      description:
+        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
+    },
+    {
+      title: "Connected Car Platform",
+      description:
+        "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles.",
+    },
+    {
+      title: "Manufacturing Process Optimization",
+      description:
+        "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control.",
+    },
   ],
   health: [
-    { title: "AI-Powered Diagnostic Tool", description: "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods." },
-    { title: "Telemedicine Platform", description: "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations." }
-  ]
+    {
+      title: "AI-Powered Diagnostic Tool",
+      description:
+        "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods.",
+    },
+    {
+      title: "Telemedicine Platform",
+      description:
+        "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations.",
+    },
+  ],
 };
 
-const CaseStudy = ({link, title, description, image }) => (
+const CaseStudy = ({ link, title, description, image }) => (
   <Link to={link} className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-      <img 
+      <img
         src={image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />
       <div className="p-3 md:p-4">
-        <h3 className="font-bold text-sm sm:text-base md:text-lg mb-1 sm:mb-2">{title}</h3>
+        <h3 className="font-bold text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
+          {title}
+        </h3>
         <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
       </div>
     </div>
   </Link>
 );
-
 
 function Cstdmain() {
   const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
@@ -67,9 +138,14 @@ function Cstdmain() {
   return (
     <div className="font-manrope  xl:-mt-4">
       <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 w-screen text-white 2xl:py-8 pt-32 pb-8 text-center">
-        <h1 className="text-blackk text-4xl  md:text-6xl font-bold mb-4">CASE STUDIES</h1>
+        <h1 className="text-blackk text-4xl  md:text-6xl font-bold mb-4">
+          CASE STUDIES
+        </h1>
         <p className="text-blackk text-xl  md:text-2xl max-w-3xl py-2 mx-auto px-4">
-          Explore <span className="text-bloo font-bold">Real-World Examples</span> of how EICE has transformed businesses across industries through innovative software solutions and unparalleled expertise.
+          Explore{" "}
+          <span className="text-bloo font-bold">Real-World Examples</span> of
+          how EICE has transformed businesses across industries through
+          innovative software solutions and unparalleled expertise.
         </p>
       </header>
       <main className="container mx-auto max-w-7xl pt-8">
@@ -95,9 +171,13 @@ function Cstdmain() {
         {industries.map((industry) => (
           <section
             key={industry.id}
-            className={`mb-12 px-2 ${activeIndustry === industry.id ? "block" : "hidden"}`}
+            className={`mb-12 px-2 ${
+              activeIndustry === industry.id ? "block" : "hidden"
+            }`}
           >
-            <h2 className="text-xl px-2 sm:text-2xl font-bold mb-4 sm:mb-6">{industry.name}</h2>
+            <h2 className="text-xl px-2 sm:text-2xl font-bold mb-4 sm:mb-6">
+              {industry.name}
+            </h2>
             <div className="flex flex-wrap -mx-2">
               {projects[industry.id].map((project, index) => (
                 <CaseStudy

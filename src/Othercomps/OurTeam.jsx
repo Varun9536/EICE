@@ -8,6 +8,14 @@ function OurTeam(){
            <div className="max-w-7xl mx-auto px-4">
                 <div></div>
             </div>
+            <div className="max-w-7xl mx-auto px-4">
+                <div>
+                    
+                </div>
+                <div>
+
+                </div>
+            </div>
             <Footer />
             <Copyright /> 
         </div>
