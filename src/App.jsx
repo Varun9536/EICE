@@ -125,6 +125,7 @@ import Talktous from "./Othercomps/Talktous.jsx";
 import Saas from "./Servcomps/Saas.jsx";
 import Chatbot from './Servcomps/Chatbot.jsx';
 import SimuLift from "./Cstudies/SimuLift.jsx";
+import OurTeam from "./Othercomps/OurTeam.jsx";
 
 const App = () => {
   return (
@@ -137,6 +138,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/About" element={<About />} />
+        <Route path="/OurTeam" element={<OurTeam />} />
+
         <Route path="/Services" element={<Services />} />
         <Route path="/Resources" element={<Resources />} />
         <Route path="/Careers" element={<Careers />} />
@@ -411,7 +414,7 @@ const Content = ({ selected, dir }) => {
       }}
       // style={'z-offset:1000'}
       // give width down here for standard sizing, 450px was older one, rn 729
-      className="absolute overflow-visible z-50 left-0 transform -translate-x-1/2 top-16 w-[90vw] max-w-[790px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
+      className="absolute overflow-visible z-50 left-0 transform -translate-x-1/2 top-16 w-[90vw] max-w-[720px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
       // className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
     >
       <Bridge />
@@ -551,10 +554,10 @@ const Aboutus = () => {
                 </p>
               </div>
             </div>
-            <div>
-              <Link to="/About">
-                <button className="mt-4 flex items-center gap-1 text-md hover:underline text-bloo">
-                  <span>Learn more</span>
+            <div className="w-full items-start ">
+              <Link to="/OurTeam">
+                <button className="bg-blue-900 rounded-md p-2 mt-4 flex items-center gap-1 text-md hover:bg-blue-900/90 text-white text-base">
+                  <span>Our Team</span>
                   <FiArrowRight />
                 </button>
               </Link>
@@ -611,7 +614,7 @@ const OurServices = () => {
           </div>
         </div>
         <div className="col-span-2">
-          <div className="grid grid-cols-2 gap-8 items-start justify-start">
+          <div className="grid grid-cols-2 gap-y-2 gap-x-4 items-start justify-start ">
             <Link
               to="/Services?scrollTo=appDevelopment"
               className="group cursor-pointer  py-1 text-blackk/60 transition-colors"
@@ -624,8 +627,8 @@ const OurServices = () => {
               <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
               <h1 className="text-sm pt-1">
                 Leveraging 15+ years of expertise, EICE has delivered over 150
-                innovative app projects across 10+ countries, enhancing digital
-                experiences for 60+ clients.
+                projects across 10+ countries, enhancing digital
+                experiences for 60+ clients. With clients in 10+ countries, EICE is a leading IT company.
               </h1>
             </Link>
             <Link
@@ -636,7 +639,7 @@ const OurServices = () => {
                 <LuCircuitBoard size={40} className="mb-2 text-bloo" />
               </div>
               <div className="text-md text-left font-bold text-blackk">
-                Emerginng Technologies
+                Emerging Tech
               </div>
 
               <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
@@ -748,7 +751,7 @@ const OurResources = () => {
 
 const OurIndustries = () => {
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-3 gap-4">
       <div className="">
         <div className="bg-bloo w-full h-full rounded-md">
           <div className="text-white grid grid-cols-2 p-1">
@@ -786,7 +789,7 @@ const OurIndustries = () => {
         </div>
       </div>
       <div className="col-span-2">
-        <div className="grid grid-cols-2 gap-8 p-6">
+        <div className="grid grid-cols-2 gap-y-10 gap-x-1 p-6">
           <div className="group flex flex-col gap-1">
             <Link to="/Industries-Oilandgas" className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper">
