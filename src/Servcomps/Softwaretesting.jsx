@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import laptop from "../assets/Compressed/Laptop.png";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { MdApi, MdChevronLeft, MdChevronRight, MdConveyorBelt, MdSecurity } from "react-icons/md";
 
 import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
@@ -18,6 +18,9 @@ import Reviews from "../Homecomps/Reviews.jsx";
 import Clients from "../Homecomps/Clients.jsx";
 import Clientele from "../Homecomps/Clientele.jsx";
 import Process from "../Homecomps/Process.jsx";
+import { BiCode, BiMobile, BiWrench } from "react-icons/bi";
+import { AiOutlineRollback } from "react-icons/ai";
+import { BsArrowLeftRight, BsSpeedometer } from "react-icons/bs";
 
 const industries = [
   { name: "OIL AND GAS INDUSTRY", id: "oil" },
@@ -220,7 +223,7 @@ function Chatbot() {
         <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className="rounded-full flex items-start w-full">
-              <img src={dtdigital} alt="" />
+              <BiCode size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">
@@ -236,7 +239,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className="rounded-full flex items-start w-full">
-              <img src={dtdigital} alt="" />
+              <BsSpeedometer size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl ">
@@ -252,7 +255,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtconsulting} alt="" className="scale-[0.85]" />
+              <MdSecurity size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">
@@ -269,7 +272,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtdesign} alt="" className="scale-[0.8]" />
+              <MdConveyorBelt size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">
@@ -285,7 +288,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtdesign} alt="" className="scale-[0.8]" />
+              <BsArrowLeftRight size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">
@@ -301,7 +304,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtdesign} alt="" className="scale-[0.8]" />
+              <AiOutlineRollback size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">
@@ -317,7 +320,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtdesign} alt="" className="scale-[0.8]" />
+              <BiMobile size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">
@@ -333,7 +336,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtdesign} alt="" className="scale-[0.8]" />
+              <MdApi size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">
@@ -350,7 +353,7 @@ function Chatbot() {
           </div>
           <div className="group  p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtdesign} alt="" className="scale-[0.8]" />
+              <BiWrench size={48} className="text-bloo" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk font-bold text-xl pt-1 pb-3 sm:text-2xl">
