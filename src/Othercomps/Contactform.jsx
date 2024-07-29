@@ -19,7 +19,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://192.168.9.91:4000/v1/formdata", {
+      const response = await fetch("https://www.eicetechnology.com/api/v1/formdata", {
         method: "POST",
         body: JSON.stringify(formValues),
         headers: {
