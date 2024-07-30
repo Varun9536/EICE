@@ -55,7 +55,7 @@ function VoiceCallAI() {
             </div>
           </div>
         </div>
-        <div className="w-full pb-6">
+        <div className="w-full pb-6 text-left">
           <h2 className="text-blackk max-w-3xl pb-2 font-bold text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">
             Key Challenges
           </h2>
