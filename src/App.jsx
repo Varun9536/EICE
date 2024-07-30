@@ -42,6 +42,7 @@ import DataManagement from "./Cstudies/DataManagement.jsx";
 import NoraltaMath from "./Cstudies/NoraltaMath.jsx";
 import Peep from "./Cstudies/Peep.jsx";
 import ScadaNoralta from "./Cstudies/ScadaNoralta.jsx";
+import VoiceCallAI from "./Cstudies/VoiceCallAI.jsx";
 
 import Servmain from "./Servcomps/Servmain";
 import Aiml from "./Servcomps/Aiml";
@@ -177,6 +178,7 @@ const App = () => {
         <Route path="Casestudy-EPGIS" element={<DataManagement />} />
         <Route path="Casestudy-NoraltaFEMMS" element={<NoraltaMath />} />
         <Route path="Casestudy-SchlumbergerBAA" element={<Peep />} />
+        <Route path="Casestudy-VoiceCallAI" element={<VoiceCallAI />} />
         <Route
           path="Casestudy-DesignSimBORETS"
           element={<Boretsdesignsimtool />}

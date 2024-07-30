@@ -21,69 +21,25 @@ import Process from "../Homecomps/Process.jsx";
 import { FaLightbulb } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { GrVirtualMachine } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const industries = [
-  { name: "OIL AND GAS INDUSTRY", id: "oil" },
-  { name: "AUTOMOBILE INDUSTRY", id: "auto" },
-  { name: "HEALTHCARE INDUSTRY", id: "health" },
+  { name: "MACHINE LEARNING", id: "oil" },
 ];
 
 const projects = {
   oil: [
     {
-      title: "Offshore Platform Optimization",
+      title: "VOICE CALL ASSISTANT",
       description:
-        "Improved production efficiency by 25% through advanced AI-driven monitoring systems.",
-    },
-    {
-      title: "Energy Trading Platform",
-      description:
-        "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%.",
-    },
-  ],
-  auto: [
-    {
-      title: "Autonomous Driving AI",
-      description:
-        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
-    },
-    {
-      title: "Autonomous Driving AI",
-      description:
-        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
-    },
-    {
-      title: "Autonomous Driving AI",
-      description:
-        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
-    },
-    {
-      title: "Connected Car Platform",
-      description:
-        "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles.",
-    },
-    {
-      title: "Manufacturing Process Optimization",
-      description:
-        "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control.",
-    },
-  ],
-  health: [
-    {
-      title: "AI-Powered Diagnostic Tool",
-      description:
-        "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods.",
-    },
-    {
-      title: "Telemedicine Platform",
-      description:
-        "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations.",
+      "",
+      link: "/casestudy-VoiceCallAI",
     },
   ],
 };
 
-const CaseStudy = ({ title, description, image }) => (
-  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
+const CaseStudy = ({ title, description, image, link }) => (
+  <Link to={link} className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img
         src={image}
@@ -97,7 +53,7 @@ const CaseStudy = ({ title, description, image }) => (
         <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 function Cstdmain() {
@@ -148,6 +104,7 @@ function Cstdmain() {
                   title={project.title}
                   description={project.description}
                   image={laptop}
+                  link ={project.link}
                 />
               ))}
             </div>
