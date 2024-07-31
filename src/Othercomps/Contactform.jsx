@@ -62,7 +62,7 @@ function ContactForm() {
               required
             />
             <input
-              type="tel"
+              type="number"
               name="contact"
               value={formValues.contact}
               onChange={handleInputChange}
