@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function ContactForm() {
   const [formValues, setFormValues] = useState({
@@ -19,18 +20,28 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://192.168.9.91:4000/v1/formdata", {
-        method: "POST",
-        body: JSON.stringify(formValues),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const data = await response.json();
-      if (data.result === "successful") {
-        alert(`Message Sent Successfully`);
-        setFormValues({ name: "", email: "", contact: "", message: "" });
+      // const response = await fetch("http://192.168.9.91:4000/v1/formdata", {
+      //   method: "POST",
+      //   body: JSON.stringify(formValues),
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // });
+        let response = await axios.post("https://www.eicetechnology.com/contact.php", formValues)
+      console.log(response.data)
+      if (response.data.result === true) {
+        alert("Message Sent Successfully")
+         setFormValues({ name: "", email: "", contact: "", message: "" });
       }
+
+      else {
+        alert("Failed to save data , Please try again later")
+      }
+      // const data = await response.json();
+      // if (data.result === "successful") {
+      //   alert(`Message Sent Successfully`);
+      //   setFormValues({ name: "", email: "", contact: "", message: "" });
+      // }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Failed to send message. Please try again.");
