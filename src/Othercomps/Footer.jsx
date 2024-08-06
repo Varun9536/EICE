@@ -112,61 +112,61 @@ function Footer() {
 
 
             <Link
-              to="/services-digitaltransformation"
+              to="/Services/Digitaltransformation"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Digital Transformation
             </Link>
             <Link
-              to="/services-aiml"
+              to="/Services/Aiml"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               AI/ML
             </Link>
             <Link
-              to="/services-blockchain"
+              to="/Services/Blockchain"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Blockchain
             </Link>
             <Link
-              to="/services-iot"
+              to="/Services/Iot"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               IOT
             </Link>
             <Link
-              to="/services-uiuxconsulting"
+              to="/Services/Uiuxconsulting"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               UI/UX Consulting
             </Link>
             <Link
-              to="/services-android"
+              to="/Services/Android"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Desktop and Mobile App Development
             </Link>
             <Link
-              to="/services-webdevelopment"
+              to="/Services/Webdevelopment"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Web Development
             </Link>
             <Link
-              to="/services-devops"
+              to="/Services/Devops"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               DevOps
             </Link>
             <Link
-              to="/services-cloud"
+              to="/Services/Cloud"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Cloud Services
             </Link>
             <Link
-              to="/services-softwaretesting"
+              to="/Services/Softwaretesting"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Software Testing
@@ -178,25 +178,25 @@ function Footer() {
           <h1 className="px-3 py-2 fontsize_4  ">Company</h1>
           <div className="flex flex-row flex-wrap">
             <Link
-              to="/about"
+              to="/About"
               className=" text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               About Us
             </Link>
             <Link
-              to="/resources"
+              to="/Resources"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Resources
             </Link>
             <Link
-              to="/contact"
+              to="/Contact"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Contact Us
             </Link>
             <Link
-              to="/industries"
+              to="/Industries"
               className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Industries

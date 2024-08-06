@@ -31,7 +31,7 @@ function Big() {
                     Let's Connect
                   </button>
                 </Link>
-                <Link to="/services-aiml">
+                <Link to="/Services/Aiml">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
                     Learn More
                   </button>
@@ -72,7 +72,7 @@ function Big() {
                     Let's Connect
                   </button>
                 </Link>
-                <Link to="/services-devops">
+                <Link to="/Services/Devops">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
                     Learn More
                   </button>
@@ -113,7 +113,7 @@ function Big() {
                     Let's Connect
                   </button>
                 </Link>
-                <Link to="/services-digitaltransformation">
+                <Link to="/Services/Digitaltransformation">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
                     Learn More
                   </button>

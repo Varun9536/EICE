@@ -42,7 +42,7 @@ function Indusmain() {
       color: "blue",
       Icon: indus_oilandgas,
       title: "Oil and Gas",
-      to: "/industries-oilandgas",
+      to: "/Industries/oilandgas",
       description:
         "Pioneering the Future of Oil and Gas with State-of-the-Art Solutions.",
     },
@@ -50,7 +50,7 @@ function Indusmain() {
       color: "purple",
       Icon: indus_education,
       title: "Education",
-      to: "/industries-education",
+      to: "/Industries/education",
       description:
         "Empowering Education Through Innovative Technology Solutions.",
     },
@@ -58,7 +58,7 @@ function Indusmain() {
       color: "emerald",
       Icon: indus_law,
       title: "Legal",
-      to: "/industries-legal",
+      to: "/Industries/legal",
       description:
         "Innovative Legal Software Solutions for a Modern Legal Practice.",
     },
@@ -66,7 +66,7 @@ function Indusmain() {
       color: "amber",
       Icon: indus_healthcare,
       title: "Healthcare",
-      to: "/industries-healthcare",
+      to: "/Industries/healthcare",
       description:
         "Elevate Your Digital Health Solutions with Our Expert Software Development Services.",
     },
@@ -74,7 +74,7 @@ function Indusmain() {
       color: "pink",
       Icon: indus_digimedia,
       title: "Digital Media",
-      to: "/industries-digitalmedia",
+      to: "/Industries/digitalmedia",
       description:
         "Transforming the Media Landscape with Innovative Technology Solutions.",
     },
@@ -82,7 +82,7 @@ function Indusmain() {
       color: "rose",
       Icon: indus_financial,
       title: "Financial Services",
-      to: "/industries-financial",
+      to: "/Industries/financial",
       description:
         "Revolutionizing Financial Services Through Advanced Technology Solutions.",
     },
@@ -90,7 +90,7 @@ function Indusmain() {
       color: "amber",
       Icon: indus_logistics,
       title: "Logistics",
-      to: "/industries-logistics",
+      to: "/Industries/logistics",
       description:
         "Driving Logistics Excellence with Intelligent Software Solutions.",
     },
@@ -98,7 +98,7 @@ function Indusmain() {
       color: "rose",
       Icon: indus_enterprise,
       title: "Enterprise",
-      to: "/industries-enterprise",
+      to: "/Industries/enterprise",
       description:
         "Driving Enterprise Excellence with Intelligent Software Solutions.",
     },

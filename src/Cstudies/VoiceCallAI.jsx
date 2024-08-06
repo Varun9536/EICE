@@ -291,7 +291,7 @@ function VoiceCallAI() {
         <div className="max-w-7xl mx-auto grid grid-cols-3 gap-8 w-full">
           <div className="p-2 rounded-xl hover:scale-[.99] transition duration-300">
             <Link
-              to="/CaseStudy-PetroSIM"
+              to="/Casestudy/PetroSIM"
               className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4"
             >
               <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
@@ -312,7 +312,7 @@ function VoiceCallAI() {
           </div>
           <div className="p-2 rounded-xl hover:scale-[.99] transition duration-300">
             <Link
-              to="/CaseStudy-ReliMonitor"
+              to="/Casestudy/ReliMonitor"
               className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4"
             >
               <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
@@ -333,7 +333,7 @@ function VoiceCallAI() {
           </div>
           <div className="p-2 rounded-xl hover:scale-[.99] transition duration-300">
             <Link
-              to="/CaseStudy-EspctQuote"
+              to="/Casestudy/EspctQuote"
               className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4"
             >
               <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">

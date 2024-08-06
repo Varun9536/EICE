@@ -11,7 +11,7 @@ const Offerdata = [
         </svg>
         `,
     title: "AI/ML",
-    link: "/services-aiml",
+    link: "/Services/Aiml",
     fliptext:
       " Data is the foundation of AI and ML. Our experts design advanced solutions to analyze diverse data types, uncover growth trends, and provide actionable insights. Leverage our expertise to drive informed decisions and strategic growth for your business.",
   },
@@ -22,7 +22,7 @@ const Offerdata = [
         <svg xmlns="http://www.w3.org/2000/svg" fill="#01b0f1" viewBox="0 0 512 640" x="0px" y="0px"><path d="M272,312H240a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16Z"/><path d="M432.16,392h-.08a8,8,0,1,0,.08,0Z"/><path d="M488,240H464V101.28A21.31,21.31,0,0,0,442.72,80H69.28A21.31,21.31,0,0,0,48,101.28V192H33.88A17.9,17.9,0,0,0,16,209.88V414.12A17.9,17.9,0,0,0,33.88,432H336a8,8,0,0,0,8-8V392a8,8,0,0,0-8-8H288V352h80v72a8,8,0,0,0,8,8H488a8,8,0,0,0,8-8V248A8,8,0,0,0,488,240Zm-8,128H384V256h96ZM64,101.28A5.22,5.22,0,0,1,69.28,96H442.72a5.22,5.22,0,0,1,5.28,5.28V240H376a8,8,0,0,0-8,8v40H208V209.88A17.9,17.9,0,0,0,190.12,192H64ZM208,384V352h16v32ZM33.88,208H190.12a1.88,1.88,0,0,1,1.88,1.88V384H32V209.88A1.88,1.88,0,0,1,33.88,208ZM176,416H33.88A1.88,1.88,0,0,1,32,414.12V400H192v14.12a1.88,1.88,0,0,1-1.88,1.88Zm152,0H207.81a16.86,16.86,0,0,0,.19-1.88V400H328Zm-56-32H240V352h32Zm8-48H208V304H368v32Zm104,80V384h96v32Z"/><path d="M48,248a8,8,0,0,0,5.66-2.34l12-12a8,8,0,0,0-11.32-11.32l-12,12A8,8,0,0,0,48,248Z"/><path d="M50.34,285.66a8,8,0,0,0,11.32,0l48-48a8,8,0,0,0-11.32-11.32l-48,48A8,8,0,0,0,50.34,285.66Z"/><path d="M93.66,141.66l16-16a8,8,0,0,0-11.32-11.32l-16,16a8,8,0,0,0,11.32,11.32Z"/><path d="M138.34,114.34l-48,48a8,8,0,0,0,11.32,11.32l48-48a8,8,0,0,0-11.32-11.32Z"/></svg>
         `,
     title: "UI/UX Services",
-    link: "/services-uiuxconsulting",
+    link: "/Services/Uiuxconsulting",
     fliptext:
       "We offer top-notch UI/UX design services to create intuitive, user-friendly interfaces that enhance user experience and drive engagement. Our designs focus on both aesthetic appeal and functionality, helping your business stand out and achieve your digital goals effectively.",
   },
@@ -34,7 +34,7 @@ const Offerdata = [
         </svg>
         `,
     title: "DEVOPS",
-    link: "/services-devops",
+    link: "/Services/Devops",
     fliptext:
       "We provide DevOps services for digital transformation and growth. Our expertise in CI/CD pipelines, AWS, Azure, and GCP helps you deploy, manage, and expand applications effectively. Drive innovation and efficiency for your business’s success with our solutions.",
   },
@@ -53,7 +53,7 @@ const Offerdata = [
 </svg>
         `,
     title: "IOT",
-    link: "/services-iot",
+    link: "/Services/Iot",
     fliptext:
       "We specialize in creating scalable and secure IoT solutions to enhance efficiency, improve connectivity, and provide actionable data insights. Our expertise helps your business thrive in the digital age, driving innovation and growth for long-term success.",
   },
@@ -68,7 +68,7 @@ const Offerdata = [
         </svg>
         `,
     title: `ENTERPRISE APP DEVELOPMENT`,
-    link: "/services-enterpriseappdev",
+    link: "/Services/Enterpriseappdev",
     fliptext:
       "Elevate your business with our mobile app development services. We specialize in native, hybrid, and decentralized apps to boost brand value and align with the mobile-first trend. Let us help you create innovative solutions for a competitive edge.",
   },
@@ -83,7 +83,7 @@ const Offerdata = [
         </svg>
         `,
     title: "TECHNOLOGY CONSULTING",
-    link: "/services-techconsultancy",
+    link: "/Services/Techconsultancy",
     fliptext:
       "We offer comprehensive technology consulting services with strategic guidance and tailored solutions. Our expertise boosts efficiency, drives innovation, and achieves digital transformation for businesses of all sizes. Partner with us to elevate your technology strategy and achieve success.",
   },
@@ -94,7 +94,7 @@ const Offerdata = [
         </svg>
         `,
     title: "CLOUD SERVICES",
-    link: "/services-cloud",
+    link: "/Services/Cloud",
     fliptext:
       "Explore our advanced cloud services for scalable and efficient operations. We offer secure, reliable infrastructure and expert management tailored to your needs, supporting your business growth and success in the digital age. Discover the future of cloud solutions with us.",
   },
@@ -106,7 +106,7 @@ const Offerdata = [
         </svg>
         `,
     title: "DIGITAL TRANSFORMATION",
-    link: "/services-digitaltransformation",
+    link: "/Services/Digitaltransformation",
     fliptext:
       "Transform your business with our digital transformation services. We offer tailored strategies and cutting-edge solutions to modernize operations, enhance customer experiences, and drive sustainable growth. Partner with us to achieve your business goals effectively in the digital age.",
   },
@@ -125,7 +125,7 @@ const Offerdata = [
 </svg>
         `,
     title: "GIS SERVICES",
-    link: "/services-gis",
+    link: "/Services/Gis",
     fliptext:
       "We offer customized GIS solutions to maximize geographic insights for informed decision-making and effective resource management. Our services are designed to enhance your business strategy, optimize operations, and achieve your goals with precision in a competitive landscape.",
   },
@@ -137,7 +137,7 @@ const Offerdata = [
         </svg>
         `,
     title: "DATA ANALYTICS",
-    link: "/services-dataanalytics",
+    link: "/Services/Dataanalytics",
     fliptext:
       "We offer tailored Data Analytics services using advanced techniques to extract valuable insights, optimize operations, and drive informed decision-making. Our solutions are designed to help you achieve strategic objectives and gain a competitive edge in the marketplace.",
   },

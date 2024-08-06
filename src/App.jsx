@@ -153,35 +153,35 @@ const App = () => {
         <Route path="/Industries/Enterprise" element={<Enterprise />} />
         <Route path="/Industries/Legal" element={<Legal />} />
         <Route path="/Industries/Oilandgas" element={<Oilandgas />} />
-        <Route path="Services-digitaltransformation" element={<Digitrans />} />
-        <Route path="Services-aiml" element={<Aiml />} />
-        <Route path="Services-cloud" element={<Cloud />} />
-        <Route path="Services-dataanalytics" element={<Dataanalytics />} />
-        <Route path="Services-enterpriseappdev" element={<Entpappdev />} />
-        <Route path="Services-gis" element={<Gis />} />
-        <Route path="Services-devops" element={<Devops />} />
-        <Route path="Services-iot" element={<Iot />} />
-        <Route path="Services-techconsultancy" element={<Techconsult />} />
-        <Route path="Services-saas" element={<Saas />} />
-        <Route path="Services-android" element={<Android />} />
-        <Route path="Services-blockchain" element={<Blockchain />} />
-        <Route path="Services-webdevelopment" element={<Webdeveopment />} />
-        <Route path="Services-softwaretesting" element={<Softwaretesting />} />
-        <Route path="Services-uiuxconsulting" element={<UiUx />} />
-        <Route path="Services-chatbot" element={<Chatbot />} />
+        <Route path="Services/Digitaltransformation" element={<Digitrans />} />
+        <Route path="Services/Aiml" element={<Aiml />} />
+        <Route path="Services/Cloud" element={<Cloud />} />
+        <Route path="Services/Dataanalytics" element={<Dataanalytics />} />
+        <Route path="Services/Enterpriseappdev" element={<Entpappdev />} />
+        <Route path="Services/Gis" element={<Gis />} />
+        <Route path="Services/Devops" element={<Devops />} />
+        <Route path="Services/Iot" element={<Iot />} />
+        <Route path="Services/Techconsultancy" element={<Techconsult />} />
+        <Route path="Services/SAAS" element={<Saas />} />
+        <Route path="Services/Android" element={<Android />} />
+        <Route path="Services/Blockchain" element={<Blockchain />} />
+        <Route path="Services/Webdevelopment" element={<Webdeveopment />} />
+        <Route path="Services/Softwaretesting" element={<Softwaretesting />} />
+        <Route path="Services/Uiuxconsulting" element={<UiUx />} />
+        <Route path="Services/Chatbot" element={<Chatbot />} />
         <Route path="Casestudies" element={<Cstudiescomp />} />
-        <Route path="Casestudy-Relimonitor" element={<Relimonitor />} />
-        <Route path="Casestudy-PetroSIM" element={<PetroSIM />} />
-        <Route path="Casestudy-EspctQuote" element={<EspctQuote />} />
-        <Route path="Casestudy-CityGasAdani" element={<CityGasAdani />} />
-        <Route path="Casestudy-SimuLIFT" element={<SimuLift />} />
-        <Route path="Casestudy-NoraltaSCADA" element={<ScadaNoralta />} />
-        <Route path="Casestudy-EPGIS" element={<DataManagement />} />
-        <Route path="Casestudy-NoraltaFEMMS" element={<NoraltaMath />} />
-        <Route path="Casestudy-SchlumbergerBAA" element={<Peep />} />
-        <Route path="Casestudy-VoiceCallAI" element={<VoiceCallAI />} />
+        <Route path="Casestudy/Relimonitor" element={<Relimonitor />} />
+        <Route path="Casestudy/PetroSIM" element={<PetroSIM />} />
+        <Route path="Casestudy/EspctQuote" element={<EspctQuote />} />
+        <Route path="Casestudy/CityGasAdani" element={<CityGasAdani />} />
+        <Route path="Casestudy/SimuLIFT" element={<SimuLift />} />
+        <Route path="Casestudy/NoraltaSCADA" element={<ScadaNoralta />} />
+        <Route path="Casestudy/EPGIS" element={<DataManagement />} />
+        <Route path="Casestudy/NoraltaFEMMS" element={<NoraltaMath />} />
+        <Route path="Casestudy/SchlumbergerBAA" element={<Peep />} />
+        <Route path="Casestudy/VoiceCallAI" element={<VoiceCallAI />} />
         <Route
-          path="Casestudy-DesignSimBORETS"
+          path="Casestudy/DesignSimBORETS"
           element={<Boretsdesignsimtool />}
         />
 
@@ -796,7 +796,7 @@ const OurIndustries = () => {
         <div className="grid grid-cols-2 gap-y-10 gap-x-1 p-6">
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Oilandgas"
+              to="/Industries/Oilandgas"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -813,7 +813,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Healthcare"
+              to="/Industries/Healthcare"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -830,7 +830,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Legal"
+              to="/Industries/Legal"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -847,7 +847,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Education"
+              to="/Industries/Education"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -864,7 +864,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Financial"
+              to="/Industries/Financial"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -881,7 +881,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Digitalmedia"
+              to="/Industries/Digitalmedia"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -898,7 +898,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Logistics"
+              to="/Industries/Logistics"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -915,7 +915,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/industries/Enterprise"
+              to="/Industries/Enterprise"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">

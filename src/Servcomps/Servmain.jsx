@@ -86,7 +86,7 @@ function Servmain() {
             <div>
               <div className="grid lg:grid-cols-3 px-4 grid-cols-1 gap-6 pt-12">
                 <Link
-                  to="/services-digitaltransformation"
+                  to="/Services/Digitaltransformation"
                   className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 "
                 >
                   <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
@@ -109,7 +109,7 @@ function Servmain() {
                   </div>
                 </Link>
                 <Link
-                  to="/services-devops"
+                  to="/Services/Devops"
                   className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 "
                 >
                   <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
@@ -132,7 +132,7 @@ function Servmain() {
                   </div>
                 </Link>
                 <Link
-                  to="/services-aiml"
+                  to="/Services/Aiml"
                   className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 "
                 >
                   <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
@@ -181,7 +181,7 @@ function Servmain() {
           <div>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-4 pt-8">
               <Link
-                to="/services-aiml"
+                to="/Services/Aiml"
                 className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
               >
                 <div className="rounded-full py-2 px-4">
@@ -199,7 +199,7 @@ function Servmain() {
                 </div>
               </Link>
               <Link
-                to="/services-iot"
+                to="/Services/Iot"
                 className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
               >
                 <div className=" rounded-full py-2 px-4">
@@ -217,7 +217,7 @@ function Servmain() {
                 </div>
               </Link>
               <Link
-                to="/services-blockchain"
+                to="/Services/Blockchain"
                 className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
               >
                 <div className=" rounded-full py-2 px-4">
@@ -256,7 +256,7 @@ function Servmain() {
           <div className="">
             <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">
               <Link
-                to="/services-saas"
+                to="/Services/SAAS"
                 className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
               >
                 <div className="flex px-4 rounded-full ">
@@ -277,7 +277,7 @@ function Servmain() {
                 </div>
               </Link>
               <Link
-                to="/services-webdevelopment"
+                to="/Services/Webdevelopment"
                 className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
               >
                 <div className="flex px-4 rounded-full ">
@@ -295,7 +295,7 @@ function Servmain() {
                 </div>
               </Link>
               <Link
-                to="/services-chatbot"
+                to="/Services/Chatbot"
                 className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
               >
                 <div className="flex px-4 rounded-full ">
@@ -328,7 +328,7 @@ function Servmain() {
         className="px-4 pb-12 max-w-7xl mx-auto grid lg:grid-cols-2 grid-cols-1 gap-10"
       >
         <Link
-          to="/services-techconsultancy"
+          to="/Services/Techconsultancy"
           className="relative cursor-pointer group "
         >
           <div className="">
@@ -362,7 +362,7 @@ function Servmain() {
             </div>
           </div>
         </Link>
-        <Link to="/services-uiuxconsulting" className="relative">
+        <Link to="/Services/Uiuxconsulting" className="relative">
           <img
             src={uiuxdesign}
             alt=""

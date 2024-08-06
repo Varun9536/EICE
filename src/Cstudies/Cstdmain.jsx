@@ -15,58 +15,58 @@ const projects = {
     {
       title: "RE.LI Monitor",
       description: "Developed a Real Time Sensor monitoring tool using SCADA.",
-      link: "/Casestudy-ReliMonitor",
+      link: "/Casestudy/ReliMonitor",
     },
     {
       title: "PetroSIM",
       description:
         "Comprehensive quality assurance and simulation tool for refinery operations.",
-      link: "/Casestudy-PetroSIM",
+      link: "/Casestudy/PetroSIM",
     },
     {
       title: "ESPCT Quote",
       description: "Web Based Sales and Quotation Tool",
-      link: "/Casestudy-EspctQuote",
+      link: "/Casestudy/EspctQuote",
     },
     {
       title: "City Gas Distribution",
       description: "Gas Distribution Analysis App for Adani Gas",
-      link: "/Casestudy-CityGasAdani",
+      link: "/Casestudy/CityGasAdani",
     },
     {
       title: "SimuLIFT",
       description:
         "Development of Quote & Sizing Tools for Artificial Lift Methods",
-      link: "/Casestudy-SimuLIFT",
+      link: "/Casestudy/SimuLIFT",
     },
     {
       title: "E&P Data Management on GIS",
       description:
         "An Integrated Exploration & Production Data Management System",
-      link: "/Casestudy-EPGIS",
+      link: "/Casestudy/EPGIS",
     },
     {
       title: "Engineering Integration with SCADA",
       description: "Development of PLC Information Management System",
-      link: "/Casestudy-NoraltaSCADA",
+      link: "/Casestudy/NoraltaSCADA",
     },
     {
       title: "FEMMS",
       description:
         "Development of Fugitive Emission Monitoring, Estimation & Management System (FEMMS)",
-      link: "/Casestudy-NoraltaFEMMS",
+      link: "/Casestudy/NoraltaFEMMS",
     },
     {
       title: "Business Analytics Automation",
       description:
         "Development of Tool for Monitoring of Petroleum Financial Models",
-      link: "/Casestudy-SchlumbergerBAA",
+      link: "/Casestudy/SchlumbergerBAA",
     },
     {
       title: "Oil & Gas Product Development",
       description:
         "Development of Design & Simulation Tool for Production Monitoring in Oil and Gas Industry for BORETS",
-      link: "/Casestudy-DesignSimBORETS",
+      link: "/Casestudy/DesignSimBORETS",
     },
   ],
   // oil: [
