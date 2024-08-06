@@ -1,6 +1,6 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 function ContactForm() {
   const [formValues, setFormValues] = useState({
@@ -18,30 +18,28 @@ function ContactForm() {
   };
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
+    
     try {
-      // const response = await fetch("http://192.168.9.91:4000/v1/formdata", {
-      //   method: "POST",
-      //   body: JSON.stringify(formValues),
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      // });
-        let response = await axios.post("https://www.eicetechnology.com/contact.php", formValues)
+
+      let response = await axios.post("https://www.eicetechnology.com/contact.php", formValues)
       console.log(response.data)
       if (response.data.result === true) {
-        alert("Message Sent Successfully")
-         setFormValues({ name: "", email: "", contact: "", message: "" });
+        alert("Data saved successfully")
+        setFormValues({
+          name: "",
+          email: "",
+          contact: "",
+          message: "",
+        })
       }
 
       else {
         alert("Failed to save data , Please try again later")
       }
-      // const data = await response.json();
-      // if (data.result === "successful") {
-      //   alert(`Message Sent Successfully`);
-      //   setFormValues({ name: "", email: "", contact: "", message: "" });
-      // }
+
+
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Failed to send message. Please try again.");
@@ -54,6 +52,8 @@ function ContactForm() {
         <div className="bg-white rounded-lg shadow-lg shadow-blackk/20 p-8">
           <h2 className="text-2xl font-semibold text-bloo mb-6">Contact Us</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
+
+
             <input
               type="text"
               name="name"
@@ -63,6 +63,8 @@ function ContactForm() {
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
               required
             />
+
+
             <input
               type="email"
               name="email"
@@ -72,6 +74,8 @@ function ContactForm() {
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
               required
             />
+
+
             <input
               type="number"
               name="contact"
@@ -81,6 +85,8 @@ function ContactForm() {
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
               required
             />
+
+
             <textarea
               name="message"
               value={formValues.message}
@@ -90,6 +96,7 @@ function ContactForm() {
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo resize-none"
               required
             ></textarea>
+
             <button
               type="submit"
               className="w-full bg-bloo text-white font-semibold py-2 px-4 rounded-md hover:bg-bloo-dark transition duration-300 ease-in-out"

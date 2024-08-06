@@ -5,6 +5,7 @@ import fb from "../assets/fb.svg";
 import logo from "../assets/logo.svg";
 import { useState } from "react";
 import { Routes, Route, Outlet, NavLink, Link } from "react-router-dom";
+import "../fontCss.css"
 
 function Footer() {
   const [email, setemail] = useState("");
@@ -14,23 +15,23 @@ function Footer() {
   };
 
   const printvalue = async () => {
-    let a = await fetch(
-      "https://eice-website.onrender.com/v1/newsletter/email",
-      {
-        method: "post",
-        body: JSON.stringify({ email: email }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    // let a = await fetch(
+    //   "https://eice-website.onrender.com/v1/newsletter/email",
+    //   {
+    //     method: "post",
+    //     body: JSON.stringify({ email: email }),
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   }
+    // );
 
-    a = await a.json();
-    if (a.result === "successful") {
-      console.log(a.response);
-      alert(`Subscribed Successfully`);
-    }
-    console.log(a);
+    // a = await a.json();
+    // if (a.result === "successful") {
+    //   console.log(a.response);
+    //   alert(`Subscribed Successfully`);
+    // }
+    // console.log(a);
   };
 
   return (
@@ -41,7 +42,7 @@ function Footer() {
           <Link to="/" className="inline-block mb-4">
             <img src={logo} alt="EICE Logo" className="h-12 w-auto" />
           </Link>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg text-justify pb-6">
+          <p className=" fontweight_1  fontsize_3 text-blackk/60    text-justify pb-6">
             EICE Technology is an outstanding software development company with
             deep domain knowledge, well-designed processes, and technical
             expertise. We have a highly skilled team of software engineers with
@@ -95,7 +96,7 @@ function Footer() {
 
         {/* Services Links */}
         {/* <div className="">
-      <h3 className="font-bold text-lg mb-4">Services</h3>
+      <h3 className="  mb-4">Services</h3>
       <div className="space-y-2 space-x-2 items-center justify-center text-center flex flex-wrap  text-sm">
         <a href="/application-services" className="hover:underline">Application Services</a>
         <a href="/consultancy-services" className="hover:underline">Consultancy Services</a>
@@ -104,111 +105,69 @@ function Footer() {
     </div> */}
 
         <div className="flex flex-col text-start">
-          <h1 className="px-3 py-2 text-lg font-bold">
+          <h1 className="px-3 py-2 fontsize_4 ">
             Services and Technologies
           </h1>
-          <div className="flex flex-row flex-wrap">
-            {/* <Link to="/services-digitaltransformation" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Digital Transformation</Link>
-          <Link to="/services-aiml" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AIML</Link>
-          <Link to="/services-iot" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">IOT</Link>
-          <Link to="/services-devops" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DevOps</Link>
-          <Link to="/services-uiuxconsulting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">UI/UX Consulting</Link>
-          <Link to="/services-aspdotnet" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ASP.NET</Link>
-          <Link to="/services-react" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React</Link>
-          <Link to="/services-reactnative" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">React Native</Link>
-          <Link to="/services-laravel" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Laravel</Link>
-          <Link to="/services-mysql" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MySQL</Link>
-          <Link to="/services-android" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Android App Development</Link>
-          <Link to="/services-ios" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">iOS App Development</Link>
-          <Link to="/services-enterpriseappdev" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Web App Development</Link>
-          <Link to="/services-blockchain" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Blockchain</Link>
-          <Link to="/services-appconsulting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">App Consulting</Link>
-          <Link to="/services-softwaretesting" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Software Testing</Link>
-          <Link to="/services-flutter" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Flutter</Link>
-          <Link to="/services-php" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PHP</Link>
-          <Link to="/services-ionic" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ionic</Link>
-          <Link to="/services-swift" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Swift</Link>
-          <Link to="/services-kotlin" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Kotlin</Link>
-          <Link to="/services-objectivec" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">ObjectiveC</Link>
-          <Link to="/services-vue" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Vue</Link>
-          <Link to="/services-angular" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Angular</Link>
-          <Link to="/services-jquery" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jquery</Link>
-          <Link to="/services-typescript" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Typescript</Link>
-          <Link to="/services-postgresql" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">PostgreSQL</Link>
-          <Link to="/services-mongodb" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">MongoDB</Link>
-          <Link to="/services-dynamodb" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">DynamoDB</Link>
-          <Link to="/services-django" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Django</Link>
-          <Link to="/services-oracle" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Oracle</Link>
-          <Link to="/services-apache" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Apache</Link>
-          <Link to="/services-rubyonrails" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ruby on Rails</Link>
-          <Link to="/services-express" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Express</Link>
-          <Link to="/services-docker" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Docker</Link>
-          <Link to="/services-firebase" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Firebase</Link>
-          <Link to="/services-nodejs" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">NodeJS</Link>
-          <Link to="/services-git" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Git</Link>
-          <Link to="/services-kubernetes" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Kubernetes</Link>
-          <Link to="/services-jira" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Jira</Link>
-          <Link to="/services-ansible" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Ansible</Link>
-          <Link to="/services-aws" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">AWS</Link>
-          <Link to="/services-azure" className="text-blackk/70 hover:text-blackk font-semibold hover:underline py-1 px-3">Azure</Link> */}
+          <div className=" fontsize_3 flex flex-row flex-wrap">
+
 
             <Link
               to="/services-digitaltransformation"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Digital Transformation
             </Link>
             <Link
               to="/services-aiml"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               AI/ML
             </Link>
             <Link
               to="/services-blockchain"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Blockchain
             </Link>
             <Link
               to="/services-iot"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               IOT
             </Link>
             <Link
               to="/services-uiuxconsulting"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               UI/UX Consulting
             </Link>
             <Link
               to="/services-android"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Desktop and Mobile App Development
             </Link>
             <Link
               to="/services-webdevelopment"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Web Development
             </Link>
             <Link
               to="/services-devops"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               DevOps
             </Link>
             <Link
               to="/services-cloud"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Cloud Services
             </Link>
             <Link
               to="/services-softwaretesting"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Software Testing
             </Link>
@@ -216,29 +175,29 @@ function Footer() {
         </div>
 
         <div className="flex flex-col text-start">
-          <h1 className="px-3 py-2 text-lg font-bold">Company</h1>
+          <h1 className="px-3 py-2 fontsize_4  ">Company</h1>
           <div className="flex flex-row flex-wrap">
             <Link
               to="/about"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className=" text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               About Us
             </Link>
             <Link
               to="/resources"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Resources
             </Link>
             <Link
               to="/contact"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Contact Us
             </Link>
             <Link
               to="/industries"
-              className="text-blackk/60 sm:text-xl text-lg hover:text-blackk font-semibold hover:underline py-1 px-3"
+              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               Industries
             </Link>
@@ -247,7 +206,7 @@ function Footer() {
 
         {/* Newsletter Subscription */}
         {/* <div>
-      <h3 className="font-bold text-lg mb-4">Subscribe to our Newsletter</h3>
+      <h3 className="  mb-4">Subscribe to our Newsletter</h3>
       <div className="flex flex-col gap-4">
       <input 
           type="email" 

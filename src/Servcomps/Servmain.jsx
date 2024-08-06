@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Offers from "../Homecomps/Offers";
+// import "./Styles/Servmain.css"
 
 import {
   FiArrowRight,
@@ -56,7 +57,7 @@ function Servmain() {
           Explore what we offer
         </h2>
         <div className="w-full rounded-xl scale-[.65] max-w-screen-2xl mx-auto ">
-          <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] -my-10 bg-cover bg-center bg-no-repeat rounded-full"></div>
+          <div  className="  bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%]   bg-cover bg-center bg-no-repeat rounded-full"></div>
         </div>
         <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-center">
           At EICE, we offer a comprehensive suite of tech services designed to

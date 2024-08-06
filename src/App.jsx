@@ -1,6 +1,7 @@
 /* eslint-disable react/display-name */
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import "./App.css"
 
 // import Withsplashscreen from './Splashcomponents/Withsplashscreen';
 import logo from "./assets/logo.svg";
@@ -128,7 +129,7 @@ import OurTeam from "./Othercomps/OurTeam.jsx";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <NavLayout />
       <ScrollToTop />
       <Routes>
@@ -143,15 +144,15 @@ const App = () => {
         <Route path="/Resources" element={<Resources />} />
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Industries" element={<Allindus />} />
-        <Route path="/Industries-financial" element={<Financial />} />
-        <Route path="/Industries-education" element={<Educational />} />
-        <Route path="/Industries-digitalmedia" element={<Digitalmedia />} />
-        <Route path="/Industries-healthcare" element={<Healthcare />} />
-        <Route path="/Industries-logistics" element={<Logistics />} />
-        <Route path="/Industries-enterprise" element={<Enterprise />} />
-        <Route path="/Industries-legal" element={<Legal />} />
-        <Route path="/Industries-oilandgas" element={<Oilandgas />} />
+        <Route path="/Industries" element={<Allindus />}></Route>
+        <Route path="/Industries/Financial" element={<Financial />} />
+        <Route path="/Industries/Education" element={<Educational />} />
+        <Route path="/Industries/Digitalmedia" element={<Digitalmedia />} />
+        <Route path="/Industries/Healthcare" element={<Healthcare />} />
+        <Route path="/Industries/Logistics" element={<Logistics />} />
+        <Route path="/Industries/Enterprise" element={<Enterprise />} />
+        <Route path="/Industries/Legal" element={<Legal />} />
+        <Route path="/Industries/Oilandgas" element={<Oilandgas />} />
         <Route path="Services-digitaltransformation" element={<Digitrans />} />
         <Route path="Services-aiml" element={<Aiml />} />
         <Route path="Services-cloud" element={<Cloud />} />
@@ -194,7 +195,7 @@ const App = () => {
         />
         {/* </Route> */}
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
@@ -379,18 +380,16 @@ const Tab = ({ children, tab, handleSetSelected, selected, link }) => {
       id={`shift-tab-${tab}`}
       onMouseEnter={() => handleSetSelected(tab)}
       onClick={() => handleSetSelected(tab)}
-      className={`h-full flex items-center gap-1 rounded-full px-3 py-1.5 text-md transition-colors ${
-        selected === tab ? "" : ""
-      }`}
+      className={`h-full flex items-center gap-1 rounded-full px-3 py-1.5 text-md transition-colors ${selected === tab ? "" : ""
+        }`}
     >
       <div className="group overflow-visible hover:text-bloo  transition duration-300 ease-in-out">
         <div className="flex flex-row items-center justify-center">
           <Link className="flex items-center justify-center" to={link}>
             <span className="pr-2">{children}</span>
             <FiChevronDown
-              className={`transition-transform ${
-                selected === tab ? "rotate-180" : ""
-              }`}
+              className={`transition-transform ${selected === tab ? "rotate-180" : ""
+                }`}
             />
           </Link>
         </div>
@@ -419,7 +418,7 @@ const Content = ({ selected, dir }) => {
       // style={'z-offset:1000'}
       // give width down here for standard sizing, 450px was older one, rn 729
       className="absolute overflow-visible z-50 left-0 transform -translate-x-1/2 top-16 w-[90vw] max-w-[720px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
-      // className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
+    // className="absolute overflow-visible z-50 left-0 top-16 w-[729px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white p-4"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -797,7 +796,7 @@ const OurIndustries = () => {
         <div className="grid grid-cols-2 gap-y-10 gap-x-1 p-6">
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Oilandgas"
+              to="/industries/Oilandgas"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -814,7 +813,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Healthcare"
+              to="/industries/Healthcare"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -831,7 +830,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Legal"
+              to="/industries/Legal"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -848,7 +847,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Education"
+              to="/industries/Education"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -865,7 +864,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Financial"
+              to="/industries/Financial"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -882,7 +881,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Digitalmedia"
+              to="/industries/Digitalmedia"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -899,7 +898,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Logistics"
+              to="/industries/Logistics"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -916,7 +915,7 @@ const OurIndustries = () => {
           </div>
           <div className="group flex flex-col gap-1">
             <Link
-              to="/Industries-Enterprise"
+              to="/industries/Enterprise"
               className="flex flex-row gap-4 items-center"
             >
               <div className="icon-wrapper">
@@ -967,8 +966,11 @@ const Home = () => {
       {/* <div className="bg-gradient-to-b from-bloo/[.01] via-bloo/[.06] to-bloo/[.01]"> */}
 
       {/* <Temp /> */}
-      <Big />
-      <Clients />
+      <div  className="inner_components" >
+        <Big />
+        <Clients />
+      </div>
+
 
       {/* <Separator /> */}
       <div className="flex flex-col gap-0.5 items-center justify-center xl:pt-16 pt-12 w-screen px-2 mb-4 sm:mb-8 md:mb-12">

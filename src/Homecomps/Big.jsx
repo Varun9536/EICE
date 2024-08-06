@@ -155,7 +155,7 @@ function Big() {
 
   return (
     <div className="relative overflow-hidden font-manrope text-blackk pb-4">
-      <div className="absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
+      <div  className="  absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
       <div className="relative z-10 py-8 sm:py-16 md:py-24 2xl:py-10">
         <div className="container mx-auto px-4 sm:px-2 xl:px-8">
           <TransitionGroup className="min-h-[500px] sm:min-h-[450px]">

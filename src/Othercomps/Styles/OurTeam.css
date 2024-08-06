@@ -1,0 +1,22 @@
+.teamBox {
+    width: 400px;
+} 
+
+
+@media screen and (min-width : 560px) and (max-width:800px)
+{
+    .teamBox {
+        
+        width: 280px;
+    }
+}
+
+
+.team_container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
