@@ -35,9 +35,11 @@ function Peep() {
             visualizing and analyzing complex petroleum financial models,
             enhancing decision-making in upstream oil and gas projects.
           </p>
-          <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={peep1} alt="" className="w-full h-full object-fit" />
-            <img src={peep2} alt="" className="w-full h-full object-fit" />
+          <div className="w-full h-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
+            {/* <img src={peep1} alt="" className="w-full h-full object-fit" />
+            <img src={peep2} alt="" className="w-full h-full object-fit" /> */}
+            <div className="bg-peep1 w-full h-full bg-fit bg-no-repeat"></div>
+            <div className="bg-peep2 w-full h-full bg-fit bg-no-repeat"></div>
           </div>
         </div>
         <div className="w-full pb-6">

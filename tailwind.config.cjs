@@ -33,6 +33,10 @@ export default {
         'journeymap2' : "url('./assets/Compressed/journeymap2.png')",
         'rescasebanner' : "url('./assets/Compressed/rescasebanner.png')",
         'resourceshero' : "url('./assets/Compressed/resourceshero.png')",
+        'peep1' : "url('./assets/Compressed/Peep1.png')",
+        'peep2' : "url('./assets/Compressed/Peep2.png')",
+        // 'resourceshero' : "url('./assets/Compressed/resourceshero.png')",
+        // 'resourceshero' : "url('./assets/Compressed/resourceshero.png')",
 
 
       },
