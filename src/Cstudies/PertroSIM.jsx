@@ -23,8 +23,8 @@ function PetroSIM() {
             optimization.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={petrosim1} alt="" className="w-full h-full object-fit" />
-            <img src={petrosim2} alt="" className="w-full h-full object-fit" />
+            <img src={petrosim1} alt="" className="w-full h-full object-fit rounded-lg" />
+            <img src={petrosim2} alt="" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

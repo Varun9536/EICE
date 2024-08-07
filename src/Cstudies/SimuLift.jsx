@@ -10,6 +10,8 @@ import petrosim1 from "../assets/Compressed/kbcchempetro1.png";
 import petrosim2 from "../assets/Compressed/kbcchempetro2.png";
 import adanigas1 from "../assets/Compressed/adanigas1.png";
 import adanigas2 from "../assets/Compressed/adanigas2.png";
+import simulift1 from '../assets/Compressed/simulift1.png';
+import simulift2 from '../assets/Compressed/simulift2.png';
 
 import { GiVirtualMarker } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -32,8 +34,8 @@ function SimuLift() {
             methods from ESP design to PCP and Hydraulic Rod pump systems.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={adanigas1} alt="" className="w-full h-full object-fit" />
-            <img src={adanigas2} alt="" className="w-full h-full object-fit" />
+            <img src={simulift1} alt="" className="w-full h-full object-fit rounded-lg" />
+            <img src={simulift2} alt="" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

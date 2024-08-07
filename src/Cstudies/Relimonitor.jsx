@@ -22,9 +22,14 @@ function Relimonitor() {
             integrating SCADA data for intelligent alarm management and
             performance analysis across diverse well types.
           </p>
-          <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={temp} alt="" className="w-full h-full object-fit" />
-            <img src={temp2} alt="" className="w-full h-full object-fit" />
+          <div className=" w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
+            <div className="relative w-full h-full rounded-lg">
+              
+              <img src={temp} alt="" className="w-full h-full rounded-lg object-fit" />
+            </div>
+            <div className="relative w-full h-full rounded-lg">
+              <img src={temp2} alt="" className="w-full h-full rounded-lg object-fit" />
+            </div>
           </div>
         </div>
         <div className="w-full pb-6">
@@ -33,7 +38,7 @@ function Relimonitor() {
           </h2>
           <div className="max-w-3xl  mx-auto flex flex-col py-4 gap-4">
             <div className="flex gap-4 ">
-              <h1 className="text-bloo flex items-center justify-center h-full font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2">
+              <h1 className="text-bloo flex items-center justify-center h-full font-bold text-center text-xl sm:text-xl lg:text-2xl py-2">
                 01
               </h1>
               <p className="font-medium text-blackk/60 sm:text-xl text-lg py-2">
