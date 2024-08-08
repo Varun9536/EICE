@@ -359,7 +359,12 @@ function OurTeam() {
       skillSet: "Selenium Web Driver, JIRA, QC, Zephyr, ALM, TestNG, Core Java Automation, Postman API, JMeter, VB Script"
     },
 
-
+    {
+      name: "Manish Sharma",
+      education: "B.Tech (Computer Science and Engineering)",
+      experience: "11 Years",
+      skillSet: "Power BI, MS Excel, PowerPoint, Power Apps, Power Automate, Excel, Macro and SharePoint, Azure, OCI, IT Services, SAP, Summit Tool, Managed Engine, ServiceNow, Azure -IAAS, WFM, IT helpdesk, ITIL, RPO, BPO, Asset, Inventory"
+    },
 
     {
       name: "Ashish Goswami",
@@ -382,13 +387,13 @@ function OurTeam() {
     {
       name: "Basant Anand",
       education: "M.C.A (Master of Computer Applications)",
-      experience: "4+ Years",
+      experience: "3+ Years",
       skillSet: "HTML5, CSS3, Bootstrap, PHP, JavaScript, .NET (MVC), Xamarin, WordPress, WIX, Agile methodologies"
     },
     {
       name: "Shivam Kushwaha",
       education: "B.Tech (Information Technology)",
-      experience: "6+ Years",
+      experience: "3 Years",
       skillSet: "C#.NET, ASP.NET MVC, ASP.NET Core, HTML5/CSS3/JavaScript, PL/SQL, Microsoft Visual Studio 2019/2022, SQL Server 2008 R2, Object-Oriented Programming (OOP), jQuery, Git (Version Control)"
     },
     {
@@ -400,7 +405,7 @@ function OurTeam() {
     {
       name: "Vinod Kumar",
       education: "M.C.A (Master of Computer Applications)",
-      experience: "3+ Years",
+      experience: "3 Years",
       skillSet: "C#, ASP.NET (Core/MVC), jQuery, JavaScript, MS SQL Server, JIRA, Trello, Agile (Scrum), Waterfall"
     },
     {
@@ -451,12 +456,7 @@ function OurTeam() {
       experience: "7+ Years",
       skillSet: "Figma, Adobe XD, Axure RP, InVision, Miro, MS Office, Mural, UX Audit, User Research, Design/Stakeholder Workshops, Personas, Storyboarding, Journey, Empathy, Affinity Mapping, Card Sorting, Task Flow, Flow Charts, Information Architecture, Wireframes and Prototypes, Usability Testing"
     },
-    {
-      name: "Manish Sharma",
-      education: "B.Tech (Computer Science and Engineering)",
-      experience: "11 Years",
-      skillSet: "Power BI, MS Excel, PowerPoint, Power Apps, Power Automate, Excel, Macro and SharePoint, Azure, OCI, IT Services, SAP, Summit Tool, Managed Engine, ServiceNow, Azure -IAAS, WFM, IT helpdesk, ITIL, RPO, BPO, Asset, Inventory"
-    },
+    
 
 
   ];
